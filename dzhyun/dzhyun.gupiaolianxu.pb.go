@@ -14,20 +14,20 @@ var _ = fmt.Errorf
 var _ = math.Inf
 
 type KXian struct {
-	ShiJian          int64 `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
-	KaiPanJia        int64 `protobuf:"varint,2,opt,name=KaiPanJia" json:"KaiPanJia,omitempty"`
-	ZuiGaoJia        int64 `protobuf:"varint,3,opt,name=ZuiGaoJia" json:"ZuiGaoJia,omitempty"`
-	ZuiDiJia         int64 `protobuf:"varint,4,opt,name=ZuiDiJia" json:"ZuiDiJia,omitempty"`
-	ShouPanJia       int64 `protobuf:"varint,5,opt,name=ShouPanJia" json:"ShouPanJia,omitempty"`
-	ChengJiaoLiang   int64 `protobuf:"varint,6,opt,name=ChengJiaoLiang" json:"ChengJiaoLiang,omitempty"`
-	ChengJiaoE       int64 `protobuf:"varint,7,opt,name=ChengJiaoE" json:"ChengJiaoE,omitempty"`
-	ChengJiaoBiShu   int64 `protobuf:"varint,8,opt,name=ChengJiaoBiShu" json:"ChengJiaoBiShu,omitempty"`
-	ShangZhangJiaShu int64 `protobuf:"varint,9,opt,name=ShangZhangJiaShu" json:"ShangZhangJiaShu,omitempty"`
-	XiaDieJiaShu     int64 `protobuf:"varint,10,opt,name=XiaDieJiaShu" json:"XiaDieJiaShu,omitempty"`
-	ChiCang          int64 `protobuf:"varint,11,opt,name=ChiCang" json:"ChiCang,omitempty"`
-	ZengCang         int64 `protobuf:"varint,12,opt,name=ZengCang" json:"ZengCang,omitempty"`
-	ZengLiang        int64 `protobuf:"varint,13,opt,name=ZengLiang" json:"ZengLiang,omitempty"`
-	JieSuanJia       int64 `protobuf:"varint,14,opt,name=JieSuanJia" json:"JieSuanJia,omitempty"`
+	ShiJian          yfloat `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	KaiPanJia        yfloat `protobuf:"varint,2,opt,name=KaiPanJia" json:"KaiPanJia,omitempty"`
+	ZuiGaoJia        yfloat `protobuf:"varint,3,opt,name=ZuiGaoJia" json:"ZuiGaoJia,omitempty"`
+	ZuiDiJia         yfloat `protobuf:"varint,4,opt,name=ZuiDiJia" json:"ZuiDiJia,omitempty"`
+	ShouPanJia       yfloat `protobuf:"varint,5,opt,name=ShouPanJia" json:"ShouPanJia,omitempty"`
+	ChengJiaoLiang   yfloat `protobuf:"varint,6,opt,name=ChengJiaoLiang" json:"ChengJiaoLiang,omitempty"`
+	ChengJiaoE       yfloat `protobuf:"varint,7,opt,name=ChengJiaoE" json:"ChengJiaoE,omitempty"`
+	ChengJiaoBiShu   yfloat `protobuf:"varint,8,opt,name=ChengJiaoBiShu" json:"ChengJiaoBiShu,omitempty"`
+	ShangZhangJiaShu yfloat `protobuf:"varint,9,opt,name=ShangZhangJiaShu" json:"ShangZhangJiaShu,omitempty"`
+	XiaDieJiaShu     yfloat `protobuf:"varint,10,opt,name=XiaDieJiaShu" json:"XiaDieJiaShu,omitempty"`
+	ChiCang          yfloat `protobuf:"varint,11,opt,name=ChiCang" json:"ChiCang,omitempty"`
+	ZengCang         yfloat `protobuf:"varint,12,opt,name=ZengCang" json:"ZengCang,omitempty"`
+	ZengLiang        yfloat `protobuf:"varint,13,opt,name=ZengLiang" json:"ZengLiang,omitempty"`
+	JieSuanJia       yfloat `protobuf:"varint,14,opt,name=JieSuanJia" json:"JieSuanJia,omitempty"`
 }
 
 func (m *KXian) Reset()                    { *m = KXian{} }
@@ -35,98 +35,98 @@ func (m *KXian) String() string            { return proto.CompactTextString(m) }
 func (*KXian) ProtoMessage()               {}
 func (*KXian) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{0} }
 
-func (m *KXian) GetShiJian() int64 {
+func (m *KXian) GetShiJian() yfloat {
 	if m != nil {
 		return m.ShiJian
 	}
 	return 0
 }
 
-func (m *KXian) GetKaiPanJia() int64 {
+func (m *KXian) GetKaiPanJia() yfloat {
 	if m != nil {
 		return m.KaiPanJia
 	}
 	return 0
 }
 
-func (m *KXian) GetZuiGaoJia() int64 {
+func (m *KXian) GetZuiGaoJia() yfloat {
 	if m != nil {
 		return m.ZuiGaoJia
 	}
 	return 0
 }
 
-func (m *KXian) GetZuiDiJia() int64 {
+func (m *KXian) GetZuiDiJia() yfloat {
 	if m != nil {
 		return m.ZuiDiJia
 	}
 	return 0
 }
 
-func (m *KXian) GetShouPanJia() int64 {
+func (m *KXian) GetShouPanJia() yfloat {
 	if m != nil {
 		return m.ShouPanJia
 	}
 	return 0
 }
 
-func (m *KXian) GetChengJiaoLiang() int64 {
+func (m *KXian) GetChengJiaoLiang() yfloat {
 	if m != nil {
 		return m.ChengJiaoLiang
 	}
 	return 0
 }
 
-func (m *KXian) GetChengJiaoE() int64 {
+func (m *KXian) GetChengJiaoE() yfloat {
 	if m != nil {
 		return m.ChengJiaoE
 	}
 	return 0
 }
 
-func (m *KXian) GetChengJiaoBiShu() int64 {
+func (m *KXian) GetChengJiaoBiShu() yfloat {
 	if m != nil {
 		return m.ChengJiaoBiShu
 	}
 	return 0
 }
 
-func (m *KXian) GetShangZhangJiaShu() int64 {
+func (m *KXian) GetShangZhangJiaShu() yfloat {
 	if m != nil {
 		return m.ShangZhangJiaShu
 	}
 	return 0
 }
 
-func (m *KXian) GetXiaDieJiaShu() int64 {
+func (m *KXian) GetXiaDieJiaShu() yfloat {
 	if m != nil {
 		return m.XiaDieJiaShu
 	}
 	return 0
 }
 
-func (m *KXian) GetChiCang() int64 {
+func (m *KXian) GetChiCang() yfloat {
 	if m != nil {
 		return m.ChiCang
 	}
 	return 0
 }
 
-func (m *KXian) GetZengCang() int64 {
+func (m *KXian) GetZengCang() yfloat {
 	if m != nil {
 		return m.ZengCang
 	}
 	return 0
 }
 
-func (m *KXian) GetZengLiang() int64 {
+func (m *KXian) GetZengLiang() yfloat {
 	if m != nil {
 		return m.ZengLiang
 	}
 	return 0
 }
 
-func (m *KXian) GetJieSuanJia() int64 {
+func (m *KXian) GetJieSuanJia() yfloat {
 	if m != nil {
 		return m.JieSuanJia
 	}
@@ -134,15 +134,15 @@ func (m *KXian) GetJieSuanJia() int64 {
 }
 
 type FenShi struct {
-	ShiJian               int64 `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
-	ChengJiaoJia          int64 `protobuf:"varint,2,opt,name=ChengJiaoJia" json:"ChengJiaoJia,omitempty"`
-	ChengJiaoLiang        int64 `protobuf:"varint,3,opt,name=ChengJiaoLiang" json:"ChengJiaoLiang,omitempty"`
-	ChengJiaoE            int64 `protobuf:"varint,4,opt,name=ChengJiaoE" json:"ChengJiaoE,omitempty"`
-	JunJia                int64 `protobuf:"varint,5,opt,name=JunJia" json:"JunJia,omitempty"`
-	LingXianZhiBiao       int64 `protobuf:"varint,6,opt,name=LingXianZhiBiao" json:"LingXianZhiBiao,omitempty"`
-	DuoKongXian           int64 `protobuf:"varint,7,opt,name=DuoKongXian" json:"DuoKongXian,omitempty"`
-	WeiTuoMaiRuZongLiang  int64 `protobuf:"varint,8,opt,name=WeiTuoMaiRuZongLiang" json:"WeiTuoMaiRuZongLiang,omitempty"`
-	WeiTuoMaiChuZongLiang int64 `protobuf:"varint,9,opt,name=WeiTuoMaiChuZongLiang" json:"WeiTuoMaiChuZongLiang,omitempty"`
+	ShiJian               yfloat `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	ChengJiaoJia          yfloat `protobuf:"varint,2,opt,name=ChengJiaoJia" json:"ChengJiaoJia,omitempty"`
+	ChengJiaoLiang        yfloat `protobuf:"varint,3,opt,name=ChengJiaoLiang" json:"ChengJiaoLiang,omitempty"`
+	ChengJiaoE            yfloat `protobuf:"varint,4,opt,name=ChengJiaoE" json:"ChengJiaoE,omitempty"`
+	JunJia                yfloat `protobuf:"varint,5,opt,name=JunJia" json:"JunJia,omitempty"`
+	LingXianZhiBiao       yfloat `protobuf:"varint,6,opt,name=LingXianZhiBiao" json:"LingXianZhiBiao,omitempty"`
+	DuoKongXian           yfloat `protobuf:"varint,7,opt,name=DuoKongXian" json:"DuoKongXian,omitempty"`
+	WeiTuoMaiRuZongLiang  yfloat `protobuf:"varint,8,opt,name=WeiTuoMaiRuZongLiang" json:"WeiTuoMaiRuZongLiang,omitempty"`
+	WeiTuoMaiChuZongLiang yfloat `protobuf:"varint,9,opt,name=WeiTuoMaiChuZongLiang" json:"WeiTuoMaiChuZongLiang,omitempty"`
 }
 
 func (m *FenShi) Reset()                    { *m = FenShi{} }
@@ -150,63 +150,63 @@ func (m *FenShi) String() string            { return proto.CompactTextString(m) 
 func (*FenShi) ProtoMessage()               {}
 func (*FenShi) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{1} }
 
-func (m *FenShi) GetShiJian() int64 {
+func (m *FenShi) GetShiJian() yfloat {
 	if m != nil {
 		return m.ShiJian
 	}
 	return 0
 }
 
-func (m *FenShi) GetChengJiaoJia() int64 {
+func (m *FenShi) GetChengJiaoJia() yfloat {
 	if m != nil {
 		return m.ChengJiaoJia
 	}
 	return 0
 }
 
-func (m *FenShi) GetChengJiaoLiang() int64 {
+func (m *FenShi) GetChengJiaoLiang() yfloat {
 	if m != nil {
 		return m.ChengJiaoLiang
 	}
 	return 0
 }
 
-func (m *FenShi) GetChengJiaoE() int64 {
+func (m *FenShi) GetChengJiaoE() yfloat {
 	if m != nil {
 		return m.ChengJiaoE
 	}
 	return 0
 }
 
-func (m *FenShi) GetJunJia() int64 {
+func (m *FenShi) GetJunJia() yfloat {
 	if m != nil {
 		return m.JunJia
 	}
 	return 0
 }
 
-func (m *FenShi) GetLingXianZhiBiao() int64 {
+func (m *FenShi) GetLingXianZhiBiao() yfloat {
 	if m != nil {
 		return m.LingXianZhiBiao
 	}
 	return 0
 }
 
-func (m *FenShi) GetDuoKongXian() int64 {
+func (m *FenShi) GetDuoKongXian() yfloat {
 	if m != nil {
 		return m.DuoKongXian
 	}
 	return 0
 }
 
-func (m *FenShi) GetWeiTuoMaiRuZongLiang() int64 {
+func (m *FenShi) GetWeiTuoMaiRuZongLiang() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuZongLiang
 	}
 	return 0
 }
 
-func (m *FenShi) GetWeiTuoMaiChuZongLiang() int64 {
+func (m *FenShi) GetWeiTuoMaiChuZongLiang() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuZongLiang
 	}
@@ -230,8 +230,8 @@ func (m *FenShiLishi) GetRows() []*FenShi {
 }
 
 type DynaAlib struct {
-	ShiJian int64          `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
-	ID      int64          `protobuf:"varint,2,opt,name=ID" json:"ID,omitempty"`
+	ShiJian yfloat          `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	ID      yfloat          `protobuf:"varint,2,opt,name=ID" json:"ID,omitempty"`
 	Objs    []string       `protobuf:"bytes,3,rep,name=Objs" json:"Objs,omitempty"`
 	DAObjs  []*DynaAlibObj `protobuf:"bytes,4,rep,name=DAObjs" json:"DAObjs,omitempty"`
 }
@@ -241,14 +241,14 @@ func (m *DynaAlib) String() string            { return proto.CompactTextString(m
 func (*DynaAlib) ProtoMessage()               {}
 func (*DynaAlib) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{3} }
 
-func (m *DynaAlib) GetShiJian() int64 {
+func (m *DynaAlib) GetShiJian() yfloat {
 	if m != nil {
 		return m.ShiJian
 	}
 	return 0
 }
 
-func (m *DynaAlib) GetID() int64 {
+func (m *DynaAlib) GetID() yfloat {
 	if m != nil {
 		return m.ID
 	}
@@ -287,10 +287,10 @@ func (m *DynaAlibObj) GetObjs() []string {
 
 type BackUpState struct {
 	Market            string `protobuf:"bytes,1,opt,name=Market" json:"Market,omitempty"`
-	BackUpTime        int64  `protobuf:"varint,2,opt,name=BackUpTime" json:"BackUpTime,omitempty"`
-	BackUpCloseStatus int64  `protobuf:"varint,3,opt,name=BackUpCloseStatus" json:"BackUpCloseStatus,omitempty"`
-	CloseTime         int64  `protobuf:"varint,4,opt,name=CloseTime" json:"CloseTime,omitempty"`
-	CloseStatus       int64  `protobuf:"varint,5,opt,name=CloseStatus" json:"CloseStatus,omitempty"`
+	BackUpTime        yfloat  `protobuf:"varint,2,opt,name=BackUpTime" json:"BackUpTime,omitempty"`
+	BackUpCloseStatus yfloat  `protobuf:"varint,3,opt,name=BackUpCloseStatus" json:"BackUpCloseStatus,omitempty"`
+	CloseTime         yfloat  `protobuf:"varint,4,opt,name=CloseTime" json:"CloseTime,omitempty"`
+	CloseStatus       yfloat  `protobuf:"varint,5,opt,name=CloseStatus" json:"CloseStatus,omitempty"`
 }
 
 func (m *BackUpState) Reset()                    { *m = BackUpState{} }
@@ -305,28 +305,28 @@ func (m *BackUpState) GetMarket() string {
 	return ""
 }
 
-func (m *BackUpState) GetBackUpTime() int64 {
+func (m *BackUpState) GetBackUpTime() yfloat {
 	if m != nil {
 		return m.BackUpTime
 	}
 	return 0
 }
 
-func (m *BackUpState) GetBackUpCloseStatus() int64 {
+func (m *BackUpState) GetBackUpCloseStatus() yfloat {
 	if m != nil {
 		return m.BackUpCloseStatus
 	}
 	return 0
 }
 
-func (m *BackUpState) GetCloseTime() int64 {
+func (m *BackUpState) GetCloseTime() yfloat {
 	if m != nil {
 		return m.CloseTime
 	}
 	return 0
 }
 
-func (m *BackUpState) GetCloseStatus() int64 {
+func (m *BackUpState) GetCloseStatus() yfloat {
 	if m != nil {
 		return m.CloseStatus
 	}
@@ -334,9 +334,9 @@ func (m *BackUpState) GetCloseStatus() int64 {
 }
 
 type LingxianDuokongZhibiao struct {
-	ShiJian         int64 `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
-	LingXianZhiBiao int64 `protobuf:"varint,2,opt,name=LingXianZhiBiao" json:"LingXianZhiBiao,omitempty"`
-	DuoKongXian     int64 `protobuf:"varint,3,opt,name=DuoKongXian" json:"DuoKongXian,omitempty"`
+	ShiJian         yfloat `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	LingXianZhiBiao yfloat `protobuf:"varint,2,opt,name=LingXianZhiBiao" json:"LingXianZhiBiao,omitempty"`
+	DuoKongXian     yfloat `protobuf:"varint,3,opt,name=DuoKongXian" json:"DuoKongXian,omitempty"`
 }
 
 func (m *LingxianDuokongZhibiao) Reset()                    { *m = LingxianDuokongZhibiao{} }
@@ -344,21 +344,21 @@ func (m *LingxianDuokongZhibiao) String() string            { return proto.Compa
 func (*LingxianDuokongZhibiao) ProtoMessage()               {}
 func (*LingxianDuokongZhibiao) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{6} }
 
-func (m *LingxianDuokongZhibiao) GetShiJian() int64 {
+func (m *LingxianDuokongZhibiao) GetShiJian() yfloat {
 	if m != nil {
 		return m.ShiJian
 	}
 	return 0
 }
 
-func (m *LingxianDuokongZhibiao) GetLingXianZhiBiao() int64 {
+func (m *LingxianDuokongZhibiao) GetLingXianZhiBiao() yfloat {
 	if m != nil {
 		return m.LingXianZhiBiao
 	}
 	return 0
 }
 
-func (m *LingxianDuokongZhibiao) GetDuoKongXian() int64 {
+func (m *LingxianDuokongZhibiao) GetDuoKongXian() yfloat {
 	if m != nil {
 		return m.DuoKongXian
 	}
@@ -366,8 +366,8 @@ func (m *LingxianDuokongZhibiao) GetDuoKongXian() int64 {
 }
 
 type LingxianDuokongZhibiaoStatus struct {
-	JiaoYiRiQi  int64                   `protobuf:"varint,1,opt,name=JiaoYiRiQi" json:"JiaoYiRiQi,omitempty"`
-	IndexStatuc int64                   `protobuf:"varint,2,opt,name=IndexStatuc" json:"IndexStatuc,omitempty"`
+	JiaoYiRiQi  yfloat                   `protobuf:"varint,1,opt,name=JiaoYiRiQi" json:"JiaoYiRiQi,omitempty"`
+	IndexStatuc yfloat                   `protobuf:"varint,2,opt,name=IndexStatuc" json:"IndexStatuc,omitempty"`
 	DataStatus  *LingxianDuokongZhibiao `protobuf:"bytes,3,opt,name=DataStatus" json:"DataStatus,omitempty"`
 }
 
@@ -376,14 +376,14 @@ func (m *LingxianDuokongZhibiaoStatus) String() string            { return proto
 func (*LingxianDuokongZhibiaoStatus) ProtoMessage()               {}
 func (*LingxianDuokongZhibiaoStatus) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{7} }
 
-func (m *LingxianDuokongZhibiaoStatus) GetJiaoYiRiQi() int64 {
+func (m *LingxianDuokongZhibiaoStatus) GetJiaoYiRiQi() yfloat {
 	if m != nil {
 		return m.JiaoYiRiQi
 	}
 	return 0
 }
 
-func (m *LingxianDuokongZhibiaoStatus) GetIndexStatuc() int64 {
+func (m *LingxianDuokongZhibiaoStatus) GetIndexStatuc() yfloat {
 	if m != nil {
 		return m.IndexStatuc
 	}

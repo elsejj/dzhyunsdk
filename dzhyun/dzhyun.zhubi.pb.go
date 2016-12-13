@@ -15,11 +15,11 @@ var _ = math.Inf
 
 // 逐笔当日存储结构
 type ZhubiDangri struct {
-	Id             int64 `protobuf:"varint,1,opt,name=Id" json:"Id,omitempty"`
-	ShiJian        int64 `protobuf:"varint,2,opt,name=ShiJian" json:"ShiJian,omitempty"`
-	ZuiXinJia      int64 `protobuf:"varint,3,opt,name=ZuiXinJia" json:"ZuiXinJia,omitempty"`
-	ChengJiaoLiang int64 `protobuf:"varint,4,opt,name=ChengJiaoLiang" json:"ChengJiaoLiang,omitempty"`
-	ZhubiId        int64 `protobuf:"varint,5,opt,name=ZhubiId" json:"ZhubiId,omitempty"`
+	Id             yfloat `protobuf:"varint,1,opt,name=Id" json:"Id,omitempty"`
+	ShiJian        yfloat `protobuf:"varint,2,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	ZuiXinJia      yfloat `protobuf:"varint,3,opt,name=ZuiXinJia" json:"ZuiXinJia,omitempty"`
+	ChengJiaoLiang yfloat `protobuf:"varint,4,opt,name=ChengJiaoLiang" json:"ChengJiaoLiang,omitempty"`
+	ZhubiId        yfloat `protobuf:"varint,5,opt,name=ZhubiId" json:"ZhubiId,omitempty"`
 }
 
 func (m *ZhubiDangri) Reset()                    { *m = ZhubiDangri{} }
@@ -27,35 +27,35 @@ func (m *ZhubiDangri) String() string            { return proto.CompactTextStrin
 func (*ZhubiDangri) ProtoMessage()               {}
 func (*ZhubiDangri) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{0} }
 
-func (m *ZhubiDangri) GetId() int64 {
+func (m *ZhubiDangri) GetId() yfloat {
 	if m != nil {
 		return m.Id
 	}
 	return 0
 }
 
-func (m *ZhubiDangri) GetShiJian() int64 {
+func (m *ZhubiDangri) GetShiJian() yfloat {
 	if m != nil {
 		return m.ShiJian
 	}
 	return 0
 }
 
-func (m *ZhubiDangri) GetZuiXinJia() int64 {
+func (m *ZhubiDangri) GetZuiXinJia() yfloat {
 	if m != nil {
 		return m.ZuiXinJia
 	}
 	return 0
 }
 
-func (m *ZhubiDangri) GetChengJiaoLiang() int64 {
+func (m *ZhubiDangri) GetChengJiaoLiang() yfloat {
 	if m != nil {
 		return m.ChengJiaoLiang
 	}
 	return 0
 }
 
-func (m *ZhubiDangri) GetZhubiId() int64 {
+func (m *ZhubiDangri) GetZhubiId() yfloat {
 	if m != nil {
 		return m.ZhubiId
 	}

@@ -345,7 +345,7 @@ func (m *QuoteTick) GetOutter() int32 {
 type QuoteTickSingle struct {
 	Obj     string            `protobuf:"bytes,1,opt,name=Obj" json:"Obj,omitempty"`
 	Data    []*FenBiChengJiao `protobuf:"bytes,2,rep,name=Data" json:"Data,omitempty"`
-	QingPan int64             `protobuf:"varint,3,opt,name=QingPan" json:"QingPan,omitempty"`
+	QingPan yfloat             `protobuf:"varint,3,opt,name=QingPan" json:"QingPan,omitempty"`
 }
 
 func (m *QuoteTickSingle) Reset()                    { *m = QuoteTickSingle{} }
@@ -367,7 +367,7 @@ func (m *QuoteTickSingle) GetData() []*FenBiChengJiao {
 	return nil
 }
 
-func (m *QuoteTickSingle) GetQingPan() int64 {
+func (m *QuoteTickSingle) GetQingPan() yfloat {
 	if m != nil {
 		return m.QingPan
 	}
@@ -474,13 +474,13 @@ func (m *QuoteMin) GetSellVolume() []float32 {
 type QuoteMinSingle struct {
 	Obj                string                                    `protobuf:"bytes,1,opt,name=Obj" json:"Obj,omitempty"`
 	Data               []*FenShi                                 `protobuf:"bytes,2,rep,name=Data" json:"Data,omitempty"`
-	RiQi               int64                                     `protobuf:"varint,3,opt,name=RiQi" json:"RiQi,omitempty"`
-	ShiQu              int64                                     `protobuf:"varint,4,opt,name=ShiQu" json:"ShiQu,omitempty"`
-	JiHeJingJiaDianShu int64                                     `protobuf:"varint,5,opt,name=JiHeJingJiaDianShu" json:"JiHeJingJiaDianShu,omitempty"`
+	RiQi               yfloat                                     `protobuf:"varint,3,opt,name=RiQi" json:"RiQi,omitempty"`
+	ShiQu              yfloat                                     `protobuf:"varint,4,opt,name=ShiQu" json:"ShiQu,omitempty"`
+	JiHeJingJiaDianShu yfloat                                     `protobuf:"varint,5,opt,name=JiHeJingJiaDianShu" json:"JiHeJingJiaDianShu,omitempty"`
 	JiaoYiShiJianDuan  []*QuoteMinSingle_JiaoYiShiJianDuanJieGou `protobuf:"bytes,6,rep,name=JiaoYiShiJianDuan" json:"JiaoYiShiJianDuan,omitempty"`
-	ZuoShou            int64                                     `protobuf:"varint,7,opt,name=ZuoShou" json:"ZuoShou,omitempty"`
-	QingPan            int64                                     `protobuf:"varint,8,opt,name=QingPan" json:"QingPan,omitempty"`
-	ZuoRiJieSuanJia    int64                                     `protobuf:"varint,9,opt,name=ZuoRiJieSuanJia" json:"ZuoRiJieSuanJia,omitempty"`
+	ZuoShou            yfloat                                     `protobuf:"varint,7,opt,name=ZuoShou" json:"ZuoShou,omitempty"`
+	QingPan            yfloat                                     `protobuf:"varint,8,opt,name=QingPan" json:"QingPan,omitempty"`
+	ZuoRiJieSuanJia    yfloat                                     `protobuf:"varint,9,opt,name=ZuoRiJieSuanJia" json:"ZuoRiJieSuanJia,omitempty"`
 	LiShiFenShi        []*FenShiLishi                            `protobuf:"bytes,10,rep,name=LiShiFenShi" json:"LiShiFenShi,omitempty"`
 }
 
@@ -503,21 +503,21 @@ func (m *QuoteMinSingle) GetData() []*FenShi {
 	return nil
 }
 
-func (m *QuoteMinSingle) GetRiQi() int64 {
+func (m *QuoteMinSingle) GetRiQi() yfloat {
 	if m != nil {
 		return m.RiQi
 	}
 	return 0
 }
 
-func (m *QuoteMinSingle) GetShiQu() int64 {
+func (m *QuoteMinSingle) GetShiQu() yfloat {
 	if m != nil {
 		return m.ShiQu
 	}
 	return 0
 }
 
-func (m *QuoteMinSingle) GetJiHeJingJiaDianShu() int64 {
+func (m *QuoteMinSingle) GetJiHeJingJiaDianShu() yfloat {
 	if m != nil {
 		return m.JiHeJingJiaDianShu
 	}
@@ -531,21 +531,21 @@ func (m *QuoteMinSingle) GetJiaoYiShiJianDuan() []*QuoteMinSingle_JiaoYiShiJianD
 	return nil
 }
 
-func (m *QuoteMinSingle) GetZuoShou() int64 {
+func (m *QuoteMinSingle) GetZuoShou() yfloat {
 	if m != nil {
 		return m.ZuoShou
 	}
 	return 0
 }
 
-func (m *QuoteMinSingle) GetQingPan() int64 {
+func (m *QuoteMinSingle) GetQingPan() yfloat {
 	if m != nil {
 		return m.QingPan
 	}
 	return 0
 }
 
-func (m *QuoteMinSingle) GetZuoRiJieSuanJia() int64 {
+func (m *QuoteMinSingle) GetZuoRiJieSuanJia() yfloat {
 	if m != nil {
 		return m.ZuoRiJieSuanJia
 	}
@@ -560,10 +560,10 @@ func (m *QuoteMinSingle) GetLiShiFenShi() []*FenShiLishi {
 }
 
 type QuoteMinSingle_JiaoYiShiJianDuanJieGou struct {
-	KaiShiShiJian int64 `protobuf:"varint,1,opt,name=KaiShiShiJian" json:"KaiShiShiJian,omitempty"`
-	JieShuShiJian int64 `protobuf:"varint,2,opt,name=JieShuShiJian" json:"JieShuShiJian,omitempty"`
-	KaiShiRiQi    int64 `protobuf:"varint,3,opt,name=KaiShiRiQi" json:"KaiShiRiQi,omitempty"`
-	JieShuRiQi    int64 `protobuf:"varint,4,opt,name=JieShuRiQi" json:"JieShuRiQi,omitempty"`
+	KaiShiShiJian yfloat `protobuf:"varint,1,opt,name=KaiShiShiJian" json:"KaiShiShiJian,omitempty"`
+	JieShuShiJian yfloat `protobuf:"varint,2,opt,name=JieShuShiJian" json:"JieShuShiJian,omitempty"`
+	KaiShiRiQi    yfloat `protobuf:"varint,3,opt,name=KaiShiRiQi" json:"KaiShiRiQi,omitempty"`
+	JieShuRiQi    yfloat `protobuf:"varint,4,opt,name=JieShuRiQi" json:"JieShuRiQi,omitempty"`
 }
 
 func (m *QuoteMinSingle_JiaoYiShiJianDuanJieGou) Reset() {
@@ -575,28 +575,28 @@ func (*QuoteMinSingle_JiaoYiShiJianDuanJieGou) Descriptor() ([]byte, []int) {
 	return fileDescriptor1, []int{10, 0}
 }
 
-func (m *QuoteMinSingle_JiaoYiShiJianDuanJieGou) GetKaiShiShiJian() int64 {
+func (m *QuoteMinSingle_JiaoYiShiJianDuanJieGou) GetKaiShiShiJian() yfloat {
 	if m != nil {
 		return m.KaiShiShiJian
 	}
 	return 0
 }
 
-func (m *QuoteMinSingle_JiaoYiShiJianDuanJieGou) GetJieShuShiJian() int64 {
+func (m *QuoteMinSingle_JiaoYiShiJianDuanJieGou) GetJieShuShiJian() yfloat {
 	if m != nil {
 		return m.JieShuShiJian
 	}
 	return 0
 }
 
-func (m *QuoteMinSingle_JiaoYiShiJianDuanJieGou) GetKaiShiRiQi() int64 {
+func (m *QuoteMinSingle_JiaoYiShiJianDuanJieGou) GetKaiShiRiQi() yfloat {
 	if m != nil {
 		return m.KaiShiRiQi
 	}
 	return 0
 }
 
-func (m *QuoteMinSingle_JiaoYiShiJianDuanJieGou) GetJieShuRiQi() int64 {
+func (m *QuoteMinSingle_JiaoYiShiJianDuanJieGou) GetJieShuRiQi() yfloat {
 	if m != nil {
 		return m.JieShuRiQi
 	}
@@ -621,22 +621,22 @@ func (m *QuoteMinOutput) GetResults() []*QuoteMinSingle {
 
 // Level大单
 type QuoteBOrder struct {
-	ShiJian            int64 `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
-	WeiTuoMaiRu        int64 `protobuf:"varint,2,opt,name=WeiTuoMaiRu" json:"WeiTuoMaiRu,omitempty"`
-	WeiTuoMaiChu       int64 `protobuf:"varint,3,opt,name=WeiTuoMaiChu" json:"WeiTuoMaiChu,omitempty"`
-	MaiRuZhongDanBiLi  int64 `protobuf:"varint,4,opt,name=MaiRuZhongDanBiLi" json:"MaiRuZhongDanBiLi,omitempty"`
-	MaiRuDaDanBiLi     int64 `protobuf:"varint,5,opt,name=MaiRuDaDanBiLi" json:"MaiRuDaDanBiLi,omitempty"`
-	MaiRuTeDaDanBiLi   int64 `protobuf:"varint,6,opt,name=MaiRuTeDaDanBiLi" json:"MaiRuTeDaDanBiLi,omitempty"`
-	MaiChuZhongDanBiLi int64 `protobuf:"varint,7,opt,name=MaiChuZhongDanBiLi" json:"MaiChuZhongDanBiLi,omitempty"`
-	MaiChuDaDanBiLi    int64 `protobuf:"varint,8,opt,name=MaiChuDaDanBiLi" json:"MaiChuDaDanBiLi,omitempty"`
-	MaiChuTeDaDanBiLi  int64 `protobuf:"varint,9,opt,name=MaiChuTeDaDanBiLi" json:"MaiChuTeDaDanBiLi,omitempty"`
-	DuanXianMaiRu      int64 `protobuf:"varint,10,opt,name=DuanXianMaiRu" json:"DuanXianMaiRu,omitempty"`
-	DuanXianMaiChu     int64 `protobuf:"varint,11,opt,name=DuanXianMaiChu" json:"DuanXianMaiChu,omitempty"`
-	DuanXianChiHuo     int64 `protobuf:"varint,12,opt,name=DuanXianChiHuo" json:"DuanXianChiHuo,omitempty"`
-	DuanXianTuHuo      int64 `protobuf:"varint,13,opt,name=DuanXianTuHuo" json:"DuanXianTuHuo,omitempty"`
-	DaDanLiuRuJinE     int64 `protobuf:"varint,14,opt,name=DaDanLiuRuJinE" json:"DaDanLiuRuJinE,omitempty"`
-	DaDanLiuChuJinE    int64 `protobuf:"varint,15,opt,name=DaDanLiuChuJinE" json:"DaDanLiuChuJinE,omitempty"`
-	DaDanJingLiuRuJinE int64 `protobuf:"varint,16,opt,name=DaDanJingLiuRuJinE" json:"DaDanJingLiuRuJinE,omitempty"`
+	ShiJian            yfloat `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	WeiTuoMaiRu        yfloat `protobuf:"varint,2,opt,name=WeiTuoMaiRu" json:"WeiTuoMaiRu,omitempty"`
+	WeiTuoMaiChu       yfloat `protobuf:"varint,3,opt,name=WeiTuoMaiChu" json:"WeiTuoMaiChu,omitempty"`
+	MaiRuZhongDanBiLi  yfloat `protobuf:"varint,4,opt,name=MaiRuZhongDanBiLi" json:"MaiRuZhongDanBiLi,omitempty"`
+	MaiRuDaDanBiLi     yfloat `protobuf:"varint,5,opt,name=MaiRuDaDanBiLi" json:"MaiRuDaDanBiLi,omitempty"`
+	MaiRuTeDaDanBiLi   yfloat `protobuf:"varint,6,opt,name=MaiRuTeDaDanBiLi" json:"MaiRuTeDaDanBiLi,omitempty"`
+	MaiChuZhongDanBiLi yfloat `protobuf:"varint,7,opt,name=MaiChuZhongDanBiLi" json:"MaiChuZhongDanBiLi,omitempty"`
+	MaiChuDaDanBiLi    yfloat `protobuf:"varint,8,opt,name=MaiChuDaDanBiLi" json:"MaiChuDaDanBiLi,omitempty"`
+	MaiChuTeDaDanBiLi  yfloat `protobuf:"varint,9,opt,name=MaiChuTeDaDanBiLi" json:"MaiChuTeDaDanBiLi,omitempty"`
+	DuanXianMaiRu      yfloat `protobuf:"varint,10,opt,name=DuanXianMaiRu" json:"DuanXianMaiRu,omitempty"`
+	DuanXianMaiChu     yfloat `protobuf:"varint,11,opt,name=DuanXianMaiChu" json:"DuanXianMaiChu,omitempty"`
+	DuanXianChiHuo     yfloat `protobuf:"varint,12,opt,name=DuanXianChiHuo" json:"DuanXianChiHuo,omitempty"`
+	DuanXianTuHuo      yfloat `protobuf:"varint,13,opt,name=DuanXianTuHuo" json:"DuanXianTuHuo,omitempty"`
+	DaDanLiuRuJinE     yfloat `protobuf:"varint,14,opt,name=DaDanLiuRuJinE" json:"DaDanLiuRuJinE,omitempty"`
+	DaDanLiuChuJinE    yfloat `protobuf:"varint,15,opt,name=DaDanLiuChuJinE" json:"DaDanLiuChuJinE,omitempty"`
+	DaDanJingLiuRuJinE yfloat `protobuf:"varint,16,opt,name=DaDanJingLiuRuJinE" json:"DaDanJingLiuRuJinE,omitempty"`
 }
 
 func (m *QuoteBOrder) Reset()                    { *m = QuoteBOrder{} }
@@ -644,112 +644,112 @@ func (m *QuoteBOrder) String() string            { return proto.CompactTextStrin
 func (*QuoteBOrder) ProtoMessage()               {}
 func (*QuoteBOrder) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{12} }
 
-func (m *QuoteBOrder) GetShiJian() int64 {
+func (m *QuoteBOrder) GetShiJian() yfloat {
 	if m != nil {
 		return m.ShiJian
 	}
 	return 0
 }
 
-func (m *QuoteBOrder) GetWeiTuoMaiRu() int64 {
+func (m *QuoteBOrder) GetWeiTuoMaiRu() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRu
 	}
 	return 0
 }
 
-func (m *QuoteBOrder) GetWeiTuoMaiChu() int64 {
+func (m *QuoteBOrder) GetWeiTuoMaiChu() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChu
 	}
 	return 0
 }
 
-func (m *QuoteBOrder) GetMaiRuZhongDanBiLi() int64 {
+func (m *QuoteBOrder) GetMaiRuZhongDanBiLi() yfloat {
 	if m != nil {
 		return m.MaiRuZhongDanBiLi
 	}
 	return 0
 }
 
-func (m *QuoteBOrder) GetMaiRuDaDanBiLi() int64 {
+func (m *QuoteBOrder) GetMaiRuDaDanBiLi() yfloat {
 	if m != nil {
 		return m.MaiRuDaDanBiLi
 	}
 	return 0
 }
 
-func (m *QuoteBOrder) GetMaiRuTeDaDanBiLi() int64 {
+func (m *QuoteBOrder) GetMaiRuTeDaDanBiLi() yfloat {
 	if m != nil {
 		return m.MaiRuTeDaDanBiLi
 	}
 	return 0
 }
 
-func (m *QuoteBOrder) GetMaiChuZhongDanBiLi() int64 {
+func (m *QuoteBOrder) GetMaiChuZhongDanBiLi() yfloat {
 	if m != nil {
 		return m.MaiChuZhongDanBiLi
 	}
 	return 0
 }
 
-func (m *QuoteBOrder) GetMaiChuDaDanBiLi() int64 {
+func (m *QuoteBOrder) GetMaiChuDaDanBiLi() yfloat {
 	if m != nil {
 		return m.MaiChuDaDanBiLi
 	}
 	return 0
 }
 
-func (m *QuoteBOrder) GetMaiChuTeDaDanBiLi() int64 {
+func (m *QuoteBOrder) GetMaiChuTeDaDanBiLi() yfloat {
 	if m != nil {
 		return m.MaiChuTeDaDanBiLi
 	}
 	return 0
 }
 
-func (m *QuoteBOrder) GetDuanXianMaiRu() int64 {
+func (m *QuoteBOrder) GetDuanXianMaiRu() yfloat {
 	if m != nil {
 		return m.DuanXianMaiRu
 	}
 	return 0
 }
 
-func (m *QuoteBOrder) GetDuanXianMaiChu() int64 {
+func (m *QuoteBOrder) GetDuanXianMaiChu() yfloat {
 	if m != nil {
 		return m.DuanXianMaiChu
 	}
 	return 0
 }
 
-func (m *QuoteBOrder) GetDuanXianChiHuo() int64 {
+func (m *QuoteBOrder) GetDuanXianChiHuo() yfloat {
 	if m != nil {
 		return m.DuanXianChiHuo
 	}
 	return 0
 }
 
-func (m *QuoteBOrder) GetDuanXianTuHuo() int64 {
+func (m *QuoteBOrder) GetDuanXianTuHuo() yfloat {
 	if m != nil {
 		return m.DuanXianTuHuo
 	}
 	return 0
 }
 
-func (m *QuoteBOrder) GetDaDanLiuRuJinE() int64 {
+func (m *QuoteBOrder) GetDaDanLiuRuJinE() yfloat {
 	if m != nil {
 		return m.DaDanLiuRuJinE
 	}
 	return 0
 }
 
-func (m *QuoteBOrder) GetDaDanLiuChuJinE() int64 {
+func (m *QuoteBOrder) GetDaDanLiuChuJinE() yfloat {
 	if m != nil {
 		return m.DaDanLiuChuJinE
 	}
 	return 0
 }
 
-func (m *QuoteBOrder) GetDaDanJingLiuRuJinE() int64 {
+func (m *QuoteBOrder) GetDaDanJingLiuRuJinE() yfloat {
 	if m != nil {
 		return m.DaDanJingLiuRuJinE
 	}
@@ -798,9 +798,9 @@ func (m *QuoteBOrderOutput) GetResults() []*QuoteBOrderSingle {
 
 // 除权参数
 type QuoteDivid struct {
-	ShiJian         int64 `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
-	ChuQuanChengShu int64 `protobuf:"varint,2,opt,name=ChuQuanChengShu" json:"ChuQuanChengShu,omitempty"`
-	ChuQuanPianYi   int64 `protobuf:"varint,3,opt,name=ChuQuanPianYi" json:"ChuQuanPianYi,omitempty"`
+	ShiJian         yfloat `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	ChuQuanChengShu yfloat `protobuf:"varint,2,opt,name=ChuQuanChengShu" json:"ChuQuanChengShu,omitempty"`
+	ChuQuanPianYi   yfloat `protobuf:"varint,3,opt,name=ChuQuanPianYi" json:"ChuQuanPianYi,omitempty"`
 }
 
 func (m *QuoteDivid) Reset()                    { *m = QuoteDivid{} }
@@ -808,21 +808,21 @@ func (m *QuoteDivid) String() string            { return proto.CompactTextString
 func (*QuoteDivid) ProtoMessage()               {}
 func (*QuoteDivid) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{15} }
 
-func (m *QuoteDivid) GetShiJian() int64 {
+func (m *QuoteDivid) GetShiJian() yfloat {
 	if m != nil {
 		return m.ShiJian
 	}
 	return 0
 }
 
-func (m *QuoteDivid) GetChuQuanChengShu() int64 {
+func (m *QuoteDivid) GetChuQuanChengShu() yfloat {
 	if m != nil {
 		return m.ChuQuanChengShu
 	}
 	return 0
 }
 
-func (m *QuoteDivid) GetChuQuanPianYi() int64 {
+func (m *QuoteDivid) GetChuQuanPianYi() yfloat {
 	if m != nil {
 		return m.ChuQuanPianYi
 	}
@@ -873,7 +873,7 @@ func (m *QuoteDividOutput) GetResults() []*QuoteDividSingle {
 type QuoteDynaMinSingle struct {
 	Obj     string         `protobuf:"bytes,1,opt,name=Obj" json:"Obj,omitempty"`
 	Data    []*GeGuDongTai `protobuf:"bytes,2,rep,name=Data" json:"Data,omitempty"`
-	QingPan int64          `protobuf:"varint,3,opt,name=QingPan" json:"QingPan,omitempty"`
+	QingPan yfloat          `protobuf:"varint,3,opt,name=QingPan" json:"QingPan,omitempty"`
 }
 
 func (m *QuoteDynaMinSingle) Reset()                    { *m = QuoteDynaMinSingle{} }
@@ -895,7 +895,7 @@ func (m *QuoteDynaMinSingle) GetData() []*GeGuDongTai {
 	return nil
 }
 
-func (m *QuoteDynaMinSingle) GetQingPan() int64 {
+func (m *QuoteDynaMinSingle) GetQingPan() yfloat {
 	if m != nil {
 		return m.QingPan
 	}
@@ -906,7 +906,7 @@ func (m *QuoteDynaMinSingle) GetQingPan() int64 {
 type QuoteReportSingle struct {
 	Obj     string         `protobuf:"bytes,1,opt,name=Obj" json:"Obj,omitempty"`
 	Data    []*ZhubiDangri `protobuf:"bytes,2,rep,name=Data" json:"Data,omitempty"`
-	QingPan int64          `protobuf:"varint,3,opt,name=QingPan" json:"QingPan,omitempty"`
+	QingPan yfloat          `protobuf:"varint,3,opt,name=QingPan" json:"QingPan,omitempty"`
 }
 
 func (m *QuoteReportSingle) Reset()                    { *m = QuoteReportSingle{} }
@@ -928,7 +928,7 @@ func (m *QuoteReportSingle) GetData() []*ZhubiDangri {
 	return nil
 }
 
-func (m *QuoteReportSingle) GetQingPan() int64 {
+func (m *QuoteReportSingle) GetQingPan() yfloat {
 	if m != nil {
 		return m.QingPan
 	}
@@ -964,7 +964,7 @@ func (m *QuoteQueueSingle) GetData() []*WeiTuoDuiLie {
 type QuoteHistoryMinSingle struct {
 	Obj     string         `protobuf:"bytes,1,opt,name=Obj" json:"Obj,omitempty"`
 	Data    []*FenShiLishi `protobuf:"bytes,2,rep,name=Data" json:"Data,omitempty"`
-	ZuoShou int64          `protobuf:"varint,3,opt,name=ZuoShou" json:"ZuoShou,omitempty"`
+	ZuoShou yfloat          `protobuf:"varint,3,opt,name=ZuoShou" json:"ZuoShou,omitempty"`
 }
 
 func (m *QuoteHistoryMinSingle) Reset()                    { *m = QuoteHistoryMinSingle{} }
@@ -986,7 +986,7 @@ func (m *QuoteHistoryMinSingle) GetData() []*FenShiLishi {
 	return nil
 }
 
-func (m *QuoteHistoryMinSingle) GetZuoShou() int64 {
+func (m *QuoteHistoryMinSingle) GetZuoShou() yfloat {
 	if m != nil {
 		return m.ZuoShou
 	}
@@ -995,10 +995,10 @@ func (m *QuoteHistoryMinSingle) GetZuoShou() int64 {
 
 // 资金流向
 type QuoteFundFlow struct {
-	ShiJian            int64 `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
-	DaDanLiuRuJinE     int64 `protobuf:"varint,2,opt,name=DaDanLiuRuJinE" json:"DaDanLiuRuJinE,omitempty"`
-	DaDanLiuChuJinE    int64 `protobuf:"varint,3,opt,name=DaDanLiuChuJinE" json:"DaDanLiuChuJinE,omitempty"`
-	DaDanJingLiuRuJinE int64 `protobuf:"varint,4,opt,name=DaDanJingLiuRuJinE" json:"DaDanJingLiuRuJinE,omitempty"`
+	ShiJian            yfloat `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	DaDanLiuRuJinE     yfloat `protobuf:"varint,2,opt,name=DaDanLiuRuJinE" json:"DaDanLiuRuJinE,omitempty"`
+	DaDanLiuChuJinE    yfloat `protobuf:"varint,3,opt,name=DaDanLiuChuJinE" json:"DaDanLiuChuJinE,omitempty"`
+	DaDanJingLiuRuJinE yfloat `protobuf:"varint,4,opt,name=DaDanJingLiuRuJinE" json:"DaDanJingLiuRuJinE,omitempty"`
 }
 
 func (m *QuoteFundFlow) Reset()                    { *m = QuoteFundFlow{} }
@@ -1006,28 +1006,28 @@ func (m *QuoteFundFlow) String() string            { return proto.CompactTextStr
 func (*QuoteFundFlow) ProtoMessage()               {}
 func (*QuoteFundFlow) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{22} }
 
-func (m *QuoteFundFlow) GetShiJian() int64 {
+func (m *QuoteFundFlow) GetShiJian() yfloat {
 	if m != nil {
 		return m.ShiJian
 	}
 	return 0
 }
 
-func (m *QuoteFundFlow) GetDaDanLiuRuJinE() int64 {
+func (m *QuoteFundFlow) GetDaDanLiuRuJinE() yfloat {
 	if m != nil {
 		return m.DaDanLiuRuJinE
 	}
 	return 0
 }
 
-func (m *QuoteFundFlow) GetDaDanLiuChuJinE() int64 {
+func (m *QuoteFundFlow) GetDaDanLiuChuJinE() yfloat {
 	if m != nil {
 		return m.DaDanLiuChuJinE
 	}
 	return 0
 }
 
-func (m *QuoteFundFlow) GetDaDanJingLiuRuJinE() int64 {
+func (m *QuoteFundFlow) GetDaDanJingLiuRuJinE() yfloat {
 	if m != nil {
 		return m.DaDanJingLiuRuJinE
 	}
@@ -1062,7 +1062,7 @@ func (m *QuoteFundFlowSingle) GetData() []*QuoteFundFlow {
 type QuoteQueueMinSingle struct {
 	Obj     string          `protobuf:"bytes,1,opt,name=Obj" json:"Obj,omitempty"`
 	Data    []*WeiTuoDuiLie `protobuf:"bytes,2,rep,name=Data" json:"Data,omitempty"`
-	QingPan int64           `protobuf:"varint,3,opt,name=QingPan" json:"QingPan,omitempty"`
+	QingPan yfloat           `protobuf:"varint,3,opt,name=QingPan" json:"QingPan,omitempty"`
 }
 
 func (m *QuoteQueueMinSingle) Reset()                    { *m = QuoteQueueMinSingle{} }
@@ -1084,7 +1084,7 @@ func (m *QuoteQueueMinSingle) GetData() []*WeiTuoDuiLie {
 	return nil
 }
 
-func (m *QuoteQueueMinSingle) GetQingPan() int64 {
+func (m *QuoteQueueMinSingle) GetQingPan() yfloat {
 	if m != nil {
 		return m.QingPan
 	}

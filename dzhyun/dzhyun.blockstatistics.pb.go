@@ -14,19 +14,19 @@ var _ = fmt.Errorf
 var _ = math.Inf
 
 type TongJiApp struct {
-	ChengJiaoE              int64                            `protobuf:"varint,1,opt,name=ChengJiaoE" json:"ChengJiaoE,omitempty"`
-	LiuTongShiZhi           int64                            `protobuf:"varint,2,opt,name=LiuTongShiZhi" json:"LiuTongShiZhi,omitempty"`
-	ZongShiZhi              int64                            `protobuf:"varint,3,opt,name=ZongShiZhi" json:"ZongShiZhi,omitempty"`
+	ChengJiaoE              yfloat                            `protobuf:"varint,1,opt,name=ChengJiaoE" json:"ChengJiaoE,omitempty"`
+	LiuTongShiZhi           yfloat                            `protobuf:"varint,2,opt,name=LiuTongShiZhi" json:"LiuTongShiZhi,omitempty"`
+	ZongShiZhi              yfloat                            `protobuf:"varint,3,opt,name=ZongShiZhi" json:"ZongShiZhi,omitempty"`
 	ZhangDiePing            *TongJiApp_ZhangDiePingShuJu     `protobuf:"bytes,4,opt,name=ZhangDiePing" json:"ZhangDiePing,omitempty"`
 	LingZhangGu             *TongJiApp_LingZhangGuShuJu      `protobuf:"bytes,5,opt,name=LingZhangGu" json:"LingZhangGu,omitempty"`
-	TingPaiJiaShu           int64                            `protobuf:"varint,6,opt,name=TingPaiJiaShu" json:"TingPaiJiaShu,omitempty"`
+	TingPaiJiaShu           yfloat                            `protobuf:"varint,6,opt,name=TingPaiJiaShu" json:"TingPaiJiaShu,omitempty"`
 	ZhangTingDieTing        *TongJiApp_ZhangTingDieTingShuJu `protobuf:"bytes,7,opt,name=ZhangTingDieTing" json:"ZhangTingDieTing,omitempty"`
-	GuPiaoGeShu             int64                            `protobuf:"varint,8,opt,name=GuPiaoGeShu" json:"GuPiaoGeShu,omitempty"`
-	PingJunJingTaiShiYingLv int64                            `protobuf:"varint,9,opt,name=PingJunJingTaiShiYingLv" json:"PingJunJingTaiShiYingLv,omitempty"`
-	ZiJinJingE              int64                            `protobuf:"varint,10,opt,name=ZiJinJingE" json:"ZiJinJingE,omitempty"`
+	GuPiaoGeShu             yfloat                            `protobuf:"varint,8,opt,name=GuPiaoGeShu" json:"GuPiaoGeShu,omitempty"`
+	PingJunJingTaiShiYingLv yfloat                            `protobuf:"varint,9,opt,name=PingJunJingTaiShiYingLv" json:"PingJunJingTaiShiYingLv,omitempty"`
+	ZiJinJingE              yfloat                            `protobuf:"varint,10,opt,name=ZiJinJingE" json:"ZiJinJingE,omitempty"`
 	ZiJinLiuXiang           []*TongJiApp_ZiJinLiuXiangShuJu  `protobuf:"bytes,11,rep,name=ZiJinLiuXiang" json:"ZiJinLiuXiang,omitempty"`
-	JunJia                  int64                            `protobuf:"varint,12,opt,name=JunJia" json:"JunJia,omitempty"`
-	JiaQuanJunJia           int64                            `protobuf:"varint,13,opt,name=JiaQuanJunJia" json:"JiaQuanJunJia,omitempty"`
+	JunJia                  yfloat                            `protobuf:"varint,12,opt,name=JunJia" json:"JunJia,omitempty"`
+	JiaQuanJunJia           yfloat                            `protobuf:"varint,13,opt,name=JiaQuanJunJia" json:"JiaQuanJunJia,omitempty"`
 }
 
 func (m *TongJiApp) Reset()                    { *m = TongJiApp{} }
@@ -34,21 +34,21 @@ func (m *TongJiApp) String() string            { return proto.CompactTextString(
 func (*TongJiApp) ProtoMessage()               {}
 func (*TongJiApp) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{0} }
 
-func (m *TongJiApp) GetChengJiaoE() int64 {
+func (m *TongJiApp) GetChengJiaoE() yfloat {
 	if m != nil {
 		return m.ChengJiaoE
 	}
 	return 0
 }
 
-func (m *TongJiApp) GetLiuTongShiZhi() int64 {
+func (m *TongJiApp) GetLiuTongShiZhi() yfloat {
 	if m != nil {
 		return m.LiuTongShiZhi
 	}
 	return 0
 }
 
-func (m *TongJiApp) GetZongShiZhi() int64 {
+func (m *TongJiApp) GetZongShiZhi() yfloat {
 	if m != nil {
 		return m.ZongShiZhi
 	}
@@ -69,7 +69,7 @@ func (m *TongJiApp) GetLingZhangGu() *TongJiApp_LingZhangGuShuJu {
 	return nil
 }
 
-func (m *TongJiApp) GetTingPaiJiaShu() int64 {
+func (m *TongJiApp) GetTingPaiJiaShu() yfloat {
 	if m != nil {
 		return m.TingPaiJiaShu
 	}
@@ -83,21 +83,21 @@ func (m *TongJiApp) GetZhangTingDieTing() *TongJiApp_ZhangTingDieTingShuJu {
 	return nil
 }
 
-func (m *TongJiApp) GetGuPiaoGeShu() int64 {
+func (m *TongJiApp) GetGuPiaoGeShu() yfloat {
 	if m != nil {
 		return m.GuPiaoGeShu
 	}
 	return 0
 }
 
-func (m *TongJiApp) GetPingJunJingTaiShiYingLv() int64 {
+func (m *TongJiApp) GetPingJunJingTaiShiYingLv() yfloat {
 	if m != nil {
 		return m.PingJunJingTaiShiYingLv
 	}
 	return 0
 }
 
-func (m *TongJiApp) GetZiJinJingE() int64 {
+func (m *TongJiApp) GetZiJinJingE() yfloat {
 	if m != nil {
 		return m.ZiJinJingE
 	}
@@ -111,14 +111,14 @@ func (m *TongJiApp) GetZiJinLiuXiang() []*TongJiApp_ZiJinLiuXiangShuJu {
 	return nil
 }
 
-func (m *TongJiApp) GetJunJia() int64 {
+func (m *TongJiApp) GetJunJia() yfloat {
 	if m != nil {
 		return m.JunJia
 	}
 	return 0
 }
 
-func (m *TongJiApp) GetJiaQuanJunJia() int64 {
+func (m *TongJiApp) GetJiaQuanJunJia() yfloat {
 	if m != nil {
 		return m.JiaQuanJunJia
 	}
@@ -129,8 +129,8 @@ func (m *TongJiApp) GetJiaQuanJunJia() int64 {
 type TongJiApp_LingZhangGuShuJu struct {
 	Obj               string `protobuf:"bytes,1,opt,name=Obj" json:"Obj,omitempty"`
 	ZhongWenJianCheng string `protobuf:"bytes,2,opt,name=ZhongWenJianCheng" json:"ZhongWenJianCheng,omitempty"`
-	ZuiXinJia         int64  `protobuf:"varint,3,opt,name=ZuiXinJia" json:"ZuiXinJia,omitempty"`
-	ZhangFu           int64  `protobuf:"varint,4,opt,name=ZhangFu" json:"ZhangFu,omitempty"`
+	ZuiXinJia         yfloat  `protobuf:"varint,3,opt,name=ZuiXinJia" json:"ZuiXinJia,omitempty"`
+	ZhangFu           yfloat  `protobuf:"varint,4,opt,name=ZhangFu" json:"ZhangFu,omitempty"`
 }
 
 func (m *TongJiApp_LingZhangGuShuJu) Reset()                    { *m = TongJiApp_LingZhangGuShuJu{} }
@@ -152,14 +152,14 @@ func (m *TongJiApp_LingZhangGuShuJu) GetZhongWenJianCheng() string {
 	return ""
 }
 
-func (m *TongJiApp_LingZhangGuShuJu) GetZuiXinJia() int64 {
+func (m *TongJiApp_LingZhangGuShuJu) GetZuiXinJia() yfloat {
 	if m != nil {
 		return m.ZuiXinJia
 	}
 	return 0
 }
 
-func (m *TongJiApp_LingZhangGuShuJu) GetZhangFu() int64 {
+func (m *TongJiApp_LingZhangGuShuJu) GetZhangFu() yfloat {
 	if m != nil {
 		return m.ZhangFu
 	}
@@ -168,9 +168,9 @@ func (m *TongJiApp_LingZhangGuShuJu) GetZhangFu() int64 {
 
 // 涨跌平
 type TongJiApp_ZhangDiePingShuJu struct {
-	ShangZhangJiaShu int64 `protobuf:"varint,1,opt,name=ShangZhangJiaShu" json:"ShangZhangJiaShu,omitempty"`
-	XiaDieJiaShu     int64 `protobuf:"varint,2,opt,name=XiaDieJiaShu" json:"XiaDieJiaShu,omitempty"`
-	PingPanJiaShu    int64 `protobuf:"varint,3,opt,name=PingPanJiaShu" json:"PingPanJiaShu,omitempty"`
+	ShangZhangJiaShu yfloat `protobuf:"varint,1,opt,name=ShangZhangJiaShu" json:"ShangZhangJiaShu,omitempty"`
+	XiaDieJiaShu     yfloat `protobuf:"varint,2,opt,name=XiaDieJiaShu" json:"XiaDieJiaShu,omitempty"`
+	PingPanJiaShu    yfloat `protobuf:"varint,3,opt,name=PingPanJiaShu" json:"PingPanJiaShu,omitempty"`
 }
 
 func (m *TongJiApp_ZhangDiePingShuJu) Reset()                    { *m = TongJiApp_ZhangDiePingShuJu{} }
@@ -178,21 +178,21 @@ func (m *TongJiApp_ZhangDiePingShuJu) String() string            { return proto.
 func (*TongJiApp_ZhangDiePingShuJu) ProtoMessage()               {}
 func (*TongJiApp_ZhangDiePingShuJu) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{0, 1} }
 
-func (m *TongJiApp_ZhangDiePingShuJu) GetShangZhangJiaShu() int64 {
+func (m *TongJiApp_ZhangDiePingShuJu) GetShangZhangJiaShu() yfloat {
 	if m != nil {
 		return m.ShangZhangJiaShu
 	}
 	return 0
 }
 
-func (m *TongJiApp_ZhangDiePingShuJu) GetXiaDieJiaShu() int64 {
+func (m *TongJiApp_ZhangDiePingShuJu) GetXiaDieJiaShu() yfloat {
 	if m != nil {
 		return m.XiaDieJiaShu
 	}
 	return 0
 }
 
-func (m *TongJiApp_ZhangDiePingShuJu) GetPingPanJiaShu() int64 {
+func (m *TongJiApp_ZhangDiePingShuJu) GetPingPanJiaShu() yfloat {
 	if m != nil {
 		return m.PingPanJiaShu
 	}
@@ -201,8 +201,8 @@ func (m *TongJiApp_ZhangDiePingShuJu) GetPingPanJiaShu() int64 {
 
 // 涨停跌停
 type TongJiApp_ZhangTingDieTingShuJu struct {
-	ZhangTingJiaShu int64 `protobuf:"varint,1,opt,name=ZhangTingJiaShu" json:"ZhangTingJiaShu,omitempty"`
-	DieTingJiaShu   int64 `protobuf:"varint,2,opt,name=DieTingJiaShu" json:"DieTingJiaShu,omitempty"`
+	ZhangTingJiaShu yfloat `protobuf:"varint,1,opt,name=ZhangTingJiaShu" json:"ZhangTingJiaShu,omitempty"`
+	DieTingJiaShu   yfloat `protobuf:"varint,2,opt,name=DieTingJiaShu" json:"DieTingJiaShu,omitempty"`
 }
 
 func (m *TongJiApp_ZhangTingDieTingShuJu) Reset()         { *m = TongJiApp_ZhangTingDieTingShuJu{} }
@@ -212,14 +212,14 @@ func (*TongJiApp_ZhangTingDieTingShuJu) Descriptor() ([]byte, []int) {
 	return fileDescriptor4, []int{0, 2}
 }
 
-func (m *TongJiApp_ZhangTingDieTingShuJu) GetZhangTingJiaShu() int64 {
+func (m *TongJiApp_ZhangTingDieTingShuJu) GetZhangTingJiaShu() yfloat {
 	if m != nil {
 		return m.ZhangTingJiaShu
 	}
 	return 0
 }
 
-func (m *TongJiApp_ZhangTingDieTingShuJu) GetDieTingJiaShu() int64 {
+func (m *TongJiApp_ZhangTingDieTingShuJu) GetDieTingJiaShu() yfloat {
 	if m != nil {
 		return m.DieTingJiaShu
 	}
@@ -228,8 +228,8 @@ func (m *TongJiApp_ZhangTingDieTingShuJu) GetDieTingJiaShu() int64 {
 
 // 资金流向
 type TongJiApp_ZiJinLiuXiangShuJu struct {
-	ShiJian    int64 `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
-	ZiJinJingE int64 `protobuf:"varint,2,opt,name=ZiJinJingE" json:"ZiJinJingE,omitempty"`
+	ShiJian    yfloat `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	ZiJinJingE yfloat `protobuf:"varint,2,opt,name=ZiJinJingE" json:"ZiJinJingE,omitempty"`
 }
 
 func (m *TongJiApp_ZiJinLiuXiangShuJu) Reset()                    { *m = TongJiApp_ZiJinLiuXiangShuJu{} }
@@ -237,14 +237,14 @@ func (m *TongJiApp_ZiJinLiuXiangShuJu) String() string            { return proto
 func (*TongJiApp_ZiJinLiuXiangShuJu) ProtoMessage()               {}
 func (*TongJiApp_ZiJinLiuXiangShuJu) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{0, 3} }
 
-func (m *TongJiApp_ZiJinLiuXiangShuJu) GetShiJian() int64 {
+func (m *TongJiApp_ZiJinLiuXiangShuJu) GetShiJian() yfloat {
 	if m != nil {
 		return m.ShiJian
 	}
 	return 0
 }
 
-func (m *TongJiApp_ZiJinLiuXiangShuJu) GetZiJinJingE() int64 {
+func (m *TongJiApp_ZiJinLiuXiangShuJu) GetZiJinJingE() yfloat {
 	if m != nil {
 		return m.ZiJinJingE
 	}

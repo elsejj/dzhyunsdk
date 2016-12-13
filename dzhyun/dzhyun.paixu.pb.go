@@ -16,7 +16,7 @@ var _ = math.Inf
 // 排序存储结构
 type PaiXu struct {
 	Obj   string `protobuf:"bytes,1,opt,name=Obj" json:"Obj,omitempty"`
-	Value int64  `protobuf:"varint,2,opt,name=Value" json:"Value,omitempty"`
+	Value yfloat  `protobuf:"varint,2,opt,name=Value" json:"Value,omitempty"`
 	Text  string `protobuf:"bytes,3,opt,name=Text" json:"Text,omitempty"`
 }
 
@@ -32,7 +32,7 @@ func (m *PaiXu) GetObj() string {
 	return ""
 }
 
-func (m *PaiXu) GetValue() int64 {
+func (m *PaiXu) GetValue() yfloat {
 	if m != nil {
 		return m.Value
 	}
@@ -49,9 +49,9 @@ func (m *PaiXu) GetText() string {
 // 排名存储结构
 type PaiMing struct {
 	Obj    string `protobuf:"bytes,1,opt,name=Obj" json:"Obj,omitempty"`
-	Value  int64  `protobuf:"varint,2,opt,name=Value" json:"Value,omitempty"`
+	Value  yfloat  `protobuf:"varint,2,opt,name=Value" json:"Value,omitempty"`
 	Text   string `protobuf:"bytes,3,opt,name=Text" json:"Text,omitempty"`
-	MingCi int64  `protobuf:"varint,4,opt,name=MingCi" json:"MingCi,omitempty"`
+	MingCi yfloat  `protobuf:"varint,4,opt,name=MingCi" json:"MingCi,omitempty"`
 }
 
 func (m *PaiMing) Reset()                    { *m = PaiMing{} }
@@ -66,7 +66,7 @@ func (m *PaiMing) GetObj() string {
 	return ""
 }
 
-func (m *PaiMing) GetValue() int64 {
+func (m *PaiMing) GetValue() yfloat {
 	if m != nil {
 		return m.Value
 	}
@@ -80,7 +80,7 @@ func (m *PaiMing) GetText() string {
 	return ""
 }
 
-func (m *PaiMing) GetMingCi() int64 {
+func (m *PaiMing) GetMingCi() yfloat {
 	if m != nil {
 		return m.MingCi
 	}

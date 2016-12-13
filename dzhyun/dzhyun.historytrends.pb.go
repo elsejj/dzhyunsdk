@@ -14,8 +14,8 @@ var _ = fmt.Errorf
 var _ = math.Inf
 
 type YueKXianShuJu struct {
-	Nian    int64 `protobuf:"varint,1,opt,name=Nian" json:"Nian,omitempty"`
-	ZhangFu int64 `protobuf:"varint,2,opt,name=ZhangFu" json:"ZhangFu,omitempty"`
+	Nian    yfloat `protobuf:"varint,1,opt,name=Nian" json:"Nian,omitempty"`
+	ZhangFu yfloat `protobuf:"varint,2,opt,name=ZhangFu" json:"ZhangFu,omitempty"`
 }
 
 func (m *YueKXianShuJu) Reset()                    { *m = YueKXianShuJu{} }
@@ -23,14 +23,14 @@ func (m *YueKXianShuJu) String() string            { return proto.CompactTextStr
 func (*YueKXianShuJu) ProtoMessage()               {}
 func (*YueKXianShuJu) Descriptor() ([]byte, []int) { return fileDescriptor8, []int{0} }
 
-func (m *YueKXianShuJu) GetNian() int64 {
+func (m *YueKXianShuJu) GetNian() yfloat {
 	if m != nil {
 		return m.Nian
 	}
 	return 0
 }
 
-func (m *YueKXianShuJu) GetZhangFu() int64 {
+func (m *YueKXianShuJu) GetZhangFu() yfloat {
 	if m != nil {
 		return m.ZhangFu
 	}
@@ -38,10 +38,10 @@ func (m *YueKXianShuJu) GetZhangFu() int64 {
 }
 
 type YueZouShiShuJu struct {
-	Yue             int64            `protobuf:"varint,1,opt,name=Yue" json:"Yue,omitempty"`
+	Yue             yfloat            `protobuf:"varint,1,opt,name=Yue" json:"Yue,omitempty"`
 	YueKXian        []*YueKXianShuJu `protobuf:"bytes,2,rep,name=YueKXian" json:"YueKXian,omitempty"`
-	ShangZhangGaiLv int64            `protobuf:"varint,3,opt,name=ShangZhangGaiLv" json:"ShangZhangGaiLv,omitempty"`
-	PingJunZhangFu  int64            `protobuf:"varint,4,opt,name=PingJunZhangFu" json:"PingJunZhangFu,omitempty"`
+	ShangZhangGaiLv yfloat            `protobuf:"varint,3,opt,name=ShangZhangGaiLv" json:"ShangZhangGaiLv,omitempty"`
+	PingJunZhangFu  yfloat            `protobuf:"varint,4,opt,name=PingJunZhangFu" json:"PingJunZhangFu,omitempty"`
 }
 
 func (m *YueZouShiShuJu) Reset()                    { *m = YueZouShiShuJu{} }
@@ -49,7 +49,7 @@ func (m *YueZouShiShuJu) String() string            { return proto.CompactTextSt
 func (*YueZouShiShuJu) ProtoMessage()               {}
 func (*YueZouShiShuJu) Descriptor() ([]byte, []int) { return fileDescriptor8, []int{1} }
 
-func (m *YueZouShiShuJu) GetYue() int64 {
+func (m *YueZouShiShuJu) GetYue() yfloat {
 	if m != nil {
 		return m.Yue
 	}
@@ -63,14 +63,14 @@ func (m *YueZouShiShuJu) GetYueKXian() []*YueKXianShuJu {
 	return nil
 }
 
-func (m *YueZouShiShuJu) GetShangZhangGaiLv() int64 {
+func (m *YueZouShiShuJu) GetShangZhangGaiLv() yfloat {
 	if m != nil {
 		return m.ShangZhangGaiLv
 	}
 	return 0
 }
 
-func (m *YueZouShiShuJu) GetPingJunZhangFu() int64 {
+func (m *YueZouShiShuJu) GetPingJunZhangFu() yfloat {
 	if m != nil {
 		return m.PingJunZhangFu
 	}

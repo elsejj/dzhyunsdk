@@ -15,10 +15,10 @@ var _ = math.Inf
 
 // 排序存储结构
 type DXSpirit struct {
-	ShiJian int64  `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	ShiJian yfloat  `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
 	Obj     string `protobuf:"bytes,2,opt,name=Obj" json:"Obj,omitempty"`
 	TongZhi string `protobuf:"bytes,3,opt,name=TongZhi" json:"TongZhi,omitempty"`
-	ShuJu   int64  `protobuf:"varint,4,opt,name=ShuJu" json:"ShuJu,omitempty"`
+	ShuJu   yfloat  `protobuf:"varint,4,opt,name=ShuJu" json:"ShuJu,omitempty"`
 }
 
 func (m *DXSpirit) Reset()                    { *m = DXSpirit{} }
@@ -26,7 +26,7 @@ func (m *DXSpirit) String() string            { return proto.CompactTextString(m
 func (*DXSpirit) ProtoMessage()               {}
 func (*DXSpirit) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{0} }
 
-func (m *DXSpirit) GetShiJian() int64 {
+func (m *DXSpirit) GetShiJian() yfloat {
 	if m != nil {
 		return m.ShiJian
 	}
@@ -47,7 +47,7 @@ func (m *DXSpirit) GetTongZhi() string {
 	return ""
 }
 
-func (m *DXSpirit) GetShuJu() int64 {
+func (m *DXSpirit) GetShuJu() yfloat {
 	if m != nil {
 		return m.ShuJu
 	}
@@ -56,32 +56,32 @@ func (m *DXSpirit) GetShuJu() int64 {
 
 type DXSpiritStat struct {
 	Obj            string `protobuf:"bytes,1,opt,name=Obj" json:"Obj,omitempty"`
-	HjfsTotal      int64  `protobuf:"varint,2,opt,name=HjfsTotal" json:"HjfsTotal,omitempty"`
-	KsftTotal      int64  `protobuf:"varint,3,opt,name=KsftTotal" json:"KsftTotal,omitempty"`
-	GttsTotal      int64  `protobuf:"varint,4,opt,name=GttsTotal" json:"GttsTotal,omitempty"`
-	JsxdTotal      int64  `protobuf:"varint,5,opt,name=JsxdTotal" json:"JsxdTotal,omitempty"`
-	DbmrTotal      int64  `protobuf:"varint,6,opt,name=DbmrTotal" json:"DbmrTotal,omitempty"`
-	DbmrStatistics int64  `protobuf:"varint,7,opt,name=DbmrStatistics" json:"DbmrStatistics,omitempty"`
-	DbmcTotal      int64  `protobuf:"varint,8,opt,name=DbmcTotal" json:"DbmcTotal,omitempty"`
-	DbmcStatistics int64  `protobuf:"varint,9,opt,name=DbmcStatistics" json:"DbmcStatistics,omitempty"`
-	FztbTotal      int64  `protobuf:"varint,10,opt,name=FztbTotal" json:"FztbTotal,omitempty"`
-	FdtbTotal      int64  `protobuf:"varint,11,opt,name=FdtbTotal" json:"FdtbTotal,omitempty"`
-	DkztTotal      int64  `protobuf:"varint,12,opt,name=DkztTotal" json:"DkztTotal,omitempty"`
-	DkdtTotal      int64  `protobuf:"varint,13,opt,name=DkdtTotal" json:"DkdtTotal,omitempty"`
-	YdmcPTotal     int64  `protobuf:"varint,14,opt,name=YdmcPTotal" json:"YdmcPTotal,omitempty"`
-	YdmrPTotal     int64  `protobuf:"varint,15,opt,name=YdmrPTotal" json:"YdmrPTotal,omitempty"`
-	LszsTotal      int64  `protobuf:"varint,16,opt,name=LszsTotal" json:"LszsTotal,omitempty"`
-	DyzsTotal      int64  `protobuf:"varint,17,opt,name=DyzsTotal" json:"DyzsTotal,omitempty"`
-	JgmrgdTotal    int64  `protobuf:"varint,18,opt,name=JgmrgdTotal" json:"JgmrgdTotal,omitempty"`
-	JgmcgdTotal    int64  `protobuf:"varint,19,opt,name=JgmcgdTotal" json:"JgmcgdTotal,omitempty"`
-	DcjmrdTotal    int64  `protobuf:"varint,20,opt,name=DcjmrdTotal" json:"DcjmrdTotal,omitempty"`
-	DcjmcdTotal    int64  `protobuf:"varint,21,opt,name=DcjmcdTotal" json:"DcjmcdTotal,omitempty"`
-	FdmrgdTotal    int64  `protobuf:"varint,22,opt,name=FdmrgdTotal" json:"FdmrgdTotal,omitempty"`
-	FdmcgdTotal    int64  `protobuf:"varint,23,opt,name=FdmcgdTotal" json:"FdmcgdTotal,omitempty"`
-	MrcdTotal      int64  `protobuf:"varint,24,opt,name=MrcdTotal" json:"MrcdTotal,omitempty"`
-	MccdTotal      int64  `protobuf:"varint,25,opt,name=MccdTotal" json:"MccdTotal,omitempty"`
-	MrxdTotal      int64  `protobuf:"varint,26,opt,name=MrxdTotal" json:"MrxdTotal,omitempty"`
-	McxdTotal      int64  `protobuf:"varint,27,opt,name=McxdTotal" json:"McxdTotal,omitempty"`
+	HjfsTotal      yfloat  `protobuf:"varint,2,opt,name=HjfsTotal" json:"HjfsTotal,omitempty"`
+	KsftTotal      yfloat  `protobuf:"varint,3,opt,name=KsftTotal" json:"KsftTotal,omitempty"`
+	GttsTotal      yfloat  `protobuf:"varint,4,opt,name=GttsTotal" json:"GttsTotal,omitempty"`
+	JsxdTotal      yfloat  `protobuf:"varint,5,opt,name=JsxdTotal" json:"JsxdTotal,omitempty"`
+	DbmrTotal      yfloat  `protobuf:"varint,6,opt,name=DbmrTotal" json:"DbmrTotal,omitempty"`
+	DbmrStatistics yfloat  `protobuf:"varint,7,opt,name=DbmrStatistics" json:"DbmrStatistics,omitempty"`
+	DbmcTotal      yfloat  `protobuf:"varint,8,opt,name=DbmcTotal" json:"DbmcTotal,omitempty"`
+	DbmcStatistics yfloat  `protobuf:"varint,9,opt,name=DbmcStatistics" json:"DbmcStatistics,omitempty"`
+	FztbTotal      yfloat  `protobuf:"varint,10,opt,name=FztbTotal" json:"FztbTotal,omitempty"`
+	FdtbTotal      yfloat  `protobuf:"varint,11,opt,name=FdtbTotal" json:"FdtbTotal,omitempty"`
+	DkztTotal      yfloat  `protobuf:"varint,12,opt,name=DkztTotal" json:"DkztTotal,omitempty"`
+	DkdtTotal      yfloat  `protobuf:"varint,13,opt,name=DkdtTotal" json:"DkdtTotal,omitempty"`
+	YdmcPTotal     yfloat  `protobuf:"varint,14,opt,name=YdmcPTotal" json:"YdmcPTotal,omitempty"`
+	YdmrPTotal     yfloat  `protobuf:"varint,15,opt,name=YdmrPTotal" json:"YdmrPTotal,omitempty"`
+	LszsTotal      yfloat  `protobuf:"varint,16,opt,name=LszsTotal" json:"LszsTotal,omitempty"`
+	DyzsTotal      yfloat  `protobuf:"varint,17,opt,name=DyzsTotal" json:"DyzsTotal,omitempty"`
+	JgmrgdTotal    yfloat  `protobuf:"varint,18,opt,name=JgmrgdTotal" json:"JgmrgdTotal,omitempty"`
+	JgmcgdTotal    yfloat  `protobuf:"varint,19,opt,name=JgmcgdTotal" json:"JgmcgdTotal,omitempty"`
+	DcjmrdTotal    yfloat  `protobuf:"varint,20,opt,name=DcjmrdTotal" json:"DcjmrdTotal,omitempty"`
+	DcjmcdTotal    yfloat  `protobuf:"varint,21,opt,name=DcjmcdTotal" json:"DcjmcdTotal,omitempty"`
+	FdmrgdTotal    yfloat  `protobuf:"varint,22,opt,name=FdmrgdTotal" json:"FdmrgdTotal,omitempty"`
+	FdmcgdTotal    yfloat  `protobuf:"varint,23,opt,name=FdmcgdTotal" json:"FdmcgdTotal,omitempty"`
+	MrcdTotal      yfloat  `protobuf:"varint,24,opt,name=MrcdTotal" json:"MrcdTotal,omitempty"`
+	MccdTotal      yfloat  `protobuf:"varint,25,opt,name=MccdTotal" json:"MccdTotal,omitempty"`
+	MrxdTotal      yfloat  `protobuf:"varint,26,opt,name=MrxdTotal" json:"MrxdTotal,omitempty"`
+	McxdTotal      yfloat  `protobuf:"varint,27,opt,name=McxdTotal" json:"McxdTotal,omitempty"`
 }
 
 func (m *DXSpiritStat) Reset()                    { *m = DXSpiritStat{} }
@@ -96,182 +96,182 @@ func (m *DXSpiritStat) GetObj() string {
 	return ""
 }
 
-func (m *DXSpiritStat) GetHjfsTotal() int64 {
+func (m *DXSpiritStat) GetHjfsTotal() yfloat {
 	if m != nil {
 		return m.HjfsTotal
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetKsftTotal() int64 {
+func (m *DXSpiritStat) GetKsftTotal() yfloat {
 	if m != nil {
 		return m.KsftTotal
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetGttsTotal() int64 {
+func (m *DXSpiritStat) GetGttsTotal() yfloat {
 	if m != nil {
 		return m.GttsTotal
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetJsxdTotal() int64 {
+func (m *DXSpiritStat) GetJsxdTotal() yfloat {
 	if m != nil {
 		return m.JsxdTotal
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetDbmrTotal() int64 {
+func (m *DXSpiritStat) GetDbmrTotal() yfloat {
 	if m != nil {
 		return m.DbmrTotal
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetDbmrStatistics() int64 {
+func (m *DXSpiritStat) GetDbmrStatistics() yfloat {
 	if m != nil {
 		return m.DbmrStatistics
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetDbmcTotal() int64 {
+func (m *DXSpiritStat) GetDbmcTotal() yfloat {
 	if m != nil {
 		return m.DbmcTotal
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetDbmcStatistics() int64 {
+func (m *DXSpiritStat) GetDbmcStatistics() yfloat {
 	if m != nil {
 		return m.DbmcStatistics
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetFztbTotal() int64 {
+func (m *DXSpiritStat) GetFztbTotal() yfloat {
 	if m != nil {
 		return m.FztbTotal
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetFdtbTotal() int64 {
+func (m *DXSpiritStat) GetFdtbTotal() yfloat {
 	if m != nil {
 		return m.FdtbTotal
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetDkztTotal() int64 {
+func (m *DXSpiritStat) GetDkztTotal() yfloat {
 	if m != nil {
 		return m.DkztTotal
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetDkdtTotal() int64 {
+func (m *DXSpiritStat) GetDkdtTotal() yfloat {
 	if m != nil {
 		return m.DkdtTotal
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetYdmcPTotal() int64 {
+func (m *DXSpiritStat) GetYdmcPTotal() yfloat {
 	if m != nil {
 		return m.YdmcPTotal
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetYdmrPTotal() int64 {
+func (m *DXSpiritStat) GetYdmrPTotal() yfloat {
 	if m != nil {
 		return m.YdmrPTotal
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetLszsTotal() int64 {
+func (m *DXSpiritStat) GetLszsTotal() yfloat {
 	if m != nil {
 		return m.LszsTotal
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetDyzsTotal() int64 {
+func (m *DXSpiritStat) GetDyzsTotal() yfloat {
 	if m != nil {
 		return m.DyzsTotal
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetJgmrgdTotal() int64 {
+func (m *DXSpiritStat) GetJgmrgdTotal() yfloat {
 	if m != nil {
 		return m.JgmrgdTotal
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetJgmcgdTotal() int64 {
+func (m *DXSpiritStat) GetJgmcgdTotal() yfloat {
 	if m != nil {
 		return m.JgmcgdTotal
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetDcjmrdTotal() int64 {
+func (m *DXSpiritStat) GetDcjmrdTotal() yfloat {
 	if m != nil {
 		return m.DcjmrdTotal
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetDcjmcdTotal() int64 {
+func (m *DXSpiritStat) GetDcjmcdTotal() yfloat {
 	if m != nil {
 		return m.DcjmcdTotal
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetFdmrgdTotal() int64 {
+func (m *DXSpiritStat) GetFdmrgdTotal() yfloat {
 	if m != nil {
 		return m.FdmrgdTotal
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetFdmcgdTotal() int64 {
+func (m *DXSpiritStat) GetFdmcgdTotal() yfloat {
 	if m != nil {
 		return m.FdmcgdTotal
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetMrcdTotal() int64 {
+func (m *DXSpiritStat) GetMrcdTotal() yfloat {
 	if m != nil {
 		return m.MrcdTotal
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetMccdTotal() int64 {
+func (m *DXSpiritStat) GetMccdTotal() yfloat {
 	if m != nil {
 		return m.MccdTotal
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetMrxdTotal() int64 {
+func (m *DXSpiritStat) GetMrxdTotal() yfloat {
 	if m != nil {
 		return m.MrxdTotal
 	}
 	return 0
 }
 
-func (m *DXSpiritStat) GetMcxdTotal() int64 {
+func (m *DXSpiritStat) GetMcxdTotal() yfloat {
 	if m != nil {
 		return m.McxdTotal
 	}

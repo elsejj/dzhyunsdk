@@ -14,17 +14,17 @@ var _ = fmt.Errorf
 var _ = math.Inf
 
 type FenBiChengJiao struct {
-	Id                      int64 `protobuf:"varint,1,opt,name=Id" json:"Id,omitempty"`
-	ShiJian                 int64 `protobuf:"varint,2,opt,name=ShiJian" json:"ShiJian,omitempty"`
-	ChengJiaoJia            int64 `protobuf:"varint,3,opt,name=ChengJiaoJia" json:"ChengJiaoJia,omitempty"`
-	ChengJiaoLiang          int64 `protobuf:"varint,4,opt,name=ChengJiaoLiang" json:"ChengJiaoLiang,omitempty"`
-	ChengJiaoE              int64 `protobuf:"varint,5,opt,name=ChengJiaoE" json:"ChengJiaoE,omitempty"`
-	ChengJiaoDanBiShu       int64 `protobuf:"varint,6,opt,name=ChengJiaoDanBiShu" json:"ChengJiaoDanBiShu,omitempty"`
-	ShiFouZhuDongXingMaiDan int64 `protobuf:"varint,7,opt,name=ShiFouZhuDongXingMaiDan" json:"ShiFouZhuDongXingMaiDan,omitempty"`
-	MaiMaiFangXiang         int64 `protobuf:"varint,8,opt,name=MaiMaiFangXiang" json:"MaiMaiFangXiang,omitempty"`
-	DanCiChengJiaoLiang     int64 `protobuf:"varint,9,opt,name=DanCiChengJiaoLiang" json:"DanCiChengJiaoLiang,omitempty"`
-	DanCiChengJiaoE         int64 `protobuf:"varint,10,opt,name=DanCiChengJiaoE" json:"DanCiChengJiaoE,omitempty"`
-	DanCiChengJiaoDanBiShu  int64 `protobuf:"varint,11,opt,name=DanCiChengJiaoDanBiShu" json:"DanCiChengJiaoDanBiShu,omitempty"`
+	Id                      yfloat `protobuf:"varint,1,opt,name=Id" json:"Id,omitempty"`
+	ShiJian                 yfloat `protobuf:"varint,2,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	ChengJiaoJia            yfloat `protobuf:"varint,3,opt,name=ChengJiaoJia" json:"ChengJiaoJia,omitempty"`
+	ChengJiaoLiang          yfloat `protobuf:"varint,4,opt,name=ChengJiaoLiang" json:"ChengJiaoLiang,omitempty"`
+	ChengJiaoE              yfloat `protobuf:"varint,5,opt,name=ChengJiaoE" json:"ChengJiaoE,omitempty"`
+	ChengJiaoDanBiShu       yfloat `protobuf:"varint,6,opt,name=ChengJiaoDanBiShu" json:"ChengJiaoDanBiShu,omitempty"`
+	ShiFouZhuDongXingMaiDan yfloat `protobuf:"varint,7,opt,name=ShiFouZhuDongXingMaiDan" json:"ShiFouZhuDongXingMaiDan,omitempty"`
+	MaiMaiFangXiang         yfloat `protobuf:"varint,8,opt,name=MaiMaiFangXiang" json:"MaiMaiFangXiang,omitempty"`
+	DanCiChengJiaoLiang     yfloat `protobuf:"varint,9,opt,name=DanCiChengJiaoLiang" json:"DanCiChengJiaoLiang,omitempty"`
+	DanCiChengJiaoE         yfloat `protobuf:"varint,10,opt,name=DanCiChengJiaoE" json:"DanCiChengJiaoE,omitempty"`
+	DanCiChengJiaoDanBiShu  yfloat `protobuf:"varint,11,opt,name=DanCiChengJiaoDanBiShu" json:"DanCiChengJiaoDanBiShu,omitempty"`
 }
 
 func (m *FenBiChengJiao) Reset()                    { *m = FenBiChengJiao{} }
@@ -32,77 +32,77 @@ func (m *FenBiChengJiao) String() string            { return proto.CompactTextSt
 func (*FenBiChengJiao) ProtoMessage()               {}
 func (*FenBiChengJiao) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{0} }
 
-func (m *FenBiChengJiao) GetId() int64 {
+func (m *FenBiChengJiao) GetId() yfloat {
 	if m != nil {
 		return m.Id
 	}
 	return 0
 }
 
-func (m *FenBiChengJiao) GetShiJian() int64 {
+func (m *FenBiChengJiao) GetShiJian() yfloat {
 	if m != nil {
 		return m.ShiJian
 	}
 	return 0
 }
 
-func (m *FenBiChengJiao) GetChengJiaoJia() int64 {
+func (m *FenBiChengJiao) GetChengJiaoJia() yfloat {
 	if m != nil {
 		return m.ChengJiaoJia
 	}
 	return 0
 }
 
-func (m *FenBiChengJiao) GetChengJiaoLiang() int64 {
+func (m *FenBiChengJiao) GetChengJiaoLiang() yfloat {
 	if m != nil {
 		return m.ChengJiaoLiang
 	}
 	return 0
 }
 
-func (m *FenBiChengJiao) GetChengJiaoE() int64 {
+func (m *FenBiChengJiao) GetChengJiaoE() yfloat {
 	if m != nil {
 		return m.ChengJiaoE
 	}
 	return 0
 }
 
-func (m *FenBiChengJiao) GetChengJiaoDanBiShu() int64 {
+func (m *FenBiChengJiao) GetChengJiaoDanBiShu() yfloat {
 	if m != nil {
 		return m.ChengJiaoDanBiShu
 	}
 	return 0
 }
 
-func (m *FenBiChengJiao) GetShiFouZhuDongXingMaiDan() int64 {
+func (m *FenBiChengJiao) GetShiFouZhuDongXingMaiDan() yfloat {
 	if m != nil {
 		return m.ShiFouZhuDongXingMaiDan
 	}
 	return 0
 }
 
-func (m *FenBiChengJiao) GetMaiMaiFangXiang() int64 {
+func (m *FenBiChengJiao) GetMaiMaiFangXiang() yfloat {
 	if m != nil {
 		return m.MaiMaiFangXiang
 	}
 	return 0
 }
 
-func (m *FenBiChengJiao) GetDanCiChengJiaoLiang() int64 {
+func (m *FenBiChengJiao) GetDanCiChengJiaoLiang() yfloat {
 	if m != nil {
 		return m.DanCiChengJiaoLiang
 	}
 	return 0
 }
 
-func (m *FenBiChengJiao) GetDanCiChengJiaoE() int64 {
+func (m *FenBiChengJiao) GetDanCiChengJiaoE() yfloat {
 	if m != nil {
 		return m.DanCiChengJiaoE
 	}
 	return 0
 }
 
-func (m *FenBiChengJiao) GetDanCiChengJiaoDanBiShu() int64 {
+func (m *FenBiChengJiao) GetDanCiChengJiaoDanBiShu() yfloat {
 	if m != nil {
 		return m.DanCiChengJiaoDanBiShu
 	}
@@ -110,116 +110,116 @@ func (m *FenBiChengJiao) GetDanCiChengJiaoDanBiShu() int64 {
 }
 
 type GeGuDongTai struct {
-	Id                  int64 `protobuf:"varint,1,opt,name=Id" json:"Id,omitempty"`
-	ShiJian             int64 `protobuf:"varint,2,opt,name=ShiJian" json:"ShiJian,omitempty"`
-	ZuiXinJia           int64 `protobuf:"varint,3,opt,name=ZuiXinJia" json:"ZuiXinJia,omitempty"`
-	KaiPanJia           int64 `protobuf:"varint,4,opt,name=KaiPanJia" json:"KaiPanJia,omitempty"`
-	ZuiGaoJia           int64 `protobuf:"varint,5,opt,name=ZuiGaoJia" json:"ZuiGaoJia,omitempty"`
-	ZuiDiJia            int64 `protobuf:"varint,6,opt,name=ZuiDiJia" json:"ZuiDiJia,omitempty"`
-	ZuoShou             int64 `protobuf:"varint,7,opt,name=ZuoShou" json:"ZuoShou,omitempty"`
-	JunJia              int64 `protobuf:"varint,8,opt,name=JunJia" json:"JunJia,omitempty"`
-	ZhangDie            int64 `protobuf:"varint,9,opt,name=ZhangDie" json:"ZhangDie,omitempty"`
-	ZhangFu             int64 `protobuf:"varint,10,opt,name=ZhangFu" json:"ZhangFu,omitempty"`
-	ZhenFu              int64 `protobuf:"varint,11,opt,name=ZhenFu" json:"ZhenFu,omitempty"`
-	ChengJiaoLiang      int64 `protobuf:"varint,12,opt,name=ChengJiaoLiang" json:"ChengJiaoLiang,omitempty"`
-	XianShou            int64 `protobuf:"varint,13,opt,name=XianShou" json:"XianShou,omitempty"`
-	ChengJiaoE          int64 `protobuf:"varint,14,opt,name=ChengJiaoE" json:"ChengJiaoE,omitempty"`
-	ZongChengJiaoBiShu  int64 `protobuf:"varint,15,opt,name=ZongChengJiaoBiShu" json:"ZongChengJiaoBiShu,omitempty"`
-	MeiBiChengJiaoGuShu int64 `protobuf:"varint,16,opt,name=MeiBiChengJiaoGuShu" json:"MeiBiChengJiaoGuShu,omitempty"`
-	HuanShou            int64 `protobuf:"varint,17,opt,name=HuanShou" json:"HuanShou,omitempty"`
-	LiangBi             int64 `protobuf:"varint,18,opt,name=LiangBi" json:"LiangBi,omitempty"`
-	NeiPan              int64 `protobuf:"varint,19,opt,name=NeiPan" json:"NeiPan,omitempty"`
-	WaiPan              int64 `protobuf:"varint,20,opt,name=WaiPan" json:"WaiPan,omitempty"`
+	Id                  yfloat `protobuf:"varint,1,opt,name=Id" json:"Id,omitempty"`
+	ShiJian             yfloat `protobuf:"varint,2,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	ZuiXinJia           yfloat `protobuf:"varint,3,opt,name=ZuiXinJia" json:"ZuiXinJia,omitempty"`
+	KaiPanJia           yfloat `protobuf:"varint,4,opt,name=KaiPanJia" json:"KaiPanJia,omitempty"`
+	ZuiGaoJia           yfloat `protobuf:"varint,5,opt,name=ZuiGaoJia" json:"ZuiGaoJia,omitempty"`
+	ZuiDiJia            yfloat `protobuf:"varint,6,opt,name=ZuiDiJia" json:"ZuiDiJia,omitempty"`
+	ZuoShou             yfloat `protobuf:"varint,7,opt,name=ZuoShou" json:"ZuoShou,omitempty"`
+	JunJia              yfloat `protobuf:"varint,8,opt,name=JunJia" json:"JunJia,omitempty"`
+	ZhangDie            yfloat `protobuf:"varint,9,opt,name=ZhangDie" json:"ZhangDie,omitempty"`
+	ZhangFu             yfloat `protobuf:"varint,10,opt,name=ZhangFu" json:"ZhangFu,omitempty"`
+	ZhenFu              yfloat `protobuf:"varint,11,opt,name=ZhenFu" json:"ZhenFu,omitempty"`
+	ChengJiaoLiang      yfloat `protobuf:"varint,12,opt,name=ChengJiaoLiang" json:"ChengJiaoLiang,omitempty"`
+	XianShou            yfloat `protobuf:"varint,13,opt,name=XianShou" json:"XianShou,omitempty"`
+	ChengJiaoE          yfloat `protobuf:"varint,14,opt,name=ChengJiaoE" json:"ChengJiaoE,omitempty"`
+	ZongChengJiaoBiShu  yfloat `protobuf:"varint,15,opt,name=ZongChengJiaoBiShu" json:"ZongChengJiaoBiShu,omitempty"`
+	MeiBiChengJiaoGuShu yfloat `protobuf:"varint,16,opt,name=MeiBiChengJiaoGuShu" json:"MeiBiChengJiaoGuShu,omitempty"`
+	HuanShou            yfloat `protobuf:"varint,17,opt,name=HuanShou" json:"HuanShou,omitempty"`
+	LiangBi             yfloat `protobuf:"varint,18,opt,name=LiangBi" json:"LiangBi,omitempty"`
+	NeiPan              yfloat `protobuf:"varint,19,opt,name=NeiPan" json:"NeiPan,omitempty"`
+	WaiPan              yfloat `protobuf:"varint,20,opt,name=WaiPan" json:"WaiPan,omitempty"`
 	// lv2数据
-	ZongMaiRu        int64 `protobuf:"varint,21,opt,name=ZongMaiRu" json:"ZongMaiRu,omitempty"`
-	ZongMaiChu       int64 `protobuf:"varint,22,opt,name=ZongMaiChu" json:"ZongMaiChu,omitempty"`
-	ZongMaiRuJunJia  int64 `protobuf:"varint,23,opt,name=ZongMaiRuJunJia" json:"ZongMaiRuJunJia,omitempty"`
-	ZongMaiChuJunJia int64 `protobuf:"varint,24,opt,name=ZongMaiChuJunJia" json:"ZongMaiChuJunJia,omitempty"`
-	ZhangTing        int64 `protobuf:"varint,25,opt,name=ZhangTing" json:"ZhangTing,omitempty"`
-	DieTing          int64 `protobuf:"varint,26,opt,name=DieTing" json:"DieTing,omitempty"`
-	FenZhongZhangFu1 int64 `protobuf:"varint,27,opt,name=FenZhongZhangFu1" json:"FenZhongZhangFu1,omitempty"`
-	FenZhongZhangFu2 int64 `protobuf:"varint,28,opt,name=FenZhongZhangFu2" json:"FenZhongZhangFu2,omitempty"`
-	FenZhongZhangFu3 int64 `protobuf:"varint,29,opt,name=FenZhongZhangFu3" json:"FenZhongZhangFu3,omitempty"`
-	FenZhongZhangFu4 int64 `protobuf:"varint,30,opt,name=FenZhongZhangFu4" json:"FenZhongZhangFu4,omitempty"`
-	FenZhongZhangFu5 int64 `protobuf:"varint,31,opt,name=FenZhongZhangFu5" json:"FenZhongZhangFu5,omitempty"`
+	ZongMaiRu        yfloat `protobuf:"varint,21,opt,name=ZongMaiRu" json:"ZongMaiRu,omitempty"`
+	ZongMaiChu       yfloat `protobuf:"varint,22,opt,name=ZongMaiChu" json:"ZongMaiChu,omitempty"`
+	ZongMaiRuJunJia  yfloat `protobuf:"varint,23,opt,name=ZongMaiRuJunJia" json:"ZongMaiRuJunJia,omitempty"`
+	ZongMaiChuJunJia yfloat `protobuf:"varint,24,opt,name=ZongMaiChuJunJia" json:"ZongMaiChuJunJia,omitempty"`
+	ZhangTing        yfloat `protobuf:"varint,25,opt,name=ZhangTing" json:"ZhangTing,omitempty"`
+	DieTing          yfloat `protobuf:"varint,26,opt,name=DieTing" json:"DieTing,omitempty"`
+	FenZhongZhangFu1 yfloat `protobuf:"varint,27,opt,name=FenZhongZhangFu1" json:"FenZhongZhangFu1,omitempty"`
+	FenZhongZhangFu2 yfloat `protobuf:"varint,28,opt,name=FenZhongZhangFu2" json:"FenZhongZhangFu2,omitempty"`
+	FenZhongZhangFu3 yfloat `protobuf:"varint,29,opt,name=FenZhongZhangFu3" json:"FenZhongZhangFu3,omitempty"`
+	FenZhongZhangFu4 yfloat `protobuf:"varint,30,opt,name=FenZhongZhangFu4" json:"FenZhongZhangFu4,omitempty"`
+	FenZhongZhangFu5 yfloat `protobuf:"varint,31,opt,name=FenZhongZhangFu5" json:"FenZhongZhangFu5,omitempty"`
 	// 买卖盘
-	WeiTuoMaiRuJia1    int64 `protobuf:"varint,32,opt,name=WeiTuoMaiRuJia1" json:"WeiTuoMaiRuJia1,omitempty"`
-	WeiTuoMaiRuLiang1  int64 `protobuf:"varint,33,opt,name=WeiTuoMaiRuLiang1" json:"WeiTuoMaiRuLiang1,omitempty"`
-	WeiTuoMaiRuJia2    int64 `protobuf:"varint,34,opt,name=WeiTuoMaiRuJia2" json:"WeiTuoMaiRuJia2,omitempty"`
-	WeiTuoMaiRuLiang2  int64 `protobuf:"varint,35,opt,name=WeiTuoMaiRuLiang2" json:"WeiTuoMaiRuLiang2,omitempty"`
-	WeiTuoMaiRuJia3    int64 `protobuf:"varint,36,opt,name=WeiTuoMaiRuJia3" json:"WeiTuoMaiRuJia3,omitempty"`
-	WeiTuoMaiRuLiang3  int64 `protobuf:"varint,37,opt,name=WeiTuoMaiRuLiang3" json:"WeiTuoMaiRuLiang3,omitempty"`
-	WeiTuoMaiRuJia4    int64 `protobuf:"varint,38,opt,name=WeiTuoMaiRuJia4" json:"WeiTuoMaiRuJia4,omitempty"`
-	WeiTuoMaiRuLiang4  int64 `protobuf:"varint,39,opt,name=WeiTuoMaiRuLiang4" json:"WeiTuoMaiRuLiang4,omitempty"`
-	WeiTuoMaiRuJia5    int64 `protobuf:"varint,40,opt,name=WeiTuoMaiRuJia5" json:"WeiTuoMaiRuJia5,omitempty"`
-	WeiTuoMaiRuLiang5  int64 `protobuf:"varint,41,opt,name=WeiTuoMaiRuLiang5" json:"WeiTuoMaiRuLiang5,omitempty"`
-	WeiTuoMaiChuJia1   int64 `protobuf:"varint,42,opt,name=WeiTuoMaiChuJia1" json:"WeiTuoMaiChuJia1,omitempty"`
-	WeiTuoMaiChuLiang1 int64 `protobuf:"varint,43,opt,name=WeiTuoMaiChuLiang1" json:"WeiTuoMaiChuLiang1,omitempty"`
-	WeiTuoMaiChuJia2   int64 `protobuf:"varint,44,opt,name=WeiTuoMaiChuJia2" json:"WeiTuoMaiChuJia2,omitempty"`
-	WeiTuoMaiChuLiang2 int64 `protobuf:"varint,45,opt,name=WeiTuoMaiChuLiang2" json:"WeiTuoMaiChuLiang2,omitempty"`
-	WeiTuoMaiChuJia3   int64 `protobuf:"varint,46,opt,name=WeiTuoMaiChuJia3" json:"WeiTuoMaiChuJia3,omitempty"`
-	WeiTuoMaiChuLiang3 int64 `protobuf:"varint,47,opt,name=WeiTuoMaiChuLiang3" json:"WeiTuoMaiChuLiang3,omitempty"`
-	WeiTuoMaiChuJia4   int64 `protobuf:"varint,48,opt,name=WeiTuoMaiChuJia4" json:"WeiTuoMaiChuJia4,omitempty"`
-	WeiTuoMaiChuLiang4 int64 `protobuf:"varint,49,opt,name=WeiTuoMaiChuLiang4" json:"WeiTuoMaiChuLiang4,omitempty"`
-	WeiTuoMaiChuJia5   int64 `protobuf:"varint,50,opt,name=WeiTuoMaiChuJia5" json:"WeiTuoMaiChuJia5,omitempty"`
-	WeiTuoMaiChuLiang5 int64 `protobuf:"varint,51,opt,name=WeiTuoMaiChuLiang5" json:"WeiTuoMaiChuLiang5,omitempty"`
-	WeiBi              int64 `protobuf:"varint,52,opt,name=WeiBi" json:"WeiBi,omitempty"`
-	WeiCha             int64 `protobuf:"varint,53,opt,name=WeiCha" json:"WeiCha,omitempty"`
+	WeiTuoMaiRuJia1    yfloat `protobuf:"varint,32,opt,name=WeiTuoMaiRuJia1" json:"WeiTuoMaiRuJia1,omitempty"`
+	WeiTuoMaiRuLiang1  yfloat `protobuf:"varint,33,opt,name=WeiTuoMaiRuLiang1" json:"WeiTuoMaiRuLiang1,omitempty"`
+	WeiTuoMaiRuJia2    yfloat `protobuf:"varint,34,opt,name=WeiTuoMaiRuJia2" json:"WeiTuoMaiRuJia2,omitempty"`
+	WeiTuoMaiRuLiang2  yfloat `protobuf:"varint,35,opt,name=WeiTuoMaiRuLiang2" json:"WeiTuoMaiRuLiang2,omitempty"`
+	WeiTuoMaiRuJia3    yfloat `protobuf:"varint,36,opt,name=WeiTuoMaiRuJia3" json:"WeiTuoMaiRuJia3,omitempty"`
+	WeiTuoMaiRuLiang3  yfloat `protobuf:"varint,37,opt,name=WeiTuoMaiRuLiang3" json:"WeiTuoMaiRuLiang3,omitempty"`
+	WeiTuoMaiRuJia4    yfloat `protobuf:"varint,38,opt,name=WeiTuoMaiRuJia4" json:"WeiTuoMaiRuJia4,omitempty"`
+	WeiTuoMaiRuLiang4  yfloat `protobuf:"varint,39,opt,name=WeiTuoMaiRuLiang4" json:"WeiTuoMaiRuLiang4,omitempty"`
+	WeiTuoMaiRuJia5    yfloat `protobuf:"varint,40,opt,name=WeiTuoMaiRuJia5" json:"WeiTuoMaiRuJia5,omitempty"`
+	WeiTuoMaiRuLiang5  yfloat `protobuf:"varint,41,opt,name=WeiTuoMaiRuLiang5" json:"WeiTuoMaiRuLiang5,omitempty"`
+	WeiTuoMaiChuJia1   yfloat `protobuf:"varint,42,opt,name=WeiTuoMaiChuJia1" json:"WeiTuoMaiChuJia1,omitempty"`
+	WeiTuoMaiChuLiang1 yfloat `protobuf:"varint,43,opt,name=WeiTuoMaiChuLiang1" json:"WeiTuoMaiChuLiang1,omitempty"`
+	WeiTuoMaiChuJia2   yfloat `protobuf:"varint,44,opt,name=WeiTuoMaiChuJia2" json:"WeiTuoMaiChuJia2,omitempty"`
+	WeiTuoMaiChuLiang2 yfloat `protobuf:"varint,45,opt,name=WeiTuoMaiChuLiang2" json:"WeiTuoMaiChuLiang2,omitempty"`
+	WeiTuoMaiChuJia3   yfloat `protobuf:"varint,46,opt,name=WeiTuoMaiChuJia3" json:"WeiTuoMaiChuJia3,omitempty"`
+	WeiTuoMaiChuLiang3 yfloat `protobuf:"varint,47,opt,name=WeiTuoMaiChuLiang3" json:"WeiTuoMaiChuLiang3,omitempty"`
+	WeiTuoMaiChuJia4   yfloat `protobuf:"varint,48,opt,name=WeiTuoMaiChuJia4" json:"WeiTuoMaiChuJia4,omitempty"`
+	WeiTuoMaiChuLiang4 yfloat `protobuf:"varint,49,opt,name=WeiTuoMaiChuLiang4" json:"WeiTuoMaiChuLiang4,omitempty"`
+	WeiTuoMaiChuJia5   yfloat `protobuf:"varint,50,opt,name=WeiTuoMaiChuJia5" json:"WeiTuoMaiChuJia5,omitempty"`
+	WeiTuoMaiChuLiang5 yfloat `protobuf:"varint,51,opt,name=WeiTuoMaiChuLiang5" json:"WeiTuoMaiChuLiang5,omitempty"`
+	WeiBi              yfloat `protobuf:"varint,52,opt,name=WeiBi" json:"WeiBi,omitempty"`
+	WeiCha             yfloat `protobuf:"varint,53,opt,name=WeiCha" json:"WeiCha,omitempty"`
 	// 扩展买卖盘
-	JiaQuanPingJunWeiTuoMaiRuJia  int64 `protobuf:"varint,54,opt,name=JiaQuanPingJunWeiTuoMaiRuJia" json:"JiaQuanPingJunWeiTuoMaiRuJia,omitempty"`
-	WeiTuoMaiRuZongLiang          int64 `protobuf:"varint,55,opt,name=WeiTuoMaiRuZongLiang" json:"WeiTuoMaiRuZongLiang,omitempty"`
-	JiaQuanPingJunWeiTuoMaiChuJia int64 `protobuf:"varint,56,opt,name=JiaQuanPingJunWeiTuoMaiChuJia" json:"JiaQuanPingJunWeiTuoMaiChuJia,omitempty"`
-	WeiTuoMaiChuZongLiang         int64 `protobuf:"varint,57,opt,name=WeiTuoMaiChuZongLiang" json:"WeiTuoMaiChuZongLiang,omitempty"`
-	KuoZhanMaiRuJia1              int64 `protobuf:"varint,58,opt,name=KuoZhanMaiRuJia1" json:"KuoZhanMaiRuJia1,omitempty"`
-	KuoZhanMaiRuJia2              int64 `protobuf:"varint,59,opt,name=KuoZhanMaiRuJia2" json:"KuoZhanMaiRuJia2,omitempty"`
-	KuoZhanMaiRuJia3              int64 `protobuf:"varint,60,opt,name=KuoZhanMaiRuJia3" json:"KuoZhanMaiRuJia3,omitempty"`
-	KuoZhanMaiRuJia4              int64 `protobuf:"varint,61,opt,name=KuoZhanMaiRuJia4" json:"KuoZhanMaiRuJia4,omitempty"`
-	KuoZhanMaiRuJia5              int64 `protobuf:"varint,62,opt,name=KuoZhanMaiRuJia5" json:"KuoZhanMaiRuJia5,omitempty"`
-	KuoZhanMaiRuLiang1            int64 `protobuf:"varint,63,opt,name=KuoZhanMaiRuLiang1" json:"KuoZhanMaiRuLiang1,omitempty"`
-	KuoZhanMaiRuLiang2            int64 `protobuf:"varint,64,opt,name=KuoZhanMaiRuLiang2" json:"KuoZhanMaiRuLiang2,omitempty"`
-	KuoZhanMaiRuLiang3            int64 `protobuf:"varint,65,opt,name=KuoZhanMaiRuLiang3" json:"KuoZhanMaiRuLiang3,omitempty"`
-	KuoZhanMaiRuLiang4            int64 `protobuf:"varint,66,opt,name=KuoZhanMaiRuLiang4" json:"KuoZhanMaiRuLiang4,omitempty"`
-	KuoZhanMaiRuLiang5            int64 `protobuf:"varint,67,opt,name=KuoZhanMaiRuLiang5" json:"KuoZhanMaiRuLiang5,omitempty"`
-	KuoZhanMaiChuJia1             int64 `protobuf:"varint,68,opt,name=KuoZhanMaiChuJia1" json:"KuoZhanMaiChuJia1,omitempty"`
-	KuoZhanMaiChuJia2             int64 `protobuf:"varint,69,opt,name=KuoZhanMaiChuJia2" json:"KuoZhanMaiChuJia2,omitempty"`
-	KuoZhanMaiChuJia3             int64 `protobuf:"varint,70,opt,name=KuoZhanMaiChuJia3" json:"KuoZhanMaiChuJia3,omitempty"`
-	KuoZhanMaiChuJia4             int64 `protobuf:"varint,71,opt,name=KuoZhanMaiChuJia4" json:"KuoZhanMaiChuJia4,omitempty"`
-	KuoZhanMaiChuJia5             int64 `protobuf:"varint,72,opt,name=KuoZhanMaiChuJia5" json:"KuoZhanMaiChuJia5,omitempty"`
-	KuoZhanMaiChuLiang1           int64 `protobuf:"varint,73,opt,name=KuoZhanMaiChuLiang1" json:"KuoZhanMaiChuLiang1,omitempty"`
-	KuoZhanMaiChuLiang2           int64 `protobuf:"varint,74,opt,name=KuoZhanMaiChuLiang2" json:"KuoZhanMaiChuLiang2,omitempty"`
-	KuoZhanMaiChuLiang3           int64 `protobuf:"varint,75,opt,name=KuoZhanMaiChuLiang3" json:"KuoZhanMaiChuLiang3,omitempty"`
-	KuoZhanMaiChuLiang4           int64 `protobuf:"varint,76,opt,name=KuoZhanMaiChuLiang4" json:"KuoZhanMaiChuLiang4,omitempty"`
-	KuoZhanMaiChuLiang5           int64 `protobuf:"varint,77,opt,name=KuoZhanMaiChuLiang5" json:"KuoZhanMaiChuLiang5,omitempty"`
+	JiaQuanPingJunWeiTuoMaiRuJia  yfloat `protobuf:"varint,54,opt,name=JiaQuanPingJunWeiTuoMaiRuJia" json:"JiaQuanPingJunWeiTuoMaiRuJia,omitempty"`
+	WeiTuoMaiRuZongLiang          yfloat `protobuf:"varint,55,opt,name=WeiTuoMaiRuZongLiang" json:"WeiTuoMaiRuZongLiang,omitempty"`
+	JiaQuanPingJunWeiTuoMaiChuJia yfloat `protobuf:"varint,56,opt,name=JiaQuanPingJunWeiTuoMaiChuJia" json:"JiaQuanPingJunWeiTuoMaiChuJia,omitempty"`
+	WeiTuoMaiChuZongLiang         yfloat `protobuf:"varint,57,opt,name=WeiTuoMaiChuZongLiang" json:"WeiTuoMaiChuZongLiang,omitempty"`
+	KuoZhanMaiRuJia1              yfloat `protobuf:"varint,58,opt,name=KuoZhanMaiRuJia1" json:"KuoZhanMaiRuJia1,omitempty"`
+	KuoZhanMaiRuJia2              yfloat `protobuf:"varint,59,opt,name=KuoZhanMaiRuJia2" json:"KuoZhanMaiRuJia2,omitempty"`
+	KuoZhanMaiRuJia3              yfloat `protobuf:"varint,60,opt,name=KuoZhanMaiRuJia3" json:"KuoZhanMaiRuJia3,omitempty"`
+	KuoZhanMaiRuJia4              yfloat `protobuf:"varint,61,opt,name=KuoZhanMaiRuJia4" json:"KuoZhanMaiRuJia4,omitempty"`
+	KuoZhanMaiRuJia5              yfloat `protobuf:"varint,62,opt,name=KuoZhanMaiRuJia5" json:"KuoZhanMaiRuJia5,omitempty"`
+	KuoZhanMaiRuLiang1            yfloat `protobuf:"varint,63,opt,name=KuoZhanMaiRuLiang1" json:"KuoZhanMaiRuLiang1,omitempty"`
+	KuoZhanMaiRuLiang2            yfloat `protobuf:"varint,64,opt,name=KuoZhanMaiRuLiang2" json:"KuoZhanMaiRuLiang2,omitempty"`
+	KuoZhanMaiRuLiang3            yfloat `protobuf:"varint,65,opt,name=KuoZhanMaiRuLiang3" json:"KuoZhanMaiRuLiang3,omitempty"`
+	KuoZhanMaiRuLiang4            yfloat `protobuf:"varint,66,opt,name=KuoZhanMaiRuLiang4" json:"KuoZhanMaiRuLiang4,omitempty"`
+	KuoZhanMaiRuLiang5            yfloat `protobuf:"varint,67,opt,name=KuoZhanMaiRuLiang5" json:"KuoZhanMaiRuLiang5,omitempty"`
+	KuoZhanMaiChuJia1             yfloat `protobuf:"varint,68,opt,name=KuoZhanMaiChuJia1" json:"KuoZhanMaiChuJia1,omitempty"`
+	KuoZhanMaiChuJia2             yfloat `protobuf:"varint,69,opt,name=KuoZhanMaiChuJia2" json:"KuoZhanMaiChuJia2,omitempty"`
+	KuoZhanMaiChuJia3             yfloat `protobuf:"varint,70,opt,name=KuoZhanMaiChuJia3" json:"KuoZhanMaiChuJia3,omitempty"`
+	KuoZhanMaiChuJia4             yfloat `protobuf:"varint,71,opt,name=KuoZhanMaiChuJia4" json:"KuoZhanMaiChuJia4,omitempty"`
+	KuoZhanMaiChuJia5             yfloat `protobuf:"varint,72,opt,name=KuoZhanMaiChuJia5" json:"KuoZhanMaiChuJia5,omitempty"`
+	KuoZhanMaiChuLiang1           yfloat `protobuf:"varint,73,opt,name=KuoZhanMaiChuLiang1" json:"KuoZhanMaiChuLiang1,omitempty"`
+	KuoZhanMaiChuLiang2           yfloat `protobuf:"varint,74,opt,name=KuoZhanMaiChuLiang2" json:"KuoZhanMaiChuLiang2,omitempty"`
+	KuoZhanMaiChuLiang3           yfloat `protobuf:"varint,75,opt,name=KuoZhanMaiChuLiang3" json:"KuoZhanMaiChuLiang3,omitempty"`
+	KuoZhanMaiChuLiang4           yfloat `protobuf:"varint,76,opt,name=KuoZhanMaiChuLiang4" json:"KuoZhanMaiChuLiang4,omitempty"`
+	KuoZhanMaiChuLiang5           yfloat `protobuf:"varint,77,opt,name=KuoZhanMaiChuLiang5" json:"KuoZhanMaiChuLiang5,omitempty"`
 	// 期货特有
-	ChiCang         int64 `protobuf:"varint,78,opt,name=ChiCang" json:"ChiCang,omitempty"`
-	ZengCang        int64 `protobuf:"varint,79,opt,name=ZengCang" json:"ZengCang,omitempty"`
-	RiZeng          int64 `protobuf:"varint,80,opt,name=RiZeng" json:"RiZeng,omitempty"`
-	JieSuanJia      int64 `protobuf:"varint,81,opt,name=JieSuanJia" json:"JieSuanJia,omitempty"`
-	ZuoRiJieSuanJia int64 `protobuf:"varint,82,opt,name=ZuoRiJieSuanJia" json:"ZuoRiJieSuanJia,omitempty"`
-	KaiPing         int64 `protobuf:"varint,83,opt,name=KaiPing" json:"KaiPing,omitempty"`
-	JieSuanZhangDie int64 `protobuf:"varint,84,opt,name=JieSuanZhangDie" json:"JieSuanZhangDie,omitempty"`
-	JieSuanZhangFu  int64 `protobuf:"varint,85,opt,name=JieSuanZhangFu" json:"JieSuanZhangFu,omitempty"`
+	ChiCang         yfloat `protobuf:"varint,78,opt,name=ChiCang" json:"ChiCang,omitempty"`
+	ZengCang        yfloat `protobuf:"varint,79,opt,name=ZengCang" json:"ZengCang,omitempty"`
+	RiZeng          yfloat `protobuf:"varint,80,opt,name=RiZeng" json:"RiZeng,omitempty"`
+	JieSuanJia      yfloat `protobuf:"varint,81,opt,name=JieSuanJia" json:"JieSuanJia,omitempty"`
+	ZuoRiJieSuanJia yfloat `protobuf:"varint,82,opt,name=ZuoRiJieSuanJia" json:"ZuoRiJieSuanJia,omitempty"`
+	KaiPing         yfloat `protobuf:"varint,83,opt,name=KaiPing" json:"KaiPing,omitempty"`
+	JieSuanZhangDie yfloat `protobuf:"varint,84,opt,name=JieSuanZhangDie" json:"JieSuanZhangDie,omitempty"`
+	JieSuanZhangFu  yfloat `protobuf:"varint,85,opt,name=JieSuanZhangFu" json:"JieSuanZhangFu,omitempty"`
 	// 盘口变化
-	PanKouBianHuaMaiRu1   int64 `protobuf:"varint,86,opt,name=PanKouBianHuaMaiRu1" json:"PanKouBianHuaMaiRu1,omitempty"`
-	PanKouBianHuaMaiRu2   int64 `protobuf:"varint,87,opt,name=PanKouBianHuaMaiRu2" json:"PanKouBianHuaMaiRu2,omitempty"`
-	PanKouBianHuaMaiRu3   int64 `protobuf:"varint,88,opt,name=PanKouBianHuaMaiRu3" json:"PanKouBianHuaMaiRu3,omitempty"`
-	PanKouBianHuaMaiRu4   int64 `protobuf:"varint,89,opt,name=PanKouBianHuaMaiRu4" json:"PanKouBianHuaMaiRu4,omitempty"`
-	PanKouBianHuaMaiRu5   int64 `protobuf:"varint,90,opt,name=PanKouBianHuaMaiRu5" json:"PanKouBianHuaMaiRu5,omitempty"`
-	PanKouBianHuaMaiRu6   int64 `protobuf:"varint,91,opt,name=PanKouBianHuaMaiRu6" json:"PanKouBianHuaMaiRu6,omitempty"`
-	PanKouBianHuaMaiRu7   int64 `protobuf:"varint,92,opt,name=PanKouBianHuaMaiRu7" json:"PanKouBianHuaMaiRu7,omitempty"`
-	PanKouBianHuaMaiRu8   int64 `protobuf:"varint,93,opt,name=PanKouBianHuaMaiRu8" json:"PanKouBianHuaMaiRu8,omitempty"`
-	PanKouBianHuaMaiRu9   int64 `protobuf:"varint,94,opt,name=PanKouBianHuaMaiRu9" json:"PanKouBianHuaMaiRu9,omitempty"`
-	PanKouBianHuaMaiRu10  int64 `protobuf:"varint,95,opt,name=PanKouBianHuaMaiRu10" json:"PanKouBianHuaMaiRu10,omitempty"`
-	PanKouBianHuaMaiChu1  int64 `protobuf:"varint,96,opt,name=PanKouBianHuaMaiChu1" json:"PanKouBianHuaMaiChu1,omitempty"`
-	PanKouBianHuaMaiChu2  int64 `protobuf:"varint,97,opt,name=PanKouBianHuaMaiChu2" json:"PanKouBianHuaMaiChu2,omitempty"`
-	PanKouBianHuaMaiChu3  int64 `protobuf:"varint,98,opt,name=PanKouBianHuaMaiChu3" json:"PanKouBianHuaMaiChu3,omitempty"`
-	PanKouBianHuaMaiChu4  int64 `protobuf:"varint,99,opt,name=PanKouBianHuaMaiChu4" json:"PanKouBianHuaMaiChu4,omitempty"`
-	PanKouBianHuaMaiChu5  int64 `protobuf:"varint,100,opt,name=PanKouBianHuaMaiChu5" json:"PanKouBianHuaMaiChu5,omitempty"`
-	PanKouBianHuaMaiChu6  int64 `protobuf:"varint,101,opt,name=PanKouBianHuaMaiChu6" json:"PanKouBianHuaMaiChu6,omitempty"`
-	PanKouBianHuaMaiChu7  int64 `protobuf:"varint,102,opt,name=PanKouBianHuaMaiChu7" json:"PanKouBianHuaMaiChu7,omitempty"`
-	PanKouBianHuaMaiChu8  int64 `protobuf:"varint,103,opt,name=PanKouBianHuaMaiChu8" json:"PanKouBianHuaMaiChu8,omitempty"`
-	PanKouBianHuaMaiChu9  int64 `protobuf:"varint,104,opt,name=PanKouBianHuaMaiChu9" json:"PanKouBianHuaMaiChu9,omitempty"`
-	PanKouBianHuaMaiChu10 int64 `protobuf:"varint,105,opt,name=PanKouBianHuaMaiChu10" json:"PanKouBianHuaMaiChu10,omitempty"`
+	PanKouBianHuaMaiRu1   yfloat `protobuf:"varint,86,opt,name=PanKouBianHuaMaiRu1" json:"PanKouBianHuaMaiRu1,omitempty"`
+	PanKouBianHuaMaiRu2   yfloat `protobuf:"varint,87,opt,name=PanKouBianHuaMaiRu2" json:"PanKouBianHuaMaiRu2,omitempty"`
+	PanKouBianHuaMaiRu3   yfloat `protobuf:"varint,88,opt,name=PanKouBianHuaMaiRu3" json:"PanKouBianHuaMaiRu3,omitempty"`
+	PanKouBianHuaMaiRu4   yfloat `protobuf:"varint,89,opt,name=PanKouBianHuaMaiRu4" json:"PanKouBianHuaMaiRu4,omitempty"`
+	PanKouBianHuaMaiRu5   yfloat `protobuf:"varint,90,opt,name=PanKouBianHuaMaiRu5" json:"PanKouBianHuaMaiRu5,omitempty"`
+	PanKouBianHuaMaiRu6   yfloat `protobuf:"varint,91,opt,name=PanKouBianHuaMaiRu6" json:"PanKouBianHuaMaiRu6,omitempty"`
+	PanKouBianHuaMaiRu7   yfloat `protobuf:"varint,92,opt,name=PanKouBianHuaMaiRu7" json:"PanKouBianHuaMaiRu7,omitempty"`
+	PanKouBianHuaMaiRu8   yfloat `protobuf:"varint,93,opt,name=PanKouBianHuaMaiRu8" json:"PanKouBianHuaMaiRu8,omitempty"`
+	PanKouBianHuaMaiRu9   yfloat `protobuf:"varint,94,opt,name=PanKouBianHuaMaiRu9" json:"PanKouBianHuaMaiRu9,omitempty"`
+	PanKouBianHuaMaiRu10  yfloat `protobuf:"varint,95,opt,name=PanKouBianHuaMaiRu10" json:"PanKouBianHuaMaiRu10,omitempty"`
+	PanKouBianHuaMaiChu1  yfloat `protobuf:"varint,96,opt,name=PanKouBianHuaMaiChu1" json:"PanKouBianHuaMaiChu1,omitempty"`
+	PanKouBianHuaMaiChu2  yfloat `protobuf:"varint,97,opt,name=PanKouBianHuaMaiChu2" json:"PanKouBianHuaMaiChu2,omitempty"`
+	PanKouBianHuaMaiChu3  yfloat `protobuf:"varint,98,opt,name=PanKouBianHuaMaiChu3" json:"PanKouBianHuaMaiChu3,omitempty"`
+	PanKouBianHuaMaiChu4  yfloat `protobuf:"varint,99,opt,name=PanKouBianHuaMaiChu4" json:"PanKouBianHuaMaiChu4,omitempty"`
+	PanKouBianHuaMaiChu5  yfloat `protobuf:"varint,100,opt,name=PanKouBianHuaMaiChu5" json:"PanKouBianHuaMaiChu5,omitempty"`
+	PanKouBianHuaMaiChu6  yfloat `protobuf:"varint,101,opt,name=PanKouBianHuaMaiChu6" json:"PanKouBianHuaMaiChu6,omitempty"`
+	PanKouBianHuaMaiChu7  yfloat `protobuf:"varint,102,opt,name=PanKouBianHuaMaiChu7" json:"PanKouBianHuaMaiChu7,omitempty"`
+	PanKouBianHuaMaiChu8  yfloat `protobuf:"varint,103,opt,name=PanKouBianHuaMaiChu8" json:"PanKouBianHuaMaiChu8,omitempty"`
+	PanKouBianHuaMaiChu9  yfloat `protobuf:"varint,104,opt,name=PanKouBianHuaMaiChu9" json:"PanKouBianHuaMaiChu9,omitempty"`
+	PanKouBianHuaMaiChu10 yfloat `protobuf:"varint,105,opt,name=PanKouBianHuaMaiChu10" json:"PanKouBianHuaMaiChu10,omitempty"`
 }
 
 func (m *GeGuDongTai) Reset()                    { *m = GeGuDongTai{} }
@@ -227,735 +227,735 @@ func (m *GeGuDongTai) String() string            { return proto.CompactTextStrin
 func (*GeGuDongTai) ProtoMessage()               {}
 func (*GeGuDongTai) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{1} }
 
-func (m *GeGuDongTai) GetId() int64 {
+func (m *GeGuDongTai) GetId() yfloat {
 	if m != nil {
 		return m.Id
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetShiJian() int64 {
+func (m *GeGuDongTai) GetShiJian() yfloat {
 	if m != nil {
 		return m.ShiJian
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetZuiXinJia() int64 {
+func (m *GeGuDongTai) GetZuiXinJia() yfloat {
 	if m != nil {
 		return m.ZuiXinJia
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetKaiPanJia() int64 {
+func (m *GeGuDongTai) GetKaiPanJia() yfloat {
 	if m != nil {
 		return m.KaiPanJia
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetZuiGaoJia() int64 {
+func (m *GeGuDongTai) GetZuiGaoJia() yfloat {
 	if m != nil {
 		return m.ZuiGaoJia
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetZuiDiJia() int64 {
+func (m *GeGuDongTai) GetZuiDiJia() yfloat {
 	if m != nil {
 		return m.ZuiDiJia
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetZuoShou() int64 {
+func (m *GeGuDongTai) GetZuoShou() yfloat {
 	if m != nil {
 		return m.ZuoShou
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetJunJia() int64 {
+func (m *GeGuDongTai) GetJunJia() yfloat {
 	if m != nil {
 		return m.JunJia
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetZhangDie() int64 {
+func (m *GeGuDongTai) GetZhangDie() yfloat {
 	if m != nil {
 		return m.ZhangDie
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetZhangFu() int64 {
+func (m *GeGuDongTai) GetZhangFu() yfloat {
 	if m != nil {
 		return m.ZhangFu
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetZhenFu() int64 {
+func (m *GeGuDongTai) GetZhenFu() yfloat {
 	if m != nil {
 		return m.ZhenFu
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetChengJiaoLiang() int64 {
+func (m *GeGuDongTai) GetChengJiaoLiang() yfloat {
 	if m != nil {
 		return m.ChengJiaoLiang
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetXianShou() int64 {
+func (m *GeGuDongTai) GetXianShou() yfloat {
 	if m != nil {
 		return m.XianShou
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetChengJiaoE() int64 {
+func (m *GeGuDongTai) GetChengJiaoE() yfloat {
 	if m != nil {
 		return m.ChengJiaoE
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetZongChengJiaoBiShu() int64 {
+func (m *GeGuDongTai) GetZongChengJiaoBiShu() yfloat {
 	if m != nil {
 		return m.ZongChengJiaoBiShu
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetMeiBiChengJiaoGuShu() int64 {
+func (m *GeGuDongTai) GetMeiBiChengJiaoGuShu() yfloat {
 	if m != nil {
 		return m.MeiBiChengJiaoGuShu
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetHuanShou() int64 {
+func (m *GeGuDongTai) GetHuanShou() yfloat {
 	if m != nil {
 		return m.HuanShou
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetLiangBi() int64 {
+func (m *GeGuDongTai) GetLiangBi() yfloat {
 	if m != nil {
 		return m.LiangBi
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetNeiPan() int64 {
+func (m *GeGuDongTai) GetNeiPan() yfloat {
 	if m != nil {
 		return m.NeiPan
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWaiPan() int64 {
+func (m *GeGuDongTai) GetWaiPan() yfloat {
 	if m != nil {
 		return m.WaiPan
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetZongMaiRu() int64 {
+func (m *GeGuDongTai) GetZongMaiRu() yfloat {
 	if m != nil {
 		return m.ZongMaiRu
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetZongMaiChu() int64 {
+func (m *GeGuDongTai) GetZongMaiChu() yfloat {
 	if m != nil {
 		return m.ZongMaiChu
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetZongMaiRuJunJia() int64 {
+func (m *GeGuDongTai) GetZongMaiRuJunJia() yfloat {
 	if m != nil {
 		return m.ZongMaiRuJunJia
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetZongMaiChuJunJia() int64 {
+func (m *GeGuDongTai) GetZongMaiChuJunJia() yfloat {
 	if m != nil {
 		return m.ZongMaiChuJunJia
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetZhangTing() int64 {
+func (m *GeGuDongTai) GetZhangTing() yfloat {
 	if m != nil {
 		return m.ZhangTing
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetDieTing() int64 {
+func (m *GeGuDongTai) GetDieTing() yfloat {
 	if m != nil {
 		return m.DieTing
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetFenZhongZhangFu1() int64 {
+func (m *GeGuDongTai) GetFenZhongZhangFu1() yfloat {
 	if m != nil {
 		return m.FenZhongZhangFu1
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetFenZhongZhangFu2() int64 {
+func (m *GeGuDongTai) GetFenZhongZhangFu2() yfloat {
 	if m != nil {
 		return m.FenZhongZhangFu2
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetFenZhongZhangFu3() int64 {
+func (m *GeGuDongTai) GetFenZhongZhangFu3() yfloat {
 	if m != nil {
 		return m.FenZhongZhangFu3
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetFenZhongZhangFu4() int64 {
+func (m *GeGuDongTai) GetFenZhongZhangFu4() yfloat {
 	if m != nil {
 		return m.FenZhongZhangFu4
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetFenZhongZhangFu5() int64 {
+func (m *GeGuDongTai) GetFenZhongZhangFu5() yfloat {
 	if m != nil {
 		return m.FenZhongZhangFu5
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiTuoMaiRuJia1() int64 {
+func (m *GeGuDongTai) GetWeiTuoMaiRuJia1() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuJia1
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiTuoMaiRuLiang1() int64 {
+func (m *GeGuDongTai) GetWeiTuoMaiRuLiang1() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuLiang1
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiTuoMaiRuJia2() int64 {
+func (m *GeGuDongTai) GetWeiTuoMaiRuJia2() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuJia2
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiTuoMaiRuLiang2() int64 {
+func (m *GeGuDongTai) GetWeiTuoMaiRuLiang2() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuLiang2
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiTuoMaiRuJia3() int64 {
+func (m *GeGuDongTai) GetWeiTuoMaiRuJia3() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuJia3
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiTuoMaiRuLiang3() int64 {
+func (m *GeGuDongTai) GetWeiTuoMaiRuLiang3() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuLiang3
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiTuoMaiRuJia4() int64 {
+func (m *GeGuDongTai) GetWeiTuoMaiRuJia4() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuJia4
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiTuoMaiRuLiang4() int64 {
+func (m *GeGuDongTai) GetWeiTuoMaiRuLiang4() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuLiang4
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiTuoMaiRuJia5() int64 {
+func (m *GeGuDongTai) GetWeiTuoMaiRuJia5() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuJia5
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiTuoMaiRuLiang5() int64 {
+func (m *GeGuDongTai) GetWeiTuoMaiRuLiang5() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuLiang5
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiTuoMaiChuJia1() int64 {
+func (m *GeGuDongTai) GetWeiTuoMaiChuJia1() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuJia1
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiTuoMaiChuLiang1() int64 {
+func (m *GeGuDongTai) GetWeiTuoMaiChuLiang1() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuLiang1
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiTuoMaiChuJia2() int64 {
+func (m *GeGuDongTai) GetWeiTuoMaiChuJia2() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuJia2
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiTuoMaiChuLiang2() int64 {
+func (m *GeGuDongTai) GetWeiTuoMaiChuLiang2() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuLiang2
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiTuoMaiChuJia3() int64 {
+func (m *GeGuDongTai) GetWeiTuoMaiChuJia3() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuJia3
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiTuoMaiChuLiang3() int64 {
+func (m *GeGuDongTai) GetWeiTuoMaiChuLiang3() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuLiang3
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiTuoMaiChuJia4() int64 {
+func (m *GeGuDongTai) GetWeiTuoMaiChuJia4() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuJia4
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiTuoMaiChuLiang4() int64 {
+func (m *GeGuDongTai) GetWeiTuoMaiChuLiang4() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuLiang4
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiTuoMaiChuJia5() int64 {
+func (m *GeGuDongTai) GetWeiTuoMaiChuJia5() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuJia5
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiTuoMaiChuLiang5() int64 {
+func (m *GeGuDongTai) GetWeiTuoMaiChuLiang5() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuLiang5
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiBi() int64 {
+func (m *GeGuDongTai) GetWeiBi() yfloat {
 	if m != nil {
 		return m.WeiBi
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiCha() int64 {
+func (m *GeGuDongTai) GetWeiCha() yfloat {
 	if m != nil {
 		return m.WeiCha
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetJiaQuanPingJunWeiTuoMaiRuJia() int64 {
+func (m *GeGuDongTai) GetJiaQuanPingJunWeiTuoMaiRuJia() yfloat {
 	if m != nil {
 		return m.JiaQuanPingJunWeiTuoMaiRuJia
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiTuoMaiRuZongLiang() int64 {
+func (m *GeGuDongTai) GetWeiTuoMaiRuZongLiang() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuZongLiang
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetJiaQuanPingJunWeiTuoMaiChuJia() int64 {
+func (m *GeGuDongTai) GetJiaQuanPingJunWeiTuoMaiChuJia() yfloat {
 	if m != nil {
 		return m.JiaQuanPingJunWeiTuoMaiChuJia
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetWeiTuoMaiChuZongLiang() int64 {
+func (m *GeGuDongTai) GetWeiTuoMaiChuZongLiang() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuZongLiang
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetKuoZhanMaiRuJia1() int64 {
+func (m *GeGuDongTai) GetKuoZhanMaiRuJia1() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiRuJia1
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetKuoZhanMaiRuJia2() int64 {
+func (m *GeGuDongTai) GetKuoZhanMaiRuJia2() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiRuJia2
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetKuoZhanMaiRuJia3() int64 {
+func (m *GeGuDongTai) GetKuoZhanMaiRuJia3() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiRuJia3
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetKuoZhanMaiRuJia4() int64 {
+func (m *GeGuDongTai) GetKuoZhanMaiRuJia4() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiRuJia4
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetKuoZhanMaiRuJia5() int64 {
+func (m *GeGuDongTai) GetKuoZhanMaiRuJia5() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiRuJia5
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetKuoZhanMaiRuLiang1() int64 {
+func (m *GeGuDongTai) GetKuoZhanMaiRuLiang1() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiRuLiang1
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetKuoZhanMaiRuLiang2() int64 {
+func (m *GeGuDongTai) GetKuoZhanMaiRuLiang2() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiRuLiang2
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetKuoZhanMaiRuLiang3() int64 {
+func (m *GeGuDongTai) GetKuoZhanMaiRuLiang3() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiRuLiang3
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetKuoZhanMaiRuLiang4() int64 {
+func (m *GeGuDongTai) GetKuoZhanMaiRuLiang4() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiRuLiang4
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetKuoZhanMaiRuLiang5() int64 {
+func (m *GeGuDongTai) GetKuoZhanMaiRuLiang5() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiRuLiang5
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetKuoZhanMaiChuJia1() int64 {
+func (m *GeGuDongTai) GetKuoZhanMaiChuJia1() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiChuJia1
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetKuoZhanMaiChuJia2() int64 {
+func (m *GeGuDongTai) GetKuoZhanMaiChuJia2() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiChuJia2
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetKuoZhanMaiChuJia3() int64 {
+func (m *GeGuDongTai) GetKuoZhanMaiChuJia3() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiChuJia3
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetKuoZhanMaiChuJia4() int64 {
+func (m *GeGuDongTai) GetKuoZhanMaiChuJia4() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiChuJia4
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetKuoZhanMaiChuJia5() int64 {
+func (m *GeGuDongTai) GetKuoZhanMaiChuJia5() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiChuJia5
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetKuoZhanMaiChuLiang1() int64 {
+func (m *GeGuDongTai) GetKuoZhanMaiChuLiang1() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiChuLiang1
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetKuoZhanMaiChuLiang2() int64 {
+func (m *GeGuDongTai) GetKuoZhanMaiChuLiang2() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiChuLiang2
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetKuoZhanMaiChuLiang3() int64 {
+func (m *GeGuDongTai) GetKuoZhanMaiChuLiang3() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiChuLiang3
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetKuoZhanMaiChuLiang4() int64 {
+func (m *GeGuDongTai) GetKuoZhanMaiChuLiang4() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiChuLiang4
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetKuoZhanMaiChuLiang5() int64 {
+func (m *GeGuDongTai) GetKuoZhanMaiChuLiang5() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiChuLiang5
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetChiCang() int64 {
+func (m *GeGuDongTai) GetChiCang() yfloat {
 	if m != nil {
 		return m.ChiCang
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetZengCang() int64 {
+func (m *GeGuDongTai) GetZengCang() yfloat {
 	if m != nil {
 		return m.ZengCang
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetRiZeng() int64 {
+func (m *GeGuDongTai) GetRiZeng() yfloat {
 	if m != nil {
 		return m.RiZeng
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetJieSuanJia() int64 {
+func (m *GeGuDongTai) GetJieSuanJia() yfloat {
 	if m != nil {
 		return m.JieSuanJia
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetZuoRiJieSuanJia() int64 {
+func (m *GeGuDongTai) GetZuoRiJieSuanJia() yfloat {
 	if m != nil {
 		return m.ZuoRiJieSuanJia
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetKaiPing() int64 {
+func (m *GeGuDongTai) GetKaiPing() yfloat {
 	if m != nil {
 		return m.KaiPing
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetJieSuanZhangDie() int64 {
+func (m *GeGuDongTai) GetJieSuanZhangDie() yfloat {
 	if m != nil {
 		return m.JieSuanZhangDie
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetJieSuanZhangFu() int64 {
+func (m *GeGuDongTai) GetJieSuanZhangFu() yfloat {
 	if m != nil {
 		return m.JieSuanZhangFu
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetPanKouBianHuaMaiRu1() int64 {
+func (m *GeGuDongTai) GetPanKouBianHuaMaiRu1() yfloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiRu1
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetPanKouBianHuaMaiRu2() int64 {
+func (m *GeGuDongTai) GetPanKouBianHuaMaiRu2() yfloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiRu2
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetPanKouBianHuaMaiRu3() int64 {
+func (m *GeGuDongTai) GetPanKouBianHuaMaiRu3() yfloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiRu3
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetPanKouBianHuaMaiRu4() int64 {
+func (m *GeGuDongTai) GetPanKouBianHuaMaiRu4() yfloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiRu4
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetPanKouBianHuaMaiRu5() int64 {
+func (m *GeGuDongTai) GetPanKouBianHuaMaiRu5() yfloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiRu5
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetPanKouBianHuaMaiRu6() int64 {
+func (m *GeGuDongTai) GetPanKouBianHuaMaiRu6() yfloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiRu6
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetPanKouBianHuaMaiRu7() int64 {
+func (m *GeGuDongTai) GetPanKouBianHuaMaiRu7() yfloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiRu7
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetPanKouBianHuaMaiRu8() int64 {
+func (m *GeGuDongTai) GetPanKouBianHuaMaiRu8() yfloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiRu8
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetPanKouBianHuaMaiRu9() int64 {
+func (m *GeGuDongTai) GetPanKouBianHuaMaiRu9() yfloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiRu9
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetPanKouBianHuaMaiRu10() int64 {
+func (m *GeGuDongTai) GetPanKouBianHuaMaiRu10() yfloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiRu10
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetPanKouBianHuaMaiChu1() int64 {
+func (m *GeGuDongTai) GetPanKouBianHuaMaiChu1() yfloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiChu1
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetPanKouBianHuaMaiChu2() int64 {
+func (m *GeGuDongTai) GetPanKouBianHuaMaiChu2() yfloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiChu2
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetPanKouBianHuaMaiChu3() int64 {
+func (m *GeGuDongTai) GetPanKouBianHuaMaiChu3() yfloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiChu3
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetPanKouBianHuaMaiChu4() int64 {
+func (m *GeGuDongTai) GetPanKouBianHuaMaiChu4() yfloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiChu4
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetPanKouBianHuaMaiChu5() int64 {
+func (m *GeGuDongTai) GetPanKouBianHuaMaiChu5() yfloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiChu5
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetPanKouBianHuaMaiChu6() int64 {
+func (m *GeGuDongTai) GetPanKouBianHuaMaiChu6() yfloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiChu6
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetPanKouBianHuaMaiChu7() int64 {
+func (m *GeGuDongTai) GetPanKouBianHuaMaiChu7() yfloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiChu7
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetPanKouBianHuaMaiChu8() int64 {
+func (m *GeGuDongTai) GetPanKouBianHuaMaiChu8() yfloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiChu8
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetPanKouBianHuaMaiChu9() int64 {
+func (m *GeGuDongTai) GetPanKouBianHuaMaiChu9() yfloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiChu9
 	}
 	return 0
 }
 
-func (m *GeGuDongTai) GetPanKouBianHuaMaiChu10() int64 {
+func (m *GeGuDongTai) GetPanKouBianHuaMaiChu10() yfloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiChu10
 	}
@@ -963,31 +963,31 @@ func (m *GeGuDongTai) GetPanKouBianHuaMaiChu10() int64 {
 }
 
 type MaiMaiPan struct {
-	Id      int64 `protobuf:"varint,1,opt,name=Id" json:"Id,omitempty"`
-	ShiJian int64 `protobuf:"varint,2,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	Id      yfloat `protobuf:"varint,1,opt,name=Id" json:"Id,omitempty"`
+	ShiJian yfloat `protobuf:"varint,2,opt,name=ShiJian" json:"ShiJian,omitempty"`
 	// 5档委托盘
-	WeiTuoMaiRuJia1    int64 `protobuf:"varint,3,opt,name=WeiTuoMaiRuJia1" json:"WeiTuoMaiRuJia1,omitempty"`
-	WeiTuoMaiRuLiang1  int64 `protobuf:"varint,4,opt,name=WeiTuoMaiRuLiang1" json:"WeiTuoMaiRuLiang1,omitempty"`
-	WeiTuoMaiRuJia2    int64 `protobuf:"varint,5,opt,name=WeiTuoMaiRuJia2" json:"WeiTuoMaiRuJia2,omitempty"`
-	WeiTuoMaiRuLiang2  int64 `protobuf:"varint,6,opt,name=WeiTuoMaiRuLiang2" json:"WeiTuoMaiRuLiang2,omitempty"`
-	WeiTuoMaiRuJia3    int64 `protobuf:"varint,7,opt,name=WeiTuoMaiRuJia3" json:"WeiTuoMaiRuJia3,omitempty"`
-	WeiTuoMaiRuLiang3  int64 `protobuf:"varint,8,opt,name=WeiTuoMaiRuLiang3" json:"WeiTuoMaiRuLiang3,omitempty"`
-	WeiTuoMaiRuJia4    int64 `protobuf:"varint,9,opt,name=WeiTuoMaiRuJia4" json:"WeiTuoMaiRuJia4,omitempty"`
-	WeiTuoMaiRuLiang4  int64 `protobuf:"varint,10,opt,name=WeiTuoMaiRuLiang4" json:"WeiTuoMaiRuLiang4,omitempty"`
-	WeiTuoMaiRuJia5    int64 `protobuf:"varint,11,opt,name=WeiTuoMaiRuJia5" json:"WeiTuoMaiRuJia5,omitempty"`
-	WeiTuoMaiRuLiang5  int64 `protobuf:"varint,12,opt,name=WeiTuoMaiRuLiang5" json:"WeiTuoMaiRuLiang5,omitempty"`
-	WeiTuoMaiChuJia1   int64 `protobuf:"varint,13,opt,name=WeiTuoMaiChuJia1" json:"WeiTuoMaiChuJia1,omitempty"`
-	WeiTuoMaiChuLiang1 int64 `protobuf:"varint,14,opt,name=WeiTuoMaiChuLiang1" json:"WeiTuoMaiChuLiang1,omitempty"`
-	WeiTuoMaiChuJia2   int64 `protobuf:"varint,15,opt,name=WeiTuoMaiChuJia2" json:"WeiTuoMaiChuJia2,omitempty"`
-	WeiTuoMaiChuLiang2 int64 `protobuf:"varint,16,opt,name=WeiTuoMaiChuLiang2" json:"WeiTuoMaiChuLiang2,omitempty"`
-	WeiTuoMaiChuJia3   int64 `protobuf:"varint,17,opt,name=WeiTuoMaiChuJia3" json:"WeiTuoMaiChuJia3,omitempty"`
-	WeiTuoMaiChuLiang3 int64 `protobuf:"varint,18,opt,name=WeiTuoMaiChuLiang3" json:"WeiTuoMaiChuLiang3,omitempty"`
-	WeiTuoMaiChuJia4   int64 `protobuf:"varint,19,opt,name=WeiTuoMaiChuJia4" json:"WeiTuoMaiChuJia4,omitempty"`
-	WeiTuoMaiChuLiang4 int64 `protobuf:"varint,20,opt,name=WeiTuoMaiChuLiang4" json:"WeiTuoMaiChuLiang4,omitempty"`
-	WeiTuoMaiChuJia5   int64 `protobuf:"varint,21,opt,name=WeiTuoMaiChuJia5" json:"WeiTuoMaiChuJia5,omitempty"`
-	WeiTuoMaiChuLiang5 int64 `protobuf:"varint,22,opt,name=WeiTuoMaiChuLiang5" json:"WeiTuoMaiChuLiang5,omitempty"`
-	WeiBi              int64 `protobuf:"varint,23,opt,name=WeiBi" json:"WeiBi,omitempty"`
-	WeiCha             int64 `protobuf:"varint,24,opt,name=WeiCha" json:"WeiCha,omitempty"`
+	WeiTuoMaiRuJia1    yfloat `protobuf:"varint,3,opt,name=WeiTuoMaiRuJia1" json:"WeiTuoMaiRuJia1,omitempty"`
+	WeiTuoMaiRuLiang1  yfloat `protobuf:"varint,4,opt,name=WeiTuoMaiRuLiang1" json:"WeiTuoMaiRuLiang1,omitempty"`
+	WeiTuoMaiRuJia2    yfloat `protobuf:"varint,5,opt,name=WeiTuoMaiRuJia2" json:"WeiTuoMaiRuJia2,omitempty"`
+	WeiTuoMaiRuLiang2  yfloat `protobuf:"varint,6,opt,name=WeiTuoMaiRuLiang2" json:"WeiTuoMaiRuLiang2,omitempty"`
+	WeiTuoMaiRuJia3    yfloat `protobuf:"varint,7,opt,name=WeiTuoMaiRuJia3" json:"WeiTuoMaiRuJia3,omitempty"`
+	WeiTuoMaiRuLiang3  yfloat `protobuf:"varint,8,opt,name=WeiTuoMaiRuLiang3" json:"WeiTuoMaiRuLiang3,omitempty"`
+	WeiTuoMaiRuJia4    yfloat `protobuf:"varint,9,opt,name=WeiTuoMaiRuJia4" json:"WeiTuoMaiRuJia4,omitempty"`
+	WeiTuoMaiRuLiang4  yfloat `protobuf:"varint,10,opt,name=WeiTuoMaiRuLiang4" json:"WeiTuoMaiRuLiang4,omitempty"`
+	WeiTuoMaiRuJia5    yfloat `protobuf:"varint,11,opt,name=WeiTuoMaiRuJia5" json:"WeiTuoMaiRuJia5,omitempty"`
+	WeiTuoMaiRuLiang5  yfloat `protobuf:"varint,12,opt,name=WeiTuoMaiRuLiang5" json:"WeiTuoMaiRuLiang5,omitempty"`
+	WeiTuoMaiChuJia1   yfloat `protobuf:"varint,13,opt,name=WeiTuoMaiChuJia1" json:"WeiTuoMaiChuJia1,omitempty"`
+	WeiTuoMaiChuLiang1 yfloat `protobuf:"varint,14,opt,name=WeiTuoMaiChuLiang1" json:"WeiTuoMaiChuLiang1,omitempty"`
+	WeiTuoMaiChuJia2   yfloat `protobuf:"varint,15,opt,name=WeiTuoMaiChuJia2" json:"WeiTuoMaiChuJia2,omitempty"`
+	WeiTuoMaiChuLiang2 yfloat `protobuf:"varint,16,opt,name=WeiTuoMaiChuLiang2" json:"WeiTuoMaiChuLiang2,omitempty"`
+	WeiTuoMaiChuJia3   yfloat `protobuf:"varint,17,opt,name=WeiTuoMaiChuJia3" json:"WeiTuoMaiChuJia3,omitempty"`
+	WeiTuoMaiChuLiang3 yfloat `protobuf:"varint,18,opt,name=WeiTuoMaiChuLiang3" json:"WeiTuoMaiChuLiang3,omitempty"`
+	WeiTuoMaiChuJia4   yfloat `protobuf:"varint,19,opt,name=WeiTuoMaiChuJia4" json:"WeiTuoMaiChuJia4,omitempty"`
+	WeiTuoMaiChuLiang4 yfloat `protobuf:"varint,20,opt,name=WeiTuoMaiChuLiang4" json:"WeiTuoMaiChuLiang4,omitempty"`
+	WeiTuoMaiChuJia5   yfloat `protobuf:"varint,21,opt,name=WeiTuoMaiChuJia5" json:"WeiTuoMaiChuJia5,omitempty"`
+	WeiTuoMaiChuLiang5 yfloat `protobuf:"varint,22,opt,name=WeiTuoMaiChuLiang5" json:"WeiTuoMaiChuLiang5,omitempty"`
+	WeiBi              yfloat `protobuf:"varint,23,opt,name=WeiBi" json:"WeiBi,omitempty"`
+	WeiCha             yfloat `protobuf:"varint,24,opt,name=WeiCha" json:"WeiCha,omitempty"`
 }
 
 func (m *MaiMaiPan) Reset()                    { *m = MaiMaiPan{} }
@@ -995,168 +995,168 @@ func (m *MaiMaiPan) String() string            { return proto.CompactTextString(
 func (*MaiMaiPan) ProtoMessage()               {}
 func (*MaiMaiPan) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{2} }
 
-func (m *MaiMaiPan) GetId() int64 {
+func (m *MaiMaiPan) GetId() yfloat {
 	if m != nil {
 		return m.Id
 	}
 	return 0
 }
 
-func (m *MaiMaiPan) GetShiJian() int64 {
+func (m *MaiMaiPan) GetShiJian() yfloat {
 	if m != nil {
 		return m.ShiJian
 	}
 	return 0
 }
 
-func (m *MaiMaiPan) GetWeiTuoMaiRuJia1() int64 {
+func (m *MaiMaiPan) GetWeiTuoMaiRuJia1() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuJia1
 	}
 	return 0
 }
 
-func (m *MaiMaiPan) GetWeiTuoMaiRuLiang1() int64 {
+func (m *MaiMaiPan) GetWeiTuoMaiRuLiang1() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuLiang1
 	}
 	return 0
 }
 
-func (m *MaiMaiPan) GetWeiTuoMaiRuJia2() int64 {
+func (m *MaiMaiPan) GetWeiTuoMaiRuJia2() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuJia2
 	}
 	return 0
 }
 
-func (m *MaiMaiPan) GetWeiTuoMaiRuLiang2() int64 {
+func (m *MaiMaiPan) GetWeiTuoMaiRuLiang2() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuLiang2
 	}
 	return 0
 }
 
-func (m *MaiMaiPan) GetWeiTuoMaiRuJia3() int64 {
+func (m *MaiMaiPan) GetWeiTuoMaiRuJia3() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuJia3
 	}
 	return 0
 }
 
-func (m *MaiMaiPan) GetWeiTuoMaiRuLiang3() int64 {
+func (m *MaiMaiPan) GetWeiTuoMaiRuLiang3() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuLiang3
 	}
 	return 0
 }
 
-func (m *MaiMaiPan) GetWeiTuoMaiRuJia4() int64 {
+func (m *MaiMaiPan) GetWeiTuoMaiRuJia4() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuJia4
 	}
 	return 0
 }
 
-func (m *MaiMaiPan) GetWeiTuoMaiRuLiang4() int64 {
+func (m *MaiMaiPan) GetWeiTuoMaiRuLiang4() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuLiang4
 	}
 	return 0
 }
 
-func (m *MaiMaiPan) GetWeiTuoMaiRuJia5() int64 {
+func (m *MaiMaiPan) GetWeiTuoMaiRuJia5() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuJia5
 	}
 	return 0
 }
 
-func (m *MaiMaiPan) GetWeiTuoMaiRuLiang5() int64 {
+func (m *MaiMaiPan) GetWeiTuoMaiRuLiang5() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuLiang5
 	}
 	return 0
 }
 
-func (m *MaiMaiPan) GetWeiTuoMaiChuJia1() int64 {
+func (m *MaiMaiPan) GetWeiTuoMaiChuJia1() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuJia1
 	}
 	return 0
 }
 
-func (m *MaiMaiPan) GetWeiTuoMaiChuLiang1() int64 {
+func (m *MaiMaiPan) GetWeiTuoMaiChuLiang1() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuLiang1
 	}
 	return 0
 }
 
-func (m *MaiMaiPan) GetWeiTuoMaiChuJia2() int64 {
+func (m *MaiMaiPan) GetWeiTuoMaiChuJia2() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuJia2
 	}
 	return 0
 }
 
-func (m *MaiMaiPan) GetWeiTuoMaiChuLiang2() int64 {
+func (m *MaiMaiPan) GetWeiTuoMaiChuLiang2() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuLiang2
 	}
 	return 0
 }
 
-func (m *MaiMaiPan) GetWeiTuoMaiChuJia3() int64 {
+func (m *MaiMaiPan) GetWeiTuoMaiChuJia3() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuJia3
 	}
 	return 0
 }
 
-func (m *MaiMaiPan) GetWeiTuoMaiChuLiang3() int64 {
+func (m *MaiMaiPan) GetWeiTuoMaiChuLiang3() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuLiang3
 	}
 	return 0
 }
 
-func (m *MaiMaiPan) GetWeiTuoMaiChuJia4() int64 {
+func (m *MaiMaiPan) GetWeiTuoMaiChuJia4() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuJia4
 	}
 	return 0
 }
 
-func (m *MaiMaiPan) GetWeiTuoMaiChuLiang4() int64 {
+func (m *MaiMaiPan) GetWeiTuoMaiChuLiang4() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuLiang4
 	}
 	return 0
 }
 
-func (m *MaiMaiPan) GetWeiTuoMaiChuJia5() int64 {
+func (m *MaiMaiPan) GetWeiTuoMaiChuJia5() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuJia5
 	}
 	return 0
 }
 
-func (m *MaiMaiPan) GetWeiTuoMaiChuLiang5() int64 {
+func (m *MaiMaiPan) GetWeiTuoMaiChuLiang5() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuLiang5
 	}
 	return 0
 }
 
-func (m *MaiMaiPan) GetWeiBi() int64 {
+func (m *MaiMaiPan) GetWeiBi() yfloat {
 	if m != nil {
 		return m.WeiBi
 	}
 	return 0
 }
 
-func (m *MaiMaiPan) GetWeiCha() int64 {
+func (m *MaiMaiPan) GetWeiCha() yfloat {
 	if m != nil {
 		return m.WeiCha
 	}
@@ -1164,32 +1164,32 @@ func (m *MaiMaiPan) GetWeiCha() int64 {
 }
 
 type KuoZhanMaiMaiPan struct {
-	Id                            int64 `protobuf:"varint,1,opt,name=Id" json:"Id,omitempty"`
-	ShiJian                       int64 `protobuf:"varint,2,opt,name=ShiJian" json:"ShiJian,omitempty"`
-	JiaQuanPingJunWeiTuoMaiRuJia  int64 `protobuf:"varint,3,opt,name=JiaQuanPingJunWeiTuoMaiRuJia" json:"JiaQuanPingJunWeiTuoMaiRuJia,omitempty"`
-	WeiTuoMaiRuZongLiang          int64 `protobuf:"varint,4,opt,name=WeiTuoMaiRuZongLiang" json:"WeiTuoMaiRuZongLiang,omitempty"`
-	JiaQuanPingJunWeiTuoMaiChuJia int64 `protobuf:"varint,5,opt,name=JiaQuanPingJunWeiTuoMaiChuJia" json:"JiaQuanPingJunWeiTuoMaiChuJia,omitempty"`
-	WeiTuoMaiChuZongLiang         int64 `protobuf:"varint,6,opt,name=WeiTuoMaiChuZongLiang" json:"WeiTuoMaiChuZongLiang,omitempty"`
-	KuoZhanMaiRuJia1              int64 `protobuf:"varint,7,opt,name=KuoZhanMaiRuJia1" json:"KuoZhanMaiRuJia1,omitempty"`
-	KuoZhanMaiRuJia2              int64 `protobuf:"varint,8,opt,name=KuoZhanMaiRuJia2" json:"KuoZhanMaiRuJia2,omitempty"`
-	KuoZhanMaiRuJia3              int64 `protobuf:"varint,9,opt,name=KuoZhanMaiRuJia3" json:"KuoZhanMaiRuJia3,omitempty"`
-	KuoZhanMaiRuJia4              int64 `protobuf:"varint,10,opt,name=KuoZhanMaiRuJia4" json:"KuoZhanMaiRuJia4,omitempty"`
-	KuoZhanMaiRuJia5              int64 `protobuf:"varint,11,opt,name=KuoZhanMaiRuJia5" json:"KuoZhanMaiRuJia5,omitempty"`
-	KuoZhanMaiRuLiang1            int64 `protobuf:"varint,12,opt,name=KuoZhanMaiRuLiang1" json:"KuoZhanMaiRuLiang1,omitempty"`
-	KuoZhanMaiRuLiang2            int64 `protobuf:"varint,13,opt,name=KuoZhanMaiRuLiang2" json:"KuoZhanMaiRuLiang2,omitempty"`
-	KuoZhanMaiRuLiang3            int64 `protobuf:"varint,14,opt,name=KuoZhanMaiRuLiang3" json:"KuoZhanMaiRuLiang3,omitempty"`
-	KuoZhanMaiRuLiang4            int64 `protobuf:"varint,15,opt,name=KuoZhanMaiRuLiang4" json:"KuoZhanMaiRuLiang4,omitempty"`
-	KuoZhanMaiRuLiang5            int64 `protobuf:"varint,16,opt,name=KuoZhanMaiRuLiang5" json:"KuoZhanMaiRuLiang5,omitempty"`
-	KuoZhanMaiChuJia1             int64 `protobuf:"varint,17,opt,name=KuoZhanMaiChuJia1" json:"KuoZhanMaiChuJia1,omitempty"`
-	KuoZhanMaiChuJia2             int64 `protobuf:"varint,18,opt,name=KuoZhanMaiChuJia2" json:"KuoZhanMaiChuJia2,omitempty"`
-	KuoZhanMaiChuJia3             int64 `protobuf:"varint,19,opt,name=KuoZhanMaiChuJia3" json:"KuoZhanMaiChuJia3,omitempty"`
-	KuoZhanMaiChuJia4             int64 `protobuf:"varint,20,opt,name=KuoZhanMaiChuJia4" json:"KuoZhanMaiChuJia4,omitempty"`
-	KuoZhanMaiChuJia5             int64 `protobuf:"varint,21,opt,name=KuoZhanMaiChuJia5" json:"KuoZhanMaiChuJia5,omitempty"`
-	KuoZhanMaiChuLiang1           int64 `protobuf:"varint,22,opt,name=KuoZhanMaiChuLiang1" json:"KuoZhanMaiChuLiang1,omitempty"`
-	KuoZhanMaiChuLiang2           int64 `protobuf:"varint,23,opt,name=KuoZhanMaiChuLiang2" json:"KuoZhanMaiChuLiang2,omitempty"`
-	KuoZhanMaiChuLiang3           int64 `protobuf:"varint,24,opt,name=KuoZhanMaiChuLiang3" json:"KuoZhanMaiChuLiang3,omitempty"`
-	KuoZhanMaiChuLiang4           int64 `protobuf:"varint,25,opt,name=KuoZhanMaiChuLiang4" json:"KuoZhanMaiChuLiang4,omitempty"`
-	KuoZhanMaiChuLiang5           int64 `protobuf:"varint,26,opt,name=KuoZhanMaiChuLiang5" json:"KuoZhanMaiChuLiang5,omitempty"`
+	Id                            yfloat `protobuf:"varint,1,opt,name=Id" json:"Id,omitempty"`
+	ShiJian                       yfloat `protobuf:"varint,2,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	JiaQuanPingJunWeiTuoMaiRuJia  yfloat `protobuf:"varint,3,opt,name=JiaQuanPingJunWeiTuoMaiRuJia" json:"JiaQuanPingJunWeiTuoMaiRuJia,omitempty"`
+	WeiTuoMaiRuZongLiang          yfloat `protobuf:"varint,4,opt,name=WeiTuoMaiRuZongLiang" json:"WeiTuoMaiRuZongLiang,omitempty"`
+	JiaQuanPingJunWeiTuoMaiChuJia yfloat `protobuf:"varint,5,opt,name=JiaQuanPingJunWeiTuoMaiChuJia" json:"JiaQuanPingJunWeiTuoMaiChuJia,omitempty"`
+	WeiTuoMaiChuZongLiang         yfloat `protobuf:"varint,6,opt,name=WeiTuoMaiChuZongLiang" json:"WeiTuoMaiChuZongLiang,omitempty"`
+	KuoZhanMaiRuJia1              yfloat `protobuf:"varint,7,opt,name=KuoZhanMaiRuJia1" json:"KuoZhanMaiRuJia1,omitempty"`
+	KuoZhanMaiRuJia2              yfloat `protobuf:"varint,8,opt,name=KuoZhanMaiRuJia2" json:"KuoZhanMaiRuJia2,omitempty"`
+	KuoZhanMaiRuJia3              yfloat `protobuf:"varint,9,opt,name=KuoZhanMaiRuJia3" json:"KuoZhanMaiRuJia3,omitempty"`
+	KuoZhanMaiRuJia4              yfloat `protobuf:"varint,10,opt,name=KuoZhanMaiRuJia4" json:"KuoZhanMaiRuJia4,omitempty"`
+	KuoZhanMaiRuJia5              yfloat `protobuf:"varint,11,opt,name=KuoZhanMaiRuJia5" json:"KuoZhanMaiRuJia5,omitempty"`
+	KuoZhanMaiRuLiang1            yfloat `protobuf:"varint,12,opt,name=KuoZhanMaiRuLiang1" json:"KuoZhanMaiRuLiang1,omitempty"`
+	KuoZhanMaiRuLiang2            yfloat `protobuf:"varint,13,opt,name=KuoZhanMaiRuLiang2" json:"KuoZhanMaiRuLiang2,omitempty"`
+	KuoZhanMaiRuLiang3            yfloat `protobuf:"varint,14,opt,name=KuoZhanMaiRuLiang3" json:"KuoZhanMaiRuLiang3,omitempty"`
+	KuoZhanMaiRuLiang4            yfloat `protobuf:"varint,15,opt,name=KuoZhanMaiRuLiang4" json:"KuoZhanMaiRuLiang4,omitempty"`
+	KuoZhanMaiRuLiang5            yfloat `protobuf:"varint,16,opt,name=KuoZhanMaiRuLiang5" json:"KuoZhanMaiRuLiang5,omitempty"`
+	KuoZhanMaiChuJia1             yfloat `protobuf:"varint,17,opt,name=KuoZhanMaiChuJia1" json:"KuoZhanMaiChuJia1,omitempty"`
+	KuoZhanMaiChuJia2             yfloat `protobuf:"varint,18,opt,name=KuoZhanMaiChuJia2" json:"KuoZhanMaiChuJia2,omitempty"`
+	KuoZhanMaiChuJia3             yfloat `protobuf:"varint,19,opt,name=KuoZhanMaiChuJia3" json:"KuoZhanMaiChuJia3,omitempty"`
+	KuoZhanMaiChuJia4             yfloat `protobuf:"varint,20,opt,name=KuoZhanMaiChuJia4" json:"KuoZhanMaiChuJia4,omitempty"`
+	KuoZhanMaiChuJia5             yfloat `protobuf:"varint,21,opt,name=KuoZhanMaiChuJia5" json:"KuoZhanMaiChuJia5,omitempty"`
+	KuoZhanMaiChuLiang1           yfloat `protobuf:"varint,22,opt,name=KuoZhanMaiChuLiang1" json:"KuoZhanMaiChuLiang1,omitempty"`
+	KuoZhanMaiChuLiang2           yfloat `protobuf:"varint,23,opt,name=KuoZhanMaiChuLiang2" json:"KuoZhanMaiChuLiang2,omitempty"`
+	KuoZhanMaiChuLiang3           yfloat `protobuf:"varint,24,opt,name=KuoZhanMaiChuLiang3" json:"KuoZhanMaiChuLiang3,omitempty"`
+	KuoZhanMaiChuLiang4           yfloat `protobuf:"varint,25,opt,name=KuoZhanMaiChuLiang4" json:"KuoZhanMaiChuLiang4,omitempty"`
+	KuoZhanMaiChuLiang5           yfloat `protobuf:"varint,26,opt,name=KuoZhanMaiChuLiang5" json:"KuoZhanMaiChuLiang5,omitempty"`
 }
 
 func (m *KuoZhanMaiMaiPan) Reset()                    { *m = KuoZhanMaiMaiPan{} }
@@ -1197,182 +1197,182 @@ func (m *KuoZhanMaiMaiPan) String() string            { return proto.CompactText
 func (*KuoZhanMaiMaiPan) ProtoMessage()               {}
 func (*KuoZhanMaiMaiPan) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{3} }
 
-func (m *KuoZhanMaiMaiPan) GetId() int64 {
+func (m *KuoZhanMaiMaiPan) GetId() yfloat {
 	if m != nil {
 		return m.Id
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetShiJian() int64 {
+func (m *KuoZhanMaiMaiPan) GetShiJian() yfloat {
 	if m != nil {
 		return m.ShiJian
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetJiaQuanPingJunWeiTuoMaiRuJia() int64 {
+func (m *KuoZhanMaiMaiPan) GetJiaQuanPingJunWeiTuoMaiRuJia() yfloat {
 	if m != nil {
 		return m.JiaQuanPingJunWeiTuoMaiRuJia
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetWeiTuoMaiRuZongLiang() int64 {
+func (m *KuoZhanMaiMaiPan) GetWeiTuoMaiRuZongLiang() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuZongLiang
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetJiaQuanPingJunWeiTuoMaiChuJia() int64 {
+func (m *KuoZhanMaiMaiPan) GetJiaQuanPingJunWeiTuoMaiChuJia() yfloat {
 	if m != nil {
 		return m.JiaQuanPingJunWeiTuoMaiChuJia
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetWeiTuoMaiChuZongLiang() int64 {
+func (m *KuoZhanMaiMaiPan) GetWeiTuoMaiChuZongLiang() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuZongLiang
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiRuJia1() int64 {
+func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiRuJia1() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiRuJia1
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiRuJia2() int64 {
+func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiRuJia2() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiRuJia2
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiRuJia3() int64 {
+func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiRuJia3() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiRuJia3
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiRuJia4() int64 {
+func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiRuJia4() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiRuJia4
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiRuJia5() int64 {
+func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiRuJia5() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiRuJia5
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiRuLiang1() int64 {
+func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiRuLiang1() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiRuLiang1
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiRuLiang2() int64 {
+func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiRuLiang2() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiRuLiang2
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiRuLiang3() int64 {
+func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiRuLiang3() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiRuLiang3
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiRuLiang4() int64 {
+func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiRuLiang4() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiRuLiang4
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiRuLiang5() int64 {
+func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiRuLiang5() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiRuLiang5
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiChuJia1() int64 {
+func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiChuJia1() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiChuJia1
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiChuJia2() int64 {
+func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiChuJia2() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiChuJia2
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiChuJia3() int64 {
+func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiChuJia3() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiChuJia3
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiChuJia4() int64 {
+func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiChuJia4() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiChuJia4
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiChuJia5() int64 {
+func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiChuJia5() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiChuJia5
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiChuLiang1() int64 {
+func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiChuLiang1() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiChuLiang1
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiChuLiang2() int64 {
+func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiChuLiang2() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiChuLiang2
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiChuLiang3() int64 {
+func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiChuLiang3() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiChuLiang3
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiChuLiang4() int64 {
+func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiChuLiang4() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiChuLiang4
 	}
 	return 0
 }
 
-func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiChuLiang5() int64 {
+func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiChuLiang5() yfloat {
 	if m != nil {
 		return m.KuoZhanMaiChuLiang5
 	}
@@ -1380,8 +1380,8 @@ func (m *KuoZhanMaiMaiPan) GetKuoZhanMaiChuLiang5() int64 {
 }
 
 type QuanMaiMaiPan struct {
-	Id           int64                       `protobuf:"varint,1,opt,name=Id" json:"Id,omitempty"`
-	ShiJian      int64                       `protobuf:"varint,2,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	Id           yfloat                       `protobuf:"varint,1,opt,name=Id" json:"Id,omitempty"`
+	ShiJian      yfloat                       `protobuf:"varint,2,opt,name=ShiJian" json:"ShiJian,omitempty"`
 	WeiMaiRuPan  []*QuanMaiMaiPan_MaiMaiBiao `protobuf:"bytes,3,rep,name=WeiMaiRuPan" json:"WeiMaiRuPan,omitempty"`
 	WeiMaiChuPan []*QuanMaiMaiPan_MaiMaiBiao `protobuf:"bytes,4,rep,name=WeiMaiChuPan" json:"WeiMaiChuPan,omitempty"`
 }
@@ -1391,14 +1391,14 @@ func (m *QuanMaiMaiPan) String() string            { return proto.CompactTextStr
 func (*QuanMaiMaiPan) ProtoMessage()               {}
 func (*QuanMaiMaiPan) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{4} }
 
-func (m *QuanMaiMaiPan) GetId() int64 {
+func (m *QuanMaiMaiPan) GetId() yfloat {
 	if m != nil {
 		return m.Id
 	}
 	return 0
 }
 
-func (m *QuanMaiMaiPan) GetShiJian() int64 {
+func (m *QuanMaiMaiPan) GetShiJian() yfloat {
 	if m != nil {
 		return m.ShiJian
 	}
@@ -1420,10 +1420,10 @@ func (m *QuanMaiMaiPan) GetWeiMaiChuPan() []*QuanMaiMaiPan_MaiMaiBiao {
 }
 
 type QuanMaiMaiPan_MaiMaiBiao struct {
-	WeiZhi int64 `protobuf:"varint,1,opt,name=WeiZhi" json:"WeiZhi,omitempty"`
-	Jia    int64 `protobuf:"varint,2,opt,name=Jia" json:"Jia,omitempty"`
-	Liang  int64 `protobuf:"varint,3,opt,name=Liang" json:"Liang,omitempty"`
-	DanShu int64 `protobuf:"varint,4,opt,name=DanShu" json:"DanShu,omitempty"`
+	WeiZhi yfloat `protobuf:"varint,1,opt,name=WeiZhi" json:"WeiZhi,omitempty"`
+	Jia    yfloat `protobuf:"varint,2,opt,name=Jia" json:"Jia,omitempty"`
+	Liang  yfloat `protobuf:"varint,3,opt,name=Liang" json:"Liang,omitempty"`
+	DanShu yfloat `protobuf:"varint,4,opt,name=DanShu" json:"DanShu,omitempty"`
 }
 
 func (m *QuanMaiMaiPan_MaiMaiBiao) Reset()                    { *m = QuanMaiMaiPan_MaiMaiBiao{} }
@@ -1431,28 +1431,28 @@ func (m *QuanMaiMaiPan_MaiMaiBiao) String() string            { return proto.Com
 func (*QuanMaiMaiPan_MaiMaiBiao) ProtoMessage()               {}
 func (*QuanMaiMaiPan_MaiMaiBiao) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{4, 0} }
 
-func (m *QuanMaiMaiPan_MaiMaiBiao) GetWeiZhi() int64 {
+func (m *QuanMaiMaiPan_MaiMaiBiao) GetWeiZhi() yfloat {
 	if m != nil {
 		return m.WeiZhi
 	}
 	return 0
 }
 
-func (m *QuanMaiMaiPan_MaiMaiBiao) GetJia() int64 {
+func (m *QuanMaiMaiPan_MaiMaiBiao) GetJia() yfloat {
 	if m != nil {
 		return m.Jia
 	}
 	return 0
 }
 
-func (m *QuanMaiMaiPan_MaiMaiBiao) GetLiang() int64 {
+func (m *QuanMaiMaiPan_MaiMaiBiao) GetLiang() yfloat {
 	if m != nil {
 		return m.Liang
 	}
 	return 0
 }
 
-func (m *QuanMaiMaiPan_MaiMaiBiao) GetDanShu() int64 {
+func (m *QuanMaiMaiPan_MaiMaiBiao) GetDanShu() yfloat {
 	if m != nil {
 		return m.DanShu
 	}
@@ -1461,7 +1461,7 @@ func (m *QuanMaiMaiPan_MaiMaiBiao) GetDanShu() int64 {
 
 type WeiTuoDuiLie struct {
 	Obj          string                 `protobuf:"bytes,1,opt,name=Obj" json:"Obj,omitempty"`
-	ShiJian      int64                  `protobuf:"varint,2,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	ShiJian      yfloat                  `protobuf:"varint,2,opt,name=ShiJian" json:"ShiJian,omitempty"`
 	MaiRuDuiLie  []*WeiTuoDuiLie_WeiTuo `protobuf:"bytes,3,rep,name=MaiRuDuiLie" json:"MaiRuDuiLie,omitempty"`
 	MaiChuDuiLie []*WeiTuoDuiLie_WeiTuo `protobuf:"bytes,4,rep,name=MaiChuDuiLie" json:"MaiChuDuiLie,omitempty"`
 }
@@ -1478,7 +1478,7 @@ func (m *WeiTuoDuiLie) GetObj() string {
 	return ""
 }
 
-func (m *WeiTuoDuiLie) GetShiJian() int64 {
+func (m *WeiTuoDuiLie) GetShiJian() yfloat {
 	if m != nil {
 		return m.ShiJian
 	}
@@ -1500,10 +1500,10 @@ func (m *WeiTuoDuiLie) GetMaiChuDuiLie() []*WeiTuoDuiLie_WeiTuo {
 }
 
 type WeiTuoDuiLie_WeiTuo struct {
-	Jia       int64   `protobuf:"varint,1,opt,name=Jia" json:"Jia,omitempty"`
-	BiShu     int64   `protobuf:"varint,2,opt,name=BiShu" json:"BiShu,omitempty"`
-	Liang     []int64 `protobuf:"varint,3,rep,packed,name=Liang" json:"Liang,omitempty"`
-	ZongLiang int64   `protobuf:"varint,4,opt,name=ZongLiang" json:"ZongLiang,omitempty"`
+	Jia       yfloat   `protobuf:"varint,1,opt,name=Jia" json:"Jia,omitempty"`
+	BiShu     yfloat   `protobuf:"varint,2,opt,name=BiShu" json:"BiShu,omitempty"`
+	Liang     []yfloat `protobuf:"varint,3,rep,packed,name=Liang" json:"Liang,omitempty"`
+	ZongLiang yfloat   `protobuf:"varint,4,opt,name=ZongLiang" json:"ZongLiang,omitempty"`
 }
 
 func (m *WeiTuoDuiLie_WeiTuo) Reset()                    { *m = WeiTuoDuiLie_WeiTuo{} }
@@ -1511,28 +1511,28 @@ func (m *WeiTuoDuiLie_WeiTuo) String() string            { return proto.CompactT
 func (*WeiTuoDuiLie_WeiTuo) ProtoMessage()               {}
 func (*WeiTuoDuiLie_WeiTuo) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{5, 0} }
 
-func (m *WeiTuoDuiLie_WeiTuo) GetJia() int64 {
+func (m *WeiTuoDuiLie_WeiTuo) GetJia() yfloat {
 	if m != nil {
 		return m.Jia
 	}
 	return 0
 }
 
-func (m *WeiTuoDuiLie_WeiTuo) GetBiShu() int64 {
+func (m *WeiTuoDuiLie_WeiTuo) GetBiShu() yfloat {
 	if m != nil {
 		return m.BiShu
 	}
 	return 0
 }
 
-func (m *WeiTuoDuiLie_WeiTuo) GetLiang() []int64 {
+func (m *WeiTuoDuiLie_WeiTuo) GetLiang() []yfloat {
 	if m != nil {
 		return m.Liang
 	}
 	return nil
 }
 
-func (m *WeiTuoDuiLie_WeiTuo) GetZongLiang() int64 {
+func (m *WeiTuoDuiLie_WeiTuo) GetZongLiang() yfloat {
 	if m != nil {
 		return m.ZongLiang
 	}
@@ -1540,22 +1540,22 @@ func (m *WeiTuoDuiLie_WeiTuo) GetZongLiang() int64 {
 }
 
 type Level2TongJi struct {
-	Id                 int64 `protobuf:"varint,1,opt,name=Id" json:"Id,omitempty"`
-	ShiJian            int64 `protobuf:"varint,2,opt,name=ShiJian" json:"ShiJian,omitempty"`
-	WeiTuoMaiRu        int64 `protobuf:"varint,3,opt,name=WeiTuoMaiRu" json:"WeiTuoMaiRu,omitempty"`
-	WeiTuoMaiChu       int64 `protobuf:"varint,4,opt,name=WeiTuoMaiChu" json:"WeiTuoMaiChu,omitempty"`
-	MaiRuZhongDanBiLi  int64 `protobuf:"varint,5,opt,name=MaiRuZhongDanBiLi" json:"MaiRuZhongDanBiLi,omitempty"`
-	MaiRuDaDanBiLi     int64 `protobuf:"varint,6,opt,name=MaiRuDaDanBiLi" json:"MaiRuDaDanBiLi,omitempty"`
-	MaiRuTeDaDanBiLi   int64 `protobuf:"varint,7,opt,name=MaiRuTeDaDanBiLi" json:"MaiRuTeDaDanBiLi,omitempty"`
-	MaiChuZhongDanBiLi int64 `protobuf:"varint,8,opt,name=MaiChuZhongDanBiLi" json:"MaiChuZhongDanBiLi,omitempty"`
-	MaiChuDaDanBiLi    int64 `protobuf:"varint,9,opt,name=MaiChuDaDanBiLi" json:"MaiChuDaDanBiLi,omitempty"`
-	MaiChuTeDaDanBiLi  int64 `protobuf:"varint,10,opt,name=MaiChuTeDaDanBiLi" json:"MaiChuTeDaDanBiLi,omitempty"`
-	DuanXianMaiRu      int64 `protobuf:"varint,11,opt,name=DuanXianMaiRu" json:"DuanXianMaiRu,omitempty"`
-	DuanXianMaiChu     int64 `protobuf:"varint,12,opt,name=DuanXianMaiChu" json:"DuanXianMaiChu,omitempty"`
-	DuanXianChiHuo     int64 `protobuf:"varint,13,opt,name=DuanXianChiHuo" json:"DuanXianChiHuo,omitempty"`
-	DuanXianTuHuo      int64 `protobuf:"varint,14,opt,name=DuanXianTuHuo" json:"DuanXianTuHuo,omitempty"`
-	ChengJiaoLiang     int64 `protobuf:"varint,15,opt,name=ChengJiaoLiang" json:"ChengJiaoLiang,omitempty"`
-	ChengJiaoE         int64 `protobuf:"varint,16,opt,name=ChengJiaoE" json:"ChengJiaoE,omitempty"`
+	Id                 yfloat `protobuf:"varint,1,opt,name=Id" json:"Id,omitempty"`
+	ShiJian            yfloat `protobuf:"varint,2,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	WeiTuoMaiRu        yfloat `protobuf:"varint,3,opt,name=WeiTuoMaiRu" json:"WeiTuoMaiRu,omitempty"`
+	WeiTuoMaiChu       yfloat `protobuf:"varint,4,opt,name=WeiTuoMaiChu" json:"WeiTuoMaiChu,omitempty"`
+	MaiRuZhongDanBiLi  yfloat `protobuf:"varint,5,opt,name=MaiRuZhongDanBiLi" json:"MaiRuZhongDanBiLi,omitempty"`
+	MaiRuDaDanBiLi     yfloat `protobuf:"varint,6,opt,name=MaiRuDaDanBiLi" json:"MaiRuDaDanBiLi,omitempty"`
+	MaiRuTeDaDanBiLi   yfloat `protobuf:"varint,7,opt,name=MaiRuTeDaDanBiLi" json:"MaiRuTeDaDanBiLi,omitempty"`
+	MaiChuZhongDanBiLi yfloat `protobuf:"varint,8,opt,name=MaiChuZhongDanBiLi" json:"MaiChuZhongDanBiLi,omitempty"`
+	MaiChuDaDanBiLi    yfloat `protobuf:"varint,9,opt,name=MaiChuDaDanBiLi" json:"MaiChuDaDanBiLi,omitempty"`
+	MaiChuTeDaDanBiLi  yfloat `protobuf:"varint,10,opt,name=MaiChuTeDaDanBiLi" json:"MaiChuTeDaDanBiLi,omitempty"`
+	DuanXianMaiRu      yfloat `protobuf:"varint,11,opt,name=DuanXianMaiRu" json:"DuanXianMaiRu,omitempty"`
+	DuanXianMaiChu     yfloat `protobuf:"varint,12,opt,name=DuanXianMaiChu" json:"DuanXianMaiChu,omitempty"`
+	DuanXianChiHuo     yfloat `protobuf:"varint,13,opt,name=DuanXianChiHuo" json:"DuanXianChiHuo,omitempty"`
+	DuanXianTuHuo      yfloat `protobuf:"varint,14,opt,name=DuanXianTuHuo" json:"DuanXianTuHuo,omitempty"`
+	ChengJiaoLiang     yfloat `protobuf:"varint,15,opt,name=ChengJiaoLiang" json:"ChengJiaoLiang,omitempty"`
+	ChengJiaoE         yfloat `protobuf:"varint,16,opt,name=ChengJiaoE" json:"ChengJiaoE,omitempty"`
 }
 
 func (m *Level2TongJi) Reset()                    { *m = Level2TongJi{} }
@@ -1563,112 +1563,112 @@ func (m *Level2TongJi) String() string            { return proto.CompactTextStri
 func (*Level2TongJi) ProtoMessage()               {}
 func (*Level2TongJi) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{6} }
 
-func (m *Level2TongJi) GetId() int64 {
+func (m *Level2TongJi) GetId() yfloat {
 	if m != nil {
 		return m.Id
 	}
 	return 0
 }
 
-func (m *Level2TongJi) GetShiJian() int64 {
+func (m *Level2TongJi) GetShiJian() yfloat {
 	if m != nil {
 		return m.ShiJian
 	}
 	return 0
 }
 
-func (m *Level2TongJi) GetWeiTuoMaiRu() int64 {
+func (m *Level2TongJi) GetWeiTuoMaiRu() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRu
 	}
 	return 0
 }
 
-func (m *Level2TongJi) GetWeiTuoMaiChu() int64 {
+func (m *Level2TongJi) GetWeiTuoMaiChu() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChu
 	}
 	return 0
 }
 
-func (m *Level2TongJi) GetMaiRuZhongDanBiLi() int64 {
+func (m *Level2TongJi) GetMaiRuZhongDanBiLi() yfloat {
 	if m != nil {
 		return m.MaiRuZhongDanBiLi
 	}
 	return 0
 }
 
-func (m *Level2TongJi) GetMaiRuDaDanBiLi() int64 {
+func (m *Level2TongJi) GetMaiRuDaDanBiLi() yfloat {
 	if m != nil {
 		return m.MaiRuDaDanBiLi
 	}
 	return 0
 }
 
-func (m *Level2TongJi) GetMaiRuTeDaDanBiLi() int64 {
+func (m *Level2TongJi) GetMaiRuTeDaDanBiLi() yfloat {
 	if m != nil {
 		return m.MaiRuTeDaDanBiLi
 	}
 	return 0
 }
 
-func (m *Level2TongJi) GetMaiChuZhongDanBiLi() int64 {
+func (m *Level2TongJi) GetMaiChuZhongDanBiLi() yfloat {
 	if m != nil {
 		return m.MaiChuZhongDanBiLi
 	}
 	return 0
 }
 
-func (m *Level2TongJi) GetMaiChuDaDanBiLi() int64 {
+func (m *Level2TongJi) GetMaiChuDaDanBiLi() yfloat {
 	if m != nil {
 		return m.MaiChuDaDanBiLi
 	}
 	return 0
 }
 
-func (m *Level2TongJi) GetMaiChuTeDaDanBiLi() int64 {
+func (m *Level2TongJi) GetMaiChuTeDaDanBiLi() yfloat {
 	if m != nil {
 		return m.MaiChuTeDaDanBiLi
 	}
 	return 0
 }
 
-func (m *Level2TongJi) GetDuanXianMaiRu() int64 {
+func (m *Level2TongJi) GetDuanXianMaiRu() yfloat {
 	if m != nil {
 		return m.DuanXianMaiRu
 	}
 	return 0
 }
 
-func (m *Level2TongJi) GetDuanXianMaiChu() int64 {
+func (m *Level2TongJi) GetDuanXianMaiChu() yfloat {
 	if m != nil {
 		return m.DuanXianMaiChu
 	}
 	return 0
 }
 
-func (m *Level2TongJi) GetDuanXianChiHuo() int64 {
+func (m *Level2TongJi) GetDuanXianChiHuo() yfloat {
 	if m != nil {
 		return m.DuanXianChiHuo
 	}
 	return 0
 }
 
-func (m *Level2TongJi) GetDuanXianTuHuo() int64 {
+func (m *Level2TongJi) GetDuanXianTuHuo() yfloat {
 	if m != nil {
 		return m.DuanXianTuHuo
 	}
 	return 0
 }
 
-func (m *Level2TongJi) GetChengJiaoLiang() int64 {
+func (m *Level2TongJi) GetChengJiaoLiang() yfloat {
 	if m != nil {
 		return m.ChengJiaoLiang
 	}
 	return 0
 }
 
-func (m *Level2TongJi) GetChengJiaoE() int64 {
+func (m *Level2TongJi) GetChengJiaoE() yfloat {
 	if m != nil {
 		return m.ChengJiaoE
 	}
@@ -1692,9 +1692,9 @@ func (m *DynaMMP) GetRows() []*DynaMaiMaiPrice {
 }
 
 type DynaMaiMaiPrice struct {
-	JiaGe  int64 `protobuf:"varint,1,opt,name=JiaGe" json:"JiaGe,omitempty"`
-	Liang  int64 `protobuf:"varint,2,opt,name=Liang" json:"Liang,omitempty"`
-	ChaZhi int64 `protobuf:"varint,3,opt,name=ChaZhi" json:"ChaZhi,omitempty"`
+	JiaGe  yfloat `protobuf:"varint,1,opt,name=JiaGe" json:"JiaGe,omitempty"`
+	Liang  yfloat `protobuf:"varint,2,opt,name=Liang" json:"Liang,omitempty"`
+	ChaZhi yfloat `protobuf:"varint,3,opt,name=ChaZhi" json:"ChaZhi,omitempty"`
 }
 
 func (m *DynaMaiMaiPrice) Reset()                    { *m = DynaMaiMaiPrice{} }
@@ -1702,21 +1702,21 @@ func (m *DynaMaiMaiPrice) String() string            { return proto.CompactTextS
 func (*DynaMaiMaiPrice) ProtoMessage()               {}
 func (*DynaMaiMaiPrice) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{8} }
 
-func (m *DynaMaiMaiPrice) GetJiaGe() int64 {
+func (m *DynaMaiMaiPrice) GetJiaGe() yfloat {
 	if m != nil {
 		return m.JiaGe
 	}
 	return 0
 }
 
-func (m *DynaMaiMaiPrice) GetLiang() int64 {
+func (m *DynaMaiMaiPrice) GetLiang() yfloat {
 	if m != nil {
 		return m.Liang
 	}
 	return 0
 }
 
-func (m *DynaMaiMaiPrice) GetChaZhi() int64 {
+func (m *DynaMaiMaiPrice) GetChaZhi() yfloat {
 	if m != nil {
 		return m.ChaZhi
 	}
@@ -1724,9 +1724,9 @@ func (m *DynaMaiMaiPrice) GetChaZhi() int64 {
 }
 
 type DynaMaiMaiZongLiang struct {
-	ShiJian               int64 `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
-	WeiTuoMaiRuZongLiang  int64 `protobuf:"varint,2,opt,name=WeiTuoMaiRuZongLiang" json:"WeiTuoMaiRuZongLiang,omitempty"`
-	WeiTuoMaiChuZongLiang int64 `protobuf:"varint,3,opt,name=WeiTuoMaiChuZongLiang" json:"WeiTuoMaiChuZongLiang,omitempty"`
+	ShiJian               yfloat `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	WeiTuoMaiRuZongLiang  yfloat `protobuf:"varint,2,opt,name=WeiTuoMaiRuZongLiang" json:"WeiTuoMaiRuZongLiang,omitempty"`
+	WeiTuoMaiChuZongLiang yfloat `protobuf:"varint,3,opt,name=WeiTuoMaiChuZongLiang" json:"WeiTuoMaiChuZongLiang,omitempty"`
 }
 
 func (m *DynaMaiMaiZongLiang) Reset()                    { *m = DynaMaiMaiZongLiang{} }
@@ -1734,21 +1734,21 @@ func (m *DynaMaiMaiZongLiang) String() string            { return proto.CompactT
 func (*DynaMaiMaiZongLiang) ProtoMessage()               {}
 func (*DynaMaiMaiZongLiang) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{9} }
 
-func (m *DynaMaiMaiZongLiang) GetShiJian() int64 {
+func (m *DynaMaiMaiZongLiang) GetShiJian() yfloat {
 	if m != nil {
 		return m.ShiJian
 	}
 	return 0
 }
 
-func (m *DynaMaiMaiZongLiang) GetWeiTuoMaiRuZongLiang() int64 {
+func (m *DynaMaiMaiZongLiang) GetWeiTuoMaiRuZongLiang() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiRuZongLiang
 	}
 	return 0
 }
 
-func (m *DynaMaiMaiZongLiang) GetWeiTuoMaiChuZongLiang() int64 {
+func (m *DynaMaiMaiZongLiang) GetWeiTuoMaiChuZongLiang() yfloat {
 	if m != nil {
 		return m.WeiTuoMaiChuZongLiang
 	}
@@ -1756,8 +1756,8 @@ func (m *DynaMaiMaiZongLiang) GetWeiTuoMaiChuZongLiang() int64 {
 }
 
 type DynaFenshiStatus struct {
-	ShiJian     int64        `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
-	IndexStatuc int64        `protobuf:"varint,2,opt,name=IndexStatuc" json:"IndexStatuc,omitempty"`
+	ShiJian     yfloat        `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	IndexStatuc yfloat        `protobuf:"varint,2,opt,name=IndexStatuc" json:"IndexStatuc,omitempty"`
 	DataStatus  *GeGuDongTai `protobuf:"bytes,3,opt,name=DataStatus" json:"DataStatus,omitempty"`
 }
 
@@ -1766,14 +1766,14 @@ func (m *DynaFenshiStatus) String() string            { return proto.CompactText
 func (*DynaFenshiStatus) ProtoMessage()               {}
 func (*DynaFenshiStatus) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{10} }
 
-func (m *DynaFenshiStatus) GetShiJian() int64 {
+func (m *DynaFenshiStatus) GetShiJian() yfloat {
 	if m != nil {
 		return m.ShiJian
 	}
 	return 0
 }
 
-func (m *DynaFenshiStatus) GetIndexStatuc() int64 {
+func (m *DynaFenshiStatus) GetIndexStatuc() yfloat {
 	if m != nil {
 		return m.IndexStatuc
 	}
