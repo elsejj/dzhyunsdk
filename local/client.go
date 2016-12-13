@@ -100,9 +100,20 @@ func (c *Client) Send(ua *dzhyun.UAResponse) {
 		return
 	}
 
-	msgData, err := json.MarshalIndent(msg, "", "  ")
-	if err != nil {
-		log.Println("client write result faield:", err)
+	var msgData []byte
+	if msg.GetTbl() != nil {
+
+		mm := Table2Map(msg.GetTbl())
+		msgData, err = json.MarshalIndent(mm, "", "  ")
+		if err != nil {
+			log.Println("client write result faield:", err)
+		}
+
+	} else {
+		msgData, err = json.MarshalIndent(msg, "", "  ")
+		if err != nil {
+			log.Println("client write result faield:", err)
+		}
 	}
 
 	data := fmt.Sprintf(`{
@@ -111,11 +122,6 @@ func (c *Client) Send(ua *dzhyun.UAResponse) {
   "Err": %d,
   "Data": %s
 }`, ua.Qid, ua.Counter, ua.Err, msgData)
-
-
-	var mm proto.Message
-
-	
 
 	c.conn.WriteMessage(websocket.TextMessage, []byte(data))
 }

@@ -104,7 +104,7 @@ func (m *CInfo) GetRatio() int32 {
 }
 
 type CArray struct {
-	IValues []yfloat   `protobuf:"varint,1,rep,packed,name=iValues" json:"iValues,omitempty"`
+	IValues []int64   `protobuf:"varint,1,rep,packed,name=iValues" json:"iValues,omitempty"`
 	FValues []float32 `protobuf:"fixed32,2,rep,packed,name=fValues" json:"fValues,omitempty"`
 	DValues []float64 `protobuf:"fixed64,3,rep,packed,name=dValues" json:"dValues,omitempty"`
 	SValues []string  `protobuf:"bytes,4,rep,name=sValues" json:"sValues,omitempty"`
@@ -115,7 +115,7 @@ func (m *CArray) String() string            { return proto.CompactTextString(m) 
 func (*CArray) ProtoMessage()               {}
 func (*CArray) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{1} }
 
-func (m *CArray) GetIValues() []yfloat {
+func (m *CArray) GetIValues() []int64 {
 	if m != nil {
 		return m.IValues
 	}
@@ -145,14 +145,14 @@ func (m *CArray) GetSValues() []string {
 
 type CData struct {
 	Index   int32     `protobuf:"varint,1,opt,name=Index" json:"Index,omitempty"`
-	IValues []yfloat   `protobuf:"varint,2,rep,packed,name=iValues" json:"iValues,omitempty"`
+	IValues []int64   `protobuf:"varint,2,rep,packed,name=iValues" json:"iValues,omitempty"`
 	FValues []float32 `protobuf:"fixed32,3,rep,packed,name=fValues" json:"fValues,omitempty"`
 	DValues []float64 `protobuf:"fixed64,4,rep,packed,name=dValues" json:"dValues,omitempty"`
 	SValues []string  `protobuf:"bytes,5,rep,name=sValues" json:"sValues,omitempty"`
 	BValues [][]byte  `protobuf:"bytes,6,rep,name=bValues,proto3" json:"bValues,omitempty"`
 	TValues []*Table  `protobuf:"bytes,7,rep,name=tValues" json:"tValues,omitempty"`
 	AValues []*CArray `protobuf:"bytes,8,rep,name=aValues" json:"aValues,omitempty"`
-	XValues []yfloat   `protobuf:"zigzag64,9,rep,packed,name=xValues" json:"xValues,omitempty"`
+	XValues []int64   `protobuf:"zigzag64,9,rep,packed,name=xValues" json:"xValues,omitempty"`
 }
 
 func (m *CData) Reset()                    { *m = CData{} }
@@ -167,7 +167,7 @@ func (m *CData) GetIndex() int32 {
 	return 0
 }
 
-func (m *CData) GetIValues() []yfloat {
+func (m *CData) GetIValues() []int64 {
 	if m != nil {
 		return m.IValues
 	}
@@ -216,7 +216,7 @@ func (m *CData) GetAValues() []*CArray {
 	return nil
 }
 
-func (m *CData) GetXValues() []yfloat {
+func (m *CData) GetXValues() []int64 {
 	if m != nil {
 		return m.XValues
 	}
@@ -225,7 +225,7 @@ func (m *CData) GetXValues() []yfloat {
 
 type CDataX struct {
 	Index   int32   `protobuf:"varint,1,opt,name=Index" json:"Index,omitempty"`
-	IValue  yfloat   `protobuf:"varint,2,opt,name=iValue" json:"iValue,omitempty"`
+	IValue  int64   `protobuf:"varint,2,opt,name=iValue" json:"iValue,omitempty"`
 	FValue  float32 `protobuf:"fixed32,3,opt,name=fValue" json:"fValue,omitempty"`
 	DValue  float64 `protobuf:"fixed64,4,opt,name=dValue" json:"dValue,omitempty"`
 	SValue  string  `protobuf:"bytes,5,opt,name=sValue" json:"sValue,omitempty"`
@@ -246,7 +246,7 @@ func (m *CDataX) GetIndex() int32 {
 	return 0
 }
 
-func (m *CDataX) GetIValue() yfloat {
+func (m *CDataX) GetIValue() int64 {
 	if m != nil {
 		return m.IValue
 	}

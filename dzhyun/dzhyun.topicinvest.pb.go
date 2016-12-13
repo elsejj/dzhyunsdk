@@ -17,8 +17,8 @@ var _ = math.Inf
 type LingZhangGuShuJu struct {
 	Obj               string `protobuf:"bytes,1,opt,name=Obj" json:"Obj,omitempty"`
 	ZhongWenJianCheng string `protobuf:"bytes,2,opt,name=ZhongWenJianCheng" json:"ZhongWenJianCheng,omitempty"`
-	ZuiXinJia         yfloat  `protobuf:"varint,3,opt,name=ZuiXinJia" json:"ZuiXinJia,omitempty"`
-	ZhangFu           yfloat  `protobuf:"varint,4,opt,name=ZhangFu" json:"ZhangFu,omitempty"`
+	ZuiXinJia         YFloat  `protobuf:"varint,3,opt,name=ZuiXinJia" json:"ZuiXinJia,omitempty"`
+	ZhangFu           YFloat  `protobuf:"varint,4,opt,name=ZhangFu" json:"ZhangFu,omitempty"`
 }
 
 func (m *LingZhangGuShuJu) Reset()                    { *m = LingZhangGuShuJu{} }
@@ -40,14 +40,14 @@ func (m *LingZhangGuShuJu) GetZhongWenJianCheng() string {
 	return ""
 }
 
-func (m *LingZhangGuShuJu) GetZuiXinJia() yfloat {
+func (m *LingZhangGuShuJu) GetZuiXinJia() YFloat {
 	if m != nil {
 		return m.ZuiXinJia
 	}
 	return 0
 }
 
-func (m *LingZhangGuShuJu) GetZhangFu() yfloat {
+func (m *LingZhangGuShuJu) GetZhangFu() YFloat {
 	if m != nil {
 		return m.ZhangFu
 	}
@@ -56,13 +56,13 @@ func (m *LingZhangGuShuJu) GetZhangFu() yfloat {
 
 // 主题排名
 type TopicInvestRank struct {
-	BianHao                   yfloat `protobuf:"varint,1,opt,name=BianHao" json:"BianHao,omitempty"`
-	ShiFouReMenZhuTi          yfloat `protobuf:"varint,2,opt,name=ShiFouReMenZhuTi" json:"ShiFouReMenZhuTi,omitempty"`
-	RiPingJunZhangFuPaiMing14 yfloat `protobuf:"varint,3,opt,name=RiPingJunZhangFuPaiMing14" json:"RiPingJunZhangFuPaiMing14,omitempty"`
-	RiPingJunZhangFuPaiMing30 yfloat `protobuf:"varint,4,opt,name=RiPingJunZhangFuPaiMing30" json:"RiPingJunZhangFuPaiMing30,omitempty"`
-	RiReDuZhi14               yfloat `protobuf:"varint,5,opt,name=RiReDuZhi14" json:"RiReDuZhi14,omitempty"`
-	RiReDuZhi30               yfloat `protobuf:"varint,6,opt,name=RiReDuZhi30" json:"RiReDuZhi30,omitempty"`
-	RiReDuZhi10               yfloat `protobuf:"varint,7,opt,name=RiReDuZhi10" json:"RiReDuZhi10,omitempty"`
+	BianHao                   YFloat `protobuf:"varint,1,opt,name=BianHao" json:"BianHao,omitempty"`
+	ShiFouReMenZhuTi          YFloat `protobuf:"varint,2,opt,name=ShiFouReMenZhuTi" json:"ShiFouReMenZhuTi,omitempty"`
+	RiPingJunZhangFuPaiMing14 YFloat `protobuf:"varint,3,opt,name=RiPingJunZhangFuPaiMing14" json:"RiPingJunZhangFuPaiMing14,omitempty"`
+	RiPingJunZhangFuPaiMing30 YFloat `protobuf:"varint,4,opt,name=RiPingJunZhangFuPaiMing30" json:"RiPingJunZhangFuPaiMing30,omitempty"`
+	RiReDuZhi14               YFloat `protobuf:"varint,5,opt,name=RiReDuZhi14" json:"RiReDuZhi14,omitempty"`
+	RiReDuZhi30               YFloat `protobuf:"varint,6,opt,name=RiReDuZhi30" json:"RiReDuZhi30,omitempty"`
+	RiReDuZhi10               YFloat `protobuf:"varint,7,opt,name=RiReDuZhi10" json:"RiReDuZhi10,omitempty"`
 }
 
 func (m *TopicInvestRank) Reset()                    { *m = TopicInvestRank{} }
@@ -70,49 +70,49 @@ func (m *TopicInvestRank) String() string            { return proto.CompactTextS
 func (*TopicInvestRank) ProtoMessage()               {}
 func (*TopicInvestRank) Descriptor() ([]byte, []int) { return fileDescriptor12, []int{1} }
 
-func (m *TopicInvestRank) GetBianHao() yfloat {
+func (m *TopicInvestRank) GetBianHao() YFloat {
 	if m != nil {
 		return m.BianHao
 	}
 	return 0
 }
 
-func (m *TopicInvestRank) GetShiFouReMenZhuTi() yfloat {
+func (m *TopicInvestRank) GetShiFouReMenZhuTi() YFloat {
 	if m != nil {
 		return m.ShiFouReMenZhuTi
 	}
 	return 0
 }
 
-func (m *TopicInvestRank) GetRiPingJunZhangFuPaiMing14() yfloat {
+func (m *TopicInvestRank) GetRiPingJunZhangFuPaiMing14() YFloat {
 	if m != nil {
 		return m.RiPingJunZhangFuPaiMing14
 	}
 	return 0
 }
 
-func (m *TopicInvestRank) GetRiPingJunZhangFuPaiMing30() yfloat {
+func (m *TopicInvestRank) GetRiPingJunZhangFuPaiMing30() YFloat {
 	if m != nil {
 		return m.RiPingJunZhangFuPaiMing30
 	}
 	return 0
 }
 
-func (m *TopicInvestRank) GetRiReDuZhi14() yfloat {
+func (m *TopicInvestRank) GetRiReDuZhi14() YFloat {
 	if m != nil {
 		return m.RiReDuZhi14
 	}
 	return 0
 }
 
-func (m *TopicInvestRank) GetRiReDuZhi30() yfloat {
+func (m *TopicInvestRank) GetRiReDuZhi30() YFloat {
 	if m != nil {
 		return m.RiReDuZhi30
 	}
 	return 0
 }
 
-func (m *TopicInvestRank) GetRiReDuZhi10() yfloat {
+func (m *TopicInvestRank) GetRiReDuZhi10() YFloat {
 	if m != nil {
 		return m.RiReDuZhi10
 	}
@@ -120,24 +120,24 @@ func (m *TopicInvestRank) GetRiReDuZhi10() yfloat {
 }
 
 type TopicInvest struct {
-	BianHao                   yfloat             `protobuf:"varint,1,opt,name=BianHao" json:"BianHao,omitempty"`
+	BianHao                   YFloat             `protobuf:"varint,1,opt,name=BianHao" json:"BianHao,omitempty"`
 	MingCheng                 string            `protobuf:"bytes,2,opt,name=MingCheng" json:"MingCheng,omitempty"`
-	ShiJian                   yfloat             `protobuf:"varint,3,opt,name=ShiJian" json:"ShiJian,omitempty"`
-	ZhangFu                   yfloat             `protobuf:"varint,4,opt,name=ZhangFu" json:"ZhangFu,omitempty"`
-	LiangBi                   yfloat             `protobuf:"varint,5,opt,name=LiangBi" json:"LiangBi,omitempty"`
-	HuanShou                  yfloat             `protobuf:"varint,6,opt,name=HuanShou" json:"HuanShou,omitempty"`
-	ShangZhangJiaShu          yfloat             `protobuf:"varint,7,opt,name=ShangZhangJiaShu" json:"ShangZhangJiaShu,omitempty"`
-	PingPanJiaShu             yfloat             `protobuf:"varint,8,opt,name=PingPanJiaShu" json:"PingPanJiaShu,omitempty"`
-	XiaDieJiaShu              yfloat             `protobuf:"varint,9,opt,name=XiaDieJiaShu" json:"XiaDieJiaShu,omitempty"`
+	ShiJian                   YFloat             `protobuf:"varint,3,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	ZhangFu                   YFloat             `protobuf:"varint,4,opt,name=ZhangFu" json:"ZhangFu,omitempty"`
+	LiangBi                   YFloat             `protobuf:"varint,5,opt,name=LiangBi" json:"LiangBi,omitempty"`
+	HuanShou                  YFloat             `protobuf:"varint,6,opt,name=HuanShou" json:"HuanShou,omitempty"`
+	ShangZhangJiaShu          YFloat             `protobuf:"varint,7,opt,name=ShangZhangJiaShu" json:"ShangZhangJiaShu,omitempty"`
+	PingPanJiaShu             YFloat             `protobuf:"varint,8,opt,name=PingPanJiaShu" json:"PingPanJiaShu,omitempty"`
+	XiaDieJiaShu              YFloat             `protobuf:"varint,9,opt,name=XiaDieJiaShu" json:"XiaDieJiaShu,omitempty"`
 	LingZhangGu               *LingZhangGuShuJu `protobuf:"bytes,10,opt,name=LingZhangGu" json:"LingZhangGu,omitempty"`
-	ShiFouReMenZhuTi          yfloat             `protobuf:"varint,11,opt,name=ShiFouReMenZhuTi" json:"ShiFouReMenZhuTi,omitempty"`
-	RiPingJunZhangFuPaiMing14 yfloat             `protobuf:"varint,12,opt,name=RiPingJunZhangFuPaiMing14" json:"RiPingJunZhangFuPaiMing14,omitempty"`
-	RiPingJunZhangFuPaiMing30 yfloat             `protobuf:"varint,13,opt,name=RiPingJunZhangFuPaiMing30" json:"RiPingJunZhangFuPaiMing30,omitempty"`
-	RiReDuZhi14               yfloat             `protobuf:"varint,14,opt,name=RiReDuZhi14" json:"RiReDuZhi14,omitempty"`
-	RiReDuZhi30               yfloat             `protobuf:"varint,15,opt,name=RiReDuZhi30" json:"RiReDuZhi30,omitempty"`
-	RiReDuZhi10               yfloat             `protobuf:"varint,16,opt,name=RiReDuZhi10" json:"RiReDuZhi10,omitempty"`
-	GeGuShu                   yfloat             `protobuf:"varint,17,opt,name=GeGuShu" json:"GeGuShu,omitempty"`
-	DangYueZhangFu            yfloat             `protobuf:"varint,18,opt,name=DangYueZhangFu" json:"DangYueZhangFu,omitempty"`
+	ShiFouReMenZhuTi          YFloat             `protobuf:"varint,11,opt,name=ShiFouReMenZhuTi" json:"ShiFouReMenZhuTi,omitempty"`
+	RiPingJunZhangFuPaiMing14 YFloat             `protobuf:"varint,12,opt,name=RiPingJunZhangFuPaiMing14" json:"RiPingJunZhangFuPaiMing14,omitempty"`
+	RiPingJunZhangFuPaiMing30 YFloat             `protobuf:"varint,13,opt,name=RiPingJunZhangFuPaiMing30" json:"RiPingJunZhangFuPaiMing30,omitempty"`
+	RiReDuZhi14               YFloat             `protobuf:"varint,14,opt,name=RiReDuZhi14" json:"RiReDuZhi14,omitempty"`
+	RiReDuZhi30               YFloat             `protobuf:"varint,15,opt,name=RiReDuZhi30" json:"RiReDuZhi30,omitempty"`
+	RiReDuZhi10               YFloat             `protobuf:"varint,16,opt,name=RiReDuZhi10" json:"RiReDuZhi10,omitempty"`
+	GeGuShu                   YFloat             `protobuf:"varint,17,opt,name=GeGuShu" json:"GeGuShu,omitempty"`
+	DangYueZhangFu            YFloat             `protobuf:"varint,18,opt,name=DangYueZhangFu" json:"DangYueZhangFu,omitempty"`
 }
 
 func (m *TopicInvest) Reset()                    { *m = TopicInvest{} }
@@ -145,7 +145,7 @@ func (m *TopicInvest) String() string            { return proto.CompactTextStrin
 func (*TopicInvest) ProtoMessage()               {}
 func (*TopicInvest) Descriptor() ([]byte, []int) { return fileDescriptor12, []int{2} }
 
-func (m *TopicInvest) GetBianHao() yfloat {
+func (m *TopicInvest) GetBianHao() YFloat {
 	if m != nil {
 		return m.BianHao
 	}
@@ -159,49 +159,49 @@ func (m *TopicInvest) GetMingCheng() string {
 	return ""
 }
 
-func (m *TopicInvest) GetShiJian() yfloat {
+func (m *TopicInvest) GetShiJian() YFloat {
 	if m != nil {
 		return m.ShiJian
 	}
 	return 0
 }
 
-func (m *TopicInvest) GetZhangFu() yfloat {
+func (m *TopicInvest) GetZhangFu() YFloat {
 	if m != nil {
 		return m.ZhangFu
 	}
 	return 0
 }
 
-func (m *TopicInvest) GetLiangBi() yfloat {
+func (m *TopicInvest) GetLiangBi() YFloat {
 	if m != nil {
 		return m.LiangBi
 	}
 	return 0
 }
 
-func (m *TopicInvest) GetHuanShou() yfloat {
+func (m *TopicInvest) GetHuanShou() YFloat {
 	if m != nil {
 		return m.HuanShou
 	}
 	return 0
 }
 
-func (m *TopicInvest) GetShangZhangJiaShu() yfloat {
+func (m *TopicInvest) GetShangZhangJiaShu() YFloat {
 	if m != nil {
 		return m.ShangZhangJiaShu
 	}
 	return 0
 }
 
-func (m *TopicInvest) GetPingPanJiaShu() yfloat {
+func (m *TopicInvest) GetPingPanJiaShu() YFloat {
 	if m != nil {
 		return m.PingPanJiaShu
 	}
 	return 0
 }
 
-func (m *TopicInvest) GetXiaDieJiaShu() yfloat {
+func (m *TopicInvest) GetXiaDieJiaShu() YFloat {
 	if m != nil {
 		return m.XiaDieJiaShu
 	}
@@ -215,56 +215,56 @@ func (m *TopicInvest) GetLingZhangGu() *LingZhangGuShuJu {
 	return nil
 }
 
-func (m *TopicInvest) GetShiFouReMenZhuTi() yfloat {
+func (m *TopicInvest) GetShiFouReMenZhuTi() YFloat {
 	if m != nil {
 		return m.ShiFouReMenZhuTi
 	}
 	return 0
 }
 
-func (m *TopicInvest) GetRiPingJunZhangFuPaiMing14() yfloat {
+func (m *TopicInvest) GetRiPingJunZhangFuPaiMing14() YFloat {
 	if m != nil {
 		return m.RiPingJunZhangFuPaiMing14
 	}
 	return 0
 }
 
-func (m *TopicInvest) GetRiPingJunZhangFuPaiMing30() yfloat {
+func (m *TopicInvest) GetRiPingJunZhangFuPaiMing30() YFloat {
 	if m != nil {
 		return m.RiPingJunZhangFuPaiMing30
 	}
 	return 0
 }
 
-func (m *TopicInvest) GetRiReDuZhi14() yfloat {
+func (m *TopicInvest) GetRiReDuZhi14() YFloat {
 	if m != nil {
 		return m.RiReDuZhi14
 	}
 	return 0
 }
 
-func (m *TopicInvest) GetRiReDuZhi30() yfloat {
+func (m *TopicInvest) GetRiReDuZhi30() YFloat {
 	if m != nil {
 		return m.RiReDuZhi30
 	}
 	return 0
 }
 
-func (m *TopicInvest) GetRiReDuZhi10() yfloat {
+func (m *TopicInvest) GetRiReDuZhi10() YFloat {
 	if m != nil {
 		return m.RiReDuZhi10
 	}
 	return 0
 }
 
-func (m *TopicInvest) GetGeGuShu() yfloat {
+func (m *TopicInvest) GetGeGuShu() YFloat {
 	if m != nil {
 		return m.GeGuShu
 	}
 	return 0
 }
 
-func (m *TopicInvest) GetDangYueZhangFu() yfloat {
+func (m *TopicInvest) GetDangYueZhangFu() YFloat {
 	if m != nil {
 		return m.DangYueZhangFu
 	}
@@ -273,8 +273,8 @@ func (m *TopicInvest) GetDangYueZhangFu() yfloat {
 
 // 历史行情
 type LiShiHangQing struct {
-	ShiJian yfloat `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
-	ZhangFu yfloat `protobuf:"varint,2,opt,name=ZhangFu" json:"ZhangFu,omitempty"`
+	ShiJian YFloat `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	ZhangFu YFloat `protobuf:"varint,2,opt,name=ZhangFu" json:"ZhangFu,omitempty"`
 }
 
 func (m *LiShiHangQing) Reset()                    { *m = LiShiHangQing{} }
@@ -282,14 +282,14 @@ func (m *LiShiHangQing) String() string            { return proto.CompactTextStr
 func (*LiShiHangQing) ProtoMessage()               {}
 func (*LiShiHangQing) Descriptor() ([]byte, []int) { return fileDescriptor12, []int{3} }
 
-func (m *LiShiHangQing) GetShiJian() yfloat {
+func (m *LiShiHangQing) GetShiJian() YFloat {
 	if m != nil {
 		return m.ShiJian
 	}
 	return 0
 }
 
-func (m *LiShiHangQing) GetZhangFu() yfloat {
+func (m *LiShiHangQing) GetZhangFu() YFloat {
 	if m != nil {
 		return m.ZhangFu
 	}
@@ -314,9 +314,9 @@ func (m *LiShiZouShi) GetHangQing() []*LiShiHangQing {
 }
 
 type TopicInvestHistory struct {
-	BianHao   yfloat        `protobuf:"varint,1,opt,name=BianHao" json:"BianHao,omitempty"`
+	BianHao   YFloat        `protobuf:"varint,1,opt,name=BianHao" json:"BianHao,omitempty"`
 	MingCheng string       `protobuf:"bytes,2,opt,name=MingCheng" json:"MingCheng,omitempty"`
-	ShiJian   yfloat        `protobuf:"varint,3,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	ShiJian   YFloat        `protobuf:"varint,3,opt,name=ShiJian" json:"ShiJian,omitempty"`
 	LiShi     *LiShiZouShi `protobuf:"bytes,4,opt,name=LiShi" json:"LiShi,omitempty"`
 }
 
@@ -325,7 +325,7 @@ func (m *TopicInvestHistory) String() string            { return proto.CompactTe
 func (*TopicInvestHistory) ProtoMessage()               {}
 func (*TopicInvestHistory) Descriptor() ([]byte, []int) { return fileDescriptor12, []int{5} }
 
-func (m *TopicInvestHistory) GetBianHao() yfloat {
+func (m *TopicInvestHistory) GetBianHao() YFloat {
 	if m != nil {
 		return m.BianHao
 	}
@@ -339,7 +339,7 @@ func (m *TopicInvestHistory) GetMingCheng() string {
 	return ""
 }
 
-func (m *TopicInvestHistory) GetShiJian() yfloat {
+func (m *TopicInvestHistory) GetShiJian() YFloat {
 	if m != nil {
 		return m.ShiJian
 	}
@@ -355,10 +355,10 @@ func (m *TopicInvestHistory) GetLiShi() *LiShiZouShi {
 
 // 主题投资成份股数据
 type TopicInvestInfo struct {
-	BianHao    yfloat    `protobuf:"varint,1,opt,name=BianHao" json:"BianHao,omitempty"`
+	BianHao    YFloat    `protobuf:"varint,1,opt,name=BianHao" json:"BianHao,omitempty"`
 	MingCheng  string   `protobuf:"bytes,2,opt,name=MingCheng" json:"MingCheng,omitempty"`
 	ChengFenGu []string `protobuf:"bytes,3,rep,name=ChengFenGu" json:"ChengFenGu,omitempty"`
-	LeiBie     yfloat    `protobuf:"varint,4,opt,name=LeiBie" json:"LeiBie,omitempty"`
+	LeiBie     YFloat    `protobuf:"varint,4,opt,name=LeiBie" json:"LeiBie,omitempty"`
 }
 
 func (m *TopicInvestInfo) Reset()                    { *m = TopicInvestInfo{} }
@@ -366,7 +366,7 @@ func (m *TopicInvestInfo) String() string            { return proto.CompactTextS
 func (*TopicInvestInfo) ProtoMessage()               {}
 func (*TopicInvestInfo) Descriptor() ([]byte, []int) { return fileDescriptor12, []int{6} }
 
-func (m *TopicInvestInfo) GetBianHao() yfloat {
+func (m *TopicInvestInfo) GetBianHao() YFloat {
 	if m != nil {
 		return m.BianHao
 	}
@@ -387,7 +387,7 @@ func (m *TopicInvestInfo) GetChengFenGu() []string {
 	return nil
 }
 
-func (m *TopicInvestInfo) GetLeiBie() yfloat {
+func (m *TopicInvestInfo) GetLeiBie() YFloat {
 	if m != nil {
 		return m.LeiBie
 	}

@@ -200,8 +200,8 @@ func (m *ZhiBiaoShuChu) GetHuiTu() []*ZhiBiaoShuChu_ZBHuiTu {
 
 // 指标输出数据
 type ZhiBiaoShuChu_ZBShuJu struct {
-	ShiJian yfloat   `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
-	JieGuo  []yfloat `protobuf:"varint,2,rep,packed,name=JieGuo" json:"JieGuo,omitempty"`
+	ShiJian YFloat   `protobuf:"varint,1,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	JieGuo  []YFloat `protobuf:"varint,2,rep,packed,name=JieGuo" json:"JieGuo,omitempty"`
 }
 
 func (m *ZhiBiaoShuChu_ZBShuJu) Reset()                    { *m = ZhiBiaoShuChu_ZBShuJu{} }
@@ -209,14 +209,14 @@ func (m *ZhiBiaoShuChu_ZBShuJu) String() string            { return proto.Compac
 func (*ZhiBiaoShuChu_ZBShuJu) ProtoMessage()               {}
 func (*ZhiBiaoShuChu_ZBShuJu) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{0, 0} }
 
-func (m *ZhiBiaoShuChu_ZBShuJu) GetShiJian() yfloat {
+func (m *ZhiBiaoShuChu_ZBShuJu) GetShiJian() YFloat {
 	if m != nil {
 		return m.ShiJian
 	}
 	return 0
 }
 
-func (m *ZhiBiaoShuChu_ZBShuJu) GetJieGuo() []yfloat {
+func (m *ZhiBiaoShuChu_ZBShuJu) GetJieGuo() []YFloat {
 	if m != nil {
 		return m.JieGuo
 	}
@@ -226,17 +226,17 @@ func (m *ZhiBiaoShuChu_ZBShuJu) GetJieGuo() []yfloat {
 // 指标输出属性
 type ZhiBiaoShuChu_ZBShuXing struct {
 	MingCheng       string                            `protobuf:"bytes,1,opt,name=MingCheng" json:"MingCheng,omitempty"`
-	YanSe           yfloat                             `protobuf:"varint,2,opt,name=YanSe" json:"YanSe,omitempty"`
+	YanSe           YFloat                             `protobuf:"varint,2,opt,name=YanSe" json:"YanSe,omitempty"`
 	LeiXing         ZhiBiaoShuChu_ZBShuXing_SXLeiXing `protobuf:"varint,3,opt,name=LeiXing,enum=dzhyun.ZhiBiaoShuChu_ZBShuXing_SXLeiXing" json:"LeiXing,omitempty"`
-	KuanDu          yfloat                             `protobuf:"varint,4,opt,name=KuanDu" json:"KuanDu,omitempty"`
-	JingDu          yfloat                             `protobuf:"varint,5,opt,name=JingDu" json:"JingDu,omitempty"`
-	DuiQi           yfloat                             `protobuf:"varint,6,opt,name=DuiQi" json:"DuiQi,omitempty"`
-	ShuXing         yfloat                             `protobuf:"varint,7,opt,name=ShuXing" json:"ShuXing,omitempty"`
-	YiDong          yfloat                             `protobuf:"varint,8,opt,name=YiDong" json:"YiDong,omitempty"`
-	CengCi          yfloat                             `protobuf:"varint,9,opt,name=CengCi" json:"CengCi,omitempty"`
-	BianLiangWeiZhi yfloat                             `protobuf:"varint,10,opt,name=BianLiangWeiZhi" json:"BianLiangWeiZhi,omitempty"`
-	KuoZhanShuXing  yfloat                             `protobuf:"varint,11,opt,name=KuoZhanShuXing" json:"KuoZhanShuXing,omitempty"`
-	YouXiaoWeiZhi   yfloat                             `protobuf:"varint,12,opt,name=YouXiaoWeiZhi" json:"YouXiaoWeiZhi,omitempty"`
+	KuanDu          YFloat                             `protobuf:"varint,4,opt,name=KuanDu" json:"KuanDu,omitempty"`
+	JingDu          YFloat                             `protobuf:"varint,5,opt,name=JingDu" json:"JingDu,omitempty"`
+	DuiQi           YFloat                             `protobuf:"varint,6,opt,name=DuiQi" json:"DuiQi,omitempty"`
+	ShuXing         YFloat                             `protobuf:"varint,7,opt,name=ShuXing" json:"ShuXing,omitempty"`
+	YiDong          YFloat                             `protobuf:"varint,8,opt,name=YiDong" json:"YiDong,omitempty"`
+	CengCi          YFloat                             `protobuf:"varint,9,opt,name=CengCi" json:"CengCi,omitempty"`
+	BianLiangWeiZhi YFloat                             `protobuf:"varint,10,opt,name=BianLiangWeiZhi" json:"BianLiangWeiZhi,omitempty"`
+	KuoZhanShuXing  YFloat                             `protobuf:"varint,11,opt,name=KuoZhanShuXing" json:"KuoZhanShuXing,omitempty"`
+	YouXiaoWeiZhi   YFloat                             `protobuf:"varint,12,opt,name=YouXiaoWeiZhi" json:"YouXiaoWeiZhi,omitempty"`
 }
 
 func (m *ZhiBiaoShuChu_ZBShuXing) Reset()                    { *m = ZhiBiaoShuChu_ZBShuXing{} }
@@ -251,7 +251,7 @@ func (m *ZhiBiaoShuChu_ZBShuXing) GetMingCheng() string {
 	return ""
 }
 
-func (m *ZhiBiaoShuChu_ZBShuXing) GetYanSe() yfloat {
+func (m *ZhiBiaoShuChu_ZBShuXing) GetYanSe() YFloat {
 	if m != nil {
 		return m.YanSe
 	}
@@ -265,63 +265,63 @@ func (m *ZhiBiaoShuChu_ZBShuXing) GetLeiXing() ZhiBiaoShuChu_ZBShuXing_SXLeiXing
 	return ZhiBiaoShuChu_ZBShuXing_TYPE_TEMP_EXPRESION
 }
 
-func (m *ZhiBiaoShuChu_ZBShuXing) GetKuanDu() yfloat {
+func (m *ZhiBiaoShuChu_ZBShuXing) GetKuanDu() YFloat {
 	if m != nil {
 		return m.KuanDu
 	}
 	return 0
 }
 
-func (m *ZhiBiaoShuChu_ZBShuXing) GetJingDu() yfloat {
+func (m *ZhiBiaoShuChu_ZBShuXing) GetJingDu() YFloat {
 	if m != nil {
 		return m.JingDu
 	}
 	return 0
 }
 
-func (m *ZhiBiaoShuChu_ZBShuXing) GetDuiQi() yfloat {
+func (m *ZhiBiaoShuChu_ZBShuXing) GetDuiQi() YFloat {
 	if m != nil {
 		return m.DuiQi
 	}
 	return 0
 }
 
-func (m *ZhiBiaoShuChu_ZBShuXing) GetShuXing() yfloat {
+func (m *ZhiBiaoShuChu_ZBShuXing) GetShuXing() YFloat {
 	if m != nil {
 		return m.ShuXing
 	}
 	return 0
 }
 
-func (m *ZhiBiaoShuChu_ZBShuXing) GetYiDong() yfloat {
+func (m *ZhiBiaoShuChu_ZBShuXing) GetYiDong() YFloat {
 	if m != nil {
 		return m.YiDong
 	}
 	return 0
 }
 
-func (m *ZhiBiaoShuChu_ZBShuXing) GetCengCi() yfloat {
+func (m *ZhiBiaoShuChu_ZBShuXing) GetCengCi() YFloat {
 	if m != nil {
 		return m.CengCi
 	}
 	return 0
 }
 
-func (m *ZhiBiaoShuChu_ZBShuXing) GetBianLiangWeiZhi() yfloat {
+func (m *ZhiBiaoShuChu_ZBShuXing) GetBianLiangWeiZhi() YFloat {
 	if m != nil {
 		return m.BianLiangWeiZhi
 	}
 	return 0
 }
 
-func (m *ZhiBiaoShuChu_ZBShuXing) GetKuoZhanShuXing() yfloat {
+func (m *ZhiBiaoShuChu_ZBShuXing) GetKuoZhanShuXing() YFloat {
 	if m != nil {
 		return m.KuoZhanShuXing
 	}
 	return 0
 }
 
-func (m *ZhiBiaoShuChu_ZBShuXing) GetYouXiaoWeiZhi() yfloat {
+func (m *ZhiBiaoShuChu_ZBShuXing) GetYouXiaoWeiZhi() YFloat {
 	if m != nil {
 		return m.YouXiaoWeiZhi
 	}
@@ -331,13 +331,13 @@ func (m *ZhiBiaoShuChu_ZBShuXing) GetYouXiaoWeiZhi() yfloat {
 // 指标绘图指令输出
 type ZhiBiaoShuChu_ZBHuiTu struct {
 	LeiXing              ZhiBiaoShuChu_ZBHuiTu_HTLeiXing   `protobuf:"varint,1,opt,name=LeiXing,enum=dzhyun.ZhiBiaoShuChu_ZBHuiTu_HTLeiXing" json:"LeiXing,omitempty"`
-	KuanDu               yfloat                             `protobuf:"varint,2,opt,name=KuanDu" json:"KuanDu,omitempty"`
-	ShuXing              yfloat                             `protobuf:"varint,3,opt,name=ShuXing" json:"ShuXing,omitempty"`
-	ShangCiJiSuan        yfloat                             `protobuf:"varint,4,opt,name=ShangCiJiSuan" json:"ShangCiJiSuan,omitempty"`
-	YanSe                yfloat                             `protobuf:"varint,5,opt,name=YanSe" json:"YanSe,omitempty"`
+	KuanDu               YFloat                             `protobuf:"varint,2,opt,name=KuanDu" json:"KuanDu,omitempty"`
+	ShuXing              YFloat                             `protobuf:"varint,3,opt,name=ShuXing" json:"ShuXing,omitempty"`
+	ShangCiJiSuan        YFloat                             `protobuf:"varint,4,opt,name=ShangCiJiSuan" json:"ShangCiJiSuan,omitempty"`
+	YanSe                YFloat                             `protobuf:"varint,5,opt,name=YanSe" json:"YanSe,omitempty"`
 	ShuChuLeiXing        ZhiBiaoShuChu_ZBShuXing_SXLeiXing `protobuf:"varint,6,opt,name=ShuChuLeiXing,enum=dzhyun.ZhiBiaoShuChu_ZBShuXing_SXLeiXing" json:"ShuChuLeiXing,omitempty"`
-	ShuChuShuXing        yfloat                             `protobuf:"varint,7,opt,name=ShuChuShuXing" json:"ShuChuShuXing,omitempty"`
-	ShuChuKuoZhanShuXing yfloat                             `protobuf:"varint,8,opt,name=ShuChuKuoZhanShuXing" json:"ShuChuKuoZhanShuXing,omitempty"`
+	ShuChuShuXing        YFloat                             `protobuf:"varint,7,opt,name=ShuChuShuXing" json:"ShuChuShuXing,omitempty"`
+	ShuChuKuoZhanShuXing YFloat                             `protobuf:"varint,8,opt,name=ShuChuKuoZhanShuXing" json:"ShuChuKuoZhanShuXing,omitempty"`
 	WenBen               []string                          `protobuf:"bytes,9,rep,name=WenBen" json:"WenBen,omitempty"`
 	ShuJu                []*ZhiBiaoShuChu_ZBHuiTu_HTShuJu  `protobuf:"bytes,10,rep,name=ShuJu" json:"ShuJu,omitempty"`
 }
@@ -354,28 +354,28 @@ func (m *ZhiBiaoShuChu_ZBHuiTu) GetLeiXing() ZhiBiaoShuChu_ZBHuiTu_HTLeiXing {
 	return ZhiBiaoShuChu_ZBHuiTu_TYPE_NOLINE
 }
 
-func (m *ZhiBiaoShuChu_ZBHuiTu) GetKuanDu() yfloat {
+func (m *ZhiBiaoShuChu_ZBHuiTu) GetKuanDu() YFloat {
 	if m != nil {
 		return m.KuanDu
 	}
 	return 0
 }
 
-func (m *ZhiBiaoShuChu_ZBHuiTu) GetShuXing() yfloat {
+func (m *ZhiBiaoShuChu_ZBHuiTu) GetShuXing() YFloat {
 	if m != nil {
 		return m.ShuXing
 	}
 	return 0
 }
 
-func (m *ZhiBiaoShuChu_ZBHuiTu) GetShangCiJiSuan() yfloat {
+func (m *ZhiBiaoShuChu_ZBHuiTu) GetShangCiJiSuan() YFloat {
 	if m != nil {
 		return m.ShangCiJiSuan
 	}
 	return 0
 }
 
-func (m *ZhiBiaoShuChu_ZBHuiTu) GetYanSe() yfloat {
+func (m *ZhiBiaoShuChu_ZBHuiTu) GetYanSe() YFloat {
 	if m != nil {
 		return m.YanSe
 	}
@@ -389,14 +389,14 @@ func (m *ZhiBiaoShuChu_ZBHuiTu) GetShuChuLeiXing() ZhiBiaoShuChu_ZBShuXing_SXLei
 	return ZhiBiaoShuChu_ZBShuXing_TYPE_TEMP_EXPRESION
 }
 
-func (m *ZhiBiaoShuChu_ZBHuiTu) GetShuChuShuXing() yfloat {
+func (m *ZhiBiaoShuChu_ZBHuiTu) GetShuChuShuXing() YFloat {
 	if m != nil {
 		return m.ShuChuShuXing
 	}
 	return 0
 }
 
-func (m *ZhiBiaoShuChu_ZBHuiTu) GetShuChuKuoZhanShuXing() yfloat {
+func (m *ZhiBiaoShuChu_ZBHuiTu) GetShuChuKuoZhanShuXing() YFloat {
 	if m != nil {
 		return m.ShuChuKuoZhanShuXing
 	}
@@ -419,9 +419,9 @@ func (m *ZhiBiaoShuChu_ZBHuiTu) GetShuJu() []*ZhiBiaoShuChu_ZBHuiTu_HTShuJu {
 
 // 绘图指令数据
 type ZhiBiaoShuChu_ZBHuiTu_HTShuJu struct {
-	WeiZhi yfloat `protobuf:"varint,1,opt,name=WeiZhi" json:"WeiZhi,omitempty"`
-	JiaGe  yfloat `protobuf:"varint,2,opt,name=JiaGe" json:"JiaGe,omitempty"`
-	CanShu yfloat `protobuf:"varint,3,opt,name=CanShu" json:"CanShu,omitempty"`
+	WeiZhi YFloat `protobuf:"varint,1,opt,name=WeiZhi" json:"WeiZhi,omitempty"`
+	JiaGe  YFloat `protobuf:"varint,2,opt,name=JiaGe" json:"JiaGe,omitempty"`
+	CanShu YFloat `protobuf:"varint,3,opt,name=CanShu" json:"CanShu,omitempty"`
 }
 
 func (m *ZhiBiaoShuChu_ZBHuiTu_HTShuJu) Reset()         { *m = ZhiBiaoShuChu_ZBHuiTu_HTShuJu{} }
@@ -431,21 +431,21 @@ func (*ZhiBiaoShuChu_ZBHuiTu_HTShuJu) Descriptor() ([]byte, []int) {
 	return fileDescriptor14, []int{0, 2, 0}
 }
 
-func (m *ZhiBiaoShuChu_ZBHuiTu_HTShuJu) GetWeiZhi() yfloat {
+func (m *ZhiBiaoShuChu_ZBHuiTu_HTShuJu) GetWeiZhi() YFloat {
 	if m != nil {
 		return m.WeiZhi
 	}
 	return 0
 }
 
-func (m *ZhiBiaoShuChu_ZBHuiTu_HTShuJu) GetJiaGe() yfloat {
+func (m *ZhiBiaoShuChu_ZBHuiTu_HTShuJu) GetJiaGe() YFloat {
 	if m != nil {
 		return m.JiaGe
 	}
 	return 0
 }
 
-func (m *ZhiBiaoShuChu_ZBHuiTu_HTShuJu) GetCanShu() yfloat {
+func (m *ZhiBiaoShuChu_ZBHuiTu_HTShuJu) GetCanShu() YFloat {
 	if m != nil {
 		return m.CanShu
 	}

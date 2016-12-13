@@ -18,412 +18,412 @@ type StkData struct {
 	JiaoYiDaiMa       string `protobuf:"bytes,2,opt,name=JiaoYiDaiMa" json:"JiaoYiDaiMa,omitempty"`
 	ZhongWenJianCheng string `protobuf:"bytes,3,opt,name=ZhongWenJianCheng" json:"ZhongWenJianCheng,omitempty"`
 	// 以下动态行情
-	ZuiXinJia           yfloat `protobuf:"varint,4,opt,name=ZuiXinJia" json:"ZuiXinJia,omitempty"`
-	KaiPanJia           yfloat `protobuf:"varint,5,opt,name=KaiPanJia" json:"KaiPanJia,omitempty"`
-	ZuiGaoJia           yfloat `protobuf:"varint,6,opt,name=ZuiGaoJia" json:"ZuiGaoJia,omitempty"`
-	ZuiDiJia            yfloat `protobuf:"varint,7,opt,name=ZuiDiJia" json:"ZuiDiJia,omitempty"`
-	ZuoShou             yfloat `protobuf:"varint,8,opt,name=ZuoShou" json:"ZuoShou,omitempty"`
-	JunJia              yfloat `protobuf:"varint,9,opt,name=JunJia" json:"JunJia,omitempty"`
-	ZhangDie            yfloat `protobuf:"varint,10,opt,name=ZhangDie" json:"ZhangDie,omitempty"`
-	ZhangFu             yfloat `protobuf:"varint,11,opt,name=ZhangFu" json:"ZhangFu,omitempty"`
-	ZhenFu              yfloat `protobuf:"varint,12,opt,name=ZhenFu" json:"ZhenFu,omitempty"`
-	ChengJiaoLiang      yfloat `protobuf:"varint,13,opt,name=ChengJiaoLiang" json:"ChengJiaoLiang,omitempty"`
-	XianShou            yfloat `protobuf:"varint,14,opt,name=XianShou" json:"XianShou,omitempty"`
-	ChengJiaoE          yfloat `protobuf:"varint,15,opt,name=ChengJiaoE" json:"ChengJiaoE,omitempty"`
-	ZongChengJiaoBiShu  yfloat `protobuf:"varint,16,opt,name=ZongChengJiaoBiShu" json:"ZongChengJiaoBiShu,omitempty"`
-	MeiBiChengJiaoGuShu yfloat `protobuf:"varint,17,opt,name=MeiBiChengJiaoGuShu" json:"MeiBiChengJiaoGuShu,omitempty"`
-	HuanShou            yfloat `protobuf:"varint,18,opt,name=HuanShou" json:"HuanShou,omitempty"`
-	LiangBi             yfloat `protobuf:"varint,19,opt,name=LiangBi" json:"LiangBi,omitempty"`
-	NeiPan              yfloat `protobuf:"varint,20,opt,name=NeiPan" json:"NeiPan,omitempty"`
-	WaiPan              yfloat `protobuf:"varint,21,opt,name=WaiPan" json:"WaiPan,omitempty"`
+	ZuiXinJia           YFloat `protobuf:"varint,4,opt,name=ZuiXinJia" json:"ZuiXinJia,omitempty"`
+	KaiPanJia           YFloat `protobuf:"varint,5,opt,name=KaiPanJia" json:"KaiPanJia,omitempty"`
+	ZuiGaoJia           YFloat `protobuf:"varint,6,opt,name=ZuiGaoJia" json:"ZuiGaoJia,omitempty"`
+	ZuiDiJia            YFloat `protobuf:"varint,7,opt,name=ZuiDiJia" json:"ZuiDiJia,omitempty"`
+	ZuoShou             YFloat `protobuf:"varint,8,opt,name=ZuoShou" json:"ZuoShou,omitempty"`
+	JunJia              YFloat `protobuf:"varint,9,opt,name=JunJia" json:"JunJia,omitempty"`
+	ZhangDie            YFloat `protobuf:"varint,10,opt,name=ZhangDie" json:"ZhangDie,omitempty"`
+	ZhangFu             YFloat `protobuf:"varint,11,opt,name=ZhangFu" json:"ZhangFu,omitempty"`
+	ZhenFu              YFloat `protobuf:"varint,12,opt,name=ZhenFu" json:"ZhenFu,omitempty"`
+	ChengJiaoLiang      YFloat `protobuf:"varint,13,opt,name=ChengJiaoLiang" json:"ChengJiaoLiang,omitempty"`
+	XianShou            YFloat `protobuf:"varint,14,opt,name=XianShou" json:"XianShou,omitempty"`
+	ChengJiaoE          YFloat `protobuf:"varint,15,opt,name=ChengJiaoE" json:"ChengJiaoE,omitempty"`
+	ZongChengJiaoBiShu  YFloat `protobuf:"varint,16,opt,name=ZongChengJiaoBiShu" json:"ZongChengJiaoBiShu,omitempty"`
+	MeiBiChengJiaoGuShu YFloat `protobuf:"varint,17,opt,name=MeiBiChengJiaoGuShu" json:"MeiBiChengJiaoGuShu,omitempty"`
+	HuanShou            YFloat `protobuf:"varint,18,opt,name=HuanShou" json:"HuanShou,omitempty"`
+	LiangBi             YFloat `protobuf:"varint,19,opt,name=LiangBi" json:"LiangBi,omitempty"`
+	NeiPan              YFloat `protobuf:"varint,20,opt,name=NeiPan" json:"NeiPan,omitempty"`
+	WaiPan              YFloat `protobuf:"varint,21,opt,name=WaiPan" json:"WaiPan,omitempty"`
 	// 以下L2
-	ZongMaiRu        yfloat `protobuf:"varint,22,opt,name=ZongMaiRu" json:"ZongMaiRu,omitempty"`
-	ZongMaiChu       yfloat `protobuf:"varint,23,opt,name=ZongMaiChu" json:"ZongMaiChu,omitempty"`
-	ZongMaiRuJunJia  yfloat `protobuf:"varint,24,opt,name=ZongMaiRuJunJia" json:"ZongMaiRuJunJia,omitempty"`
-	ZongMaiChuJunJia yfloat `protobuf:"varint,25,opt,name=ZongMaiChuJunJia" json:"ZongMaiChuJunJia,omitempty"`
+	ZongMaiRu        YFloat `protobuf:"varint,22,opt,name=ZongMaiRu" json:"ZongMaiRu,omitempty"`
+	ZongMaiChu       YFloat `protobuf:"varint,23,opt,name=ZongMaiChu" json:"ZongMaiChu,omitempty"`
+	ZongMaiRuJunJia  YFloat `protobuf:"varint,24,opt,name=ZongMaiRuJunJia" json:"ZongMaiRuJunJia,omitempty"`
+	ZongMaiChuJunJia YFloat `protobuf:"varint,25,opt,name=ZongMaiChuJunJia" json:"ZongMaiChuJunJia,omitempty"`
 	// 以下买卖盘
-	WeiTuoMaiRuJia1    yfloat `protobuf:"varint,26,opt,name=WeiTuoMaiRuJia1" json:"WeiTuoMaiRuJia1,omitempty"`
-	WeiTuoMaiRuJia2    yfloat `protobuf:"varint,27,opt,name=WeiTuoMaiRuJia2" json:"WeiTuoMaiRuJia2,omitempty"`
-	WeiTuoMaiRuJia3    yfloat `protobuf:"varint,28,opt,name=WeiTuoMaiRuJia3" json:"WeiTuoMaiRuJia3,omitempty"`
-	WeiTuoMaiRuJia4    yfloat `protobuf:"varint,29,opt,name=WeiTuoMaiRuJia4" json:"WeiTuoMaiRuJia4,omitempty"`
-	WeiTuoMaiRuJia5    yfloat `protobuf:"varint,30,opt,name=WeiTuoMaiRuJia5" json:"WeiTuoMaiRuJia5,omitempty"`
-	WeiTuoMaiRuLiang1  yfloat `protobuf:"varint,31,opt,name=WeiTuoMaiRuLiang1" json:"WeiTuoMaiRuLiang1,omitempty"`
-	WeiTuoMaiRuLiang2  yfloat `protobuf:"varint,32,opt,name=WeiTuoMaiRuLiang2" json:"WeiTuoMaiRuLiang2,omitempty"`
-	WeiTuoMaiRuLiang3  yfloat `protobuf:"varint,33,opt,name=WeiTuoMaiRuLiang3" json:"WeiTuoMaiRuLiang3,omitempty"`
-	WeiTuoMaiRuLiang4  yfloat `protobuf:"varint,34,opt,name=WeiTuoMaiRuLiang4" json:"WeiTuoMaiRuLiang4,omitempty"`
-	WeiTuoMaiRuLiang5  yfloat `protobuf:"varint,35,opt,name=WeiTuoMaiRuLiang5" json:"WeiTuoMaiRuLiang5,omitempty"`
-	WeiTuoMaiChuJia1   yfloat `protobuf:"varint,36,opt,name=WeiTuoMaiChuJia1" json:"WeiTuoMaiChuJia1,omitempty"`
-	WeiTuoMaiChuJia2   yfloat `protobuf:"varint,37,opt,name=WeiTuoMaiChuJia2" json:"WeiTuoMaiChuJia2,omitempty"`
-	WeiTuoMaiChuJia3   yfloat `protobuf:"varint,38,opt,name=WeiTuoMaiChuJia3" json:"WeiTuoMaiChuJia3,omitempty"`
-	WeiTuoMaiChuJia4   yfloat `protobuf:"varint,39,opt,name=WeiTuoMaiChuJia4" json:"WeiTuoMaiChuJia4,omitempty"`
-	WeiTuoMaiChuJia5   yfloat `protobuf:"varint,40,opt,name=WeiTuoMaiChuJia5" json:"WeiTuoMaiChuJia5,omitempty"`
-	WeiTuoMaiChuLiang1 yfloat `protobuf:"varint,41,opt,name=WeiTuoMaiChuLiang1" json:"WeiTuoMaiChuLiang1,omitempty"`
-	WeiTuoMaiChuLiang2 yfloat `protobuf:"varint,42,opt,name=WeiTuoMaiChuLiang2" json:"WeiTuoMaiChuLiang2,omitempty"`
-	WeiTuoMaiChuLiang3 yfloat `protobuf:"varint,43,opt,name=WeiTuoMaiChuLiang3" json:"WeiTuoMaiChuLiang3,omitempty"`
-	WeiTuoMaiChuLiang4 yfloat `protobuf:"varint,44,opt,name=WeiTuoMaiChuLiang4" json:"WeiTuoMaiChuLiang4,omitempty"`
-	WeiTuoMaiChuLiang5 yfloat `protobuf:"varint,45,opt,name=WeiTuoMaiChuLiang5" json:"WeiTuoMaiChuLiang5,omitempty"`
+	WeiTuoMaiRuJia1    YFloat `protobuf:"varint,26,opt,name=WeiTuoMaiRuJia1" json:"WeiTuoMaiRuJia1,omitempty"`
+	WeiTuoMaiRuJia2    YFloat `protobuf:"varint,27,opt,name=WeiTuoMaiRuJia2" json:"WeiTuoMaiRuJia2,omitempty"`
+	WeiTuoMaiRuJia3    YFloat `protobuf:"varint,28,opt,name=WeiTuoMaiRuJia3" json:"WeiTuoMaiRuJia3,omitempty"`
+	WeiTuoMaiRuJia4    YFloat `protobuf:"varint,29,opt,name=WeiTuoMaiRuJia4" json:"WeiTuoMaiRuJia4,omitempty"`
+	WeiTuoMaiRuJia5    YFloat `protobuf:"varint,30,opt,name=WeiTuoMaiRuJia5" json:"WeiTuoMaiRuJia5,omitempty"`
+	WeiTuoMaiRuLiang1  YFloat `protobuf:"varint,31,opt,name=WeiTuoMaiRuLiang1" json:"WeiTuoMaiRuLiang1,omitempty"`
+	WeiTuoMaiRuLiang2  YFloat `protobuf:"varint,32,opt,name=WeiTuoMaiRuLiang2" json:"WeiTuoMaiRuLiang2,omitempty"`
+	WeiTuoMaiRuLiang3  YFloat `protobuf:"varint,33,opt,name=WeiTuoMaiRuLiang3" json:"WeiTuoMaiRuLiang3,omitempty"`
+	WeiTuoMaiRuLiang4  YFloat `protobuf:"varint,34,opt,name=WeiTuoMaiRuLiang4" json:"WeiTuoMaiRuLiang4,omitempty"`
+	WeiTuoMaiRuLiang5  YFloat `protobuf:"varint,35,opt,name=WeiTuoMaiRuLiang5" json:"WeiTuoMaiRuLiang5,omitempty"`
+	WeiTuoMaiChuJia1   YFloat `protobuf:"varint,36,opt,name=WeiTuoMaiChuJia1" json:"WeiTuoMaiChuJia1,omitempty"`
+	WeiTuoMaiChuJia2   YFloat `protobuf:"varint,37,opt,name=WeiTuoMaiChuJia2" json:"WeiTuoMaiChuJia2,omitempty"`
+	WeiTuoMaiChuJia3   YFloat `protobuf:"varint,38,opt,name=WeiTuoMaiChuJia3" json:"WeiTuoMaiChuJia3,omitempty"`
+	WeiTuoMaiChuJia4   YFloat `protobuf:"varint,39,opt,name=WeiTuoMaiChuJia4" json:"WeiTuoMaiChuJia4,omitempty"`
+	WeiTuoMaiChuJia5   YFloat `protobuf:"varint,40,opt,name=WeiTuoMaiChuJia5" json:"WeiTuoMaiChuJia5,omitempty"`
+	WeiTuoMaiChuLiang1 YFloat `protobuf:"varint,41,opt,name=WeiTuoMaiChuLiang1" json:"WeiTuoMaiChuLiang1,omitempty"`
+	WeiTuoMaiChuLiang2 YFloat `protobuf:"varint,42,opt,name=WeiTuoMaiChuLiang2" json:"WeiTuoMaiChuLiang2,omitempty"`
+	WeiTuoMaiChuLiang3 YFloat `protobuf:"varint,43,opt,name=WeiTuoMaiChuLiang3" json:"WeiTuoMaiChuLiang3,omitempty"`
+	WeiTuoMaiChuLiang4 YFloat `protobuf:"varint,44,opt,name=WeiTuoMaiChuLiang4" json:"WeiTuoMaiChuLiang4,omitempty"`
+	WeiTuoMaiChuLiang5 YFloat `protobuf:"varint,45,opt,name=WeiTuoMaiChuLiang5" json:"WeiTuoMaiChuLiang5,omitempty"`
 	// 需要计算
-	WeiBi                      yfloat  `protobuf:"varint,46,opt,name=WeiBi" json:"WeiBi,omitempty"`
-	WeiCha                     yfloat  `protobuf:"varint,47,opt,name=WeiCha" json:"WeiCha,omitempty"`
-	ZhangSu                    yfloat  `protobuf:"varint,48,opt,name=ZhangSu" json:"ZhangSu,omitempty"`
-	JunLiang5Ri                yfloat  `protobuf:"varint,49,opt,name=JunLiang5Ri" json:"JunLiang5Ri,omitempty"`
-	ShangZhangJiaShu           yfloat  `protobuf:"varint,50,opt,name=ShangZhangJiaShu" json:"ShangZhangJiaShu,omitempty"`
-	XiaDieJiaShu               yfloat  `protobuf:"varint,51,opt,name=XiaDieJiaShu" json:"XiaDieJiaShu,omitempty"`
-	PingPanJiaShu              yfloat  `protobuf:"varint,52,opt,name=PingPanJiaShu" json:"PingPanJiaShu,omitempty"`
-	AGuShangZhangJiaShu        yfloat  `protobuf:"varint,53,opt,name=AGuShangZhangJiaShu" json:"AGuShangZhangJiaShu,omitempty"`
-	AGuXiaDieJiaShu            yfloat  `protobuf:"varint,54,opt,name=AGuXiaDieJiaShu" json:"AGuXiaDieJiaShu,omitempty"`
-	AGuPingPanJiaShu           yfloat  `protobuf:"varint,55,opt,name=AGuPingPanJiaShu" json:"AGuPingPanJiaShu,omitempty"`
-	AGuChengJiaoE              yfloat  `protobuf:"varint,56,opt,name=AGuChengJiaoE" json:"AGuChengJiaoE,omitempty"`
-	BGuShangZhangJiaShu        yfloat  `protobuf:"varint,57,opt,name=BGuShangZhangJiaShu" json:"BGuShangZhangJiaShu,omitempty"`
-	BGuXiaDieJiaShu            yfloat  `protobuf:"varint,58,opt,name=BGuXiaDieJiaShu" json:"BGuXiaDieJiaShu,omitempty"`
-	BGuPingPanJiaShu           yfloat  `protobuf:"varint,59,opt,name=BGuPingPanJiaShu" json:"BGuPingPanJiaShu,omitempty"`
-	BGuChengJiaoE              yfloat  `protobuf:"varint,60,opt,name=BGuChengJiaoE" json:"BGuChengJiaoE,omitempty"`
-	JiJinShangZhangJiaShu      yfloat  `protobuf:"varint,61,opt,name=JiJinShangZhangJiaShu" json:"JiJinShangZhangJiaShu,omitempty"`
-	JiJinXiaDieJiaShu          yfloat  `protobuf:"varint,62,opt,name=JiJinXiaDieJiaShu" json:"JiJinXiaDieJiaShu,omitempty"`
-	JiJinPingPanJiaShu         yfloat  `protobuf:"varint,63,opt,name=JiJinPingPanJiaShu" json:"JiJinPingPanJiaShu,omitempty"`
-	JiJinChengJiaoE            yfloat  `protobuf:"varint,64,opt,name=JiJinChengJiaoE" json:"JiJinChengJiaoE,omitempty"`
-	QiTaShangZhangJiaShu       yfloat  `protobuf:"varint,65,opt,name=QiTaShangZhangJiaShu" json:"QiTaShangZhangJiaShu,omitempty"`
-	QiTaXiaDieJiaShu           yfloat  `protobuf:"varint,66,opt,name=QiTaXiaDieJiaShu" json:"QiTaXiaDieJiaShu,omitempty"`
-	QiTaPingPanJiaShu          yfloat  `protobuf:"varint,67,opt,name=QiTaPingPanJiaShu" json:"QiTaPingPanJiaShu,omitempty"`
-	QiTaChengJiaoE             yfloat  `protobuf:"varint,68,opt,name=QiTaChengJiaoE" json:"QiTaChengJiaoE,omitempty"`
-	MaiRuDanShu                yfloat  `protobuf:"varint,69,opt,name=MaiRuDanShu" json:"MaiRuDanShu,omitempty"`
-	MaiChuDanShu               yfloat  `protobuf:"varint,70,opt,name=MaiChuDanShu" json:"MaiChuDanShu,omitempty"`
-	FenZhongZhangFu1           yfloat  `protobuf:"varint,77,opt,name=FenZhongZhangFu1" json:"FenZhongZhangFu1,omitempty"`
-	FenZhongZhangFu2           yfloat  `protobuf:"varint,78,opt,name=FenZhongZhangFu2" json:"FenZhongZhangFu2,omitempty"`
-	FenZhongZhangFu3           yfloat  `protobuf:"varint,79,opt,name=FenZhongZhangFu3" json:"FenZhongZhangFu3,omitempty"`
-	FenZhongZhangFu4           yfloat  `protobuf:"varint,80,opt,name=FenZhongZhangFu4" json:"FenZhongZhangFu4,omitempty"`
-	FenZhongZhangFu5           yfloat  `protobuf:"varint,81,opt,name=FenZhongZhangFu5" json:"FenZhongZhangFu5,omitempty"`
-	ShiYingLv                  yfloat  `protobuf:"varint,82,opt,name=ShiYingLv" json:"ShiYingLv,omitempty"`
-	ZhangTing                  yfloat  `protobuf:"varint,83,opt,name=ZhangTing" json:"ZhangTing,omitempty"`
-	DieTing                    yfloat  `protobuf:"varint,84,opt,name=DieTing" json:"DieTing,omitempty"`
+	WeiBi                      YFloat  `protobuf:"varint,46,opt,name=WeiBi" json:"WeiBi,omitempty"`
+	WeiCha                     YFloat  `protobuf:"varint,47,opt,name=WeiCha" json:"WeiCha,omitempty"`
+	ZhangSu                    YFloat  `protobuf:"varint,48,opt,name=ZhangSu" json:"ZhangSu,omitempty"`
+	JunLiang5Ri                YFloat  `protobuf:"varint,49,opt,name=JunLiang5Ri" json:"JunLiang5Ri,omitempty"`
+	ShangZhangJiaShu           YFloat  `protobuf:"varint,50,opt,name=ShangZhangJiaShu" json:"ShangZhangJiaShu,omitempty"`
+	XiaDieJiaShu               YFloat  `protobuf:"varint,51,opt,name=XiaDieJiaShu" json:"XiaDieJiaShu,omitempty"`
+	PingPanJiaShu              YFloat  `protobuf:"varint,52,opt,name=PingPanJiaShu" json:"PingPanJiaShu,omitempty"`
+	AGuShangZhangJiaShu        YFloat  `protobuf:"varint,53,opt,name=AGuShangZhangJiaShu" json:"AGuShangZhangJiaShu,omitempty"`
+	AGuXiaDieJiaShu            YFloat  `protobuf:"varint,54,opt,name=AGuXiaDieJiaShu" json:"AGuXiaDieJiaShu,omitempty"`
+	AGuPingPanJiaShu           YFloat  `protobuf:"varint,55,opt,name=AGuPingPanJiaShu" json:"AGuPingPanJiaShu,omitempty"`
+	AGuChengJiaoE              YFloat  `protobuf:"varint,56,opt,name=AGuChengJiaoE" json:"AGuChengJiaoE,omitempty"`
+	BGuShangZhangJiaShu        YFloat  `protobuf:"varint,57,opt,name=BGuShangZhangJiaShu" json:"BGuShangZhangJiaShu,omitempty"`
+	BGuXiaDieJiaShu            YFloat  `protobuf:"varint,58,opt,name=BGuXiaDieJiaShu" json:"BGuXiaDieJiaShu,omitempty"`
+	BGuPingPanJiaShu           YFloat  `protobuf:"varint,59,opt,name=BGuPingPanJiaShu" json:"BGuPingPanJiaShu,omitempty"`
+	BGuChengJiaoE              YFloat  `protobuf:"varint,60,opt,name=BGuChengJiaoE" json:"BGuChengJiaoE,omitempty"`
+	JiJinShangZhangJiaShu      YFloat  `protobuf:"varint,61,opt,name=JiJinShangZhangJiaShu" json:"JiJinShangZhangJiaShu,omitempty"`
+	JiJinXiaDieJiaShu          YFloat  `protobuf:"varint,62,opt,name=JiJinXiaDieJiaShu" json:"JiJinXiaDieJiaShu,omitempty"`
+	JiJinPingPanJiaShu         YFloat  `protobuf:"varint,63,opt,name=JiJinPingPanJiaShu" json:"JiJinPingPanJiaShu,omitempty"`
+	JiJinChengJiaoE            YFloat  `protobuf:"varint,64,opt,name=JiJinChengJiaoE" json:"JiJinChengJiaoE,omitempty"`
+	QiTaShangZhangJiaShu       YFloat  `protobuf:"varint,65,opt,name=QiTaShangZhangJiaShu" json:"QiTaShangZhangJiaShu,omitempty"`
+	QiTaXiaDieJiaShu           YFloat  `protobuf:"varint,66,opt,name=QiTaXiaDieJiaShu" json:"QiTaXiaDieJiaShu,omitempty"`
+	QiTaPingPanJiaShu          YFloat  `protobuf:"varint,67,opt,name=QiTaPingPanJiaShu" json:"QiTaPingPanJiaShu,omitempty"`
+	QiTaChengJiaoE             YFloat  `protobuf:"varint,68,opt,name=QiTaChengJiaoE" json:"QiTaChengJiaoE,omitempty"`
+	MaiRuDanShu                YFloat  `protobuf:"varint,69,opt,name=MaiRuDanShu" json:"MaiRuDanShu,omitempty"`
+	MaiChuDanShu               YFloat  `protobuf:"varint,70,opt,name=MaiChuDanShu" json:"MaiChuDanShu,omitempty"`
+	FenZhongZhangFu1           YFloat  `protobuf:"varint,77,opt,name=FenZhongZhangFu1" json:"FenZhongZhangFu1,omitempty"`
+	FenZhongZhangFu2           YFloat  `protobuf:"varint,78,opt,name=FenZhongZhangFu2" json:"FenZhongZhangFu2,omitempty"`
+	FenZhongZhangFu3           YFloat  `protobuf:"varint,79,opt,name=FenZhongZhangFu3" json:"FenZhongZhangFu3,omitempty"`
+	FenZhongZhangFu4           YFloat  `protobuf:"varint,80,opt,name=FenZhongZhangFu4" json:"FenZhongZhangFu4,omitempty"`
+	FenZhongZhangFu5           YFloat  `protobuf:"varint,81,opt,name=FenZhongZhangFu5" json:"FenZhongZhangFu5,omitempty"`
+	ShiYingLv                  YFloat  `protobuf:"varint,82,opt,name=ShiYingLv" json:"ShiYingLv,omitempty"`
+	ZhangTing                  YFloat  `protobuf:"varint,83,opt,name=ZhangTing" json:"ZhangTing,omitempty"`
+	DieTing                    YFloat  `protobuf:"varint,84,opt,name=DieTing" json:"DieTing,omitempty"`
 	ShiChangMingCheng          string `protobuf:"bytes,85,opt,name=ShiChangMingCheng" json:"ShiChangMingCheng,omitempty"`
 	ShiChangDuanMingCheng      string `protobuf:"bytes,86,opt,name=ShiChangDuanMingCheng" json:"ShiChangDuanMingCheng,omitempty"`
-	JiGouChiHuoShu             yfloat  `protobuf:"varint,87,opt,name=JiGouChiHuoShu" json:"JiGouChiHuoShu,omitempty"`
-	JiGouTuHuoShu              yfloat  `protobuf:"varint,88,opt,name=JiGouTuHuoShu" json:"JiGouTuHuoShu,omitempty"`
-	JiGouChiHuoLiang           yfloat  `protobuf:"varint,89,opt,name=JiGouChiHuoLiang" json:"JiGouChiHuoLiang,omitempty"`
-	JiGouTuHuoLiang            yfloat  `protobuf:"varint,90,opt,name=JiGouTuHuoLiang" json:"JiGouTuHuoLiang,omitempty"`
-	JiGouChiHuoJunE            yfloat  `protobuf:"varint,91,opt,name=JiGouChiHuoJunE" json:"JiGouChiHuoJunE,omitempty"`
-	JiGouTuHuoJunE             yfloat  `protobuf:"varint,92,opt,name=JiGouTuHuoJunE" json:"JiGouTuHuoJunE,omitempty"`
-	MeiShouGuShu               yfloat  `protobuf:"varint,93,opt,name=MeiShouGuShu" json:"MeiShouGuShu,omitempty"`
-	JiaoYiDanWei               yfloat  `protobuf:"varint,94,opt,name=JiaoYiDanWei" json:"JiaoYiDanWei,omitempty"`
-	ShiXiaoLv                  yfloat  `protobuf:"varint,95,opt,name=ShiXiaoLv" json:"ShiXiaoLv,omitempty"`
-	ShiJian                    yfloat  `protobuf:"varint,96,opt,name=ShiJian" json:"ShiJian,omitempty"`
-	ShiJingLv                  yfloat  `protobuf:"varint,97,opt,name=ShiJingLv" json:"ShiJingLv,omitempty"`
-	ZongShiZhi                 yfloat  `protobuf:"varint,98,opt,name=ZongShiZhi" json:"ZongShiZhi,omitempty"`
-	LiuTongShiZhi              yfloat  `protobuf:"varint,99,opt,name=LiuTongShiZhi" json:"LiuTongShiZhi,omitempty"`
-	RiZhangFu5                 yfloat  `protobuf:"varint,101,opt,name=RiZhangFu5" json:"RiZhangFu5,omitempty"`
-	RiPingJunZhangFu3          yfloat  `protobuf:"varint,102,opt,name=RiPingJunZhangFu3" json:"RiPingJunZhangFu3,omitempty"`
-	JingTaiShiYingLv           yfloat  `protobuf:"varint,103,opt,name=JingTaiShiYingLv" json:"JingTaiShiYingLv,omitempty"`
-	RongZiYuEZhangFu           yfloat  `protobuf:"varint,104,opt,name=RongZiYuEZhangFu" json:"RongZiYuEZhangFu,omitempty"`
-	RongZiYuELiuTongShiZhiBiLv yfloat  `protobuf:"varint,105,opt,name=RongZiYuELiuTongShiZhiBiLv" json:"RongZiYuELiuTongShiZhiBiLv,omitempty"`
-	ZiChanFuZhaiLv             yfloat  `protobuf:"varint,106,opt,name=ZiChanFuZhaiLv" json:"ZiChanFuZhaiLv,omitempty"`
+	JiGouChiHuoShu             YFloat  `protobuf:"varint,87,opt,name=JiGouChiHuoShu" json:"JiGouChiHuoShu,omitempty"`
+	JiGouTuHuoShu              YFloat  `protobuf:"varint,88,opt,name=JiGouTuHuoShu" json:"JiGouTuHuoShu,omitempty"`
+	JiGouChiHuoLiang           YFloat  `protobuf:"varint,89,opt,name=JiGouChiHuoLiang" json:"JiGouChiHuoLiang,omitempty"`
+	JiGouTuHuoLiang            YFloat  `protobuf:"varint,90,opt,name=JiGouTuHuoLiang" json:"JiGouTuHuoLiang,omitempty"`
+	JiGouChiHuoJunE            YFloat  `protobuf:"varint,91,opt,name=JiGouChiHuoJunE" json:"JiGouChiHuoJunE,omitempty"`
+	JiGouTuHuoJunE             YFloat  `protobuf:"varint,92,opt,name=JiGouTuHuoJunE" json:"JiGouTuHuoJunE,omitempty"`
+	MeiShouGuShu               YFloat  `protobuf:"varint,93,opt,name=MeiShouGuShu" json:"MeiShouGuShu,omitempty"`
+	JiaoYiDanWei               YFloat  `protobuf:"varint,94,opt,name=JiaoYiDanWei" json:"JiaoYiDanWei,omitempty"`
+	ShiXiaoLv                  YFloat  `protobuf:"varint,95,opt,name=ShiXiaoLv" json:"ShiXiaoLv,omitempty"`
+	ShiJian                    YFloat  `protobuf:"varint,96,opt,name=ShiJian" json:"ShiJian,omitempty"`
+	ShiJingLv                  YFloat  `protobuf:"varint,97,opt,name=ShiJingLv" json:"ShiJingLv,omitempty"`
+	ZongShiZhi                 YFloat  `protobuf:"varint,98,opt,name=ZongShiZhi" json:"ZongShiZhi,omitempty"`
+	LiuTongShiZhi              YFloat  `protobuf:"varint,99,opt,name=LiuTongShiZhi" json:"LiuTongShiZhi,omitempty"`
+	RiZhangFu5                 YFloat  `protobuf:"varint,101,opt,name=RiZhangFu5" json:"RiZhangFu5,omitempty"`
+	RiPingJunZhangFu3          YFloat  `protobuf:"varint,102,opt,name=RiPingJunZhangFu3" json:"RiPingJunZhangFu3,omitempty"`
+	JingTaiShiYingLv           YFloat  `protobuf:"varint,103,opt,name=JingTaiShiYingLv" json:"JingTaiShiYingLv,omitempty"`
+	RongZiYuEZhangFu           YFloat  `protobuf:"varint,104,opt,name=RongZiYuEZhangFu" json:"RongZiYuEZhangFu,omitempty"`
+	RongZiYuELiuTongShiZhiBiLv YFloat  `protobuf:"varint,105,opt,name=RongZiYuELiuTongShiZhiBiLv" json:"RongZiYuELiuTongShiZhiBiLv,omitempty"`
+	ZiChanFuZhaiLv             YFloat  `protobuf:"varint,106,opt,name=ZiChanFuZhaiLv" json:"ZiChanFuZhaiLv,omitempty"`
 	// KuoZhan
-	JiaQuanPingJunWeiTuoMaiRuJia  yfloat `protobuf:"varint,107,opt,name=JiaQuanPingJunWeiTuoMaiRuJia" json:"JiaQuanPingJunWeiTuoMaiRuJia,omitempty"`
-	WeiTuoMaiRuZongLiang          yfloat `protobuf:"varint,108,opt,name=WeiTuoMaiRuZongLiang" json:"WeiTuoMaiRuZongLiang,omitempty"`
-	JiaQuanPingJunWeiTuoMaiChuJia yfloat `protobuf:"varint,109,opt,name=JiaQuanPingJunWeiTuoMaiChuJia" json:"JiaQuanPingJunWeiTuoMaiChuJia,omitempty"`
-	WeiTuoMaiChuZongLiang         yfloat `protobuf:"varint,110,opt,name=WeiTuoMaiChuZongLiang" json:"WeiTuoMaiChuZongLiang,omitempty"`
-	KuoZhanMaiRuJia1              yfloat `protobuf:"varint,111,opt,name=KuoZhanMaiRuJia1" json:"KuoZhanMaiRuJia1,omitempty"`
-	KuoZhanMaiRuJia2              yfloat `protobuf:"varint,112,opt,name=KuoZhanMaiRuJia2" json:"KuoZhanMaiRuJia2,omitempty"`
-	KuoZhanMaiRuJia3              yfloat `protobuf:"varint,113,opt,name=KuoZhanMaiRuJia3" json:"KuoZhanMaiRuJia3,omitempty"`
-	KuoZhanMaiRuJia4              yfloat `protobuf:"varint,114,opt,name=KuoZhanMaiRuJia4" json:"KuoZhanMaiRuJia4,omitempty"`
-	KuoZhanMaiRuJia5              yfloat `protobuf:"varint,115,opt,name=KuoZhanMaiRuJia5" json:"KuoZhanMaiRuJia5,omitempty"`
-	KuoZhanMaiRuLiang1            yfloat `protobuf:"varint,116,opt,name=KuoZhanMaiRuLiang1" json:"KuoZhanMaiRuLiang1,omitempty"`
-	KuoZhanMaiRuLiang2            yfloat `protobuf:"varint,117,opt,name=KuoZhanMaiRuLiang2" json:"KuoZhanMaiRuLiang2,omitempty"`
-	KuoZhanMaiRuLiang3            yfloat `protobuf:"varint,118,opt,name=KuoZhanMaiRuLiang3" json:"KuoZhanMaiRuLiang3,omitempty"`
-	KuoZhanMaiRuLiang4            yfloat `protobuf:"varint,119,opt,name=KuoZhanMaiRuLiang4" json:"KuoZhanMaiRuLiang4,omitempty"`
-	KuoZhanMaiRuLiang5            yfloat `protobuf:"varint,120,opt,name=KuoZhanMaiRuLiang5" json:"KuoZhanMaiRuLiang5,omitempty"`
-	KuoZhanMaiChuJia1             yfloat `protobuf:"varint,121,opt,name=KuoZhanMaiChuJia1" json:"KuoZhanMaiChuJia1,omitempty"`
-	KuoZhanMaiChuJia2             yfloat `protobuf:"varint,122,opt,name=KuoZhanMaiChuJia2" json:"KuoZhanMaiChuJia2,omitempty"`
-	KuoZhanMaiChuJia3             yfloat `protobuf:"varint,123,opt,name=KuoZhanMaiChuJia3" json:"KuoZhanMaiChuJia3,omitempty"`
-	KuoZhanMaiChuJia4             yfloat `protobuf:"varint,124,opt,name=KuoZhanMaiChuJia4" json:"KuoZhanMaiChuJia4,omitempty"`
-	KuoZhanMaiChuJia5             yfloat `protobuf:"varint,125,opt,name=KuoZhanMaiChuJia5" json:"KuoZhanMaiChuJia5,omitempty"`
-	KuoZhanMaiChuLiang1           yfloat `protobuf:"varint,126,opt,name=KuoZhanMaiChuLiang1" json:"KuoZhanMaiChuLiang1,omitempty"`
-	KuoZhanMaiChuLiang2           yfloat `protobuf:"varint,127,opt,name=KuoZhanMaiChuLiang2" json:"KuoZhanMaiChuLiang2,omitempty"`
-	KuoZhanMaiChuLiang3           yfloat `protobuf:"varint,128,opt,name=KuoZhanMaiChuLiang3" json:"KuoZhanMaiChuLiang3,omitempty"`
-	KuoZhanMaiChuLiang4           yfloat `protobuf:"varint,129,opt,name=KuoZhanMaiChuLiang4" json:"KuoZhanMaiChuLiang4,omitempty"`
-	KuoZhanMaiChuLiang5           yfloat `protobuf:"varint,130,opt,name=KuoZhanMaiChuLiang5" json:"KuoZhanMaiChuLiang5,omitempty"`
-	DaDanDangRiLiuRuE             yfloat `protobuf:"varint,131,opt,name=DaDanDangRiLiuRuE" json:"DaDanDangRiLiuRuE,omitempty"`
-	DaDanLiuRuE5                  yfloat `protobuf:"varint,132,opt,name=DaDanLiuRuE5" json:"DaDanLiuRuE5,omitempty"`
-	DDX                           yfloat `protobuf:"varint,133,opt,name=DDX" json:"DDX,omitempty"`
-	DDXPiaoHongTianShu10          yfloat `protobuf:"varint,134,opt,name=DDXPiaoHongTianShu10" json:"DDXPiaoHongTianShu10,omitempty"`
-	DDXZongHe10                   yfloat `protobuf:"varint,135,opt,name=DDXZongHe10" json:"DDXZongHe10,omitempty"`
-	DDXBiaoZhunCha10              yfloat `protobuf:"varint,136,opt,name=DDXBiaoZhunCha10" json:"DDXBiaoZhunCha10,omitempty"`
-	DDXDDXBiaoZhunCha10BiZhi      yfloat `protobuf:"varint,137,opt,name=DDXDDXBiaoZhunCha10BiZhi" json:"DDXDDXBiaoZhunCha10BiZhi,omitempty"`
-	ShiFouTingPai                 yfloat `protobuf:"varint,138,opt,name=ShiFouTingPai" json:"ShiFouTingPai,omitempty"`
-	DaDanLiuRuZongE               yfloat `protobuf:"varint,140,opt,name=DaDanLiuRuZongE" json:"DaDanLiuRuZongE,omitempty"`
-	DaDanLiuChuZongE              yfloat `protobuf:"varint,141,opt,name=DaDanLiuChuZongE" json:"DaDanLiuChuZongE,omitempty"`
-	DaDanLiuRuZongE5              yfloat `protobuf:"varint,142,opt,name=DaDanLiuRuZongE5" json:"DaDanLiuRuZongE5,omitempty"`
-	DaDanLiuChuZongE5             yfloat `protobuf:"varint,143,opt,name=DaDanLiuChuZongE5" json:"DaDanLiuChuZongE5,omitempty"`
-	DDXLianXuPiaoHongTianShu      yfloat `protobuf:"varint,144,opt,name=DDXLianXuPiaoHongTianShu" json:"DDXLianXuPiaoHongTianShu,omitempty"`
+	JiaQuanPingJunWeiTuoMaiRuJia  YFloat `protobuf:"varint,107,opt,name=JiaQuanPingJunWeiTuoMaiRuJia" json:"JiaQuanPingJunWeiTuoMaiRuJia,omitempty"`
+	WeiTuoMaiRuZongLiang          YFloat `protobuf:"varint,108,opt,name=WeiTuoMaiRuZongLiang" json:"WeiTuoMaiRuZongLiang,omitempty"`
+	JiaQuanPingJunWeiTuoMaiChuJia YFloat `protobuf:"varint,109,opt,name=JiaQuanPingJunWeiTuoMaiChuJia" json:"JiaQuanPingJunWeiTuoMaiChuJia,omitempty"`
+	WeiTuoMaiChuZongLiang         YFloat `protobuf:"varint,110,opt,name=WeiTuoMaiChuZongLiang" json:"WeiTuoMaiChuZongLiang,omitempty"`
+	KuoZhanMaiRuJia1              YFloat `protobuf:"varint,111,opt,name=KuoZhanMaiRuJia1" json:"KuoZhanMaiRuJia1,omitempty"`
+	KuoZhanMaiRuJia2              YFloat `protobuf:"varint,112,opt,name=KuoZhanMaiRuJia2" json:"KuoZhanMaiRuJia2,omitempty"`
+	KuoZhanMaiRuJia3              YFloat `protobuf:"varint,113,opt,name=KuoZhanMaiRuJia3" json:"KuoZhanMaiRuJia3,omitempty"`
+	KuoZhanMaiRuJia4              YFloat `protobuf:"varint,114,opt,name=KuoZhanMaiRuJia4" json:"KuoZhanMaiRuJia4,omitempty"`
+	KuoZhanMaiRuJia5              YFloat `protobuf:"varint,115,opt,name=KuoZhanMaiRuJia5" json:"KuoZhanMaiRuJia5,omitempty"`
+	KuoZhanMaiRuLiang1            YFloat `protobuf:"varint,116,opt,name=KuoZhanMaiRuLiang1" json:"KuoZhanMaiRuLiang1,omitempty"`
+	KuoZhanMaiRuLiang2            YFloat `protobuf:"varint,117,opt,name=KuoZhanMaiRuLiang2" json:"KuoZhanMaiRuLiang2,omitempty"`
+	KuoZhanMaiRuLiang3            YFloat `protobuf:"varint,118,opt,name=KuoZhanMaiRuLiang3" json:"KuoZhanMaiRuLiang3,omitempty"`
+	KuoZhanMaiRuLiang4            YFloat `protobuf:"varint,119,opt,name=KuoZhanMaiRuLiang4" json:"KuoZhanMaiRuLiang4,omitempty"`
+	KuoZhanMaiRuLiang5            YFloat `protobuf:"varint,120,opt,name=KuoZhanMaiRuLiang5" json:"KuoZhanMaiRuLiang5,omitempty"`
+	KuoZhanMaiChuJia1             YFloat `protobuf:"varint,121,opt,name=KuoZhanMaiChuJia1" json:"KuoZhanMaiChuJia1,omitempty"`
+	KuoZhanMaiChuJia2             YFloat `protobuf:"varint,122,opt,name=KuoZhanMaiChuJia2" json:"KuoZhanMaiChuJia2,omitempty"`
+	KuoZhanMaiChuJia3             YFloat `protobuf:"varint,123,opt,name=KuoZhanMaiChuJia3" json:"KuoZhanMaiChuJia3,omitempty"`
+	KuoZhanMaiChuJia4             YFloat `protobuf:"varint,124,opt,name=KuoZhanMaiChuJia4" json:"KuoZhanMaiChuJia4,omitempty"`
+	KuoZhanMaiChuJia5             YFloat `protobuf:"varint,125,opt,name=KuoZhanMaiChuJia5" json:"KuoZhanMaiChuJia5,omitempty"`
+	KuoZhanMaiChuLiang1           YFloat `protobuf:"varint,126,opt,name=KuoZhanMaiChuLiang1" json:"KuoZhanMaiChuLiang1,omitempty"`
+	KuoZhanMaiChuLiang2           YFloat `protobuf:"varint,127,opt,name=KuoZhanMaiChuLiang2" json:"KuoZhanMaiChuLiang2,omitempty"`
+	KuoZhanMaiChuLiang3           YFloat `protobuf:"varint,128,opt,name=KuoZhanMaiChuLiang3" json:"KuoZhanMaiChuLiang3,omitempty"`
+	KuoZhanMaiChuLiang4           YFloat `protobuf:"varint,129,opt,name=KuoZhanMaiChuLiang4" json:"KuoZhanMaiChuLiang4,omitempty"`
+	KuoZhanMaiChuLiang5           YFloat `protobuf:"varint,130,opt,name=KuoZhanMaiChuLiang5" json:"KuoZhanMaiChuLiang5,omitempty"`
+	DaDanDangRiLiuRuE             YFloat `protobuf:"varint,131,opt,name=DaDanDangRiLiuRuE" json:"DaDanDangRiLiuRuE,omitempty"`
+	DaDanLiuRuE5                  YFloat `protobuf:"varint,132,opt,name=DaDanLiuRuE5" json:"DaDanLiuRuE5,omitempty"`
+	DDX                           YFloat `protobuf:"varint,133,opt,name=DDX" json:"DDX,omitempty"`
+	DDXPiaoHongTianShu10          YFloat `protobuf:"varint,134,opt,name=DDXPiaoHongTianShu10" json:"DDXPiaoHongTianShu10,omitempty"`
+	DDXZongHe10                   YFloat `protobuf:"varint,135,opt,name=DDXZongHe10" json:"DDXZongHe10,omitempty"`
+	DDXBiaoZhunCha10              YFloat `protobuf:"varint,136,opt,name=DDXBiaoZhunCha10" json:"DDXBiaoZhunCha10,omitempty"`
+	DDXDDXBiaoZhunCha10BiZhi      YFloat `protobuf:"varint,137,opt,name=DDXDDXBiaoZhunCha10BiZhi" json:"DDXDDXBiaoZhunCha10BiZhi,omitempty"`
+	ShiFouTingPai                 YFloat `protobuf:"varint,138,opt,name=ShiFouTingPai" json:"ShiFouTingPai,omitempty"`
+	DaDanLiuRuZongE               YFloat `protobuf:"varint,140,opt,name=DaDanLiuRuZongE" json:"DaDanLiuRuZongE,omitempty"`
+	DaDanLiuChuZongE              YFloat `protobuf:"varint,141,opt,name=DaDanLiuChuZongE" json:"DaDanLiuChuZongE,omitempty"`
+	DaDanLiuRuZongE5              YFloat `protobuf:"varint,142,opt,name=DaDanLiuRuZongE5" json:"DaDanLiuRuZongE5,omitempty"`
+	DaDanLiuChuZongE5             YFloat `protobuf:"varint,143,opt,name=DaDanLiuChuZongE5" json:"DaDanLiuChuZongE5,omitempty"`
+	DDXLianXuPiaoHongTianShu      YFloat `protobuf:"varint,144,opt,name=DDXLianXuPiaoHongTianShu" json:"DDXLianXuPiaoHongTianShu,omitempty"`
 	// 指标相关字段
 	// MA
-	MA1MinMA1 yfloat `protobuf:"varint,200,opt,name=MA1minMA1" json:"MA1minMA1,omitempty"`
-	MA1MinMA2 yfloat `protobuf:"varint,201,opt,name=MA1minMA2" json:"MA1minMA2,omitempty"`
-	MA1MinMA3 yfloat `protobuf:"varint,202,opt,name=MA1minMA3" json:"MA1minMA3,omitempty"`
-	MA1MinMA4 yfloat `protobuf:"varint,203,opt,name=MA1minMA4" json:"MA1minMA4,omitempty"`
-	MA1MinMA5 yfloat `protobuf:"varint,204,opt,name=MA1minMA5" json:"MA1minMA5,omitempty"`
-	MA1MinMA6 yfloat `protobuf:"varint,205,opt,name=MA1minMA6" json:"MA1minMA6,omitempty"`
-	MA5MinMA1 yfloat `protobuf:"varint,206,opt,name=MA5minMA1" json:"MA5minMA1,omitempty"`
-	MA5MinMA2 yfloat `protobuf:"varint,207,opt,name=MA5minMA2" json:"MA5minMA2,omitempty"`
-	MA5MinMA3 yfloat `protobuf:"varint,208,opt,name=MA5minMA3" json:"MA5minMA3,omitempty"`
-	MA5MinMA4 yfloat `protobuf:"varint,209,opt,name=MA5minMA4" json:"MA5minMA4,omitempty"`
-	MA5MinMA5 yfloat `protobuf:"varint,210,opt,name=MA5minMA5" json:"MA5minMA5,omitempty"`
-	MA5MinMA6 yfloat `protobuf:"varint,211,opt,name=MA5minMA6" json:"MA5minMA6,omitempty"`
-	MA1DayMA1 yfloat `protobuf:"varint,212,opt,name=MA1dayMA1" json:"MA1dayMA1,omitempty"`
-	MA1DayMA2 yfloat `protobuf:"varint,213,opt,name=MA1dayMA2" json:"MA1dayMA2,omitempty"`
-	MA1DayMA3 yfloat `protobuf:"varint,214,opt,name=MA1dayMA3" json:"MA1dayMA3,omitempty"`
-	MA1DayMA4 yfloat `protobuf:"varint,215,opt,name=MA1dayMA4" json:"MA1dayMA4,omitempty"`
-	MA1DayMA5 yfloat `protobuf:"varint,216,opt,name=MA1dayMA5" json:"MA1dayMA5,omitempty"`
-	MA1DayMA6 yfloat `protobuf:"varint,217,opt,name=MA1dayMA6" json:"MA1dayMA6,omitempty"`
+	MA1MinMA1 YFloat `protobuf:"varint,200,opt,name=MA1minMA1" json:"MA1minMA1,omitempty"`
+	MA1MinMA2 YFloat `protobuf:"varint,201,opt,name=MA1minMA2" json:"MA1minMA2,omitempty"`
+	MA1MinMA3 YFloat `protobuf:"varint,202,opt,name=MA1minMA3" json:"MA1minMA3,omitempty"`
+	MA1MinMA4 YFloat `protobuf:"varint,203,opt,name=MA1minMA4" json:"MA1minMA4,omitempty"`
+	MA1MinMA5 YFloat `protobuf:"varint,204,opt,name=MA1minMA5" json:"MA1minMA5,omitempty"`
+	MA1MinMA6 YFloat `protobuf:"varint,205,opt,name=MA1minMA6" json:"MA1minMA6,omitempty"`
+	MA5MinMA1 YFloat `protobuf:"varint,206,opt,name=MA5minMA1" json:"MA5minMA1,omitempty"`
+	MA5MinMA2 YFloat `protobuf:"varint,207,opt,name=MA5minMA2" json:"MA5minMA2,omitempty"`
+	MA5MinMA3 YFloat `protobuf:"varint,208,opt,name=MA5minMA3" json:"MA5minMA3,omitempty"`
+	MA5MinMA4 YFloat `protobuf:"varint,209,opt,name=MA5minMA4" json:"MA5minMA4,omitempty"`
+	MA5MinMA5 YFloat `protobuf:"varint,210,opt,name=MA5minMA5" json:"MA5minMA5,omitempty"`
+	MA5MinMA6 YFloat `protobuf:"varint,211,opt,name=MA5minMA6" json:"MA5minMA6,omitempty"`
+	MA1DayMA1 YFloat `protobuf:"varint,212,opt,name=MA1dayMA1" json:"MA1dayMA1,omitempty"`
+	MA1DayMA2 YFloat `protobuf:"varint,213,opt,name=MA1dayMA2" json:"MA1dayMA2,omitempty"`
+	MA1DayMA3 YFloat `protobuf:"varint,214,opt,name=MA1dayMA3" json:"MA1dayMA3,omitempty"`
+	MA1DayMA4 YFloat `protobuf:"varint,215,opt,name=MA1dayMA4" json:"MA1dayMA4,omitempty"`
+	MA1DayMA5 YFloat `protobuf:"varint,216,opt,name=MA1dayMA5" json:"MA1dayMA5,omitempty"`
+	MA1DayMA6 YFloat `protobuf:"varint,217,opt,name=MA1dayMA6" json:"MA1dayMA6,omitempty"`
 	// BOLL
-	BOLL1MinMID   yfloat `protobuf:"varint,218,opt,name=BOLL1minMID" json:"BOLL1minMID,omitempty"`
-	BOLL1MinUPPER yfloat `protobuf:"varint,219,opt,name=BOLL1minUPPER" json:"BOLL1minUPPER,omitempty"`
-	BOLL1MinLOWER yfloat `protobuf:"varint,220,opt,name=BOLL1minLOWER" json:"BOLL1minLOWER,omitempty"`
-	BOLL5MinMID   yfloat `protobuf:"varint,221,opt,name=BOLL5minMID" json:"BOLL5minMID,omitempty"`
-	BOLL5MinUPPER yfloat `protobuf:"varint,222,opt,name=BOLL5minUPPER" json:"BOLL5minUPPER,omitempty"`
-	BOLL5MinLOWER yfloat `protobuf:"varint,223,opt,name=BOLL5minLOWER" json:"BOLL5minLOWER,omitempty"`
-	BOLL1DayMID   yfloat `protobuf:"varint,224,opt,name=BOLL1dayMID" json:"BOLL1dayMID,omitempty"`
-	BOLL1DayUPPER yfloat `protobuf:"varint,225,opt,name=BOLL1dayUPPER" json:"BOLL1dayUPPER,omitempty"`
-	BOLL1DayLOWER yfloat `protobuf:"varint,226,opt,name=BOLL1dayLOWER" json:"BOLL1dayLOWER,omitempty"`
+	BOLL1MinMID   YFloat `protobuf:"varint,218,opt,name=BOLL1minMID" json:"BOLL1minMID,omitempty"`
+	BOLL1MinUPPER YFloat `protobuf:"varint,219,opt,name=BOLL1minUPPER" json:"BOLL1minUPPER,omitempty"`
+	BOLL1MinLOWER YFloat `protobuf:"varint,220,opt,name=BOLL1minLOWER" json:"BOLL1minLOWER,omitempty"`
+	BOLL5MinMID   YFloat `protobuf:"varint,221,opt,name=BOLL5minMID" json:"BOLL5minMID,omitempty"`
+	BOLL5MinUPPER YFloat `protobuf:"varint,222,opt,name=BOLL5minUPPER" json:"BOLL5minUPPER,omitempty"`
+	BOLL5MinLOWER YFloat `protobuf:"varint,223,opt,name=BOLL5minLOWER" json:"BOLL5minLOWER,omitempty"`
+	BOLL1DayMID   YFloat `protobuf:"varint,224,opt,name=BOLL1dayMID" json:"BOLL1dayMID,omitempty"`
+	BOLL1DayUPPER YFloat `protobuf:"varint,225,opt,name=BOLL1dayUPPER" json:"BOLL1dayUPPER,omitempty"`
+	BOLL1DayLOWER YFloat `protobuf:"varint,226,opt,name=BOLL1dayLOWER" json:"BOLL1dayLOWER,omitempty"`
 	// VOL
-	VOL1Min    yfloat `protobuf:"varint,227,opt,name=VOL1min" json:"VOL1min,omitempty"`
-	VOL1MinMA1 yfloat `protobuf:"varint,228,opt,name=VOL1minMA1" json:"VOL1minMA1,omitempty"`
-	VOL1MinMA2 yfloat `protobuf:"varint,229,opt,name=VOL1minMA2" json:"VOL1minMA2,omitempty"`
-	VOL1MinMA3 yfloat `protobuf:"varint,230,opt,name=VOL1minMA3" json:"VOL1minMA3,omitempty"`
-	VOL5Min    yfloat `protobuf:"varint,231,opt,name=VOL5min" json:"VOL5min,omitempty"`
-	VOL5MinMA1 yfloat `protobuf:"varint,232,opt,name=VOL5minMA1" json:"VOL5minMA1,omitempty"`
-	VOL5MinMA2 yfloat `protobuf:"varint,233,opt,name=VOL5minMA2" json:"VOL5minMA2,omitempty"`
-	VOL5MinMA3 yfloat `protobuf:"varint,234,opt,name=VOL5minMA3" json:"VOL5minMA3,omitempty"`
-	VOL1Day    yfloat `protobuf:"varint,235,opt,name=VOL1day" json:"VOL1day,omitempty"`
-	VOL1DayMA1 yfloat `protobuf:"varint,236,opt,name=VOL1dayMA1" json:"VOL1dayMA1,omitempty"`
-	VOL1DayMA2 yfloat `protobuf:"varint,237,opt,name=VOL1dayMA2" json:"VOL1dayMA2,omitempty"`
-	VOL1DayMA3 yfloat `protobuf:"varint,238,opt,name=VOL1dayMA3" json:"VOL1dayMA3,omitempty"`
+	VOL1Min    YFloat `protobuf:"varint,227,opt,name=VOL1min" json:"VOL1min,omitempty"`
+	VOL1MinMA1 YFloat `protobuf:"varint,228,opt,name=VOL1minMA1" json:"VOL1minMA1,omitempty"`
+	VOL1MinMA2 YFloat `protobuf:"varint,229,opt,name=VOL1minMA2" json:"VOL1minMA2,omitempty"`
+	VOL1MinMA3 YFloat `protobuf:"varint,230,opt,name=VOL1minMA3" json:"VOL1minMA3,omitempty"`
+	VOL5Min    YFloat `protobuf:"varint,231,opt,name=VOL5min" json:"VOL5min,omitempty"`
+	VOL5MinMA1 YFloat `protobuf:"varint,232,opt,name=VOL5minMA1" json:"VOL5minMA1,omitempty"`
+	VOL5MinMA2 YFloat `protobuf:"varint,233,opt,name=VOL5minMA2" json:"VOL5minMA2,omitempty"`
+	VOL5MinMA3 YFloat `protobuf:"varint,234,opt,name=VOL5minMA3" json:"VOL5minMA3,omitempty"`
+	VOL1Day    YFloat `protobuf:"varint,235,opt,name=VOL1day" json:"VOL1day,omitempty"`
+	VOL1DayMA1 YFloat `protobuf:"varint,236,opt,name=VOL1dayMA1" json:"VOL1dayMA1,omitempty"`
+	VOL1DayMA2 YFloat `protobuf:"varint,237,opt,name=VOL1dayMA2" json:"VOL1dayMA2,omitempty"`
+	VOL1DayMA3 YFloat `protobuf:"varint,238,opt,name=VOL1dayMA3" json:"VOL1dayMA3,omitempty"`
 	// ARBR
-	ARBR1MinAR yfloat `protobuf:"varint,239,opt,name=ARBR1minAR" json:"ARBR1minAR,omitempty"`
-	ARBR1MinBR yfloat `protobuf:"varint,240,opt,name=ARBR1minBR" json:"ARBR1minBR,omitempty"`
-	ARBR5MinAR yfloat `protobuf:"varint,241,opt,name=ARBR5minAR" json:"ARBR5minAR,omitempty"`
-	ARBR5MinBR yfloat `protobuf:"varint,242,opt,name=ARBR5minBR" json:"ARBR5minBR,omitempty"`
-	ARBR1DayAR yfloat `protobuf:"varint,243,opt,name=ARBR1dayAR" json:"ARBR1dayAR,omitempty"`
-	ARBR1DayBR yfloat `protobuf:"varint,244,opt,name=ARBR1dayBR" json:"ARBR1dayBR,omitempty"`
+	ARBR1MinAR YFloat `protobuf:"varint,239,opt,name=ARBR1minAR" json:"ARBR1minAR,omitempty"`
+	ARBR1MinBR YFloat `protobuf:"varint,240,opt,name=ARBR1minBR" json:"ARBR1minBR,omitempty"`
+	ARBR5MinAR YFloat `protobuf:"varint,241,opt,name=ARBR5minAR" json:"ARBR5minAR,omitempty"`
+	ARBR5MinBR YFloat `protobuf:"varint,242,opt,name=ARBR5minBR" json:"ARBR5minBR,omitempty"`
+	ARBR1DayAR YFloat `protobuf:"varint,243,opt,name=ARBR1dayAR" json:"ARBR1dayAR,omitempty"`
+	ARBR1DayBR YFloat `protobuf:"varint,244,opt,name=ARBR1dayBR" json:"ARBR1dayBR,omitempty"`
 	// BIAS
-	BIAS1MinBIAS1 yfloat `protobuf:"varint,245,opt,name=BIAS1minBIAS1" json:"BIAS1minBIAS1,omitempty"`
-	BIAS1MinBIAS2 yfloat `protobuf:"varint,246,opt,name=BIAS1minBIAS2" json:"BIAS1minBIAS2,omitempty"`
-	BIAS1MinBIAS3 yfloat `protobuf:"varint,247,opt,name=BIAS1minBIAS3" json:"BIAS1minBIAS3,omitempty"`
-	BIAS5MinBIAS1 yfloat `protobuf:"varint,248,opt,name=BIAS5minBIAS1" json:"BIAS5minBIAS1,omitempty"`
-	BIAS5MinBIAS2 yfloat `protobuf:"varint,249,opt,name=BIAS5minBIAS2" json:"BIAS5minBIAS2,omitempty"`
-	BIAS5MinBIAS3 yfloat `protobuf:"varint,250,opt,name=BIAS5minBIAS3" json:"BIAS5minBIAS3,omitempty"`
-	BIAS1DayBIAS1 yfloat `protobuf:"varint,251,opt,name=BIAS1dayBIAS1" json:"BIAS1dayBIAS1,omitempty"`
-	BIAS1DayBIAS2 yfloat `protobuf:"varint,252,opt,name=BIAS1dayBIAS2" json:"BIAS1dayBIAS2,omitempty"`
-	BIAS1DayBIAS3 yfloat `protobuf:"varint,253,opt,name=BIAS1dayBIAS3" json:"BIAS1dayBIAS3,omitempty"`
+	BIAS1MinBIAS1 YFloat `protobuf:"varint,245,opt,name=BIAS1minBIAS1" json:"BIAS1minBIAS1,omitempty"`
+	BIAS1MinBIAS2 YFloat `protobuf:"varint,246,opt,name=BIAS1minBIAS2" json:"BIAS1minBIAS2,omitempty"`
+	BIAS1MinBIAS3 YFloat `protobuf:"varint,247,opt,name=BIAS1minBIAS3" json:"BIAS1minBIAS3,omitempty"`
+	BIAS5MinBIAS1 YFloat `protobuf:"varint,248,opt,name=BIAS5minBIAS1" json:"BIAS5minBIAS1,omitempty"`
+	BIAS5MinBIAS2 YFloat `protobuf:"varint,249,opt,name=BIAS5minBIAS2" json:"BIAS5minBIAS2,omitempty"`
+	BIAS5MinBIAS3 YFloat `protobuf:"varint,250,opt,name=BIAS5minBIAS3" json:"BIAS5minBIAS3,omitempty"`
+	BIAS1DayBIAS1 YFloat `protobuf:"varint,251,opt,name=BIAS1dayBIAS1" json:"BIAS1dayBIAS1,omitempty"`
+	BIAS1DayBIAS2 YFloat `protobuf:"varint,252,opt,name=BIAS1dayBIAS2" json:"BIAS1dayBIAS2,omitempty"`
+	BIAS1DayBIAS3 YFloat `protobuf:"varint,253,opt,name=BIAS1dayBIAS3" json:"BIAS1dayBIAS3,omitempty"`
 	// CCI
-	CCI1Min yfloat `protobuf:"varint,254,opt,name=CCI1min" json:"CCI1min,omitempty"`
-	CCI5Min yfloat `protobuf:"varint,255,opt,name=CCI5min" json:"CCI5min,omitempty"`
-	CCI1Day yfloat `protobuf:"varint,256,opt,name=CCI1day" json:"CCI1day,omitempty"`
+	CCI1Min YFloat `protobuf:"varint,254,opt,name=CCI1min" json:"CCI1min,omitempty"`
+	CCI5Min YFloat `protobuf:"varint,255,opt,name=CCI5min" json:"CCI5min,omitempty"`
+	CCI1Day YFloat `protobuf:"varint,256,opt,name=CCI1day" json:"CCI1day,omitempty"`
 	// CJBS
-	CJBS1MinCJBS yfloat `protobuf:"varint,257,opt,name=CJBS1minCJBS" json:"CJBS1minCJBS,omitempty"`
-	CJBS5MinCJBS yfloat `protobuf:"varint,258,opt,name=CJBS5minCJBS" json:"CJBS5minCJBS,omitempty"`
-	CJBS1DayCJBS yfloat `protobuf:"varint,259,opt,name=CJBS1dayCJBS" json:"CJBS1dayCJBS,omitempty"`
+	CJBS1MinCJBS YFloat `protobuf:"varint,257,opt,name=CJBS1minCJBS" json:"CJBS1minCJBS,omitempty"`
+	CJBS5MinCJBS YFloat `protobuf:"varint,258,opt,name=CJBS5minCJBS" json:"CJBS5minCJBS,omitempty"`
+	CJBS1DayCJBS YFloat `protobuf:"varint,259,opt,name=CJBS1dayCJBS" json:"CJBS1dayCJBS,omitempty"`
 	// CR
-	CR1MinCR  yfloat `protobuf:"varint,260,opt,name=CR1minCR" json:"CR1minCR,omitempty"`
-	CR1MinMA1 yfloat `protobuf:"varint,261,opt,name=CR1minMA1" json:"CR1minMA1,omitempty"`
-	CR1MinMA2 yfloat `protobuf:"varint,262,opt,name=CR1minMA2" json:"CR1minMA2,omitempty"`
-	CR1MinMA3 yfloat `protobuf:"varint,263,opt,name=CR1minMA3" json:"CR1minMA3,omitempty"`
-	CR5MinCR  yfloat `protobuf:"varint,264,opt,name=CR5minCR" json:"CR5minCR,omitempty"`
-	CR5MinMA1 yfloat `protobuf:"varint,265,opt,name=CR5minMA1" json:"CR5minMA1,omitempty"`
-	CR5MinMA2 yfloat `protobuf:"varint,266,opt,name=CR5minMA2" json:"CR5minMA2,omitempty"`
-	CR5MinMA3 yfloat `protobuf:"varint,267,opt,name=CR5minMA3" json:"CR5minMA3,omitempty"`
-	CR1DayCR  yfloat `protobuf:"varint,268,opt,name=CR1dayCR" json:"CR1dayCR,omitempty"`
-	CR1DayMA1 yfloat `protobuf:"varint,269,opt,name=CR1dayMA1" json:"CR1dayMA1,omitempty"`
-	CR1DayMA2 yfloat `protobuf:"varint,270,opt,name=CR1dayMA2" json:"CR1dayMA2,omitempty"`
-	CR1DayMA3 yfloat `protobuf:"varint,271,opt,name=CR1dayMA3" json:"CR1dayMA3,omitempty"`
+	CR1MinCR  YFloat `protobuf:"varint,260,opt,name=CR1minCR" json:"CR1minCR,omitempty"`
+	CR1MinMA1 YFloat `protobuf:"varint,261,opt,name=CR1minMA1" json:"CR1minMA1,omitempty"`
+	CR1MinMA2 YFloat `protobuf:"varint,262,opt,name=CR1minMA2" json:"CR1minMA2,omitempty"`
+	CR1MinMA3 YFloat `protobuf:"varint,263,opt,name=CR1minMA3" json:"CR1minMA3,omitempty"`
+	CR5MinCR  YFloat `protobuf:"varint,264,opt,name=CR5minCR" json:"CR5minCR,omitempty"`
+	CR5MinMA1 YFloat `protobuf:"varint,265,opt,name=CR5minMA1" json:"CR5minMA1,omitempty"`
+	CR5MinMA2 YFloat `protobuf:"varint,266,opt,name=CR5minMA2" json:"CR5minMA2,omitempty"`
+	CR5MinMA3 YFloat `protobuf:"varint,267,opt,name=CR5minMA3" json:"CR5minMA3,omitempty"`
+	CR1DayCR  YFloat `protobuf:"varint,268,opt,name=CR1dayCR" json:"CR1dayCR,omitempty"`
+	CR1DayMA1 YFloat `protobuf:"varint,269,opt,name=CR1dayMA1" json:"CR1dayMA1,omitempty"`
+	CR1DayMA2 YFloat `protobuf:"varint,270,opt,name=CR1dayMA2" json:"CR1dayMA2,omitempty"`
+	CR1DayMA3 YFloat `protobuf:"varint,271,opt,name=CR1dayMA3" json:"CR1dayMA3,omitempty"`
 	// DMA
-	DMA1MinDDD yfloat `protobuf:"varint,272,opt,name=DMA1minDDD" json:"DMA1minDDD,omitempty"`
-	DMA1MinAMA yfloat `protobuf:"varint,273,opt,name=DMA1minAMA" json:"DMA1minAMA,omitempty"`
-	DMA5MinDDD yfloat `protobuf:"varint,274,opt,name=DMA5minDDD" json:"DMA5minDDD,omitempty"`
-	DMA5MinAMA yfloat `protobuf:"varint,275,opt,name=DMA5minAMA" json:"DMA5minAMA,omitempty"`
-	DMA1DayDDD yfloat `protobuf:"varint,276,opt,name=DMA1dayDDD" json:"DMA1dayDDD,omitempty"`
-	DMA1DayAMA yfloat `protobuf:"varint,277,opt,name=DMA1dayAMA" json:"DMA1dayAMA,omitempty"`
+	DMA1MinDDD YFloat `protobuf:"varint,272,opt,name=DMA1minDDD" json:"DMA1minDDD,omitempty"`
+	DMA1MinAMA YFloat `protobuf:"varint,273,opt,name=DMA1minAMA" json:"DMA1minAMA,omitempty"`
+	DMA5MinDDD YFloat `protobuf:"varint,274,opt,name=DMA5minDDD" json:"DMA5minDDD,omitempty"`
+	DMA5MinAMA YFloat `protobuf:"varint,275,opt,name=DMA5minAMA" json:"DMA5minAMA,omitempty"`
+	DMA1DayDDD YFloat `protobuf:"varint,276,opt,name=DMA1dayDDD" json:"DMA1dayDDD,omitempty"`
+	DMA1DayAMA YFloat `protobuf:"varint,277,opt,name=DMA1dayAMA" json:"DMA1dayAMA,omitempty"`
 	// DMI
-	DMI1MinPDI  yfloat `protobuf:"varint,278,opt,name=DMI1minPDI" json:"DMI1minPDI,omitempty"`
-	DMI1MinMDI  yfloat `protobuf:"varint,279,opt,name=DMI1minMDI" json:"DMI1minMDI,omitempty"`
-	DMI1MinADX  yfloat `protobuf:"varint,280,opt,name=DMI1minADX" json:"DMI1minADX,omitempty"`
-	DMI1MinADXR yfloat `protobuf:"varint,281,opt,name=DMI1minADXR" json:"DMI1minADXR,omitempty"`
-	DMI5MinPDI  yfloat `protobuf:"varint,282,opt,name=DMI5minPDI" json:"DMI5minPDI,omitempty"`
-	DMI5MinMDI  yfloat `protobuf:"varint,283,opt,name=DMI5minMDI" json:"DMI5minMDI,omitempty"`
-	DMI5MinADX  yfloat `protobuf:"varint,284,opt,name=DMI5minADX" json:"DMI5minADX,omitempty"`
-	DMI5MinADXR yfloat `protobuf:"varint,285,opt,name=DMI5minADXR" json:"DMI5minADXR,omitempty"`
-	DMI1DayPDI  yfloat `protobuf:"varint,286,opt,name=DMI1dayPDI" json:"DMI1dayPDI,omitempty"`
-	DMI1DayMDI  yfloat `protobuf:"varint,287,opt,name=DMI1dayMDI" json:"DMI1dayMDI,omitempty"`
-	DMI1DayADX  yfloat `protobuf:"varint,288,opt,name=DMI1dayADX" json:"DMI1dayADX,omitempty"`
-	DMI1DayADXR yfloat `protobuf:"varint,289,opt,name=DMI1dayADXR" json:"DMI1dayADXR,omitempty"`
+	DMI1MinPDI  YFloat `protobuf:"varint,278,opt,name=DMI1minPDI" json:"DMI1minPDI,omitempty"`
+	DMI1MinMDI  YFloat `protobuf:"varint,279,opt,name=DMI1minMDI" json:"DMI1minMDI,omitempty"`
+	DMI1MinADX  YFloat `protobuf:"varint,280,opt,name=DMI1minADX" json:"DMI1minADX,omitempty"`
+	DMI1MinADXR YFloat `protobuf:"varint,281,opt,name=DMI1minADXR" json:"DMI1minADXR,omitempty"`
+	DMI5MinPDI  YFloat `protobuf:"varint,282,opt,name=DMI5minPDI" json:"DMI5minPDI,omitempty"`
+	DMI5MinMDI  YFloat `protobuf:"varint,283,opt,name=DMI5minMDI" json:"DMI5minMDI,omitempty"`
+	DMI5MinADX  YFloat `protobuf:"varint,284,opt,name=DMI5minADX" json:"DMI5minADX,omitempty"`
+	DMI5MinADXR YFloat `protobuf:"varint,285,opt,name=DMI5minADXR" json:"DMI5minADXR,omitempty"`
+	DMI1DayPDI  YFloat `protobuf:"varint,286,opt,name=DMI1dayPDI" json:"DMI1dayPDI,omitempty"`
+	DMI1DayMDI  YFloat `protobuf:"varint,287,opt,name=DMI1dayMDI" json:"DMI1dayMDI,omitempty"`
+	DMI1DayADX  YFloat `protobuf:"varint,288,opt,name=DMI1dayADX" json:"DMI1dayADX,omitempty"`
+	DMI1DayADXR YFloat `protobuf:"varint,289,opt,name=DMI1dayADXR" json:"DMI1dayADXR,omitempty"`
 	// KDJ
-	KDJ1MinK yfloat `protobuf:"varint,290,opt,name=KDJ1minK" json:"KDJ1minK,omitempty"`
-	KDJ1MinD yfloat `protobuf:"varint,291,opt,name=KDJ1minD" json:"KDJ1minD,omitempty"`
-	KDJ1MinJ yfloat `protobuf:"varint,292,opt,name=KDJ1minJ" json:"KDJ1minJ,omitempty"`
-	KDJ5MinK yfloat `protobuf:"varint,293,opt,name=KDJ5minK" json:"KDJ5minK,omitempty"`
-	KDJ5MinD yfloat `protobuf:"varint,294,opt,name=KDJ5minD" json:"KDJ5minD,omitempty"`
-	KDJ5MinJ yfloat `protobuf:"varint,295,opt,name=KDJ5minJ" json:"KDJ5minJ,omitempty"`
-	KDJ1DayK yfloat `protobuf:"varint,296,opt,name=KDJ1dayK" json:"KDJ1dayK,omitempty"`
-	KDJ1DayD yfloat `protobuf:"varint,297,opt,name=KDJ1dayD" json:"KDJ1dayD,omitempty"`
-	KDJ1DayJ yfloat `protobuf:"varint,298,opt,name=KDJ1dayJ" json:"KDJ1dayJ,omitempty"`
+	KDJ1MinK YFloat `protobuf:"varint,290,opt,name=KDJ1minK" json:"KDJ1minK,omitempty"`
+	KDJ1MinD YFloat `protobuf:"varint,291,opt,name=KDJ1minD" json:"KDJ1minD,omitempty"`
+	KDJ1MinJ YFloat `protobuf:"varint,292,opt,name=KDJ1minJ" json:"KDJ1minJ,omitempty"`
+	KDJ5MinK YFloat `protobuf:"varint,293,opt,name=KDJ5minK" json:"KDJ5minK,omitempty"`
+	KDJ5MinD YFloat `protobuf:"varint,294,opt,name=KDJ5minD" json:"KDJ5minD,omitempty"`
+	KDJ5MinJ YFloat `protobuf:"varint,295,opt,name=KDJ5minJ" json:"KDJ5minJ,omitempty"`
+	KDJ1DayK YFloat `protobuf:"varint,296,opt,name=KDJ1dayK" json:"KDJ1dayK,omitempty"`
+	KDJ1DayD YFloat `protobuf:"varint,297,opt,name=KDJ1dayD" json:"KDJ1dayD,omitempty"`
+	KDJ1DayJ YFloat `protobuf:"varint,298,opt,name=KDJ1dayJ" json:"KDJ1dayJ,omitempty"`
 	// MACD
-	MACD1MinDIFF yfloat `protobuf:"varint,299,opt,name=MACD1minDIFF" json:"MACD1minDIFF,omitempty"`
-	MACD1MinDEA  yfloat `protobuf:"varint,300,opt,name=MACD1minDEA" json:"MACD1minDEA,omitempty"`
-	MACD1MinMACD yfloat `protobuf:"varint,301,opt,name=MACD1minMACD" json:"MACD1minMACD,omitempty"`
-	MACD5MinDIFF yfloat `protobuf:"varint,302,opt,name=MACD5minDIFF" json:"MACD5minDIFF,omitempty"`
-	MACD5MinDEA  yfloat `protobuf:"varint,303,opt,name=MACD5minDEA" json:"MACD5minDEA,omitempty"`
-	MACD5MinMACD yfloat `protobuf:"varint,304,opt,name=MACD5minMACD" json:"MACD5minMACD,omitempty"`
-	MACD1DayDIFF yfloat `protobuf:"varint,305,opt,name=MACD1dayDIFF" json:"MACD1dayDIFF,omitempty"`
-	MACD1DayDEA  yfloat `protobuf:"varint,306,opt,name=MACD1dayDEA" json:"MACD1dayDEA,omitempty"`
-	MACD1DayMACD yfloat `protobuf:"varint,307,opt,name=MACD1dayMACD" json:"MACD1dayMACD,omitempty"`
+	MACD1MinDIFF YFloat `protobuf:"varint,299,opt,name=MACD1minDIFF" json:"MACD1minDIFF,omitempty"`
+	MACD1MinDEA  YFloat `protobuf:"varint,300,opt,name=MACD1minDEA" json:"MACD1minDEA,omitempty"`
+	MACD1MinMACD YFloat `protobuf:"varint,301,opt,name=MACD1minMACD" json:"MACD1minMACD,omitempty"`
+	MACD5MinDIFF YFloat `protobuf:"varint,302,opt,name=MACD5minDIFF" json:"MACD5minDIFF,omitempty"`
+	MACD5MinDEA  YFloat `protobuf:"varint,303,opt,name=MACD5minDEA" json:"MACD5minDEA,omitempty"`
+	MACD5MinMACD YFloat `protobuf:"varint,304,opt,name=MACD5minMACD" json:"MACD5minMACD,omitempty"`
+	MACD1DayDIFF YFloat `protobuf:"varint,305,opt,name=MACD1dayDIFF" json:"MACD1dayDIFF,omitempty"`
+	MACD1DayDEA  YFloat `protobuf:"varint,306,opt,name=MACD1dayDEA" json:"MACD1dayDEA,omitempty"`
+	MACD1DayMACD YFloat `protobuf:"varint,307,opt,name=MACD1dayMACD" json:"MACD1dayMACD,omitempty"`
 	// OBV
-	OBV1Min yfloat `protobuf:"varint,308,opt,name=OBV1min" json:"OBV1min,omitempty"`
-	OBV5Min yfloat `protobuf:"varint,309,opt,name=OBV5min" json:"OBV5min,omitempty"`
-	OBV1Day yfloat `protobuf:"varint,310,opt,name=OBV1day" json:"OBV1day,omitempty"`
+	OBV1Min YFloat `protobuf:"varint,308,opt,name=OBV1min" json:"OBV1min,omitempty"`
+	OBV5Min YFloat `protobuf:"varint,309,opt,name=OBV5min" json:"OBV5min,omitempty"`
+	OBV1Day YFloat `protobuf:"varint,310,opt,name=OBV1day" json:"OBV1day,omitempty"`
 	// PSY
-	PSY1Min yfloat `protobuf:"varint,311,opt,name=PSY1min" json:"PSY1min,omitempty"`
-	PSY5Min yfloat `protobuf:"varint,312,opt,name=PSY5min" json:"PSY5min,omitempty"`
-	PSY1Day yfloat `protobuf:"varint,313,opt,name=PSY1day" json:"PSY1day,omitempty"`
+	PSY1Min YFloat `protobuf:"varint,311,opt,name=PSY1min" json:"PSY1min,omitempty"`
+	PSY5Min YFloat `protobuf:"varint,312,opt,name=PSY5min" json:"PSY5min,omitempty"`
+	PSY1Day YFloat `protobuf:"varint,313,opt,name=PSY1day" json:"PSY1day,omitempty"`
 	// RSI
-	RSI1MinRSI1 yfloat `protobuf:"varint,314,opt,name=RSI1minRSI1" json:"RSI1minRSI1,omitempty"`
-	RSI1MinRSI2 yfloat `protobuf:"varint,315,opt,name=RSI1minRSI2" json:"RSI1minRSI2,omitempty"`
-	RSI1MinRSI3 yfloat `protobuf:"varint,316,opt,name=RSI1minRSI3" json:"RSI1minRSI3,omitempty"`
-	RSI5MinRSI1 yfloat `protobuf:"varint,317,opt,name=RSI5minRSI1" json:"RSI5minRSI1,omitempty"`
-	RSI5MinRSI2 yfloat `protobuf:"varint,318,opt,name=RSI5minRSI2" json:"RSI5minRSI2,omitempty"`
-	RSI5MinRSI3 yfloat `protobuf:"varint,319,opt,name=RSI5minRSI3" json:"RSI5minRSI3,omitempty"`
-	RSI1DayRSI1 yfloat `protobuf:"varint,320,opt,name=RSI1dayRSI1" json:"RSI1dayRSI1,omitempty"`
-	RSI1DayRSI2 yfloat `protobuf:"varint,321,opt,name=RSI1dayRSI2" json:"RSI1dayRSI2,omitempty"`
-	RSI1DayRSI3 yfloat `protobuf:"varint,322,opt,name=RSI1dayRSI3" json:"RSI1dayRSI3,omitempty"`
+	RSI1MinRSI1 YFloat `protobuf:"varint,314,opt,name=RSI1minRSI1" json:"RSI1minRSI1,omitempty"`
+	RSI1MinRSI2 YFloat `protobuf:"varint,315,opt,name=RSI1minRSI2" json:"RSI1minRSI2,omitempty"`
+	RSI1MinRSI3 YFloat `protobuf:"varint,316,opt,name=RSI1minRSI3" json:"RSI1minRSI3,omitempty"`
+	RSI5MinRSI1 YFloat `protobuf:"varint,317,opt,name=RSI5minRSI1" json:"RSI5minRSI1,omitempty"`
+	RSI5MinRSI2 YFloat `protobuf:"varint,318,opt,name=RSI5minRSI2" json:"RSI5minRSI2,omitempty"`
+	RSI5MinRSI3 YFloat `protobuf:"varint,319,opt,name=RSI5minRSI3" json:"RSI5minRSI3,omitempty"`
+	RSI1DayRSI1 YFloat `protobuf:"varint,320,opt,name=RSI1dayRSI1" json:"RSI1dayRSI1,omitempty"`
+	RSI1DayRSI2 YFloat `protobuf:"varint,321,opt,name=RSI1dayRSI2" json:"RSI1dayRSI2,omitempty"`
+	RSI1DayRSI3 YFloat `protobuf:"varint,322,opt,name=RSI1dayRSI3" json:"RSI1dayRSI3,omitempty"`
 	// WR
-	WR1MinWR1 yfloat `protobuf:"varint,323,opt,name=WR1minWR1" json:"WR1minWR1,omitempty"`
-	WR1MinWR2 yfloat `protobuf:"varint,324,opt,name=WR1minWR2" json:"WR1minWR2,omitempty"`
-	WR5MinWR1 yfloat `protobuf:"varint,325,opt,name=WR5minWR1" json:"WR5minWR1,omitempty"`
-	WR5MinWR2 yfloat `protobuf:"varint,326,opt,name=WR5minWR2" json:"WR5minWR2,omitempty"`
-	WR1DayWR1 yfloat `protobuf:"varint,327,opt,name=WR1dayWR1" json:"WR1dayWR1,omitempty"`
-	WR1DayWR2 yfloat `protobuf:"varint,328,opt,name=WR1dayWR2" json:"WR1dayWR2,omitempty"`
+	WR1MinWR1 YFloat `protobuf:"varint,323,opt,name=WR1minWR1" json:"WR1minWR1,omitempty"`
+	WR1MinWR2 YFloat `protobuf:"varint,324,opt,name=WR1minWR2" json:"WR1minWR2,omitempty"`
+	WR5MinWR1 YFloat `protobuf:"varint,325,opt,name=WR5minWR1" json:"WR5minWR1,omitempty"`
+	WR5MinWR2 YFloat `protobuf:"varint,326,opt,name=WR5minWR2" json:"WR5minWR2,omitempty"`
+	WR1DayWR1 YFloat `protobuf:"varint,327,opt,name=WR1dayWR1" json:"WR1dayWR1,omitempty"`
+	WR1DayWR2 YFloat `protobuf:"varint,328,opt,name=WR1dayWR2" json:"WR1dayWR2,omitempty"`
 	// 股票信息
-	LeiXing              yfloat  `protobuf:"varint,400,opt,name=LeiXing" json:"LeiXing,omitempty"`
-	ZiLeiXing            yfloat  `protobuf:"varint,401,opt,name=ZiLeiXing" json:"ZiLeiXing,omitempty"`
+	LeiXing              YFloat  `protobuf:"varint,400,opt,name=LeiXing" json:"LeiXing,omitempty"`
+	ZiLeiXing            YFloat  `protobuf:"varint,401,opt,name=ZiLeiXing" json:"ZiLeiXing,omitempty"`
 	LeiXingMingCheng     string `protobuf:"bytes,402,opt,name=LeiXingMingCheng" json:"LeiXingMingCheng,omitempty"`
-	ChengJiaoLiangDanWei yfloat  `protobuf:"varint,403,opt,name=ChengJiaoLiangDanWei" json:"ChengJiaoLiangDanWei,omitempty"`
+	ChengJiaoLiangDanWei YFloat  `protobuf:"varint,403,opt,name=ChengJiaoLiangDanWei" json:"ChengJiaoLiangDanWei,omitempty"`
 	MaBiao               string `protobuf:"bytes,410,opt,name=MaBiao" json:"MaBiao,omitempty"`
 	// 分级基金
-	FJJJLeiXing      yfloat `protobuf:"varint,501,opt,name=FJJJLeiXing" json:"FJJJLeiXing,omitempty"`
-	ZhengTiYiJia     yfloat `protobuf:"varint,502,opt,name=ZhengTiYiJia" json:"ZhengTiYiJia,omitempty"`
-	MYiJia           yfloat `protobuf:"varint,551,opt,name=MYiJia" json:"MYiJia,omitempty"`
-	MShiShiJingZhi   yfloat `protobuf:"varint,552,opt,name=MShiShiJingZhi" json:"MShiShiJingZhi,omitempty"`
-	MShangZheXuZhang yfloat `protobuf:"varint,553,opt,name=MShangZheXuZhang" json:"MShangZheXuZhang,omitempty"`
-	MXiaZheXuDie     yfloat `protobuf:"varint,554,opt,name=MXiaZheXuDie" json:"MXiaZheXuDie,omitempty"`
-	YinHanShouYi     yfloat `protobuf:"varint,511,opt,name=YinHanShouYi" json:"YinHanShouYi,omitempty"`
-	JiaGeGangGan     yfloat `protobuf:"varint,512,opt,name=JiaGeGangGan" json:"JiaGeGangGan,omitempty"`
+	FJJJLeiXing      YFloat `protobuf:"varint,501,opt,name=FJJJLeiXing" json:"FJJJLeiXing,omitempty"`
+	ZhengTiYiJia     YFloat `protobuf:"varint,502,opt,name=ZhengTiYiJia" json:"ZhengTiYiJia,omitempty"`
+	MYiJia           YFloat `protobuf:"varint,551,opt,name=MYiJia" json:"MYiJia,omitempty"`
+	MShiShiJingZhi   YFloat `protobuf:"varint,552,opt,name=MShiShiJingZhi" json:"MShiShiJingZhi,omitempty"`
+	MShangZheXuZhang YFloat `protobuf:"varint,553,opt,name=MShangZheXuZhang" json:"MShangZheXuZhang,omitempty"`
+	MXiaZheXuDie     YFloat `protobuf:"varint,554,opt,name=MXiaZheXuDie" json:"MXiaZheXuDie,omitempty"`
+	YinHanShouYi     YFloat `protobuf:"varint,511,opt,name=YinHanShouYi" json:"YinHanShouYi,omitempty"`
+	JiaGeGangGan     YFloat `protobuf:"varint,512,opt,name=JiaGeGangGan" json:"JiaGeGangGan,omitempty"`
 	// 财务数据
 	PinZhongObj             string `protobuf:"bytes,601,opt,name=PinZhongObj" json:"PinZhongObj,omitempty"`
 	BaoGaoQi                string `protobuf:"bytes,602,opt,name=BaoGaoQi" json:"BaoGaoQi,omitempty"`
 	ShangShiRiQi            string `protobuf:"bytes,603,opt,name=ShangShiRiQi" json:"ShangShiRiQi,omitempty"`
-	MeiGuShouYi             yfloat  `protobuf:"varint,604,opt,name=MeiGuShouYi" json:"MeiGuShouYi,omitempty"`
-	MeiGuJingZiChan         yfloat  `protobuf:"varint,605,opt,name=MeiGuJingZiChan" json:"MeiGuJingZiChan,omitempty"`
-	JingZiChanShouYiLv      yfloat  `protobuf:"varint,606,opt,name=JingZiChanShouYiLv" json:"JingZiChanShouYiLv,omitempty"`
-	MeiGuJingYingXianJin    yfloat  `protobuf:"varint,607,opt,name=MeiGuJingYingXianJin" json:"MeiGuJingYingXianJin,omitempty"`
-	MeiGuGongJiJin          yfloat  `protobuf:"varint,608,opt,name=MeiGuGongJiJin" json:"MeiGuGongJiJin,omitempty"`
-	MeiGuWeiFenPei          yfloat  `protobuf:"varint,609,opt,name=MeiGuWeiFenPei" json:"MeiGuWeiFenPei,omitempty"`
-	GuDongQuanYiBi          yfloat  `protobuf:"varint,610,opt,name=GuDongQuanYiBi" json:"GuDongQuanYiBi,omitempty"`
-	JingLiRunTongBi         yfloat  `protobuf:"varint,611,opt,name=JingLiRunTongBi" json:"JingLiRunTongBi,omitempty"`
-	ZhuYingShouRuTongBi     yfloat  `protobuf:"varint,612,opt,name=ZhuYingShouRuTongBi" json:"ZhuYingShouRuTongBi,omitempty"`
-	XiaoShouMaoLiLv         yfloat  `protobuf:"varint,613,opt,name=XiaoShouMaoLiLv" json:"XiaoShouMaoLiLv,omitempty"`
-	TiaoZhengMeiGuJingZi    yfloat  `protobuf:"varint,614,opt,name=TiaoZhengMeiGuJingZi" json:"TiaoZhengMeiGuJingZi,omitempty"`
-	ZongZiChan              yfloat  `protobuf:"varint,615,opt,name=ZongZiChan" json:"ZongZiChan,omitempty"`
-	LiuDongZiChan           yfloat  `protobuf:"varint,616,opt,name=LiuDongZiChan" json:"LiuDongZiChan,omitempty"`
-	GuDingZiChan            yfloat  `protobuf:"varint,617,opt,name=GuDingZiChan" json:"GuDingZiChan,omitempty"`
-	WuXingZiChan            yfloat  `protobuf:"varint,618,opt,name=WuXingZiChan" json:"WuXingZiChan,omitempty"`
-	LiuDongFuZhai           yfloat  `protobuf:"varint,619,opt,name=LiuDongFuZhai" json:"LiuDongFuZhai,omitempty"`
-	ChangQiFuZhai           yfloat  `protobuf:"varint,620,opt,name=ChangQiFuZhai" json:"ChangQiFuZhai,omitempty"`
-	ZongFuZhai              yfloat  `protobuf:"varint,621,opt,name=ZongFuZhai" json:"ZongFuZhai,omitempty"`
-	GuDongQuanYi            yfloat  `protobuf:"varint,622,opt,name=GuDongQuanYi" json:"GuDongQuanYi,omitempty"`
-	ZiBenGongJiJin          yfloat  `protobuf:"varint,623,opt,name=ZiBenGongJiJin" json:"ZiBenGongJiJin,omitempty"`
-	JingYingXianJinLiuLiang yfloat  `protobuf:"varint,624,opt,name=JingYingXianJinLiuLiang" json:"JingYingXianJinLiuLiang,omitempty"`
-	TouZiXianJinLiuLiang    yfloat  `protobuf:"varint,625,opt,name=TouZiXianJinLiuLiang" json:"TouZiXianJinLiuLiang,omitempty"`
-	ChouZiXianJinLiuLiang   yfloat  `protobuf:"varint,626,opt,name=ChouZiXianJinLiuLiang" json:"ChouZiXianJinLiuLiang,omitempty"`
-	XianJinZengJiaE         yfloat  `protobuf:"varint,627,opt,name=XianJinZengJiaE" json:"XianJinZengJiaE,omitempty"`
-	ZhuYingShouRu           yfloat  `protobuf:"varint,628,opt,name=ZhuYingShouRu" json:"ZhuYingShouRu,omitempty"`
-	ZhuYingLiRun            yfloat  `protobuf:"varint,629,opt,name=ZhuYingLiRun" json:"ZhuYingLiRun,omitempty"`
-	YingYeLiRun             yfloat  `protobuf:"varint,630,opt,name=YingYeLiRun" json:"YingYeLiRun,omitempty"`
-	TouZiShouYi             yfloat  `protobuf:"varint,631,opt,name=TouZiShouYi" json:"TouZiShouYi,omitempty"`
-	YingYeWaiShouZhi        yfloat  `protobuf:"varint,632,opt,name=YingYeWaiShouZhi" json:"YingYeWaiShouZhi,omitempty"`
-	LiRunZongE              yfloat  `protobuf:"varint,633,opt,name=LiRunZongE" json:"LiRunZongE,omitempty"`
-	JingLiRun               yfloat  `protobuf:"varint,634,opt,name=JingLiRun" json:"JingLiRun,omitempty"`
-	WeiFenPeiLiRun          yfloat  `protobuf:"varint,635,opt,name=WeiFenPeiLiRun" json:"WeiFenPeiLiRun,omitempty"`
-	ZongGuBen               yfloat  `protobuf:"varint,636,opt,name=ZongGuBen" json:"ZongGuBen,omitempty"`
-	WuXianShouGuHeJi        yfloat  `protobuf:"varint,637,opt,name=WuXianShouGuHeJi" json:"WuXianShouGuHeJi,omitempty"`
-	LiuTongAGu              yfloat  `protobuf:"varint,638,opt,name=LiuTongAGu" json:"LiuTongAGu,omitempty"`
-	LiuTongBGu              yfloat  `protobuf:"varint,639,opt,name=LiuTongBGu" json:"LiuTongBGu,omitempty"`
-	JingWaiShangShiGu       yfloat  `protobuf:"varint,640,opt,name=JingWaiShangShiGu" json:"JingWaiShangShiGu,omitempty"`
-	QiTaLiuTongGu           yfloat  `protobuf:"varint,641,opt,name=QiTaLiuTongGu" json:"QiTaLiuTongGu,omitempty"`
-	XianShouGuHeJi          yfloat  `protobuf:"varint,642,opt,name=XianShouGuHeJi" json:"XianShouGuHeJi,omitempty"`
-	GuoJiaChiGu             yfloat  `protobuf:"varint,643,opt,name=GuoJiaChiGu" json:"GuoJiaChiGu,omitempty"`
-	GuoYouFaRenGu           yfloat  `protobuf:"varint,644,opt,name=GuoYouFaRenGu" json:"GuoYouFaRenGu,omitempty"`
-	JingNeiFaRenGu          yfloat  `protobuf:"varint,645,opt,name=JingNeiFaRenGu" json:"JingNeiFaRenGu,omitempty"`
-	JingNeiZiRanRenGu       yfloat  `protobuf:"varint,646,opt,name=JingNeiZiRanRenGu" json:"JingNeiZiRanRenGu,omitempty"`
-	QiTaFaQiRenGu           yfloat  `protobuf:"varint,647,opt,name=QiTaFaQiRenGu" json:"QiTaFaQiRenGu,omitempty"`
-	MuJiFaRenGu             yfloat  `protobuf:"varint,648,opt,name=MuJiFaRenGu" json:"MuJiFaRenGu,omitempty"`
-	JingWaiFaRenGu          yfloat  `protobuf:"varint,649,opt,name=JingWaiFaRenGu" json:"JingWaiFaRenGu,omitempty"`
-	JingWaiZiRanRenGu       yfloat  `protobuf:"varint,650,opt,name=JingWaiZiRanRenGu" json:"JingWaiZiRanRenGu,omitempty"`
-	YouXianGuHuoQiTa        yfloat  `protobuf:"varint,651,opt,name=YouXianGuHuoQiTa" json:"YouXianGuHuoQiTa,omitempty"`
+	MeiGuShouYi             YFloat  `protobuf:"varint,604,opt,name=MeiGuShouYi" json:"MeiGuShouYi,omitempty"`
+	MeiGuJingZiChan         YFloat  `protobuf:"varint,605,opt,name=MeiGuJingZiChan" json:"MeiGuJingZiChan,omitempty"`
+	JingZiChanShouYiLv      YFloat  `protobuf:"varint,606,opt,name=JingZiChanShouYiLv" json:"JingZiChanShouYiLv,omitempty"`
+	MeiGuJingYingXianJin    YFloat  `protobuf:"varint,607,opt,name=MeiGuJingYingXianJin" json:"MeiGuJingYingXianJin,omitempty"`
+	MeiGuGongJiJin          YFloat  `protobuf:"varint,608,opt,name=MeiGuGongJiJin" json:"MeiGuGongJiJin,omitempty"`
+	MeiGuWeiFenPei          YFloat  `protobuf:"varint,609,opt,name=MeiGuWeiFenPei" json:"MeiGuWeiFenPei,omitempty"`
+	GuDongQuanYiBi          YFloat  `protobuf:"varint,610,opt,name=GuDongQuanYiBi" json:"GuDongQuanYiBi,omitempty"`
+	JingLiRunTongBi         YFloat  `protobuf:"varint,611,opt,name=JingLiRunTongBi" json:"JingLiRunTongBi,omitempty"`
+	ZhuYingShouRuTongBi     YFloat  `protobuf:"varint,612,opt,name=ZhuYingShouRuTongBi" json:"ZhuYingShouRuTongBi,omitempty"`
+	XiaoShouMaoLiLv         YFloat  `protobuf:"varint,613,opt,name=XiaoShouMaoLiLv" json:"XiaoShouMaoLiLv,omitempty"`
+	TiaoZhengMeiGuJingZi    YFloat  `protobuf:"varint,614,opt,name=TiaoZhengMeiGuJingZi" json:"TiaoZhengMeiGuJingZi,omitempty"`
+	ZongZiChan              YFloat  `protobuf:"varint,615,opt,name=ZongZiChan" json:"ZongZiChan,omitempty"`
+	LiuDongZiChan           YFloat  `protobuf:"varint,616,opt,name=LiuDongZiChan" json:"LiuDongZiChan,omitempty"`
+	GuDingZiChan            YFloat  `protobuf:"varint,617,opt,name=GuDingZiChan" json:"GuDingZiChan,omitempty"`
+	WuXingZiChan            YFloat  `protobuf:"varint,618,opt,name=WuXingZiChan" json:"WuXingZiChan,omitempty"`
+	LiuDongFuZhai           YFloat  `protobuf:"varint,619,opt,name=LiuDongFuZhai" json:"LiuDongFuZhai,omitempty"`
+	ChangQiFuZhai           YFloat  `protobuf:"varint,620,opt,name=ChangQiFuZhai" json:"ChangQiFuZhai,omitempty"`
+	ZongFuZhai              YFloat  `protobuf:"varint,621,opt,name=ZongFuZhai" json:"ZongFuZhai,omitempty"`
+	GuDongQuanYi            YFloat  `protobuf:"varint,622,opt,name=GuDongQuanYi" json:"GuDongQuanYi,omitempty"`
+	ZiBenGongJiJin          YFloat  `protobuf:"varint,623,opt,name=ZiBenGongJiJin" json:"ZiBenGongJiJin,omitempty"`
+	JingYingXianJinLiuLiang YFloat  `protobuf:"varint,624,opt,name=JingYingXianJinLiuLiang" json:"JingYingXianJinLiuLiang,omitempty"`
+	TouZiXianJinLiuLiang    YFloat  `protobuf:"varint,625,opt,name=TouZiXianJinLiuLiang" json:"TouZiXianJinLiuLiang,omitempty"`
+	ChouZiXianJinLiuLiang   YFloat  `protobuf:"varint,626,opt,name=ChouZiXianJinLiuLiang" json:"ChouZiXianJinLiuLiang,omitempty"`
+	XianJinZengJiaE         YFloat  `protobuf:"varint,627,opt,name=XianJinZengJiaE" json:"XianJinZengJiaE,omitempty"`
+	ZhuYingShouRu           YFloat  `protobuf:"varint,628,opt,name=ZhuYingShouRu" json:"ZhuYingShouRu,omitempty"`
+	ZhuYingLiRun            YFloat  `protobuf:"varint,629,opt,name=ZhuYingLiRun" json:"ZhuYingLiRun,omitempty"`
+	YingYeLiRun             YFloat  `protobuf:"varint,630,opt,name=YingYeLiRun" json:"YingYeLiRun,omitempty"`
+	TouZiShouYi             YFloat  `protobuf:"varint,631,opt,name=TouZiShouYi" json:"TouZiShouYi,omitempty"`
+	YingYeWaiShouZhi        YFloat  `protobuf:"varint,632,opt,name=YingYeWaiShouZhi" json:"YingYeWaiShouZhi,omitempty"`
+	LiRunZongE              YFloat  `protobuf:"varint,633,opt,name=LiRunZongE" json:"LiRunZongE,omitempty"`
+	JingLiRun               YFloat  `protobuf:"varint,634,opt,name=JingLiRun" json:"JingLiRun,omitempty"`
+	WeiFenPeiLiRun          YFloat  `protobuf:"varint,635,opt,name=WeiFenPeiLiRun" json:"WeiFenPeiLiRun,omitempty"`
+	ZongGuBen               YFloat  `protobuf:"varint,636,opt,name=ZongGuBen" json:"ZongGuBen,omitempty"`
+	WuXianShouGuHeJi        YFloat  `protobuf:"varint,637,opt,name=WuXianShouGuHeJi" json:"WuXianShouGuHeJi,omitempty"`
+	LiuTongAGu              YFloat  `protobuf:"varint,638,opt,name=LiuTongAGu" json:"LiuTongAGu,omitempty"`
+	LiuTongBGu              YFloat  `protobuf:"varint,639,opt,name=LiuTongBGu" json:"LiuTongBGu,omitempty"`
+	JingWaiShangShiGu       YFloat  `protobuf:"varint,640,opt,name=JingWaiShangShiGu" json:"JingWaiShangShiGu,omitempty"`
+	QiTaLiuTongGu           YFloat  `protobuf:"varint,641,opt,name=QiTaLiuTongGu" json:"QiTaLiuTongGu,omitempty"`
+	XianShouGuHeJi          YFloat  `protobuf:"varint,642,opt,name=XianShouGuHeJi" json:"XianShouGuHeJi,omitempty"`
+	GuoJiaChiGu             YFloat  `protobuf:"varint,643,opt,name=GuoJiaChiGu" json:"GuoJiaChiGu,omitempty"`
+	GuoYouFaRenGu           YFloat  `protobuf:"varint,644,opt,name=GuoYouFaRenGu" json:"GuoYouFaRenGu,omitempty"`
+	JingNeiFaRenGu          YFloat  `protobuf:"varint,645,opt,name=JingNeiFaRenGu" json:"JingNeiFaRenGu,omitempty"`
+	JingNeiZiRanRenGu       YFloat  `protobuf:"varint,646,opt,name=JingNeiZiRanRenGu" json:"JingNeiZiRanRenGu,omitempty"`
+	QiTaFaQiRenGu           YFloat  `protobuf:"varint,647,opt,name=QiTaFaQiRenGu" json:"QiTaFaQiRenGu,omitempty"`
+	MuJiFaRenGu             YFloat  `protobuf:"varint,648,opt,name=MuJiFaRenGu" json:"MuJiFaRenGu,omitempty"`
+	JingWaiFaRenGu          YFloat  `protobuf:"varint,649,opt,name=JingWaiFaRenGu" json:"JingWaiFaRenGu,omitempty"`
+	JingWaiZiRanRenGu       YFloat  `protobuf:"varint,650,opt,name=JingWaiZiRanRenGu" json:"JingWaiZiRanRenGu,omitempty"`
+	YouXianGuHuoQiTa        YFloat  `protobuf:"varint,651,opt,name=YouXianGuHuoQiTa" json:"YouXianGuHuoQiTa,omitempty"`
 	// Level2统计数据
-	WeiTuoMaiRu        yfloat `protobuf:"varint,700,opt,name=WeiTuoMaiRu" json:"WeiTuoMaiRu,omitempty"`
-	WeiTuoMaiChu       yfloat `protobuf:"varint,701,opt,name=WeiTuoMaiChu" json:"WeiTuoMaiChu,omitempty"`
-	MaiRuZhongDanBiLi  yfloat `protobuf:"varint,702,opt,name=MaiRuZhongDanBiLi" json:"MaiRuZhongDanBiLi,omitempty"`
-	MaiRuDaDanBiLi     yfloat `protobuf:"varint,703,opt,name=MaiRuDaDanBiLi" json:"MaiRuDaDanBiLi,omitempty"`
-	MaiRuTeDaDanBiLi   yfloat `protobuf:"varint,704,opt,name=MaiRuTeDaDanBiLi" json:"MaiRuTeDaDanBiLi,omitempty"`
-	MaiChuZhongDanBiLi yfloat `protobuf:"varint,705,opt,name=MaiChuZhongDanBiLi" json:"MaiChuZhongDanBiLi,omitempty"`
-	MaiChuDaDanBiLi    yfloat `protobuf:"varint,706,opt,name=MaiChuDaDanBiLi" json:"MaiChuDaDanBiLi,omitempty"`
-	MaiChuTeDaDanBiLi  yfloat `protobuf:"varint,707,opt,name=MaiChuTeDaDanBiLi" json:"MaiChuTeDaDanBiLi,omitempty"`
-	DuanXianMaiRu      yfloat `protobuf:"varint,708,opt,name=DuanXianMaiRu" json:"DuanXianMaiRu,omitempty"`
-	DuanXianMaiChu     yfloat `protobuf:"varint,709,opt,name=DuanXianMaiChu" json:"DuanXianMaiChu,omitempty"`
-	DuanXianChiHuo     yfloat `protobuf:"varint,710,opt,name=DuanXianChiHuo" json:"DuanXianChiHuo,omitempty"`
-	DuanXianTuHuo      yfloat `protobuf:"varint,711,opt,name=DuanXianTuHuo" json:"DuanXianTuHuo,omitempty"`
+	WeiTuoMaiRu        YFloat `protobuf:"varint,700,opt,name=WeiTuoMaiRu" json:"WeiTuoMaiRu,omitempty"`
+	WeiTuoMaiChu       YFloat `protobuf:"varint,701,opt,name=WeiTuoMaiChu" json:"WeiTuoMaiChu,omitempty"`
+	MaiRuZhongDanBiLi  YFloat `protobuf:"varint,702,opt,name=MaiRuZhongDanBiLi" json:"MaiRuZhongDanBiLi,omitempty"`
+	MaiRuDaDanBiLi     YFloat `protobuf:"varint,703,opt,name=MaiRuDaDanBiLi" json:"MaiRuDaDanBiLi,omitempty"`
+	MaiRuTeDaDanBiLi   YFloat `protobuf:"varint,704,opt,name=MaiRuTeDaDanBiLi" json:"MaiRuTeDaDanBiLi,omitempty"`
+	MaiChuZhongDanBiLi YFloat `protobuf:"varint,705,opt,name=MaiChuZhongDanBiLi" json:"MaiChuZhongDanBiLi,omitempty"`
+	MaiChuDaDanBiLi    YFloat `protobuf:"varint,706,opt,name=MaiChuDaDanBiLi" json:"MaiChuDaDanBiLi,omitempty"`
+	MaiChuTeDaDanBiLi  YFloat `protobuf:"varint,707,opt,name=MaiChuTeDaDanBiLi" json:"MaiChuTeDaDanBiLi,omitempty"`
+	DuanXianMaiRu      YFloat `protobuf:"varint,708,opt,name=DuanXianMaiRu" json:"DuanXianMaiRu,omitempty"`
+	DuanXianMaiChu     YFloat `protobuf:"varint,709,opt,name=DuanXianMaiChu" json:"DuanXianMaiChu,omitempty"`
+	DuanXianChiHuo     YFloat `protobuf:"varint,710,opt,name=DuanXianChiHuo" json:"DuanXianChiHuo,omitempty"`
+	DuanXianTuHuo      YFloat `protobuf:"varint,711,opt,name=DuanXianTuHuo" json:"DuanXianTuHuo,omitempty"`
 	// 市场动态
-	BiShi yfloat `protobuf:"varint,801,opt,name=BiShi" json:"BiShi,omitempty"`
+	BiShi YFloat `protobuf:"varint,801,opt,name=BiShi" json:"BiShi,omitempty"`
 	// 领涨股
 	LingZhangGu *LingZhangGuShuJu `protobuf:"bytes,901,opt,name=LingZhangGu" json:"LingZhangGu,omitempty"`
 	// 期货特有
-	ChiCang         yfloat `protobuf:"varint,1001,opt,name=ChiCang" json:"ChiCang,omitempty"`
-	ZengCang        yfloat `protobuf:"varint,1002,opt,name=ZengCang" json:"ZengCang,omitempty"`
-	RiZeng          yfloat `protobuf:"varint,1003,opt,name=RiZeng" json:"RiZeng,omitempty"`
-	JieSuanJia      yfloat `protobuf:"varint,1004,opt,name=JieSuanJia" json:"JieSuanJia,omitempty"`
-	ZuoRiJieSuanJia yfloat `protobuf:"varint,1005,opt,name=ZuoRiJieSuanJia" json:"ZuoRiJieSuanJia,omitempty"`
-	KaiPing         yfloat `protobuf:"varint,1006,opt,name=KaiPing" json:"KaiPing,omitempty"`
-	JieSuanZhangDie yfloat `protobuf:"varint,1007,opt,name=JieSuanZhangDie" json:"JieSuanZhangDie,omitempty"`
-	JieSuanZhangFu  yfloat `protobuf:"varint,1008,opt,name=JieSuanZhangFu" json:"JieSuanZhangFu,omitempty"`
+	ChiCang         YFloat `protobuf:"varint,1001,opt,name=ChiCang" json:"ChiCang,omitempty"`
+	ZengCang        YFloat `protobuf:"varint,1002,opt,name=ZengCang" json:"ZengCang,omitempty"`
+	RiZeng          YFloat `protobuf:"varint,1003,opt,name=RiZeng" json:"RiZeng,omitempty"`
+	JieSuanJia      YFloat `protobuf:"varint,1004,opt,name=JieSuanJia" json:"JieSuanJia,omitempty"`
+	ZuoRiJieSuanJia YFloat `protobuf:"varint,1005,opt,name=ZuoRiJieSuanJia" json:"ZuoRiJieSuanJia,omitempty"`
+	KaiPing         YFloat `protobuf:"varint,1006,opt,name=KaiPing" json:"KaiPing,omitempty"`
+	JieSuanZhangDie YFloat `protobuf:"varint,1007,opt,name=JieSuanZhangDie" json:"JieSuanZhangDie,omitempty"`
+	JieSuanZhangFu  YFloat `protobuf:"varint,1008,opt,name=JieSuanZhangFu" json:"JieSuanZhangFu,omitempty"`
 	//
-	RongZiMaiRuE          yfloat  `protobuf:"varint,1009,opt,name=RongZiMaiRuE" json:"RongZiMaiRuE,omitempty"`
-	RongZiRongQuanBiaoJi  yfloat  `protobuf:"varint,1010,opt,name=RongZiRongQuanBiaoJi" json:"RongZiRongQuanBiaoJi,omitempty"`
-	ZiJinJingE            yfloat  `protobuf:"varint,1011,opt,name=ZiJinJingE" json:"ZiJinJingE,omitempty"`
-	JingNeiZongShiZhi     yfloat  `protobuf:"varint,1012,opt,name=JingNeiZongShiZhi" json:"JingNeiZongShiZhi,omitempty"`
-	GongXianDianShu       yfloat  `protobuf:"varint,1013,opt,name=GongXianDianShu" json:"GongXianDianShu,omitempty"`
+	RongZiMaiRuE          YFloat  `protobuf:"varint,1009,opt,name=RongZiMaiRuE" json:"RongZiMaiRuE,omitempty"`
+	RongZiRongQuanBiaoJi  YFloat  `protobuf:"varint,1010,opt,name=RongZiRongQuanBiaoJi" json:"RongZiRongQuanBiaoJi,omitempty"`
+	ZiJinJingE            YFloat  `protobuf:"varint,1011,opt,name=ZiJinJingE" json:"ZiJinJingE,omitempty"`
+	JingNeiZongShiZhi     YFloat  `protobuf:"varint,1012,opt,name=JingNeiZongShiZhi" json:"JingNeiZongShiZhi,omitempty"`
+	GongXianDianShu       YFloat  `protobuf:"varint,1013,opt,name=GongXianDianShu" json:"GongXianDianShu,omitempty"`
 	HangYe                string `protobuf:"bytes,1014,opt,name=HangYe" json:"HangYe,omitempty"`
-	PanKouBianHuaMaiRu1   yfloat  `protobuf:"varint,1015,opt,name=PanKouBianHuaMaiRu1" json:"PanKouBianHuaMaiRu1,omitempty"`
-	PanKouBianHuaMaiRu2   yfloat  `protobuf:"varint,1016,opt,name=PanKouBianHuaMaiRu2" json:"PanKouBianHuaMaiRu2,omitempty"`
-	PanKouBianHuaMaiRu3   yfloat  `protobuf:"varint,1017,opt,name=PanKouBianHuaMaiRu3" json:"PanKouBianHuaMaiRu3,omitempty"`
-	PanKouBianHuaMaiRu4   yfloat  `protobuf:"varint,1018,opt,name=PanKouBianHuaMaiRu4" json:"PanKouBianHuaMaiRu4,omitempty"`
-	PanKouBianHuaMaiRu5   yfloat  `protobuf:"varint,1019,opt,name=PanKouBianHuaMaiRu5" json:"PanKouBianHuaMaiRu5,omitempty"`
-	PanKouBianHuaMaiRu6   yfloat  `protobuf:"varint,1020,opt,name=PanKouBianHuaMaiRu6" json:"PanKouBianHuaMaiRu6,omitempty"`
-	PanKouBianHuaMaiRu7   yfloat  `protobuf:"varint,1021,opt,name=PanKouBianHuaMaiRu7" json:"PanKouBianHuaMaiRu7,omitempty"`
-	PanKouBianHuaMaiRu8   yfloat  `protobuf:"varint,1022,opt,name=PanKouBianHuaMaiRu8" json:"PanKouBianHuaMaiRu8,omitempty"`
-	PanKouBianHuaMaiRu9   yfloat  `protobuf:"varint,1023,opt,name=PanKouBianHuaMaiRu9" json:"PanKouBianHuaMaiRu9,omitempty"`
-	PanKouBianHuaMaiRu10  yfloat  `protobuf:"varint,1024,opt,name=PanKouBianHuaMaiRu10" json:"PanKouBianHuaMaiRu10,omitempty"`
-	PanKouBianHuaMaiChu1  yfloat  `protobuf:"varint,1025,opt,name=PanKouBianHuaMaiChu1" json:"PanKouBianHuaMaiChu1,omitempty"`
-	PanKouBianHuaMaiChu2  yfloat  `protobuf:"varint,1026,opt,name=PanKouBianHuaMaiChu2" json:"PanKouBianHuaMaiChu2,omitempty"`
-	PanKouBianHuaMaiChu3  yfloat  `protobuf:"varint,1027,opt,name=PanKouBianHuaMaiChu3" json:"PanKouBianHuaMaiChu3,omitempty"`
-	PanKouBianHuaMaiChu4  yfloat  `protobuf:"varint,1028,opt,name=PanKouBianHuaMaiChu4" json:"PanKouBianHuaMaiChu4,omitempty"`
-	PanKouBianHuaMaiChu5  yfloat  `protobuf:"varint,1029,opt,name=PanKouBianHuaMaiChu5" json:"PanKouBianHuaMaiChu5,omitempty"`
-	PanKouBianHuaMaiChu6  yfloat  `protobuf:"varint,1030,opt,name=PanKouBianHuaMaiChu6" json:"PanKouBianHuaMaiChu6,omitempty"`
-	PanKouBianHuaMaiChu7  yfloat  `protobuf:"varint,1031,opt,name=PanKouBianHuaMaiChu7" json:"PanKouBianHuaMaiChu7,omitempty"`
-	PanKouBianHuaMaiChu8  yfloat  `protobuf:"varint,1032,opt,name=PanKouBianHuaMaiChu8" json:"PanKouBianHuaMaiChu8,omitempty"`
-	PanKouBianHuaMaiChu9  yfloat  `protobuf:"varint,1033,opt,name=PanKouBianHuaMaiChu9" json:"PanKouBianHuaMaiChu9,omitempty"`
-	PanKouBianHuaMaiChu10 yfloat  `protobuf:"varint,1034,opt,name=PanKouBianHuaMaiChu10" json:"PanKouBianHuaMaiChu10,omitempty"`
+	PanKouBianHuaMaiRu1   YFloat  `protobuf:"varint,1015,opt,name=PanKouBianHuaMaiRu1" json:"PanKouBianHuaMaiRu1,omitempty"`
+	PanKouBianHuaMaiRu2   YFloat  `protobuf:"varint,1016,opt,name=PanKouBianHuaMaiRu2" json:"PanKouBianHuaMaiRu2,omitempty"`
+	PanKouBianHuaMaiRu3   YFloat  `protobuf:"varint,1017,opt,name=PanKouBianHuaMaiRu3" json:"PanKouBianHuaMaiRu3,omitempty"`
+	PanKouBianHuaMaiRu4   YFloat  `protobuf:"varint,1018,opt,name=PanKouBianHuaMaiRu4" json:"PanKouBianHuaMaiRu4,omitempty"`
+	PanKouBianHuaMaiRu5   YFloat  `protobuf:"varint,1019,opt,name=PanKouBianHuaMaiRu5" json:"PanKouBianHuaMaiRu5,omitempty"`
+	PanKouBianHuaMaiRu6   YFloat  `protobuf:"varint,1020,opt,name=PanKouBianHuaMaiRu6" json:"PanKouBianHuaMaiRu6,omitempty"`
+	PanKouBianHuaMaiRu7   YFloat  `protobuf:"varint,1021,opt,name=PanKouBianHuaMaiRu7" json:"PanKouBianHuaMaiRu7,omitempty"`
+	PanKouBianHuaMaiRu8   YFloat  `protobuf:"varint,1022,opt,name=PanKouBianHuaMaiRu8" json:"PanKouBianHuaMaiRu8,omitempty"`
+	PanKouBianHuaMaiRu9   YFloat  `protobuf:"varint,1023,opt,name=PanKouBianHuaMaiRu9" json:"PanKouBianHuaMaiRu9,omitempty"`
+	PanKouBianHuaMaiRu10  YFloat  `protobuf:"varint,1024,opt,name=PanKouBianHuaMaiRu10" json:"PanKouBianHuaMaiRu10,omitempty"`
+	PanKouBianHuaMaiChu1  YFloat  `protobuf:"varint,1025,opt,name=PanKouBianHuaMaiChu1" json:"PanKouBianHuaMaiChu1,omitempty"`
+	PanKouBianHuaMaiChu2  YFloat  `protobuf:"varint,1026,opt,name=PanKouBianHuaMaiChu2" json:"PanKouBianHuaMaiChu2,omitempty"`
+	PanKouBianHuaMaiChu3  YFloat  `protobuf:"varint,1027,opt,name=PanKouBianHuaMaiChu3" json:"PanKouBianHuaMaiChu3,omitempty"`
+	PanKouBianHuaMaiChu4  YFloat  `protobuf:"varint,1028,opt,name=PanKouBianHuaMaiChu4" json:"PanKouBianHuaMaiChu4,omitempty"`
+	PanKouBianHuaMaiChu5  YFloat  `protobuf:"varint,1029,opt,name=PanKouBianHuaMaiChu5" json:"PanKouBianHuaMaiChu5,omitempty"`
+	PanKouBianHuaMaiChu6  YFloat  `protobuf:"varint,1030,opt,name=PanKouBianHuaMaiChu6" json:"PanKouBianHuaMaiChu6,omitempty"`
+	PanKouBianHuaMaiChu7  YFloat  `protobuf:"varint,1031,opt,name=PanKouBianHuaMaiChu7" json:"PanKouBianHuaMaiChu7,omitempty"`
+	PanKouBianHuaMaiChu8  YFloat  `protobuf:"varint,1032,opt,name=PanKouBianHuaMaiChu8" json:"PanKouBianHuaMaiChu8,omitempty"`
+	PanKouBianHuaMaiChu9  YFloat  `protobuf:"varint,1033,opt,name=PanKouBianHuaMaiChu9" json:"PanKouBianHuaMaiChu9,omitempty"`
+	PanKouBianHuaMaiChu10 YFloat  `protobuf:"varint,1034,opt,name=PanKouBianHuaMaiChu10" json:"PanKouBianHuaMaiChu10,omitempty"`
 	// 焦点股票
-	ShiFouGuanZhu yfloat `protobuf:"varint,1100,opt,name=ShiFouGuanZhu" json:"ShiFouGuanZhu,omitempty"`
-	XuHao         yfloat `protobuf:"varint,1101,opt,name=XuHao" json:"XuHao,omitempty"`
+	ShiFouGuanZhu YFloat `protobuf:"varint,1100,opt,name=ShiFouGuanZhu" json:"ShiFouGuanZhu,omitempty"`
+	XuHao         YFloat `protobuf:"varint,1101,opt,name=XuHao" json:"XuHao,omitempty"`
 }
 
 func (m *StkData) Reset()                    { *m = StkData{} }
@@ -452,525 +452,525 @@ func (m *StkData) GetZhongWenJianCheng() string {
 	return ""
 }
 
-func (m *StkData) GetZuiXinJia() yfloat {
+func (m *StkData) GetZuiXinJia() YFloat {
 	if m != nil {
 		return m.ZuiXinJia
 	}
 	return 0
 }
 
-func (m *StkData) GetKaiPanJia() yfloat {
+func (m *StkData) GetKaiPanJia() YFloat {
 	if m != nil {
 		return m.KaiPanJia
 	}
 	return 0
 }
 
-func (m *StkData) GetZuiGaoJia() yfloat {
+func (m *StkData) GetZuiGaoJia() YFloat {
 	if m != nil {
 		return m.ZuiGaoJia
 	}
 	return 0
 }
 
-func (m *StkData) GetZuiDiJia() yfloat {
+func (m *StkData) GetZuiDiJia() YFloat {
 	if m != nil {
 		return m.ZuiDiJia
 	}
 	return 0
 }
 
-func (m *StkData) GetZuoShou() yfloat {
+func (m *StkData) GetZuoShou() YFloat {
 	if m != nil {
 		return m.ZuoShou
 	}
 	return 0
 }
 
-func (m *StkData) GetJunJia() yfloat {
+func (m *StkData) GetJunJia() YFloat {
 	if m != nil {
 		return m.JunJia
 	}
 	return 0
 }
 
-func (m *StkData) GetZhangDie() yfloat {
+func (m *StkData) GetZhangDie() YFloat {
 	if m != nil {
 		return m.ZhangDie
 	}
 	return 0
 }
 
-func (m *StkData) GetZhangFu() yfloat {
+func (m *StkData) GetZhangFu() YFloat {
 	if m != nil {
 		return m.ZhangFu
 	}
 	return 0
 }
 
-func (m *StkData) GetZhenFu() yfloat {
+func (m *StkData) GetZhenFu() YFloat {
 	if m != nil {
 		return m.ZhenFu
 	}
 	return 0
 }
 
-func (m *StkData) GetChengJiaoLiang() yfloat {
+func (m *StkData) GetChengJiaoLiang() YFloat {
 	if m != nil {
 		return m.ChengJiaoLiang
 	}
 	return 0
 }
 
-func (m *StkData) GetXianShou() yfloat {
+func (m *StkData) GetXianShou() YFloat {
 	if m != nil {
 		return m.XianShou
 	}
 	return 0
 }
 
-func (m *StkData) GetChengJiaoE() yfloat {
+func (m *StkData) GetChengJiaoE() YFloat {
 	if m != nil {
 		return m.ChengJiaoE
 	}
 	return 0
 }
 
-func (m *StkData) GetZongChengJiaoBiShu() yfloat {
+func (m *StkData) GetZongChengJiaoBiShu() YFloat {
 	if m != nil {
 		return m.ZongChengJiaoBiShu
 	}
 	return 0
 }
 
-func (m *StkData) GetMeiBiChengJiaoGuShu() yfloat {
+func (m *StkData) GetMeiBiChengJiaoGuShu() YFloat {
 	if m != nil {
 		return m.MeiBiChengJiaoGuShu
 	}
 	return 0
 }
 
-func (m *StkData) GetHuanShou() yfloat {
+func (m *StkData) GetHuanShou() YFloat {
 	if m != nil {
 		return m.HuanShou
 	}
 	return 0
 }
 
-func (m *StkData) GetLiangBi() yfloat {
+func (m *StkData) GetLiangBi() YFloat {
 	if m != nil {
 		return m.LiangBi
 	}
 	return 0
 }
 
-func (m *StkData) GetNeiPan() yfloat {
+func (m *StkData) GetNeiPan() YFloat {
 	if m != nil {
 		return m.NeiPan
 	}
 	return 0
 }
 
-func (m *StkData) GetWaiPan() yfloat {
+func (m *StkData) GetWaiPan() YFloat {
 	if m != nil {
 		return m.WaiPan
 	}
 	return 0
 }
 
-func (m *StkData) GetZongMaiRu() yfloat {
+func (m *StkData) GetZongMaiRu() YFloat {
 	if m != nil {
 		return m.ZongMaiRu
 	}
 	return 0
 }
 
-func (m *StkData) GetZongMaiChu() yfloat {
+func (m *StkData) GetZongMaiChu() YFloat {
 	if m != nil {
 		return m.ZongMaiChu
 	}
 	return 0
 }
 
-func (m *StkData) GetZongMaiRuJunJia() yfloat {
+func (m *StkData) GetZongMaiRuJunJia() YFloat {
 	if m != nil {
 		return m.ZongMaiRuJunJia
 	}
 	return 0
 }
 
-func (m *StkData) GetZongMaiChuJunJia() yfloat {
+func (m *StkData) GetZongMaiChuJunJia() YFloat {
 	if m != nil {
 		return m.ZongMaiChuJunJia
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiRuJia1() yfloat {
+func (m *StkData) GetWeiTuoMaiRuJia1() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiRuJia1
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiRuJia2() yfloat {
+func (m *StkData) GetWeiTuoMaiRuJia2() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiRuJia2
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiRuJia3() yfloat {
+func (m *StkData) GetWeiTuoMaiRuJia3() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiRuJia3
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiRuJia4() yfloat {
+func (m *StkData) GetWeiTuoMaiRuJia4() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiRuJia4
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiRuJia5() yfloat {
+func (m *StkData) GetWeiTuoMaiRuJia5() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiRuJia5
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiRuLiang1() yfloat {
+func (m *StkData) GetWeiTuoMaiRuLiang1() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiRuLiang1
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiRuLiang2() yfloat {
+func (m *StkData) GetWeiTuoMaiRuLiang2() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiRuLiang2
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiRuLiang3() yfloat {
+func (m *StkData) GetWeiTuoMaiRuLiang3() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiRuLiang3
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiRuLiang4() yfloat {
+func (m *StkData) GetWeiTuoMaiRuLiang4() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiRuLiang4
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiRuLiang5() yfloat {
+func (m *StkData) GetWeiTuoMaiRuLiang5() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiRuLiang5
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiChuJia1() yfloat {
+func (m *StkData) GetWeiTuoMaiChuJia1() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiChuJia1
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiChuJia2() yfloat {
+func (m *StkData) GetWeiTuoMaiChuJia2() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiChuJia2
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiChuJia3() yfloat {
+func (m *StkData) GetWeiTuoMaiChuJia3() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiChuJia3
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiChuJia4() yfloat {
+func (m *StkData) GetWeiTuoMaiChuJia4() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiChuJia4
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiChuJia5() yfloat {
+func (m *StkData) GetWeiTuoMaiChuJia5() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiChuJia5
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiChuLiang1() yfloat {
+func (m *StkData) GetWeiTuoMaiChuLiang1() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiChuLiang1
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiChuLiang2() yfloat {
+func (m *StkData) GetWeiTuoMaiChuLiang2() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiChuLiang2
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiChuLiang3() yfloat {
+func (m *StkData) GetWeiTuoMaiChuLiang3() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiChuLiang3
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiChuLiang4() yfloat {
+func (m *StkData) GetWeiTuoMaiChuLiang4() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiChuLiang4
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiChuLiang5() yfloat {
+func (m *StkData) GetWeiTuoMaiChuLiang5() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiChuLiang5
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiBi() yfloat {
+func (m *StkData) GetWeiBi() YFloat {
 	if m != nil {
 		return m.WeiBi
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiCha() yfloat {
+func (m *StkData) GetWeiCha() YFloat {
 	if m != nil {
 		return m.WeiCha
 	}
 	return 0
 }
 
-func (m *StkData) GetZhangSu() yfloat {
+func (m *StkData) GetZhangSu() YFloat {
 	if m != nil {
 		return m.ZhangSu
 	}
 	return 0
 }
 
-func (m *StkData) GetJunLiang5Ri() yfloat {
+func (m *StkData) GetJunLiang5Ri() YFloat {
 	if m != nil {
 		return m.JunLiang5Ri
 	}
 	return 0
 }
 
-func (m *StkData) GetShangZhangJiaShu() yfloat {
+func (m *StkData) GetShangZhangJiaShu() YFloat {
 	if m != nil {
 		return m.ShangZhangJiaShu
 	}
 	return 0
 }
 
-func (m *StkData) GetXiaDieJiaShu() yfloat {
+func (m *StkData) GetXiaDieJiaShu() YFloat {
 	if m != nil {
 		return m.XiaDieJiaShu
 	}
 	return 0
 }
 
-func (m *StkData) GetPingPanJiaShu() yfloat {
+func (m *StkData) GetPingPanJiaShu() YFloat {
 	if m != nil {
 		return m.PingPanJiaShu
 	}
 	return 0
 }
 
-func (m *StkData) GetAGuShangZhangJiaShu() yfloat {
+func (m *StkData) GetAGuShangZhangJiaShu() YFloat {
 	if m != nil {
 		return m.AGuShangZhangJiaShu
 	}
 	return 0
 }
 
-func (m *StkData) GetAGuXiaDieJiaShu() yfloat {
+func (m *StkData) GetAGuXiaDieJiaShu() YFloat {
 	if m != nil {
 		return m.AGuXiaDieJiaShu
 	}
 	return 0
 }
 
-func (m *StkData) GetAGuPingPanJiaShu() yfloat {
+func (m *StkData) GetAGuPingPanJiaShu() YFloat {
 	if m != nil {
 		return m.AGuPingPanJiaShu
 	}
 	return 0
 }
 
-func (m *StkData) GetAGuChengJiaoE() yfloat {
+func (m *StkData) GetAGuChengJiaoE() YFloat {
 	if m != nil {
 		return m.AGuChengJiaoE
 	}
 	return 0
 }
 
-func (m *StkData) GetBGuShangZhangJiaShu() yfloat {
+func (m *StkData) GetBGuShangZhangJiaShu() YFloat {
 	if m != nil {
 		return m.BGuShangZhangJiaShu
 	}
 	return 0
 }
 
-func (m *StkData) GetBGuXiaDieJiaShu() yfloat {
+func (m *StkData) GetBGuXiaDieJiaShu() YFloat {
 	if m != nil {
 		return m.BGuXiaDieJiaShu
 	}
 	return 0
 }
 
-func (m *StkData) GetBGuPingPanJiaShu() yfloat {
+func (m *StkData) GetBGuPingPanJiaShu() YFloat {
 	if m != nil {
 		return m.BGuPingPanJiaShu
 	}
 	return 0
 }
 
-func (m *StkData) GetBGuChengJiaoE() yfloat {
+func (m *StkData) GetBGuChengJiaoE() YFloat {
 	if m != nil {
 		return m.BGuChengJiaoE
 	}
 	return 0
 }
 
-func (m *StkData) GetJiJinShangZhangJiaShu() yfloat {
+func (m *StkData) GetJiJinShangZhangJiaShu() YFloat {
 	if m != nil {
 		return m.JiJinShangZhangJiaShu
 	}
 	return 0
 }
 
-func (m *StkData) GetJiJinXiaDieJiaShu() yfloat {
+func (m *StkData) GetJiJinXiaDieJiaShu() YFloat {
 	if m != nil {
 		return m.JiJinXiaDieJiaShu
 	}
 	return 0
 }
 
-func (m *StkData) GetJiJinPingPanJiaShu() yfloat {
+func (m *StkData) GetJiJinPingPanJiaShu() YFloat {
 	if m != nil {
 		return m.JiJinPingPanJiaShu
 	}
 	return 0
 }
 
-func (m *StkData) GetJiJinChengJiaoE() yfloat {
+func (m *StkData) GetJiJinChengJiaoE() YFloat {
 	if m != nil {
 		return m.JiJinChengJiaoE
 	}
 	return 0
 }
 
-func (m *StkData) GetQiTaShangZhangJiaShu() yfloat {
+func (m *StkData) GetQiTaShangZhangJiaShu() YFloat {
 	if m != nil {
 		return m.QiTaShangZhangJiaShu
 	}
 	return 0
 }
 
-func (m *StkData) GetQiTaXiaDieJiaShu() yfloat {
+func (m *StkData) GetQiTaXiaDieJiaShu() YFloat {
 	if m != nil {
 		return m.QiTaXiaDieJiaShu
 	}
 	return 0
 }
 
-func (m *StkData) GetQiTaPingPanJiaShu() yfloat {
+func (m *StkData) GetQiTaPingPanJiaShu() YFloat {
 	if m != nil {
 		return m.QiTaPingPanJiaShu
 	}
 	return 0
 }
 
-func (m *StkData) GetQiTaChengJiaoE() yfloat {
+func (m *StkData) GetQiTaChengJiaoE() YFloat {
 	if m != nil {
 		return m.QiTaChengJiaoE
 	}
 	return 0
 }
 
-func (m *StkData) GetMaiRuDanShu() yfloat {
+func (m *StkData) GetMaiRuDanShu() YFloat {
 	if m != nil {
 		return m.MaiRuDanShu
 	}
 	return 0
 }
 
-func (m *StkData) GetMaiChuDanShu() yfloat {
+func (m *StkData) GetMaiChuDanShu() YFloat {
 	if m != nil {
 		return m.MaiChuDanShu
 	}
 	return 0
 }
 
-func (m *StkData) GetFenZhongZhangFu1() yfloat {
+func (m *StkData) GetFenZhongZhangFu1() YFloat {
 	if m != nil {
 		return m.FenZhongZhangFu1
 	}
 	return 0
 }
 
-func (m *StkData) GetFenZhongZhangFu2() yfloat {
+func (m *StkData) GetFenZhongZhangFu2() YFloat {
 	if m != nil {
 		return m.FenZhongZhangFu2
 	}
 	return 0
 }
 
-func (m *StkData) GetFenZhongZhangFu3() yfloat {
+func (m *StkData) GetFenZhongZhangFu3() YFloat {
 	if m != nil {
 		return m.FenZhongZhangFu3
 	}
 	return 0
 }
 
-func (m *StkData) GetFenZhongZhangFu4() yfloat {
+func (m *StkData) GetFenZhongZhangFu4() YFloat {
 	if m != nil {
 		return m.FenZhongZhangFu4
 	}
 	return 0
 }
 
-func (m *StkData) GetFenZhongZhangFu5() yfloat {
+func (m *StkData) GetFenZhongZhangFu5() YFloat {
 	if m != nil {
 		return m.FenZhongZhangFu5
 	}
 	return 0
 }
 
-func (m *StkData) GetShiYingLv() yfloat {
+func (m *StkData) GetShiYingLv() YFloat {
 	if m != nil {
 		return m.ShiYingLv
 	}
 	return 0
 }
 
-func (m *StkData) GetZhangTing() yfloat {
+func (m *StkData) GetZhangTing() YFloat {
 	if m != nil {
 		return m.ZhangTing
 	}
 	return 0
 }
 
-func (m *StkData) GetDieTing() yfloat {
+func (m *StkData) GetDieTing() YFloat {
 	if m != nil {
 		return m.DieTing
 	}
@@ -991,1309 +991,1309 @@ func (m *StkData) GetShiChangDuanMingCheng() string {
 	return ""
 }
 
-func (m *StkData) GetJiGouChiHuoShu() yfloat {
+func (m *StkData) GetJiGouChiHuoShu() YFloat {
 	if m != nil {
 		return m.JiGouChiHuoShu
 	}
 	return 0
 }
 
-func (m *StkData) GetJiGouTuHuoShu() yfloat {
+func (m *StkData) GetJiGouTuHuoShu() YFloat {
 	if m != nil {
 		return m.JiGouTuHuoShu
 	}
 	return 0
 }
 
-func (m *StkData) GetJiGouChiHuoLiang() yfloat {
+func (m *StkData) GetJiGouChiHuoLiang() YFloat {
 	if m != nil {
 		return m.JiGouChiHuoLiang
 	}
 	return 0
 }
 
-func (m *StkData) GetJiGouTuHuoLiang() yfloat {
+func (m *StkData) GetJiGouTuHuoLiang() YFloat {
 	if m != nil {
 		return m.JiGouTuHuoLiang
 	}
 	return 0
 }
 
-func (m *StkData) GetJiGouChiHuoJunE() yfloat {
+func (m *StkData) GetJiGouChiHuoJunE() YFloat {
 	if m != nil {
 		return m.JiGouChiHuoJunE
 	}
 	return 0
 }
 
-func (m *StkData) GetJiGouTuHuoJunE() yfloat {
+func (m *StkData) GetJiGouTuHuoJunE() YFloat {
 	if m != nil {
 		return m.JiGouTuHuoJunE
 	}
 	return 0
 }
 
-func (m *StkData) GetMeiShouGuShu() yfloat {
+func (m *StkData) GetMeiShouGuShu() YFloat {
 	if m != nil {
 		return m.MeiShouGuShu
 	}
 	return 0
 }
 
-func (m *StkData) GetJiaoYiDanWei() yfloat {
+func (m *StkData) GetJiaoYiDanWei() YFloat {
 	if m != nil {
 		return m.JiaoYiDanWei
 	}
 	return 0
 }
 
-func (m *StkData) GetShiXiaoLv() yfloat {
+func (m *StkData) GetShiXiaoLv() YFloat {
 	if m != nil {
 		return m.ShiXiaoLv
 	}
 	return 0
 }
 
-func (m *StkData) GetShiJian() yfloat {
+func (m *StkData) GetShiJian() YFloat {
 	if m != nil {
 		return m.ShiJian
 	}
 	return 0
 }
 
-func (m *StkData) GetShiJingLv() yfloat {
+func (m *StkData) GetShiJingLv() YFloat {
 	if m != nil {
 		return m.ShiJingLv
 	}
 	return 0
 }
 
-func (m *StkData) GetZongShiZhi() yfloat {
+func (m *StkData) GetZongShiZhi() YFloat {
 	if m != nil {
 		return m.ZongShiZhi
 	}
 	return 0
 }
 
-func (m *StkData) GetLiuTongShiZhi() yfloat {
+func (m *StkData) GetLiuTongShiZhi() YFloat {
 	if m != nil {
 		return m.LiuTongShiZhi
 	}
 	return 0
 }
 
-func (m *StkData) GetRiZhangFu5() yfloat {
+func (m *StkData) GetRiZhangFu5() YFloat {
 	if m != nil {
 		return m.RiZhangFu5
 	}
 	return 0
 }
 
-func (m *StkData) GetRiPingJunZhangFu3() yfloat {
+func (m *StkData) GetRiPingJunZhangFu3() YFloat {
 	if m != nil {
 		return m.RiPingJunZhangFu3
 	}
 	return 0
 }
 
-func (m *StkData) GetJingTaiShiYingLv() yfloat {
+func (m *StkData) GetJingTaiShiYingLv() YFloat {
 	if m != nil {
 		return m.JingTaiShiYingLv
 	}
 	return 0
 }
 
-func (m *StkData) GetRongZiYuEZhangFu() yfloat {
+func (m *StkData) GetRongZiYuEZhangFu() YFloat {
 	if m != nil {
 		return m.RongZiYuEZhangFu
 	}
 	return 0
 }
 
-func (m *StkData) GetRongZiYuELiuTongShiZhiBiLv() yfloat {
+func (m *StkData) GetRongZiYuELiuTongShiZhiBiLv() YFloat {
 	if m != nil {
 		return m.RongZiYuELiuTongShiZhiBiLv
 	}
 	return 0
 }
 
-func (m *StkData) GetZiChanFuZhaiLv() yfloat {
+func (m *StkData) GetZiChanFuZhaiLv() YFloat {
 	if m != nil {
 		return m.ZiChanFuZhaiLv
 	}
 	return 0
 }
 
-func (m *StkData) GetJiaQuanPingJunWeiTuoMaiRuJia() yfloat {
+func (m *StkData) GetJiaQuanPingJunWeiTuoMaiRuJia() YFloat {
 	if m != nil {
 		return m.JiaQuanPingJunWeiTuoMaiRuJia
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiRuZongLiang() yfloat {
+func (m *StkData) GetWeiTuoMaiRuZongLiang() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiRuZongLiang
 	}
 	return 0
 }
 
-func (m *StkData) GetJiaQuanPingJunWeiTuoMaiChuJia() yfloat {
+func (m *StkData) GetJiaQuanPingJunWeiTuoMaiChuJia() YFloat {
 	if m != nil {
 		return m.JiaQuanPingJunWeiTuoMaiChuJia
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiChuZongLiang() yfloat {
+func (m *StkData) GetWeiTuoMaiChuZongLiang() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiChuZongLiang
 	}
 	return 0
 }
 
-func (m *StkData) GetKuoZhanMaiRuJia1() yfloat {
+func (m *StkData) GetKuoZhanMaiRuJia1() YFloat {
 	if m != nil {
 		return m.KuoZhanMaiRuJia1
 	}
 	return 0
 }
 
-func (m *StkData) GetKuoZhanMaiRuJia2() yfloat {
+func (m *StkData) GetKuoZhanMaiRuJia2() YFloat {
 	if m != nil {
 		return m.KuoZhanMaiRuJia2
 	}
 	return 0
 }
 
-func (m *StkData) GetKuoZhanMaiRuJia3() yfloat {
+func (m *StkData) GetKuoZhanMaiRuJia3() YFloat {
 	if m != nil {
 		return m.KuoZhanMaiRuJia3
 	}
 	return 0
 }
 
-func (m *StkData) GetKuoZhanMaiRuJia4() yfloat {
+func (m *StkData) GetKuoZhanMaiRuJia4() YFloat {
 	if m != nil {
 		return m.KuoZhanMaiRuJia4
 	}
 	return 0
 }
 
-func (m *StkData) GetKuoZhanMaiRuJia5() yfloat {
+func (m *StkData) GetKuoZhanMaiRuJia5() YFloat {
 	if m != nil {
 		return m.KuoZhanMaiRuJia5
 	}
 	return 0
 }
 
-func (m *StkData) GetKuoZhanMaiRuLiang1() yfloat {
+func (m *StkData) GetKuoZhanMaiRuLiang1() YFloat {
 	if m != nil {
 		return m.KuoZhanMaiRuLiang1
 	}
 	return 0
 }
 
-func (m *StkData) GetKuoZhanMaiRuLiang2() yfloat {
+func (m *StkData) GetKuoZhanMaiRuLiang2() YFloat {
 	if m != nil {
 		return m.KuoZhanMaiRuLiang2
 	}
 	return 0
 }
 
-func (m *StkData) GetKuoZhanMaiRuLiang3() yfloat {
+func (m *StkData) GetKuoZhanMaiRuLiang3() YFloat {
 	if m != nil {
 		return m.KuoZhanMaiRuLiang3
 	}
 	return 0
 }
 
-func (m *StkData) GetKuoZhanMaiRuLiang4() yfloat {
+func (m *StkData) GetKuoZhanMaiRuLiang4() YFloat {
 	if m != nil {
 		return m.KuoZhanMaiRuLiang4
 	}
 	return 0
 }
 
-func (m *StkData) GetKuoZhanMaiRuLiang5() yfloat {
+func (m *StkData) GetKuoZhanMaiRuLiang5() YFloat {
 	if m != nil {
 		return m.KuoZhanMaiRuLiang5
 	}
 	return 0
 }
 
-func (m *StkData) GetKuoZhanMaiChuJia1() yfloat {
+func (m *StkData) GetKuoZhanMaiChuJia1() YFloat {
 	if m != nil {
 		return m.KuoZhanMaiChuJia1
 	}
 	return 0
 }
 
-func (m *StkData) GetKuoZhanMaiChuJia2() yfloat {
+func (m *StkData) GetKuoZhanMaiChuJia2() YFloat {
 	if m != nil {
 		return m.KuoZhanMaiChuJia2
 	}
 	return 0
 }
 
-func (m *StkData) GetKuoZhanMaiChuJia3() yfloat {
+func (m *StkData) GetKuoZhanMaiChuJia3() YFloat {
 	if m != nil {
 		return m.KuoZhanMaiChuJia3
 	}
 	return 0
 }
 
-func (m *StkData) GetKuoZhanMaiChuJia4() yfloat {
+func (m *StkData) GetKuoZhanMaiChuJia4() YFloat {
 	if m != nil {
 		return m.KuoZhanMaiChuJia4
 	}
 	return 0
 }
 
-func (m *StkData) GetKuoZhanMaiChuJia5() yfloat {
+func (m *StkData) GetKuoZhanMaiChuJia5() YFloat {
 	if m != nil {
 		return m.KuoZhanMaiChuJia5
 	}
 	return 0
 }
 
-func (m *StkData) GetKuoZhanMaiChuLiang1() yfloat {
+func (m *StkData) GetKuoZhanMaiChuLiang1() YFloat {
 	if m != nil {
 		return m.KuoZhanMaiChuLiang1
 	}
 	return 0
 }
 
-func (m *StkData) GetKuoZhanMaiChuLiang2() yfloat {
+func (m *StkData) GetKuoZhanMaiChuLiang2() YFloat {
 	if m != nil {
 		return m.KuoZhanMaiChuLiang2
 	}
 	return 0
 }
 
-func (m *StkData) GetKuoZhanMaiChuLiang3() yfloat {
+func (m *StkData) GetKuoZhanMaiChuLiang3() YFloat {
 	if m != nil {
 		return m.KuoZhanMaiChuLiang3
 	}
 	return 0
 }
 
-func (m *StkData) GetKuoZhanMaiChuLiang4() yfloat {
+func (m *StkData) GetKuoZhanMaiChuLiang4() YFloat {
 	if m != nil {
 		return m.KuoZhanMaiChuLiang4
 	}
 	return 0
 }
 
-func (m *StkData) GetKuoZhanMaiChuLiang5() yfloat {
+func (m *StkData) GetKuoZhanMaiChuLiang5() YFloat {
 	if m != nil {
 		return m.KuoZhanMaiChuLiang5
 	}
 	return 0
 }
 
-func (m *StkData) GetDaDanDangRiLiuRuE() yfloat {
+func (m *StkData) GetDaDanDangRiLiuRuE() YFloat {
 	if m != nil {
 		return m.DaDanDangRiLiuRuE
 	}
 	return 0
 }
 
-func (m *StkData) GetDaDanLiuRuE5() yfloat {
+func (m *StkData) GetDaDanLiuRuE5() YFloat {
 	if m != nil {
 		return m.DaDanLiuRuE5
 	}
 	return 0
 }
 
-func (m *StkData) GetDDX() yfloat {
+func (m *StkData) GetDDX() YFloat {
 	if m != nil {
 		return m.DDX
 	}
 	return 0
 }
 
-func (m *StkData) GetDDXPiaoHongTianShu10() yfloat {
+func (m *StkData) GetDDXPiaoHongTianShu10() YFloat {
 	if m != nil {
 		return m.DDXPiaoHongTianShu10
 	}
 	return 0
 }
 
-func (m *StkData) GetDDXZongHe10() yfloat {
+func (m *StkData) GetDDXZongHe10() YFloat {
 	if m != nil {
 		return m.DDXZongHe10
 	}
 	return 0
 }
 
-func (m *StkData) GetDDXBiaoZhunCha10() yfloat {
+func (m *StkData) GetDDXBiaoZhunCha10() YFloat {
 	if m != nil {
 		return m.DDXBiaoZhunCha10
 	}
 	return 0
 }
 
-func (m *StkData) GetDDXDDXBiaoZhunCha10BiZhi() yfloat {
+func (m *StkData) GetDDXDDXBiaoZhunCha10BiZhi() YFloat {
 	if m != nil {
 		return m.DDXDDXBiaoZhunCha10BiZhi
 	}
 	return 0
 }
 
-func (m *StkData) GetShiFouTingPai() yfloat {
+func (m *StkData) GetShiFouTingPai() YFloat {
 	if m != nil {
 		return m.ShiFouTingPai
 	}
 	return 0
 }
 
-func (m *StkData) GetDaDanLiuRuZongE() yfloat {
+func (m *StkData) GetDaDanLiuRuZongE() YFloat {
 	if m != nil {
 		return m.DaDanLiuRuZongE
 	}
 	return 0
 }
 
-func (m *StkData) GetDaDanLiuChuZongE() yfloat {
+func (m *StkData) GetDaDanLiuChuZongE() YFloat {
 	if m != nil {
 		return m.DaDanLiuChuZongE
 	}
 	return 0
 }
 
-func (m *StkData) GetDaDanLiuRuZongE5() yfloat {
+func (m *StkData) GetDaDanLiuRuZongE5() YFloat {
 	if m != nil {
 		return m.DaDanLiuRuZongE5
 	}
 	return 0
 }
 
-func (m *StkData) GetDaDanLiuChuZongE5() yfloat {
+func (m *StkData) GetDaDanLiuChuZongE5() YFloat {
 	if m != nil {
 		return m.DaDanLiuChuZongE5
 	}
 	return 0
 }
 
-func (m *StkData) GetDDXLianXuPiaoHongTianShu() yfloat {
+func (m *StkData) GetDDXLianXuPiaoHongTianShu() YFloat {
 	if m != nil {
 		return m.DDXLianXuPiaoHongTianShu
 	}
 	return 0
 }
 
-func (m *StkData) GetMA1MinMA1() yfloat {
+func (m *StkData) GetMA1MinMA1() YFloat {
 	if m != nil {
 		return m.MA1MinMA1
 	}
 	return 0
 }
 
-func (m *StkData) GetMA1MinMA2() yfloat {
+func (m *StkData) GetMA1MinMA2() YFloat {
 	if m != nil {
 		return m.MA1MinMA2
 	}
 	return 0
 }
 
-func (m *StkData) GetMA1MinMA3() yfloat {
+func (m *StkData) GetMA1MinMA3() YFloat {
 	if m != nil {
 		return m.MA1MinMA3
 	}
 	return 0
 }
 
-func (m *StkData) GetMA1MinMA4() yfloat {
+func (m *StkData) GetMA1MinMA4() YFloat {
 	if m != nil {
 		return m.MA1MinMA4
 	}
 	return 0
 }
 
-func (m *StkData) GetMA1MinMA5() yfloat {
+func (m *StkData) GetMA1MinMA5() YFloat {
 	if m != nil {
 		return m.MA1MinMA5
 	}
 	return 0
 }
 
-func (m *StkData) GetMA1MinMA6() yfloat {
+func (m *StkData) GetMA1MinMA6() YFloat {
 	if m != nil {
 		return m.MA1MinMA6
 	}
 	return 0
 }
 
-func (m *StkData) GetMA5MinMA1() yfloat {
+func (m *StkData) GetMA5MinMA1() YFloat {
 	if m != nil {
 		return m.MA5MinMA1
 	}
 	return 0
 }
 
-func (m *StkData) GetMA5MinMA2() yfloat {
+func (m *StkData) GetMA5MinMA2() YFloat {
 	if m != nil {
 		return m.MA5MinMA2
 	}
 	return 0
 }
 
-func (m *StkData) GetMA5MinMA3() yfloat {
+func (m *StkData) GetMA5MinMA3() YFloat {
 	if m != nil {
 		return m.MA5MinMA3
 	}
 	return 0
 }
 
-func (m *StkData) GetMA5MinMA4() yfloat {
+func (m *StkData) GetMA5MinMA4() YFloat {
 	if m != nil {
 		return m.MA5MinMA4
 	}
 	return 0
 }
 
-func (m *StkData) GetMA5MinMA5() yfloat {
+func (m *StkData) GetMA5MinMA5() YFloat {
 	if m != nil {
 		return m.MA5MinMA5
 	}
 	return 0
 }
 
-func (m *StkData) GetMA5MinMA6() yfloat {
+func (m *StkData) GetMA5MinMA6() YFloat {
 	if m != nil {
 		return m.MA5MinMA6
 	}
 	return 0
 }
 
-func (m *StkData) GetMA1DayMA1() yfloat {
+func (m *StkData) GetMA1DayMA1() YFloat {
 	if m != nil {
 		return m.MA1DayMA1
 	}
 	return 0
 }
 
-func (m *StkData) GetMA1DayMA2() yfloat {
+func (m *StkData) GetMA1DayMA2() YFloat {
 	if m != nil {
 		return m.MA1DayMA2
 	}
 	return 0
 }
 
-func (m *StkData) GetMA1DayMA3() yfloat {
+func (m *StkData) GetMA1DayMA3() YFloat {
 	if m != nil {
 		return m.MA1DayMA3
 	}
 	return 0
 }
 
-func (m *StkData) GetMA1DayMA4() yfloat {
+func (m *StkData) GetMA1DayMA4() YFloat {
 	if m != nil {
 		return m.MA1DayMA4
 	}
 	return 0
 }
 
-func (m *StkData) GetMA1DayMA5() yfloat {
+func (m *StkData) GetMA1DayMA5() YFloat {
 	if m != nil {
 		return m.MA1DayMA5
 	}
 	return 0
 }
 
-func (m *StkData) GetMA1DayMA6() yfloat {
+func (m *StkData) GetMA1DayMA6() YFloat {
 	if m != nil {
 		return m.MA1DayMA6
 	}
 	return 0
 }
 
-func (m *StkData) GetBOLL1MinMID() yfloat {
+func (m *StkData) GetBOLL1MinMID() YFloat {
 	if m != nil {
 		return m.BOLL1MinMID
 	}
 	return 0
 }
 
-func (m *StkData) GetBOLL1MinUPPER() yfloat {
+func (m *StkData) GetBOLL1MinUPPER() YFloat {
 	if m != nil {
 		return m.BOLL1MinUPPER
 	}
 	return 0
 }
 
-func (m *StkData) GetBOLL1MinLOWER() yfloat {
+func (m *StkData) GetBOLL1MinLOWER() YFloat {
 	if m != nil {
 		return m.BOLL1MinLOWER
 	}
 	return 0
 }
 
-func (m *StkData) GetBOLL5MinMID() yfloat {
+func (m *StkData) GetBOLL5MinMID() YFloat {
 	if m != nil {
 		return m.BOLL5MinMID
 	}
 	return 0
 }
 
-func (m *StkData) GetBOLL5MinUPPER() yfloat {
+func (m *StkData) GetBOLL5MinUPPER() YFloat {
 	if m != nil {
 		return m.BOLL5MinUPPER
 	}
 	return 0
 }
 
-func (m *StkData) GetBOLL5MinLOWER() yfloat {
+func (m *StkData) GetBOLL5MinLOWER() YFloat {
 	if m != nil {
 		return m.BOLL5MinLOWER
 	}
 	return 0
 }
 
-func (m *StkData) GetBOLL1DayMID() yfloat {
+func (m *StkData) GetBOLL1DayMID() YFloat {
 	if m != nil {
 		return m.BOLL1DayMID
 	}
 	return 0
 }
 
-func (m *StkData) GetBOLL1DayUPPER() yfloat {
+func (m *StkData) GetBOLL1DayUPPER() YFloat {
 	if m != nil {
 		return m.BOLL1DayUPPER
 	}
 	return 0
 }
 
-func (m *StkData) GetBOLL1DayLOWER() yfloat {
+func (m *StkData) GetBOLL1DayLOWER() YFloat {
 	if m != nil {
 		return m.BOLL1DayLOWER
 	}
 	return 0
 }
 
-func (m *StkData) GetVOL1Min() yfloat {
+func (m *StkData) GetVOL1Min() YFloat {
 	if m != nil {
 		return m.VOL1Min
 	}
 	return 0
 }
 
-func (m *StkData) GetVOL1MinMA1() yfloat {
+func (m *StkData) GetVOL1MinMA1() YFloat {
 	if m != nil {
 		return m.VOL1MinMA1
 	}
 	return 0
 }
 
-func (m *StkData) GetVOL1MinMA2() yfloat {
+func (m *StkData) GetVOL1MinMA2() YFloat {
 	if m != nil {
 		return m.VOL1MinMA2
 	}
 	return 0
 }
 
-func (m *StkData) GetVOL1MinMA3() yfloat {
+func (m *StkData) GetVOL1MinMA3() YFloat {
 	if m != nil {
 		return m.VOL1MinMA3
 	}
 	return 0
 }
 
-func (m *StkData) GetVOL5Min() yfloat {
+func (m *StkData) GetVOL5Min() YFloat {
 	if m != nil {
 		return m.VOL5Min
 	}
 	return 0
 }
 
-func (m *StkData) GetVOL5MinMA1() yfloat {
+func (m *StkData) GetVOL5MinMA1() YFloat {
 	if m != nil {
 		return m.VOL5MinMA1
 	}
 	return 0
 }
 
-func (m *StkData) GetVOL5MinMA2() yfloat {
+func (m *StkData) GetVOL5MinMA2() YFloat {
 	if m != nil {
 		return m.VOL5MinMA2
 	}
 	return 0
 }
 
-func (m *StkData) GetVOL5MinMA3() yfloat {
+func (m *StkData) GetVOL5MinMA3() YFloat {
 	if m != nil {
 		return m.VOL5MinMA3
 	}
 	return 0
 }
 
-func (m *StkData) GetVOL1Day() yfloat {
+func (m *StkData) GetVOL1Day() YFloat {
 	if m != nil {
 		return m.VOL1Day
 	}
 	return 0
 }
 
-func (m *StkData) GetVOL1DayMA1() yfloat {
+func (m *StkData) GetVOL1DayMA1() YFloat {
 	if m != nil {
 		return m.VOL1DayMA1
 	}
 	return 0
 }
 
-func (m *StkData) GetVOL1DayMA2() yfloat {
+func (m *StkData) GetVOL1DayMA2() YFloat {
 	if m != nil {
 		return m.VOL1DayMA2
 	}
 	return 0
 }
 
-func (m *StkData) GetVOL1DayMA3() yfloat {
+func (m *StkData) GetVOL1DayMA3() YFloat {
 	if m != nil {
 		return m.VOL1DayMA3
 	}
 	return 0
 }
 
-func (m *StkData) GetARBR1MinAR() yfloat {
+func (m *StkData) GetARBR1MinAR() YFloat {
 	if m != nil {
 		return m.ARBR1MinAR
 	}
 	return 0
 }
 
-func (m *StkData) GetARBR1MinBR() yfloat {
+func (m *StkData) GetARBR1MinBR() YFloat {
 	if m != nil {
 		return m.ARBR1MinBR
 	}
 	return 0
 }
 
-func (m *StkData) GetARBR5MinAR() yfloat {
+func (m *StkData) GetARBR5MinAR() YFloat {
 	if m != nil {
 		return m.ARBR5MinAR
 	}
 	return 0
 }
 
-func (m *StkData) GetARBR5MinBR() yfloat {
+func (m *StkData) GetARBR5MinBR() YFloat {
 	if m != nil {
 		return m.ARBR5MinBR
 	}
 	return 0
 }
 
-func (m *StkData) GetARBR1DayAR() yfloat {
+func (m *StkData) GetARBR1DayAR() YFloat {
 	if m != nil {
 		return m.ARBR1DayAR
 	}
 	return 0
 }
 
-func (m *StkData) GetARBR1DayBR() yfloat {
+func (m *StkData) GetARBR1DayBR() YFloat {
 	if m != nil {
 		return m.ARBR1DayBR
 	}
 	return 0
 }
 
-func (m *StkData) GetBIAS1MinBIAS1() yfloat {
+func (m *StkData) GetBIAS1MinBIAS1() YFloat {
 	if m != nil {
 		return m.BIAS1MinBIAS1
 	}
 	return 0
 }
 
-func (m *StkData) GetBIAS1MinBIAS2() yfloat {
+func (m *StkData) GetBIAS1MinBIAS2() YFloat {
 	if m != nil {
 		return m.BIAS1MinBIAS2
 	}
 	return 0
 }
 
-func (m *StkData) GetBIAS1MinBIAS3() yfloat {
+func (m *StkData) GetBIAS1MinBIAS3() YFloat {
 	if m != nil {
 		return m.BIAS1MinBIAS3
 	}
 	return 0
 }
 
-func (m *StkData) GetBIAS5MinBIAS1() yfloat {
+func (m *StkData) GetBIAS5MinBIAS1() YFloat {
 	if m != nil {
 		return m.BIAS5MinBIAS1
 	}
 	return 0
 }
 
-func (m *StkData) GetBIAS5MinBIAS2() yfloat {
+func (m *StkData) GetBIAS5MinBIAS2() YFloat {
 	if m != nil {
 		return m.BIAS5MinBIAS2
 	}
 	return 0
 }
 
-func (m *StkData) GetBIAS5MinBIAS3() yfloat {
+func (m *StkData) GetBIAS5MinBIAS3() YFloat {
 	if m != nil {
 		return m.BIAS5MinBIAS3
 	}
 	return 0
 }
 
-func (m *StkData) GetBIAS1DayBIAS1() yfloat {
+func (m *StkData) GetBIAS1DayBIAS1() YFloat {
 	if m != nil {
 		return m.BIAS1DayBIAS1
 	}
 	return 0
 }
 
-func (m *StkData) GetBIAS1DayBIAS2() yfloat {
+func (m *StkData) GetBIAS1DayBIAS2() YFloat {
 	if m != nil {
 		return m.BIAS1DayBIAS2
 	}
 	return 0
 }
 
-func (m *StkData) GetBIAS1DayBIAS3() yfloat {
+func (m *StkData) GetBIAS1DayBIAS3() YFloat {
 	if m != nil {
 		return m.BIAS1DayBIAS3
 	}
 	return 0
 }
 
-func (m *StkData) GetCCI1Min() yfloat {
+func (m *StkData) GetCCI1Min() YFloat {
 	if m != nil {
 		return m.CCI1Min
 	}
 	return 0
 }
 
-func (m *StkData) GetCCI5Min() yfloat {
+func (m *StkData) GetCCI5Min() YFloat {
 	if m != nil {
 		return m.CCI5Min
 	}
 	return 0
 }
 
-func (m *StkData) GetCCI1Day() yfloat {
+func (m *StkData) GetCCI1Day() YFloat {
 	if m != nil {
 		return m.CCI1Day
 	}
 	return 0
 }
 
-func (m *StkData) GetCJBS1MinCJBS() yfloat {
+func (m *StkData) GetCJBS1MinCJBS() YFloat {
 	if m != nil {
 		return m.CJBS1MinCJBS
 	}
 	return 0
 }
 
-func (m *StkData) GetCJBS5MinCJBS() yfloat {
+func (m *StkData) GetCJBS5MinCJBS() YFloat {
 	if m != nil {
 		return m.CJBS5MinCJBS
 	}
 	return 0
 }
 
-func (m *StkData) GetCJBS1DayCJBS() yfloat {
+func (m *StkData) GetCJBS1DayCJBS() YFloat {
 	if m != nil {
 		return m.CJBS1DayCJBS
 	}
 	return 0
 }
 
-func (m *StkData) GetCR1MinCR() yfloat {
+func (m *StkData) GetCR1MinCR() YFloat {
 	if m != nil {
 		return m.CR1MinCR
 	}
 	return 0
 }
 
-func (m *StkData) GetCR1MinMA1() yfloat {
+func (m *StkData) GetCR1MinMA1() YFloat {
 	if m != nil {
 		return m.CR1MinMA1
 	}
 	return 0
 }
 
-func (m *StkData) GetCR1MinMA2() yfloat {
+func (m *StkData) GetCR1MinMA2() YFloat {
 	if m != nil {
 		return m.CR1MinMA2
 	}
 	return 0
 }
 
-func (m *StkData) GetCR1MinMA3() yfloat {
+func (m *StkData) GetCR1MinMA3() YFloat {
 	if m != nil {
 		return m.CR1MinMA3
 	}
 	return 0
 }
 
-func (m *StkData) GetCR5MinCR() yfloat {
+func (m *StkData) GetCR5MinCR() YFloat {
 	if m != nil {
 		return m.CR5MinCR
 	}
 	return 0
 }
 
-func (m *StkData) GetCR5MinMA1() yfloat {
+func (m *StkData) GetCR5MinMA1() YFloat {
 	if m != nil {
 		return m.CR5MinMA1
 	}
 	return 0
 }
 
-func (m *StkData) GetCR5MinMA2() yfloat {
+func (m *StkData) GetCR5MinMA2() YFloat {
 	if m != nil {
 		return m.CR5MinMA2
 	}
 	return 0
 }
 
-func (m *StkData) GetCR5MinMA3() yfloat {
+func (m *StkData) GetCR5MinMA3() YFloat {
 	if m != nil {
 		return m.CR5MinMA3
 	}
 	return 0
 }
 
-func (m *StkData) GetCR1DayCR() yfloat {
+func (m *StkData) GetCR1DayCR() YFloat {
 	if m != nil {
 		return m.CR1DayCR
 	}
 	return 0
 }
 
-func (m *StkData) GetCR1DayMA1() yfloat {
+func (m *StkData) GetCR1DayMA1() YFloat {
 	if m != nil {
 		return m.CR1DayMA1
 	}
 	return 0
 }
 
-func (m *StkData) GetCR1DayMA2() yfloat {
+func (m *StkData) GetCR1DayMA2() YFloat {
 	if m != nil {
 		return m.CR1DayMA2
 	}
 	return 0
 }
 
-func (m *StkData) GetCR1DayMA3() yfloat {
+func (m *StkData) GetCR1DayMA3() YFloat {
 	if m != nil {
 		return m.CR1DayMA3
 	}
 	return 0
 }
 
-func (m *StkData) GetDMA1MinDDD() yfloat {
+func (m *StkData) GetDMA1MinDDD() YFloat {
 	if m != nil {
 		return m.DMA1MinDDD
 	}
 	return 0
 }
 
-func (m *StkData) GetDMA1MinAMA() yfloat {
+func (m *StkData) GetDMA1MinAMA() YFloat {
 	if m != nil {
 		return m.DMA1MinAMA
 	}
 	return 0
 }
 
-func (m *StkData) GetDMA5MinDDD() yfloat {
+func (m *StkData) GetDMA5MinDDD() YFloat {
 	if m != nil {
 		return m.DMA5MinDDD
 	}
 	return 0
 }
 
-func (m *StkData) GetDMA5MinAMA() yfloat {
+func (m *StkData) GetDMA5MinAMA() YFloat {
 	if m != nil {
 		return m.DMA5MinAMA
 	}
 	return 0
 }
 
-func (m *StkData) GetDMA1DayDDD() yfloat {
+func (m *StkData) GetDMA1DayDDD() YFloat {
 	if m != nil {
 		return m.DMA1DayDDD
 	}
 	return 0
 }
 
-func (m *StkData) GetDMA1DayAMA() yfloat {
+func (m *StkData) GetDMA1DayAMA() YFloat {
 	if m != nil {
 		return m.DMA1DayAMA
 	}
 	return 0
 }
 
-func (m *StkData) GetDMI1MinPDI() yfloat {
+func (m *StkData) GetDMI1MinPDI() YFloat {
 	if m != nil {
 		return m.DMI1MinPDI
 	}
 	return 0
 }
 
-func (m *StkData) GetDMI1MinMDI() yfloat {
+func (m *StkData) GetDMI1MinMDI() YFloat {
 	if m != nil {
 		return m.DMI1MinMDI
 	}
 	return 0
 }
 
-func (m *StkData) GetDMI1MinADX() yfloat {
+func (m *StkData) GetDMI1MinADX() YFloat {
 	if m != nil {
 		return m.DMI1MinADX
 	}
 	return 0
 }
 
-func (m *StkData) GetDMI1MinADXR() yfloat {
+func (m *StkData) GetDMI1MinADXR() YFloat {
 	if m != nil {
 		return m.DMI1MinADXR
 	}
 	return 0
 }
 
-func (m *StkData) GetDMI5MinPDI() yfloat {
+func (m *StkData) GetDMI5MinPDI() YFloat {
 	if m != nil {
 		return m.DMI5MinPDI
 	}
 	return 0
 }
 
-func (m *StkData) GetDMI5MinMDI() yfloat {
+func (m *StkData) GetDMI5MinMDI() YFloat {
 	if m != nil {
 		return m.DMI5MinMDI
 	}
 	return 0
 }
 
-func (m *StkData) GetDMI5MinADX() yfloat {
+func (m *StkData) GetDMI5MinADX() YFloat {
 	if m != nil {
 		return m.DMI5MinADX
 	}
 	return 0
 }
 
-func (m *StkData) GetDMI5MinADXR() yfloat {
+func (m *StkData) GetDMI5MinADXR() YFloat {
 	if m != nil {
 		return m.DMI5MinADXR
 	}
 	return 0
 }
 
-func (m *StkData) GetDMI1DayPDI() yfloat {
+func (m *StkData) GetDMI1DayPDI() YFloat {
 	if m != nil {
 		return m.DMI1DayPDI
 	}
 	return 0
 }
 
-func (m *StkData) GetDMI1DayMDI() yfloat {
+func (m *StkData) GetDMI1DayMDI() YFloat {
 	if m != nil {
 		return m.DMI1DayMDI
 	}
 	return 0
 }
 
-func (m *StkData) GetDMI1DayADX() yfloat {
+func (m *StkData) GetDMI1DayADX() YFloat {
 	if m != nil {
 		return m.DMI1DayADX
 	}
 	return 0
 }
 
-func (m *StkData) GetDMI1DayADXR() yfloat {
+func (m *StkData) GetDMI1DayADXR() YFloat {
 	if m != nil {
 		return m.DMI1DayADXR
 	}
 	return 0
 }
 
-func (m *StkData) GetKDJ1MinK() yfloat {
+func (m *StkData) GetKDJ1MinK() YFloat {
 	if m != nil {
 		return m.KDJ1MinK
 	}
 	return 0
 }
 
-func (m *StkData) GetKDJ1MinD() yfloat {
+func (m *StkData) GetKDJ1MinD() YFloat {
 	if m != nil {
 		return m.KDJ1MinD
 	}
 	return 0
 }
 
-func (m *StkData) GetKDJ1MinJ() yfloat {
+func (m *StkData) GetKDJ1MinJ() YFloat {
 	if m != nil {
 		return m.KDJ1MinJ
 	}
 	return 0
 }
 
-func (m *StkData) GetKDJ5MinK() yfloat {
+func (m *StkData) GetKDJ5MinK() YFloat {
 	if m != nil {
 		return m.KDJ5MinK
 	}
 	return 0
 }
 
-func (m *StkData) GetKDJ5MinD() yfloat {
+func (m *StkData) GetKDJ5MinD() YFloat {
 	if m != nil {
 		return m.KDJ5MinD
 	}
 	return 0
 }
 
-func (m *StkData) GetKDJ5MinJ() yfloat {
+func (m *StkData) GetKDJ5MinJ() YFloat {
 	if m != nil {
 		return m.KDJ5MinJ
 	}
 	return 0
 }
 
-func (m *StkData) GetKDJ1DayK() yfloat {
+func (m *StkData) GetKDJ1DayK() YFloat {
 	if m != nil {
 		return m.KDJ1DayK
 	}
 	return 0
 }
 
-func (m *StkData) GetKDJ1DayD() yfloat {
+func (m *StkData) GetKDJ1DayD() YFloat {
 	if m != nil {
 		return m.KDJ1DayD
 	}
 	return 0
 }
 
-func (m *StkData) GetKDJ1DayJ() yfloat {
+func (m *StkData) GetKDJ1DayJ() YFloat {
 	if m != nil {
 		return m.KDJ1DayJ
 	}
 	return 0
 }
 
-func (m *StkData) GetMACD1MinDIFF() yfloat {
+func (m *StkData) GetMACD1MinDIFF() YFloat {
 	if m != nil {
 		return m.MACD1MinDIFF
 	}
 	return 0
 }
 
-func (m *StkData) GetMACD1MinDEA() yfloat {
+func (m *StkData) GetMACD1MinDEA() YFloat {
 	if m != nil {
 		return m.MACD1MinDEA
 	}
 	return 0
 }
 
-func (m *StkData) GetMACD1MinMACD() yfloat {
+func (m *StkData) GetMACD1MinMACD() YFloat {
 	if m != nil {
 		return m.MACD1MinMACD
 	}
 	return 0
 }
 
-func (m *StkData) GetMACD5MinDIFF() yfloat {
+func (m *StkData) GetMACD5MinDIFF() YFloat {
 	if m != nil {
 		return m.MACD5MinDIFF
 	}
 	return 0
 }
 
-func (m *StkData) GetMACD5MinDEA() yfloat {
+func (m *StkData) GetMACD5MinDEA() YFloat {
 	if m != nil {
 		return m.MACD5MinDEA
 	}
 	return 0
 }
 
-func (m *StkData) GetMACD5MinMACD() yfloat {
+func (m *StkData) GetMACD5MinMACD() YFloat {
 	if m != nil {
 		return m.MACD5MinMACD
 	}
 	return 0
 }
 
-func (m *StkData) GetMACD1DayDIFF() yfloat {
+func (m *StkData) GetMACD1DayDIFF() YFloat {
 	if m != nil {
 		return m.MACD1DayDIFF
 	}
 	return 0
 }
 
-func (m *StkData) GetMACD1DayDEA() yfloat {
+func (m *StkData) GetMACD1DayDEA() YFloat {
 	if m != nil {
 		return m.MACD1DayDEA
 	}
 	return 0
 }
 
-func (m *StkData) GetMACD1DayMACD() yfloat {
+func (m *StkData) GetMACD1DayMACD() YFloat {
 	if m != nil {
 		return m.MACD1DayMACD
 	}
 	return 0
 }
 
-func (m *StkData) GetOBV1Min() yfloat {
+func (m *StkData) GetOBV1Min() YFloat {
 	if m != nil {
 		return m.OBV1Min
 	}
 	return 0
 }
 
-func (m *StkData) GetOBV5Min() yfloat {
+func (m *StkData) GetOBV5Min() YFloat {
 	if m != nil {
 		return m.OBV5Min
 	}
 	return 0
 }
 
-func (m *StkData) GetOBV1Day() yfloat {
+func (m *StkData) GetOBV1Day() YFloat {
 	if m != nil {
 		return m.OBV1Day
 	}
 	return 0
 }
 
-func (m *StkData) GetPSY1Min() yfloat {
+func (m *StkData) GetPSY1Min() YFloat {
 	if m != nil {
 		return m.PSY1Min
 	}
 	return 0
 }
 
-func (m *StkData) GetPSY5Min() yfloat {
+func (m *StkData) GetPSY5Min() YFloat {
 	if m != nil {
 		return m.PSY5Min
 	}
 	return 0
 }
 
-func (m *StkData) GetPSY1Day() yfloat {
+func (m *StkData) GetPSY1Day() YFloat {
 	if m != nil {
 		return m.PSY1Day
 	}
 	return 0
 }
 
-func (m *StkData) GetRSI1MinRSI1() yfloat {
+func (m *StkData) GetRSI1MinRSI1() YFloat {
 	if m != nil {
 		return m.RSI1MinRSI1
 	}
 	return 0
 }
 
-func (m *StkData) GetRSI1MinRSI2() yfloat {
+func (m *StkData) GetRSI1MinRSI2() YFloat {
 	if m != nil {
 		return m.RSI1MinRSI2
 	}
 	return 0
 }
 
-func (m *StkData) GetRSI1MinRSI3() yfloat {
+func (m *StkData) GetRSI1MinRSI3() YFloat {
 	if m != nil {
 		return m.RSI1MinRSI3
 	}
 	return 0
 }
 
-func (m *StkData) GetRSI5MinRSI1() yfloat {
+func (m *StkData) GetRSI5MinRSI1() YFloat {
 	if m != nil {
 		return m.RSI5MinRSI1
 	}
 	return 0
 }
 
-func (m *StkData) GetRSI5MinRSI2() yfloat {
+func (m *StkData) GetRSI5MinRSI2() YFloat {
 	if m != nil {
 		return m.RSI5MinRSI2
 	}
 	return 0
 }
 
-func (m *StkData) GetRSI5MinRSI3() yfloat {
+func (m *StkData) GetRSI5MinRSI3() YFloat {
 	if m != nil {
 		return m.RSI5MinRSI3
 	}
 	return 0
 }
 
-func (m *StkData) GetRSI1DayRSI1() yfloat {
+func (m *StkData) GetRSI1DayRSI1() YFloat {
 	if m != nil {
 		return m.RSI1DayRSI1
 	}
 	return 0
 }
 
-func (m *StkData) GetRSI1DayRSI2() yfloat {
+func (m *StkData) GetRSI1DayRSI2() YFloat {
 	if m != nil {
 		return m.RSI1DayRSI2
 	}
 	return 0
 }
 
-func (m *StkData) GetRSI1DayRSI3() yfloat {
+func (m *StkData) GetRSI1DayRSI3() YFloat {
 	if m != nil {
 		return m.RSI1DayRSI3
 	}
 	return 0
 }
 
-func (m *StkData) GetWR1MinWR1() yfloat {
+func (m *StkData) GetWR1MinWR1() YFloat {
 	if m != nil {
 		return m.WR1MinWR1
 	}
 	return 0
 }
 
-func (m *StkData) GetWR1MinWR2() yfloat {
+func (m *StkData) GetWR1MinWR2() YFloat {
 	if m != nil {
 		return m.WR1MinWR2
 	}
 	return 0
 }
 
-func (m *StkData) GetWR5MinWR1() yfloat {
+func (m *StkData) GetWR5MinWR1() YFloat {
 	if m != nil {
 		return m.WR5MinWR1
 	}
 	return 0
 }
 
-func (m *StkData) GetWR5MinWR2() yfloat {
+func (m *StkData) GetWR5MinWR2() YFloat {
 	if m != nil {
 		return m.WR5MinWR2
 	}
 	return 0
 }
 
-func (m *StkData) GetWR1DayWR1() yfloat {
+func (m *StkData) GetWR1DayWR1() YFloat {
 	if m != nil {
 		return m.WR1DayWR1
 	}
 	return 0
 }
 
-func (m *StkData) GetWR1DayWR2() yfloat {
+func (m *StkData) GetWR1DayWR2() YFloat {
 	if m != nil {
 		return m.WR1DayWR2
 	}
 	return 0
 }
 
-func (m *StkData) GetLeiXing() yfloat {
+func (m *StkData) GetLeiXing() YFloat {
 	if m != nil {
 		return m.LeiXing
 	}
 	return 0
 }
 
-func (m *StkData) GetZiLeiXing() yfloat {
+func (m *StkData) GetZiLeiXing() YFloat {
 	if m != nil {
 		return m.ZiLeiXing
 	}
@@ -2307,7 +2307,7 @@ func (m *StkData) GetLeiXingMingCheng() string {
 	return ""
 }
 
-func (m *StkData) GetChengJiaoLiangDanWei() yfloat {
+func (m *StkData) GetChengJiaoLiangDanWei() YFloat {
 	if m != nil {
 		return m.ChengJiaoLiangDanWei
 	}
@@ -2321,56 +2321,56 @@ func (m *StkData) GetMaBiao() string {
 	return ""
 }
 
-func (m *StkData) GetFJJJLeiXing() yfloat {
+func (m *StkData) GetFJJJLeiXing() YFloat {
 	if m != nil {
 		return m.FJJJLeiXing
 	}
 	return 0
 }
 
-func (m *StkData) GetZhengTiYiJia() yfloat {
+func (m *StkData) GetZhengTiYiJia() YFloat {
 	if m != nil {
 		return m.ZhengTiYiJia
 	}
 	return 0
 }
 
-func (m *StkData) GetMYiJia() yfloat {
+func (m *StkData) GetMYiJia() YFloat {
 	if m != nil {
 		return m.MYiJia
 	}
 	return 0
 }
 
-func (m *StkData) GetMShiShiJingZhi() yfloat {
+func (m *StkData) GetMShiShiJingZhi() YFloat {
 	if m != nil {
 		return m.MShiShiJingZhi
 	}
 	return 0
 }
 
-func (m *StkData) GetMShangZheXuZhang() yfloat {
+func (m *StkData) GetMShangZheXuZhang() YFloat {
 	if m != nil {
 		return m.MShangZheXuZhang
 	}
 	return 0
 }
 
-func (m *StkData) GetMXiaZheXuDie() yfloat {
+func (m *StkData) GetMXiaZheXuDie() YFloat {
 	if m != nil {
 		return m.MXiaZheXuDie
 	}
 	return 0
 }
 
-func (m *StkData) GetYinHanShouYi() yfloat {
+func (m *StkData) GetYinHanShouYi() YFloat {
 	if m != nil {
 		return m.YinHanShouYi
 	}
 	return 0
 }
 
-func (m *StkData) GetJiaGeGangGan() yfloat {
+func (m *StkData) GetJiaGeGangGan() YFloat {
 	if m != nil {
 		return m.JiaGeGangGan
 	}
@@ -2398,427 +2398,427 @@ func (m *StkData) GetShangShiRiQi() string {
 	return ""
 }
 
-func (m *StkData) GetMeiGuShouYi() yfloat {
+func (m *StkData) GetMeiGuShouYi() YFloat {
 	if m != nil {
 		return m.MeiGuShouYi
 	}
 	return 0
 }
 
-func (m *StkData) GetMeiGuJingZiChan() yfloat {
+func (m *StkData) GetMeiGuJingZiChan() YFloat {
 	if m != nil {
 		return m.MeiGuJingZiChan
 	}
 	return 0
 }
 
-func (m *StkData) GetJingZiChanShouYiLv() yfloat {
+func (m *StkData) GetJingZiChanShouYiLv() YFloat {
 	if m != nil {
 		return m.JingZiChanShouYiLv
 	}
 	return 0
 }
 
-func (m *StkData) GetMeiGuJingYingXianJin() yfloat {
+func (m *StkData) GetMeiGuJingYingXianJin() YFloat {
 	if m != nil {
 		return m.MeiGuJingYingXianJin
 	}
 	return 0
 }
 
-func (m *StkData) GetMeiGuGongJiJin() yfloat {
+func (m *StkData) GetMeiGuGongJiJin() YFloat {
 	if m != nil {
 		return m.MeiGuGongJiJin
 	}
 	return 0
 }
 
-func (m *StkData) GetMeiGuWeiFenPei() yfloat {
+func (m *StkData) GetMeiGuWeiFenPei() YFloat {
 	if m != nil {
 		return m.MeiGuWeiFenPei
 	}
 	return 0
 }
 
-func (m *StkData) GetGuDongQuanYiBi() yfloat {
+func (m *StkData) GetGuDongQuanYiBi() YFloat {
 	if m != nil {
 		return m.GuDongQuanYiBi
 	}
 	return 0
 }
 
-func (m *StkData) GetJingLiRunTongBi() yfloat {
+func (m *StkData) GetJingLiRunTongBi() YFloat {
 	if m != nil {
 		return m.JingLiRunTongBi
 	}
 	return 0
 }
 
-func (m *StkData) GetZhuYingShouRuTongBi() yfloat {
+func (m *StkData) GetZhuYingShouRuTongBi() YFloat {
 	if m != nil {
 		return m.ZhuYingShouRuTongBi
 	}
 	return 0
 }
 
-func (m *StkData) GetXiaoShouMaoLiLv() yfloat {
+func (m *StkData) GetXiaoShouMaoLiLv() YFloat {
 	if m != nil {
 		return m.XiaoShouMaoLiLv
 	}
 	return 0
 }
 
-func (m *StkData) GetTiaoZhengMeiGuJingZi() yfloat {
+func (m *StkData) GetTiaoZhengMeiGuJingZi() YFloat {
 	if m != nil {
 		return m.TiaoZhengMeiGuJingZi
 	}
 	return 0
 }
 
-func (m *StkData) GetZongZiChan() yfloat {
+func (m *StkData) GetZongZiChan() YFloat {
 	if m != nil {
 		return m.ZongZiChan
 	}
 	return 0
 }
 
-func (m *StkData) GetLiuDongZiChan() yfloat {
+func (m *StkData) GetLiuDongZiChan() YFloat {
 	if m != nil {
 		return m.LiuDongZiChan
 	}
 	return 0
 }
 
-func (m *StkData) GetGuDingZiChan() yfloat {
+func (m *StkData) GetGuDingZiChan() YFloat {
 	if m != nil {
 		return m.GuDingZiChan
 	}
 	return 0
 }
 
-func (m *StkData) GetWuXingZiChan() yfloat {
+func (m *StkData) GetWuXingZiChan() YFloat {
 	if m != nil {
 		return m.WuXingZiChan
 	}
 	return 0
 }
 
-func (m *StkData) GetLiuDongFuZhai() yfloat {
+func (m *StkData) GetLiuDongFuZhai() YFloat {
 	if m != nil {
 		return m.LiuDongFuZhai
 	}
 	return 0
 }
 
-func (m *StkData) GetChangQiFuZhai() yfloat {
+func (m *StkData) GetChangQiFuZhai() YFloat {
 	if m != nil {
 		return m.ChangQiFuZhai
 	}
 	return 0
 }
 
-func (m *StkData) GetZongFuZhai() yfloat {
+func (m *StkData) GetZongFuZhai() YFloat {
 	if m != nil {
 		return m.ZongFuZhai
 	}
 	return 0
 }
 
-func (m *StkData) GetGuDongQuanYi() yfloat {
+func (m *StkData) GetGuDongQuanYi() YFloat {
 	if m != nil {
 		return m.GuDongQuanYi
 	}
 	return 0
 }
 
-func (m *StkData) GetZiBenGongJiJin() yfloat {
+func (m *StkData) GetZiBenGongJiJin() YFloat {
 	if m != nil {
 		return m.ZiBenGongJiJin
 	}
 	return 0
 }
 
-func (m *StkData) GetJingYingXianJinLiuLiang() yfloat {
+func (m *StkData) GetJingYingXianJinLiuLiang() YFloat {
 	if m != nil {
 		return m.JingYingXianJinLiuLiang
 	}
 	return 0
 }
 
-func (m *StkData) GetTouZiXianJinLiuLiang() yfloat {
+func (m *StkData) GetTouZiXianJinLiuLiang() YFloat {
 	if m != nil {
 		return m.TouZiXianJinLiuLiang
 	}
 	return 0
 }
 
-func (m *StkData) GetChouZiXianJinLiuLiang() yfloat {
+func (m *StkData) GetChouZiXianJinLiuLiang() YFloat {
 	if m != nil {
 		return m.ChouZiXianJinLiuLiang
 	}
 	return 0
 }
 
-func (m *StkData) GetXianJinZengJiaE() yfloat {
+func (m *StkData) GetXianJinZengJiaE() YFloat {
 	if m != nil {
 		return m.XianJinZengJiaE
 	}
 	return 0
 }
 
-func (m *StkData) GetZhuYingShouRu() yfloat {
+func (m *StkData) GetZhuYingShouRu() YFloat {
 	if m != nil {
 		return m.ZhuYingShouRu
 	}
 	return 0
 }
 
-func (m *StkData) GetZhuYingLiRun() yfloat {
+func (m *StkData) GetZhuYingLiRun() YFloat {
 	if m != nil {
 		return m.ZhuYingLiRun
 	}
 	return 0
 }
 
-func (m *StkData) GetYingYeLiRun() yfloat {
+func (m *StkData) GetYingYeLiRun() YFloat {
 	if m != nil {
 		return m.YingYeLiRun
 	}
 	return 0
 }
 
-func (m *StkData) GetTouZiShouYi() yfloat {
+func (m *StkData) GetTouZiShouYi() YFloat {
 	if m != nil {
 		return m.TouZiShouYi
 	}
 	return 0
 }
 
-func (m *StkData) GetYingYeWaiShouZhi() yfloat {
+func (m *StkData) GetYingYeWaiShouZhi() YFloat {
 	if m != nil {
 		return m.YingYeWaiShouZhi
 	}
 	return 0
 }
 
-func (m *StkData) GetLiRunZongE() yfloat {
+func (m *StkData) GetLiRunZongE() YFloat {
 	if m != nil {
 		return m.LiRunZongE
 	}
 	return 0
 }
 
-func (m *StkData) GetJingLiRun() yfloat {
+func (m *StkData) GetJingLiRun() YFloat {
 	if m != nil {
 		return m.JingLiRun
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiFenPeiLiRun() yfloat {
+func (m *StkData) GetWeiFenPeiLiRun() YFloat {
 	if m != nil {
 		return m.WeiFenPeiLiRun
 	}
 	return 0
 }
 
-func (m *StkData) GetZongGuBen() yfloat {
+func (m *StkData) GetZongGuBen() YFloat {
 	if m != nil {
 		return m.ZongGuBen
 	}
 	return 0
 }
 
-func (m *StkData) GetWuXianShouGuHeJi() yfloat {
+func (m *StkData) GetWuXianShouGuHeJi() YFloat {
 	if m != nil {
 		return m.WuXianShouGuHeJi
 	}
 	return 0
 }
 
-func (m *StkData) GetLiuTongAGu() yfloat {
+func (m *StkData) GetLiuTongAGu() YFloat {
 	if m != nil {
 		return m.LiuTongAGu
 	}
 	return 0
 }
 
-func (m *StkData) GetLiuTongBGu() yfloat {
+func (m *StkData) GetLiuTongBGu() YFloat {
 	if m != nil {
 		return m.LiuTongBGu
 	}
 	return 0
 }
 
-func (m *StkData) GetJingWaiShangShiGu() yfloat {
+func (m *StkData) GetJingWaiShangShiGu() YFloat {
 	if m != nil {
 		return m.JingWaiShangShiGu
 	}
 	return 0
 }
 
-func (m *StkData) GetQiTaLiuTongGu() yfloat {
+func (m *StkData) GetQiTaLiuTongGu() YFloat {
 	if m != nil {
 		return m.QiTaLiuTongGu
 	}
 	return 0
 }
 
-func (m *StkData) GetXianShouGuHeJi() yfloat {
+func (m *StkData) GetXianShouGuHeJi() YFloat {
 	if m != nil {
 		return m.XianShouGuHeJi
 	}
 	return 0
 }
 
-func (m *StkData) GetGuoJiaChiGu() yfloat {
+func (m *StkData) GetGuoJiaChiGu() YFloat {
 	if m != nil {
 		return m.GuoJiaChiGu
 	}
 	return 0
 }
 
-func (m *StkData) GetGuoYouFaRenGu() yfloat {
+func (m *StkData) GetGuoYouFaRenGu() YFloat {
 	if m != nil {
 		return m.GuoYouFaRenGu
 	}
 	return 0
 }
 
-func (m *StkData) GetJingNeiFaRenGu() yfloat {
+func (m *StkData) GetJingNeiFaRenGu() YFloat {
 	if m != nil {
 		return m.JingNeiFaRenGu
 	}
 	return 0
 }
 
-func (m *StkData) GetJingNeiZiRanRenGu() yfloat {
+func (m *StkData) GetJingNeiZiRanRenGu() YFloat {
 	if m != nil {
 		return m.JingNeiZiRanRenGu
 	}
 	return 0
 }
 
-func (m *StkData) GetQiTaFaQiRenGu() yfloat {
+func (m *StkData) GetQiTaFaQiRenGu() YFloat {
 	if m != nil {
 		return m.QiTaFaQiRenGu
 	}
 	return 0
 }
 
-func (m *StkData) GetMuJiFaRenGu() yfloat {
+func (m *StkData) GetMuJiFaRenGu() YFloat {
 	if m != nil {
 		return m.MuJiFaRenGu
 	}
 	return 0
 }
 
-func (m *StkData) GetJingWaiFaRenGu() yfloat {
+func (m *StkData) GetJingWaiFaRenGu() YFloat {
 	if m != nil {
 		return m.JingWaiFaRenGu
 	}
 	return 0
 }
 
-func (m *StkData) GetJingWaiZiRanRenGu() yfloat {
+func (m *StkData) GetJingWaiZiRanRenGu() YFloat {
 	if m != nil {
 		return m.JingWaiZiRanRenGu
 	}
 	return 0
 }
 
-func (m *StkData) GetYouXianGuHuoQiTa() yfloat {
+func (m *StkData) GetYouXianGuHuoQiTa() YFloat {
 	if m != nil {
 		return m.YouXianGuHuoQiTa
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiRu() yfloat {
+func (m *StkData) GetWeiTuoMaiRu() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiRu
 	}
 	return 0
 }
 
-func (m *StkData) GetWeiTuoMaiChu() yfloat {
+func (m *StkData) GetWeiTuoMaiChu() YFloat {
 	if m != nil {
 		return m.WeiTuoMaiChu
 	}
 	return 0
 }
 
-func (m *StkData) GetMaiRuZhongDanBiLi() yfloat {
+func (m *StkData) GetMaiRuZhongDanBiLi() YFloat {
 	if m != nil {
 		return m.MaiRuZhongDanBiLi
 	}
 	return 0
 }
 
-func (m *StkData) GetMaiRuDaDanBiLi() yfloat {
+func (m *StkData) GetMaiRuDaDanBiLi() YFloat {
 	if m != nil {
 		return m.MaiRuDaDanBiLi
 	}
 	return 0
 }
 
-func (m *StkData) GetMaiRuTeDaDanBiLi() yfloat {
+func (m *StkData) GetMaiRuTeDaDanBiLi() YFloat {
 	if m != nil {
 		return m.MaiRuTeDaDanBiLi
 	}
 	return 0
 }
 
-func (m *StkData) GetMaiChuZhongDanBiLi() yfloat {
+func (m *StkData) GetMaiChuZhongDanBiLi() YFloat {
 	if m != nil {
 		return m.MaiChuZhongDanBiLi
 	}
 	return 0
 }
 
-func (m *StkData) GetMaiChuDaDanBiLi() yfloat {
+func (m *StkData) GetMaiChuDaDanBiLi() YFloat {
 	if m != nil {
 		return m.MaiChuDaDanBiLi
 	}
 	return 0
 }
 
-func (m *StkData) GetMaiChuTeDaDanBiLi() yfloat {
+func (m *StkData) GetMaiChuTeDaDanBiLi() YFloat {
 	if m != nil {
 		return m.MaiChuTeDaDanBiLi
 	}
 	return 0
 }
 
-func (m *StkData) GetDuanXianMaiRu() yfloat {
+func (m *StkData) GetDuanXianMaiRu() YFloat {
 	if m != nil {
 		return m.DuanXianMaiRu
 	}
 	return 0
 }
 
-func (m *StkData) GetDuanXianMaiChu() yfloat {
+func (m *StkData) GetDuanXianMaiChu() YFloat {
 	if m != nil {
 		return m.DuanXianMaiChu
 	}
 	return 0
 }
 
-func (m *StkData) GetDuanXianChiHuo() yfloat {
+func (m *StkData) GetDuanXianChiHuo() YFloat {
 	if m != nil {
 		return m.DuanXianChiHuo
 	}
 	return 0
 }
 
-func (m *StkData) GetDuanXianTuHuo() yfloat {
+func (m *StkData) GetDuanXianTuHuo() YFloat {
 	if m != nil {
 		return m.DuanXianTuHuo
 	}
 	return 0
 }
 
-func (m *StkData) GetBiShi() yfloat {
+func (m *StkData) GetBiShi() YFloat {
 	if m != nil {
 		return m.BiShi
 	}
@@ -2832,91 +2832,91 @@ func (m *StkData) GetLingZhangGu() *LingZhangGuShuJu {
 	return nil
 }
 
-func (m *StkData) GetChiCang() yfloat {
+func (m *StkData) GetChiCang() YFloat {
 	if m != nil {
 		return m.ChiCang
 	}
 	return 0
 }
 
-func (m *StkData) GetZengCang() yfloat {
+func (m *StkData) GetZengCang() YFloat {
 	if m != nil {
 		return m.ZengCang
 	}
 	return 0
 }
 
-func (m *StkData) GetRiZeng() yfloat {
+func (m *StkData) GetRiZeng() YFloat {
 	if m != nil {
 		return m.RiZeng
 	}
 	return 0
 }
 
-func (m *StkData) GetJieSuanJia() yfloat {
+func (m *StkData) GetJieSuanJia() YFloat {
 	if m != nil {
 		return m.JieSuanJia
 	}
 	return 0
 }
 
-func (m *StkData) GetZuoRiJieSuanJia() yfloat {
+func (m *StkData) GetZuoRiJieSuanJia() YFloat {
 	if m != nil {
 		return m.ZuoRiJieSuanJia
 	}
 	return 0
 }
 
-func (m *StkData) GetKaiPing() yfloat {
+func (m *StkData) GetKaiPing() YFloat {
 	if m != nil {
 		return m.KaiPing
 	}
 	return 0
 }
 
-func (m *StkData) GetJieSuanZhangDie() yfloat {
+func (m *StkData) GetJieSuanZhangDie() YFloat {
 	if m != nil {
 		return m.JieSuanZhangDie
 	}
 	return 0
 }
 
-func (m *StkData) GetJieSuanZhangFu() yfloat {
+func (m *StkData) GetJieSuanZhangFu() YFloat {
 	if m != nil {
 		return m.JieSuanZhangFu
 	}
 	return 0
 }
 
-func (m *StkData) GetRongZiMaiRuE() yfloat {
+func (m *StkData) GetRongZiMaiRuE() YFloat {
 	if m != nil {
 		return m.RongZiMaiRuE
 	}
 	return 0
 }
 
-func (m *StkData) GetRongZiRongQuanBiaoJi() yfloat {
+func (m *StkData) GetRongZiRongQuanBiaoJi() YFloat {
 	if m != nil {
 		return m.RongZiRongQuanBiaoJi
 	}
 	return 0
 }
 
-func (m *StkData) GetZiJinJingE() yfloat {
+func (m *StkData) GetZiJinJingE() YFloat {
 	if m != nil {
 		return m.ZiJinJingE
 	}
 	return 0
 }
 
-func (m *StkData) GetJingNeiZongShiZhi() yfloat {
+func (m *StkData) GetJingNeiZongShiZhi() YFloat {
 	if m != nil {
 		return m.JingNeiZongShiZhi
 	}
 	return 0
 }
 
-func (m *StkData) GetGongXianDianShu() yfloat {
+func (m *StkData) GetGongXianDianShu() YFloat {
 	if m != nil {
 		return m.GongXianDianShu
 	}
@@ -2930,154 +2930,154 @@ func (m *StkData) GetHangYe() string {
 	return ""
 }
 
-func (m *StkData) GetPanKouBianHuaMaiRu1() yfloat {
+func (m *StkData) GetPanKouBianHuaMaiRu1() YFloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiRu1
 	}
 	return 0
 }
 
-func (m *StkData) GetPanKouBianHuaMaiRu2() yfloat {
+func (m *StkData) GetPanKouBianHuaMaiRu2() YFloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiRu2
 	}
 	return 0
 }
 
-func (m *StkData) GetPanKouBianHuaMaiRu3() yfloat {
+func (m *StkData) GetPanKouBianHuaMaiRu3() YFloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiRu3
 	}
 	return 0
 }
 
-func (m *StkData) GetPanKouBianHuaMaiRu4() yfloat {
+func (m *StkData) GetPanKouBianHuaMaiRu4() YFloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiRu4
 	}
 	return 0
 }
 
-func (m *StkData) GetPanKouBianHuaMaiRu5() yfloat {
+func (m *StkData) GetPanKouBianHuaMaiRu5() YFloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiRu5
 	}
 	return 0
 }
 
-func (m *StkData) GetPanKouBianHuaMaiRu6() yfloat {
+func (m *StkData) GetPanKouBianHuaMaiRu6() YFloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiRu6
 	}
 	return 0
 }
 
-func (m *StkData) GetPanKouBianHuaMaiRu7() yfloat {
+func (m *StkData) GetPanKouBianHuaMaiRu7() YFloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiRu7
 	}
 	return 0
 }
 
-func (m *StkData) GetPanKouBianHuaMaiRu8() yfloat {
+func (m *StkData) GetPanKouBianHuaMaiRu8() YFloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiRu8
 	}
 	return 0
 }
 
-func (m *StkData) GetPanKouBianHuaMaiRu9() yfloat {
+func (m *StkData) GetPanKouBianHuaMaiRu9() YFloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiRu9
 	}
 	return 0
 }
 
-func (m *StkData) GetPanKouBianHuaMaiRu10() yfloat {
+func (m *StkData) GetPanKouBianHuaMaiRu10() YFloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiRu10
 	}
 	return 0
 }
 
-func (m *StkData) GetPanKouBianHuaMaiChu1() yfloat {
+func (m *StkData) GetPanKouBianHuaMaiChu1() YFloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiChu1
 	}
 	return 0
 }
 
-func (m *StkData) GetPanKouBianHuaMaiChu2() yfloat {
+func (m *StkData) GetPanKouBianHuaMaiChu2() YFloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiChu2
 	}
 	return 0
 }
 
-func (m *StkData) GetPanKouBianHuaMaiChu3() yfloat {
+func (m *StkData) GetPanKouBianHuaMaiChu3() YFloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiChu3
 	}
 	return 0
 }
 
-func (m *StkData) GetPanKouBianHuaMaiChu4() yfloat {
+func (m *StkData) GetPanKouBianHuaMaiChu4() YFloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiChu4
 	}
 	return 0
 }
 
-func (m *StkData) GetPanKouBianHuaMaiChu5() yfloat {
+func (m *StkData) GetPanKouBianHuaMaiChu5() YFloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiChu5
 	}
 	return 0
 }
 
-func (m *StkData) GetPanKouBianHuaMaiChu6() yfloat {
+func (m *StkData) GetPanKouBianHuaMaiChu6() YFloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiChu6
 	}
 	return 0
 }
 
-func (m *StkData) GetPanKouBianHuaMaiChu7() yfloat {
+func (m *StkData) GetPanKouBianHuaMaiChu7() YFloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiChu7
 	}
 	return 0
 }
 
-func (m *StkData) GetPanKouBianHuaMaiChu8() yfloat {
+func (m *StkData) GetPanKouBianHuaMaiChu8() YFloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiChu8
 	}
 	return 0
 }
 
-func (m *StkData) GetPanKouBianHuaMaiChu9() yfloat {
+func (m *StkData) GetPanKouBianHuaMaiChu9() YFloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiChu9
 	}
 	return 0
 }
 
-func (m *StkData) GetPanKouBianHuaMaiChu10() yfloat {
+func (m *StkData) GetPanKouBianHuaMaiChu10() YFloat {
 	if m != nil {
 		return m.PanKouBianHuaMaiChu10
 	}
 	return 0
 }
 
-func (m *StkData) GetShiFouGuanZhu() yfloat {
+func (m *StkData) GetShiFouGuanZhu() YFloat {
 	if m != nil {
 		return m.ShiFouGuanZhu
 	}
 	return 0
 }
 
-func (m *StkData) GetXuHao() yfloat {
+func (m *StkData) GetXuHao() YFloat {
 	if m != nil {
 		return m.XuHao
 	}
