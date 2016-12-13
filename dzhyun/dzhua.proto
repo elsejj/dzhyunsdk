@@ -1,0 +1,23 @@
+syntax="proto3";
+package dzhyun;
+
+option java_package = "com.dzhyun.proto";
+
+message UAResponse
+{
+     string Qid     = 1;
+	 int32  Err     = 2;
+	 uint32 Counter = 3;
+	 bytes  Data    = 4;
+}
+
+message ChildResponse
+{
+	 int32  No      = 1;
+	 bytes  Data    = 2;
+}
+
+message GroupResponse
+{
+	repeated ChildResponse ChildRes = 1;
+}

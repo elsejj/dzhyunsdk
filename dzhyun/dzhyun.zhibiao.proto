@@ -1,0 +1,68 @@
+syntax="proto3";
+package dzhyun;
+
+option java_package = "com.dzhyun.proto";
+
+import "dzhyun.zhibiaojisuan.proto";
+
+// 指标
+message ZhiBiao { // ->MSG
+  // 指标输出
+  message ZBShuChu {
+     string                            MingCheng       = 1; // 名称
+     ZhiBiaoShuChu.ZBShuXing.SXLeiXing LeiXing         = 2; // 类型
+     int64                             YiDong          = 3; // 移动
+     int64                             ShuXing         = 4; // 属性
+     int64                             YanSe           = 5; // 颜色
+     int64                             BianLiangWeiZhi = 6; // 变量位置
+     int64                             KuoZhanShuXing  = 7; // 扩展属性
+  }
+
+  // 指标参数
+  message ZBCanShu {
+     string MingCheng  = 1; // 参数名称
+     int64  MoRenZhi   = 2; // 参数默认值
+     int64  ZuiDaZhi   = 3; // 最大值
+     int64  ZuiXiaoZhi = 4; // 最小值
+     int64  BuChang    = 5; // 步长
+  }
+
+  // 指标类型
+  enum ZBLeiXing {
+    TYPE_EXPLORER  = 0; // 条件选股
+    TYPE_SYSTEST   = 1; // 交易系统
+    TYPE_MAIN_PICT = 2; // 技术指标
+    TYPE_MAIN_ADD  = 3; // 技术指标
+    TYPE_SUB_PICT  = 4; // 技术指标
+    TYPE_PAINT_IT  = 5; // 五彩K线
+    TYPE_TEMP_INDI = 6; // 临时指标,现在只是最上层查找用
+    TYPE_TECHNIQUE = 7; // 包含 MAIN_PICT,MAIN_ADD,SUB_PICT
+    TYPE_UNKNOWN   = 8; // 未知类型
+  }
+
+  //   指标文本类型
+  enum ZBWenBenLeiXing {
+    TEXTTYPE_FORMULA  = 0; // 公式文本
+    TEXTTYPE_LUA      = 1; // lua脚本
+    TEXTTYPE_UNKNOWN  = 2; // 未知
+  }
+
+   string          MingCheng      = 1;  // 指标名称
+   string          MiaoShu        = 2;  // 指标描述
+   string          YongFa         = 3;  // 指标用法
+   string          CanShuJingLing = 4;  // 参数精灵
+   string          JianYiZu       = 5;  // 建议的分组号
+   string          WenBen         = 6;  // 指标文本
+   int64           ShiJian        = 7;  // 时间
+   ZBLeiXing       LeiXing        = 8;  // 指标类型
+   ZBWenBenLeiXing WenBenLeiXing  = 9;  // 文本类型
+   int64           BanBen         = 10; // 版本号
+   int64           ShuXing        = 11; // 属性
+   int64           MoRenLeiXing   = 12; // 默认类型
+   string          ZiJieMa        = 13; // 字节码
+   bool            ChangYong      = 14; // 常用指标
+   bool            ZiDingYi       = 15; // 自定义
+  repeated int64           EWaiShuJu      = 16; // 额外数据
+  repeated ZBCanShu        CanShu         = 17; // 指标参数
+  repeated ZBShuChu        ShuChu         = 18; // 指标输出
+}
