@@ -1,93 +1,57 @@
 package local
 
 import (
+	"encoding/json"
 	"fmt"
-	"github.com/elsejj/dzhyunsdk/dzhyun"
-	"github.com/gogo/protobuf/proto"
 	"github.com/gorilla/websocket"
 	"log"
+	"net"
 	"net/http"
 )
 
 type Server struct {
-	remote          string
-	local           string
-	upgrader        websocket.Upgrader
-	router          *Router
-	remoteClient    *websocket.Conn
-	remoteSendQueue chan []byte
+	local    string
+	upgrader websocket.Upgrader
+	router   *Router
+	remote   *Remote
 }
 
-func api1(w http.ResponseWriter, r *http.Request) {
+func (s *Server) index(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, "It's works")
 }
 
 func NewServer(remoteAddr, localAddr string) *Server {
 	s := &Server{
-		local:           localAddr,
-		remote:          remoteAddr,
-		upgrader:        websocket.Upgrader{},
-		router:          NewRouter(),
-		remoteClient:    nil,
-		remoteSendQueue: make(chan []byte),
+		local:    localAddr,
+		upgrader: websocket.Upgrader{},
+		router:   NewRouter(),
+		remote:   NewRemote(remoteAddr),
 	}
 	return s
 }
 
 func (s *Server) Run() {
 
-	go s.ConnectRemote()
+	ln, err := net.Listen("tcp", s.local)
+	if err != nil {
+		log.Println("start local server faield:", err)
+		return
+	}
+
+	go s.remote.Start(s.router)
 
 	mux := http.NewServeMux()
-
-	mux.HandleFunc("/", api1)
-	mux.Handle("/ws", s)
-
-	http.ListenAndServe(s.local, mux)
-}
-
-func (s *Server) ConnectRemote() {
-	if s.remoteClient != nil {
-		return
-	}
-	conn, _, err := websocket.DefaultDialer.Dial(s.remote, make(http.Header))
+	mux.HandleFunc("/", s.index)
+	mux.HandleFunc("/ws", s.ws)
+	mux.HandleFunc("/rs", s.remoteStatus)
+	err = http.Serve(ln, mux)
 	if err != nil {
-		log.Println("connect to remote", s.remote, "failed:", err)
-		return
+		log.Println("local http server faield:", err)
+		s.remote.Shutdown()
 	}
-	s.remoteClient = conn
-	defer s.remoteClient.Close()
-
-	// every data in remoteSendQueue will send to remote
-	go func() {
-		for data := range s.remoteSendQueue {
-			s.remoteClient.WriteMessage(websocket.TextMessage, data)
-		}
-	}()
-
-	log.Println("connet to", s.remote, "success")
-
-	for {
-		_, buf, err := conn.ReadMessage()
-		if err != nil {
-			log.Println("recv from remote failed:", err)
-			break
-		}
-		var ua dzhyun.UAResponse
-		err = proto.Unmarshal(buf, &ua)
-		if err != nil {
-			log.Println("parse remote incoming failed", err)
-			continue
-		}
-		client := s.router.GetByQid(ua.Qid)
-		if client != nil {
-			client.Send(&ua)
-		}
-	}
-
 }
 
-func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+func (s *Server) ws(w http.ResponseWriter, r *http.Request) {
 	c, err := s.upgrader.Upgrade(w, r, nil)
 	if err != nil {
 		log.Println("client connect ws faield:", err)
@@ -104,8 +68,16 @@ func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			log.Println("read ws client failed:", err)
 			break
 		}
-		//TODO: process req here
 		path := peer.ReBuildQS(msg)
-		s.remoteSendQueue <- []byte(path)
+		s.remote.sendQueue <- []byte(path)
 	}
+	s.router.Rm(peer.ID())
+}
+
+func (s *Server) remoteStatus(w http.ResponseWriter, r *http.Request) {
+	data, err := json.MarshalIndent(s.remote, "", "  ")
+	if err != nil {
+		fmt.Fprintln(w, err)
+	}
+	w.Write(data)
 }

@@ -33,7 +33,7 @@ func Table2Map(table *dzhyun.Table) []map[string]interface{} {
 				data := datas[col]
 				switch header.Type {
 				case int32(dzhyun.InfoType_Type_Int):
-					rec[header.GetName()] = data.GetIValues()[row]
+					rec[header.GetName()] = dzhyun.YFloat(data.GetIValues()[row])
 				case int32(dzhyun.InfoType_Type_SInt):
 					if row == 0 {
 						var err error

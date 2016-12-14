@@ -63,6 +63,7 @@ func (c *Client) ReBuildQS(buf []byte) string {
 	newQid := c.NewQid()
 	qs.Set("qid", newQid)
 	c.AddUserQid(newQid, qid)
+	qs.Set("compresser", "snappy")
 
 	if sub {
 	}

@@ -25,7 +25,7 @@ SDK 使用 `Go` 编写，通过 `gomobile`, `go shared library` 等机制提供�
 
 `make android`
 
-`output/dzhyunsdk.aar` 即为产生的 aar 包，可以用于导入到各 Android 工程
+output/dzhyunsdk.aar 即为产生的 aar 包，可以用于导入到各 Android 工程
 
 ```java
 import com.dzhyun.dzhyunsdk.Dzhyunsdk;
@@ -37,6 +37,27 @@ public class MainActivity extends AppCompatActivity {
         Dzhyunsdk.startSDK("ws://gw.yundzh.com/ws?token=00000003:1481705008:48ad77788e2e588c9eab9c52618173d51a600abe", "127.0.0.1:9999");
     }
 
+```
+
+对 `ws://127.0.0.1:9999/ws` 进行连接后，即可正常的发送请求和接受回复。 
+
+## iOS
+
+产生 xcode framework 
+
+`make ios`
+
+output/Dzhyunsdk.framework 即为产生的 framwork ，将其加入到已有的工程中
+
+```objc
+#include "Dzhyunsdk/Dzhyunsdk.h"
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    DzhyunDzhyunsdkStartSDK(@"ws://gw.yundzh.com/ws?token=00000003:1481705008:48ad77788e2e588c9eab9c52618173d51a600abe", @"127.0.0.1:9999");
+    
+    return YES;
+}
 ```
 
 对 `ws://127.0.0.1:9999/ws` 进行连接后，即可正常的发送请求和接受回复。 
