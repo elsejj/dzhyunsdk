@@ -17,7 +17,17 @@ type Server struct {
 }
 
 func (s *Server) index(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "It's works")
+	peer := NewClient(s.router.NextCid(), nil)
+	s.router.Add(peer)
+
+	fmt.Println("http request", r.URL.String())
+	path := peer.ReBuildQS([]byte(r.URL.String()))
+	s.remote.sendQueue <- []byte(path)
+	data := <-peer.SendQueue
+
+	w.Header().Set("Content-Type", "application/json; charset=utf-8")
+	w.Write(data)
+	s.router.Rm(peer.ID())
 }
 
 func NewServer(remoteAddr, localAddr string) *Server {

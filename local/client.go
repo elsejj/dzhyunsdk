@@ -12,18 +12,20 @@ import (
 )
 
 type Client struct {
-	id    string
-	conn  *websocket.Conn
-	qids  map[string]string
-	reqsn int
+	SendQueue chan []byte
+	id        string
+	conn      *websocket.Conn
+	qids      map[string]string
+	reqsn     int
 }
 
 func NewClient(id string, conn *websocket.Conn) *Client {
 	c := &Client{
-		id:    id,
-		conn:  conn,
-		qids:  make(map[string]string),
-		reqsn: 0,
+		SendQueue: make(chan []byte),
+		id:        id,
+		conn:      conn,
+		qids:      make(map[string]string),
+		reqsn:     0,
 	}
 	return c
 }
@@ -44,7 +46,12 @@ func (c *Client) AddUserQid(qid, uqid string) {
 
 func (c *Client) ReBuildQS(buf []byte) string {
 	p := bytes.IndexByte(buf, '?')
-	path := string(buf[0:p])
+	var path string
+	if p == -1 {
+		path = string(buf)
+	} else {
+		path = string(buf[0:p])
+	}
 	var qs url.Values
 	var err error
 	if p > 0 {
@@ -97,7 +104,13 @@ func (c *Client) Send(ua *dzhyun.UAResponse) {
 
 	err = proto.Unmarshal(ua.Data, &msg)
 	if err != nil {
-		log.Println("\t", "result is not a msg", err)
+		data := fmt.Sprintf(`{
+"Qid": "%s",
+"Counter": %d,
+"Err": %d,
+"Data": %s
+}`, ua.Qid, ua.Counter, ua.Err, string(ua.Data))
+		c.send([]byte(data))
 		return
 	}
 
@@ -123,6 +136,13 @@ func (c *Client) Send(ua *dzhyun.UAResponse) {
   "Err": %d,
   "Data": %s
 }`, ua.Qid, ua.Counter, ua.Err, msgData)
+	c.send([]byte(data))
+}
 
-	c.conn.WriteMessage(websocket.TextMessage, []byte(data))
+func (c *Client) send(data []byte) {
+	if c.conn != nil {
+		c.conn.WriteMessage(websocket.TextMessage, []byte(data))
+	} else {
+		c.SendQueue <- []byte(data)
+	}
 }
