@@ -78,15 +78,31 @@ func (r *Remote) Start(router *Router) {
 }
 
 func (r *Remote) startSend() {
+	beforeConnectedCache := make([][]byte, 1024)
+	cacheUsed := 0
+	online := false
 	for {
 		select {
 		case event := <-r.events:
 			if event == -1 {
+				online = false
 				break
+			} else if event == 1 {
+				online = true
+				for i, data := range beforeConnectedCache[0:cacheUsed] {
+					r.SendBytes += len(data)
+					r.conn.WriteMessage(websocket.TextMessage, data)
+					beforeConnectedCache[i] = nil
+				}
 			}
 		case data := <-r.sendQueue:
-			r.SendBytes += len(data)
-			r.conn.WriteMessage(websocket.TextMessage, data)
+			if online {
+				r.SendBytes += len(data)
+				r.conn.WriteMessage(websocket.TextMessage, data)
+			} else {
+				beforeConnectedCache[cacheUsed] = data
+				cacheUsed++
+			}
 		}
 	}
 }
