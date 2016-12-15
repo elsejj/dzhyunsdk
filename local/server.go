@@ -7,6 +7,7 @@ import (
 	"log"
 	"net"
 	"net/http"
+	"strings"
 )
 
 type Server struct {
@@ -14,6 +15,7 @@ type Server struct {
 	upgrader websocket.Upgrader
 	router   *Router
 	remote   *Remote
+	subs     []string
 }
 
 func (s *Server) index(w http.ResponseWriter, r *http.Request) {
@@ -36,6 +38,7 @@ func NewServer(remoteAddr, localAddr string) *Server {
 		upgrader: websocket.Upgrader{},
 		router:   NewRouter(),
 		remote:   NewRemote(remoteAddr),
+		subs:     make([]string, 0, 128),
 	}
 	return s
 }
@@ -54,6 +57,7 @@ func (s *Server) Run() {
 	mux.HandleFunc("/", s.index)
 	mux.HandleFunc("/ws", s.ws)
 	mux.HandleFunc("/rs", s.remoteStatus)
+	mux.HandleFunc("/rl", s.reload)
 	err = http.Serve(ln, mux)
 	if err != nil {
 		log.Println("local http server faield:", err)
@@ -79,6 +83,9 @@ func (s *Server) ws(w http.ResponseWriter, r *http.Request) {
 			break
 		}
 		path := peer.ReBuildQS(msg)
+		if strings.Index(path, "sub=1") > 0 {
+			s.subs = append(s.subs, path)
+		}
 		s.remote.sendQueue <- []byte(path)
 	}
 	s.router.Rm(peer.ID())
@@ -90,4 +97,19 @@ func (s *Server) remoteStatus(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintln(w, err)
 	}
 	w.Write(data)
+}
+
+func (s *Server) reload(w http.ResponseWriter, r *http.Request) {
+	s.remote.Shutdown()
+	remoteAddr := r.URL.Query().Get("remote")
+	if len(remoteAddr) == 0 {
+		remoteAddr = s.remote.server
+	}
+
+	remote := NewRemote(remoteAddr)
+	s.remote = remote
+
+	go s.remote.Start(s.router)
+
+	fmt.Fprintf(w, "{\"msg\": \"remote is restarted\"}")
 }

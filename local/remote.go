@@ -37,6 +37,7 @@ func (r *Remote) Start(router *Router) {
 	if r.conn != nil {
 		return
 	}
+	go r.startSend()
 	conn, _, err := websocket.DefaultDialer.Dial(r.server, make(http.Header))
 	if err != nil {
 		log.Println("connect to remote", r.server, "failed:", err)
@@ -48,7 +49,7 @@ func (r *Remote) Start(router *Router) {
 	log.Println("connet to", r.server, "success")
 
 	r.Online = true
-	go r.startSend()
+	r.events <- 1
 
 	for {
 		_, buf, err := conn.ReadMessage()

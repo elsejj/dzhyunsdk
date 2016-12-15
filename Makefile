@@ -7,13 +7,11 @@ OBJC_PREFIX=Dzhyun
 
 android:
 	mkdir -p $(OUTPUTDIR)
-	gomobile bind -target=android -javapkg=${JAVA_PACKAGE} ${PACKAGE}
-	mv dzhyunsdk.aar ${OUTPUTDIR}
+	cd ${OUTPUTDIR} ; gomobile bind -target=android -javapkg=${JAVA_PACKAGE} ${PACKAGE}
 
 ios:
 	mkdir -p $(OUTPUTDIR)
-	gomobile bind -target=ios -prefix=${OBJC_PREFIX} ${PACKAGE}
-	mv Dzhyunsdk.framework ${OUTPUTDIR}
+	cd ${OUTPUTDIR} ; gomobile bind -target=ios -prefix=${OBJC_PREFIX} ${PACKAGE}
 
 exe:
 	mkdir -p $(OUTPUTDIR)
