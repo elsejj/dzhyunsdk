@@ -1,14 +1,26 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"github.com/elsejj/dzhyunsdk"
 )
 
+var (
+	server string
+	token  string
+	local  string
+)
+
 func main() {
-	server := "ws://gw.yundzh.com/ws?token=00000003:1481769809:088c4d1cc313524828215d27b0dc6f642376d76e"
-	local := "127.0.0.1:9999"
-	dzhyunsdk.StartSDK(server, local)
+
+	flag.StringVar(&server, "server", "ws://gw.yundzh.com/ws", "the server url")
+	flag.StringVar(&token, "token", "", "the server access token")
+	flag.StringVar(&local, "local", "127.0.0.1:9999", "the local address")
+
+	flag.Parse()
+
+	dzhyunsdk.StartSDK(fmt.Sprintf("%s?token=%s", server, token), local)
 
 	var cmd string
 	for {
