@@ -9,9 +9,8 @@ type YFloat int64
 func (v YFloat) MarshalJSON() ([]byte, error) {
 	number, dp, err := UnmakeValue(int64(v))
 	if err != nil {
-		return nil, err
+		return []byte("null"), nil
 	}
-
 	format := fmt.Sprintf("%%.%df", dp)
 
 	text := fmt.Sprintf(format, number)

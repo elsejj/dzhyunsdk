@@ -88,6 +88,10 @@ func (s *Server) ws(w http.ResponseWriter, r *http.Request) {
 		}
 		s.remote.sendQueue <- []byte(path)
 	}
+	for qid := range peer.qids {
+		unsub := fmt.Sprintf("/cancel?qid=%v", qid)
+		s.remote.sendQueue <- []byte(unsub)
+	}
 	s.router.Rm(peer.ID())
 }
 

@@ -17,6 +17,7 @@ type Client struct {
 	conn      *websocket.Conn
 	qids      map[string]string
 	reqsn     int
+	subs      []string
 }
 
 func NewClient(id string, conn *websocket.Conn) *Client {
@@ -26,6 +27,7 @@ func NewClient(id string, conn *websocket.Conn) *Client {
 		conn:      conn,
 		qids:      make(map[string]string),
 		reqsn:     0,
+		subs:      make([]string, 0, 128),
 	}
 	return c
 }
@@ -73,6 +75,7 @@ func (c *Client) ReBuildQS(buf []byte) string {
 	qs.Set("compresser", "snappy")
 
 	if sub {
+		c.subs = append(c.subs, newQid)
 	}
 
 	path = path + "?" + qs.Encode()
