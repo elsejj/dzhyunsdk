@@ -17,7 +17,7 @@ SDK 已被简化为一个函数，传入远端服务地址和本地监听地址�
 
 # 实现
 
-SDK 使用 `Go` 编写，通过 `gomobile`, `go shared library` 等机制提供不同平台的 SDK
+SDK 使用 `Go` 编写，通过 [gomobile](https://github.com/golang/mobile), [Go 交叉编译](http://golangcookbook.com/chapters/running/cross-compiling/) 等机制提供不同平台的 SDK
 
 ## Android
 
@@ -61,3 +61,81 @@ output/Dzhyunsdk.framework 即为产生的 framwork ，将其加入到已有的�
 ```
 
 对 `ws://127.0.0.1:9999/ws` 进行连接后，即可正常的发送请求和接受回复。 
+
+# PC平台
+
+产生不同平台下的可执行文件
+
+`make exe`
+
+output/dzhyunsdk.exe 64bit windows 下的可执行文件
+
+output/dzhyunsdk.linux 64bit linux 下的可执行文
+
+output/dzhyunsdk.mac 64bit macos 下的可执行文件件
+
+可执行文件使用说明
+
+```
+ $ output/dzhyunsdk.mac -h
+Usage of output/dzhyunsdk:
+  -local string
+    	the local address (default "127.0.0.1:9999")
+  -server string
+    	the server url (default "ws://gw.yundzh.com/ws")
+  -token string
+    	the server access token
+```
+
+启动后，即可通过 `ws://127.0.0.1:9999/ws` 进行访问
+
+# HTTP代理
+
+`SDK` 也同时对 HTTP 请求进行代理，所以在某些需要使用HTTP的情况下，可以避免HTTP到远程的性能损耗，无论与`SDK`之间有多少条连接，实际上到远程的链接只有一条，并且在与远程的通讯中，启用了压缩和`Protobuf`，例如：
+
+`curl "http://127.0.0.1:9999/stkdata?obj=SH600000&field=ZhongWenJianCheng,ZuiXinJia"`
+
+将与直接访问远程的相应请求一样返回
+
+```json
+{
+  "Qid": "",
+  "Counter": 1,
+  "Err": 0,
+  "Data": {
+  "Id": 27,
+  "ObjCount": 1,
+  "RepDataStkData": [
+    {
+      "Obj": "SH600000",
+      "ZhongWenJianCheng": "浦发银行",
+      "ZuiXinJia": 16.69,
+      "XuHao": 0
+    }
+  ]
+  }
+}
+```
+
+同时，HTTP也被用于对SDK的控制
+
+## /rl
+
+`curl "http://127.0.0.1:9999/rl"`
+
+指示 `SDK`重新链接远程服务，这特别在移动端网络切换时很有必要调用
+
+## /rs
+
+`curl "http://127.0.0.1:9999/rs"`
+
+返回当前远端链接的状态，如
+
+```json
+{
+  "Online": true,
+  "SendBytes": 96,
+  "RecvBytes": 54
+}
+```
+
