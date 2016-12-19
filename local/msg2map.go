@@ -2,6 +2,8 @@ package local
 
 import (
 	"fmt"
+	"math"
+
 	"github.com/elsejj/dzhyunsdk/dzhyun"
 )
 
@@ -26,7 +28,6 @@ func Table2Map(table *dzhyun.Table) []map[string]interface{} {
 	sValues := make([]float64, len(headers))
 	rValues := make([]int, len(headers))
 	if datas != nil {
-
 		for row := 0; row < rows; row++ {
 			rec := make(map[string]interface{})
 			for col, header := range headers {
@@ -35,6 +36,7 @@ func Table2Map(table *dzhyun.Table) []map[string]interface{} {
 				case int32(dzhyun.InfoType_Type_Int):
 					rec[header.GetName()] = dzhyun.YFloat(data.GetIValues()[row])
 				case int32(dzhyun.InfoType_Type_SInt):
+					//fmt.Println("A", row, col, sValues[col], data.GetXValues()[row], header.Ratio, rValues[col])
 					if row == 0 {
 						var err error
 						sValues[col], rValues[col], err = dzhyun.UnmakeValue(data.GetXValues()[row])
@@ -42,8 +44,13 @@ func Table2Map(table *dzhyun.Table) []map[string]interface{} {
 							fmt.Println("unpack", data.GetXValues()[row], "failed", err)
 						}
 					} else {
-						sValues[col] = sValues[col] + float64(data.GetXValues()[row]*int64(header.Ratio))
+						if header.Ratio != 0 {
+							sValues[col] = sValues[col] + float64(data.GetXValues()[row]*int64(header.Ratio))/math.Pow10(rValues[col])
+						} else {
+							sValues[col] = sValues[col] + float64(data.GetXValues()[row])/math.Pow10(rValues[col])
+						}
 					}
+					//fmt.Println("B", row, col, sValues[col])
 					rec[header.GetName()] = dzhyun.YFloat(dzhyun.MakeValue(sValues[col], rValues[col]))
 				case int32(dzhyun.InfoType_Type_String):
 					rec[header.GetName()] = data.GetSValues()[row]
