@@ -1,8 +1,9 @@
 package local
 
 import (
-	"log"
+	"fmt"
 	"net/http"
+	"time"
 
 	"github.com/elsejj/dzhyunsdk/dzhyun"
 	"github.com/golang/protobuf/proto"
@@ -38,15 +39,16 @@ func (r *Remote) Start(router *Router) {
 		return
 	}
 	go r.startSend()
+	go r.keepalive()
 	conn, _, err := websocket.DefaultDialer.Dial(r.server, make(http.Header))
 	if err != nil {
-		log.Println("connect to remote", r.server, "failed:", err)
+		fmt.Println("connect to remote", r.server, "failed:", err)
 		return
 	}
 	r.conn = conn
 	defer r.Shutdown()
 
-	log.Println("connet to", r.server, "success")
+	fmt.Println("connet to", r.server, "success")
 
 	r.Online = true
 	r.events <- 1
@@ -54,21 +56,21 @@ func (r *Remote) Start(router *Router) {
 	for {
 		_, buf, err := conn.ReadMessage()
 		if err != nil {
-			log.Println("recv from remote failed:", err)
+			fmt.Println("recv from remote failed:", err)
 			break
 		}
 		r.RecvBytes += len(buf)
 
 		buf, err = snappy.Decode(nil, buf)
 		if err != nil {
-			log.Println("decompress remote data failed:", err)
+			fmt.Println("decompress remote data failed:", err)
 			continue
 		}
 
 		var ua dzhyun.UAResponse
 		err = proto.Unmarshal(buf, &ua)
 		if err != nil {
-			log.Println("parse remote incoming failed", err)
+			fmt.Println("parse remote incoming failed", err)
 			continue
 		}
 		client := router.GetByQid(ua.Qid)
@@ -104,6 +106,16 @@ func (r *Remote) startSend() {
 				beforeConnectedCache[cacheUsed] = data
 				cacheUsed++
 			}
+		}
+	}
+}
+
+func (r *Remote) keepalive() {
+	for now := range time.Tick(1 * time.Minute) {
+		fmt.Println("send ping to remote")
+		err := r.conn.WriteControl(websocket.PingMessage, nil, now.Add(time.Second*10))
+		if err != nil {
+			break
 		}
 	}
 }
