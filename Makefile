@@ -27,6 +27,5 @@ zip:
 	cd ${OUTPUTDIR} ; zip dzhyunsdk.mac.zip dzhyunsdk.mac
 	cd ${OUTPUTDIR} ; zip dzhyunsdk.aar.zip dzhyunsdk.aar
 
-
 proto:
 	make -C dzhyun
