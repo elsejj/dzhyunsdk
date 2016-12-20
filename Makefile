@@ -17,9 +17,14 @@ ios:
 exe:
 	mkdir -p $(OUTPUTDIR)
 	GOOS=linux GOARCH=amd64 go build -o ${OUTPUTDIR}/${EXE_NAME}.linux main/main.go 
-	GOOS=windows GOARCH=amd64 go build -o ${OUTPUTDIR}/${EXE_NAME} main/main.go 
+	GOOS=windows GOARCH=amd64 go build -o ${OUTPUTDIR}/${EXE_NAME}.exe main/main.go 
 	GOOS=darwin GOARCH=amd64 go build -o ${OUTPUTDIR}/${EXE_NAME}.mac main/main.go 
 
+zip:
+	cd ${OUTPUTDIR} ; zip Dzhyunsdk.framework.zip Dzhyunsdk.framework
+	cd ${OUTPUTDIR} ; zip dzhyunsdk.exe.zip dzhyunsdk.exe
+	cd ${OUTPUTDIR} ; zip dzhyunsdk.linux.zip dzhyunsdk.linux
+	cd ${OUTPUTDIR} ; zip dzhyunsdk.mac.zip dzhyunsdk.mac
 
 
 proto:
